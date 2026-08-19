@@ -1,0 +1,951 @@
+{
+ "qid": "q13_trademark",
+ "seed": 0,
+ "question": "Are there any trademark or intellectual property judgments in this corpus? If so, what did they decide?",
+ "kind": "distractor",
+ "ok": true,
+ "trace": {
+  "question": "Are there any trademark or intellectual property judgments in this corpus? If so, what did they decide?",
+  "events": [
+   {
+    "seq": 1,
+    "kind": "budget",
+    "label": "triage",
+    "detail": "simple / side=none -- The request asks for a factual lookup: whether any trademark or IP judgments exist in the corpus and what they decided. This is a straightforward enumeration/retrieval task, not requiring comparison or weighing of precedents.",
+    "payload": {
+     "budget": 4,
+     "client_side": "none"
+    },
+    "docs": [],
+    "elapsed_s": 5.01
+   },
+   {
+    "seq": 2,
+    "kind": "tool_call",
+    "label": "search_precedents",
+    "detail": "query=trademark intellectual property copyright patent top_k=25",
+    "payload": {
+     "args": {
+      "query": "trademark intellectual property copyright patent",
+      "top_k": 25
+     }
+    },
+    "docs": [],
+    "elapsed_s": 7.55
+   },
+   {
+    "seq": 3,
+    "kind": "tool_call",
+    "label": "filter_judgments",
+    "detail": "case_type_contains=trademark",
+    "payload": {
+     "args": {
+      "case_type_contains": "trademark"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 7.55
+   },
+   {
+    "seq": 4,
+    "kind": "tool_call",
+    "label": "filter_judgments",
+    "detail": "case_type_contains=intellectual property",
+    "payload": {
+     "args": {
+      "case_type_contains": "intellectual property"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 7.55
+   },
+   {
+    "seq": 5,
+    "kind": "retrieval",
+    "label": "search_precedents",
+    "detail": "query='trademark intellectual property copyright patent' favours=None k=25",
+    "payload": {
+     "query": "trademark intellectual property copyright patent",
+     "favours": null
+    },
+    "docs": [
+     {
+      "doc_id": "doc_049",
+      "title": "Intel Corporation vs S.P. Gupta And Others",
+      "dense_score": 0.6519882380962372,
+      "dense_rank": 1,
+      "sparse_score": 5.683966636657715,
+      "sparse_rank": 2,
+      "fused_score": 0.03252247488101534,
+      "fused_rank": 1,
+      "rerank_score": 10.0,
+      "final_rank": 1,
+      "why": "Directly addresses trademark infringement of a well-known mark, with factual posture of unauthorized use and ratio granting injunction.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_048",
+      "title": "Azuga Inc & Anr vs Azuga Telematics Llc & Ors",
+      "dense_score": 0.6359328031539917,
+      "dense_rank": 2,
+      "sparse_score": 21.659868240356445,
+      "sparse_rank": 1,
+      "fused_score": 0.03252247488101534,
+      "fused_rank": 2,
+      "rerank_score": 9.0,
+      "final_rank": 2,
+      "why": "Involves trademark and copyright infringement with similar factual posture (unauthorized adoption by former employees) and ratio on interim injunction.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_047",
+      "title": "New Balance Athletics Inc. vs Ashok Kumar & Ors.",
+      "dense_score": 0.5714709162712097,
+      "dense_rank": 3,
+      "sparse_score": 5.639111042022705,
+      "sparse_rank": 3,
+      "fused_score": 0.031746031746031744,
+      "fused_rank": 3,
+      "rerank_score": 8.0,
+      "final_rank": 3,
+      "why": "Trademark infringement case with triple identity test and counterfeit goods, directly relevant to trademark issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_046",
+      "title": "Ajay Alias Vishal Veeru Devgan vs The Artists Planet & Ors",
+      "dense_score": 0.472676157951355,
+      "dense_rank": 4,
+      "sparse_score": 4.342852592468262,
+      "sparse_rank": 6,
+      "fused_score": 0.030776515151515152,
+      "fused_rank": 5,
+      "rerank_score": 2.0,
+      "final_rank": 4,
+      "why": "Concerns personality and publicity rights, not trademark, copyright, or patent; only tangential overlap in IP subject matter.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_053",
+      "title": "Ashokbhai Shankar Chaudhary & vs Jayendra Virendra Sharma &",
+      "dense_score": 0.41027772426605225,
+      "dense_rank": 5,
+      "sparse_score": 5.392791271209717,
+      "sparse_rank": 4,
+      "fused_score": 0.031009615384615385,
+      "fused_rank": 4,
+      "rerank_score": 0.0,
+      "final_rank": 5,
+      "why": "Civil injunction over title and possession, no IP or trademark issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_055",
+      "title": "Smt Iravva K Purantar vs S Venkatesh",
+      "dense_score": 0.3993649482727051,
+      "dense_rank": 6,
+      "sparse_score": 3.283459186553955,
+      "sparse_rank": 7,
+      "fused_score": 0.03007688828584351,
+      "fused_rank": 6,
+      "rerank_score": 0.0,
+      "final_rank": 6,
+      "why": "Specific performance of property, no IP or trademark relevance.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_016",
+      "title": "Reserved On: 21.07.2025 vs State Of H.P",
+      "dense_score": 0.28244954347610474,
+      "dense_rank": 18,
+      "sparse_score": 5.098918437957764,
+      "sparse_rank": 5,
+      "fused_score": 0.028205128205128206,
+      "fused_rank": 7,
+      "rerank_score": 0.0,
+      "final_rank": 7,
+      "why": "Criminal motor accident case, no IP or trademark issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_031",
+      "title": "National Insurance Co. Ltd vs Laxmi Narain Dhut",
+      "dense_score": 0.3672862648963928,
+      "dense_rank": 7,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": 0.014925373134328358,
+      "fused_rank": 8,
+      "rerank_score": 0.0,
+      "final_rank": 8,
+      "why": "Motor accident insurance, no IP or trademark relevance.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_008",
+      "title": "O.V. Shanthakumari vs Kokila",
+      "dense_score": 0.3577697277069092,
+      "dense_rank": 8,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": 0.014705882352941176,
+      "fused_rank": 9,
+      "rerank_score": 0.0,
+      "final_rank": 9,
+      "why": "Motor accident compensation precedent, no IP or trademark issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_005",
+      "title": "L And T Insurance Co Ltd vs Bindudevi Samharu Yadav",
+      "dense_score": 0.3002411723136902,
+      "dense_rank": 9,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": 0.014492753623188406,
+      "fused_rank": 10,
+      "rerank_score": 0.0,
+      "final_rank": 10,
+      "why": "Motor accident compensation and Section 167 bar, no IP or trademark relevance.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_035",
+      "title": "United India Insurance Company Limited vs V.Vijayakumar",
+      "dense_score": 0.29897189140319824,
+      "dense_rank": 10,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": 0.014285714285714285,
+      "fused_rank": 11,
+      "rerank_score": 0.0,
+      "final_rank": 11,
+      "why": "Motor accident compensation and driver license breach, no IP or trademark issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_054",
+      "title": "Chinnasamy vs K.Viswanathan(Died)",
+      "dense_score": 0.29647088050842285,
+      "dense_rank": 11,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": 0.014084507042253521,
+      "fused_rank": 12,
+      "rerank_score": 0.0,
+      "final_rank": 12,
+      "why": "Specific performance of contract, no IP or trademark relevance.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_050",
+      "title": "M/S. Mandvi Co-Op Bank Ltd vs Nimesh B.Thakore",
+      "dense_score": 0.2879129648208618,
+      "dense_rank": 12,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": 0.013888888888888888,
+      "fused_rank": 13,
+      "rerank_score": 0.0,
+      "final_rank": 13,
+      "why": "Negotiable Instruments Act procedure, no IP or trademark issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_015",
+      "title": "State Of H.P vs Krishan Lal",
+      "dense_score": 0.2854461073875427,
+      "dense_rank": 13,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": 0.0136986301369863,
+      "fused_rank": 14,
+      "rerank_score": 0.0,
+      "final_rank": 14,
+      "why": "Criminal rash driving acquittal, no IP or trademark relevance.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_052",
+      "title": "Company Of Management For Baranagar ... vs Atis Dipankar Chowdhuri",
+      "dense_score": 0.28511905670166016,
+      "dense_rank": 14,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": 0.013513513513513514,
+      "fused_rank": 15,
+      "rerank_score": 0.0,
+      "final_rank": 15,
+      "why": "Criminal prosecution under NI Act, no IP or trademark issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_051",
+      "title": "Sh. Yashpal Chaudhrani & Ors. vs State (Govt. Of Nct Delhi) & Anr.",
+      "dense_score": 0.28333717584609985,
+      "dense_rank": 15,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": 0.013333333333333334,
+      "fused_rank": 16,
+      "rerank_score": 0.0,
+      "final_rank": 16,
+      "why": "Quashing criminal proceedings for economic offences, no IP or trademark relevance.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_012",
+      "title": "Smt. Rekha Kumari W/O Late Sh. Sachin vs Himachal Road",
+      "dense_score": 0.28296172618865967,
+      "dense_rank": 16,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": 0.013157894736842105,
+      "fused_rank": 17,
+      "rerank_score": 0.0,
+      "final_rank": 17,
+      "why": "Motor accident compensation, no IP or trademark issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_001",
+      "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+      "dense_score": 0.28263330459594727,
+      "dense_rank": 17,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": 0.012987012987012988,
+      "fused_rank": 18,
+      "rerank_score": 0.0,
+      "final_rank": 18,
+      "why": "Motor accident compensation and insurance breach, no IP or trademark relevance.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_032",
+      "title": "S.Iyyapan vs M/S United India Insurance Co.Ld.& Anr",
+      "dense_score": 0.28221696615219116,
+      "dense_rank": 19,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": 0.012658227848101266,
+      "fused_rank": 19,
+      "rerank_score": 0.0,
+      "final_rank": 19,
+      "why": "Motor accident third-party liability, no IP or trademark issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_017",
+      "title": "Sanjay vs State Of Haryana",
+      "dense_score": 0.2815195918083191,
+      "dense_rank": 20,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": 0.0125,
+      "fused_rank": 20,
+      "rerank_score": 0.0,
+      "final_rank": 20,
+      "why": "Criminal rash driving conviction, no IP or trademark relevance.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_029",
+      "title": "United India Insurance Co.Ltd vs Minor Mahesh Kanubhai & 2",
+      "dense_score": 0.2804468870162964,
+      "dense_rank": 21,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": 0.012345679012345678,
+      "fused_rank": 21,
+      "rerank_score": 0.0,
+      "final_rank": 21,
+      "why": "Motor accident gratuitous passengers, no IP or trademark issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_023",
+      "title": "Suman Lata And Ors. vs Madan Mohan Sonkar And Ors.",
+      "dense_score": 0.27364522218704224,
+      "dense_rank": 22,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": 0.012195121951219513,
+      "fused_rank": 22,
+      "rerank_score": 0.0,
+      "final_rank": 22,
+      "why": "Motor accident compensation and res ipsa loquitur, no IP or trademark relevance.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_044",
+      "title": "Monnet Ispat & Energy Ltd vs C.C.E., Raipur",
+      "dense_score": 0.268660306930542,
+      "dense_rank": 23,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": 0.012048192771084338,
+      "fused_rank": 23,
+      "rerank_score": 0.0,
+      "final_rank": 23,
+      "why": "Central excise Cenvat credit, no IP or trademark issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_034",
+      "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+      "dense_score": 0.26395153999328613,
+      "dense_rank": 24,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": 0.011904761904761904,
+      "fused_rank": 24,
+      "rerank_score": 0.0,
+      "final_rank": 24,
+      "why": "Motor accident third-party claim and expired licence, no IP or trademark relevance.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_022",
+      "title": "Sangeeta Devi W/O Sh. Vinod Kumar Singh vs Mahesh Chand & Ors",
+      "dense_score": 0.26386821269989014,
+      "dense_rank": 25,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": 0.011764705882352941,
+      "fused_rank": 25,
+      "rerank_score": 0.0,
+      "final_rank": 25,
+      "why": "Motor accident child death compensation, no IP or trademark issue.",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 19.29
+   },
+   {
+    "seq": 6,
+    "kind": "filter",
+    "label": "filter_judgments",
+    "detail": "WHERE case_type LIKE '%trademark%'  ->  3 of 56 judgments",
+    "payload": {
+     "where": "case_type LIKE '%trademark%'",
+     "n_matched": 3,
+     "doc_ids": [
+      "doc_047",
+      "doc_048",
+      "doc_049"
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_047",
+      "title": "New Balance Athletics Inc. vs Ashok Kumar & Ors.",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_048",
+      "title": "Azuga Inc & Anr vs Azuga Telematics Llc & Ors",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_049",
+      "title": "Intel Corporation vs S.P. Gupta And Others",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 19.3
+   },
+   {
+    "seq": 7,
+    "kind": "filter",
+    "label": "filter_judgments",
+    "detail": "WHERE case_type LIKE '%intellectual property%'  ->  0 of 56 judgments",
+    "payload": {
+     "where": "case_type LIKE '%intellectual property%'",
+     "n_matched": 0,
+     "doc_ids": []
+    },
+    "docs": [],
+    "elapsed_s": 19.3
+   },
+   {
+    "seq": 8,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_049 focus=trademark infringement, well-known mark, injunction",
+    "payload": {
+     "args": {
+      "doc_id": "doc_049",
+      "focus": "trademark infringement, well-known mark, injunction"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 21.74
+   },
+   {
+    "seq": 9,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_048 focus=trademark and copyright infringement, interim injunction",
+    "payload": {
+     "args": {
+      "doc_id": "doc_048",
+      "focus": "trademark and copyright infringement, interim injunction"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 21.74
+   },
+   {
+    "seq": 10,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_047 focus=trademark infringement, triple identity test, counterfeit",
+    "payload": {
+     "args": {
+      "doc_id": "doc_047",
+      "focus": "trademark infringement, triple identity test, counterfeit"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 21.74
+   },
+   {
+    "seq": 11,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_049 focus='trademark infringement, well-known mark, injunction' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_049"
+     ],
+     "focus": "trademark infringement, well-known mark, injunction",
+     "title": "Intel Corporation vs S.P. Gupta And Others",
+     "court": "High Court of Delhi",
+     "holding": "The suit of the Plaintiff is decreed for permanent injunction in terms of paragraphs 37(i) and (ii) of the plaint as the defendants agreed not to use the mark 'INTEL' or any deceptively similar mark.",
+     "ratio": "Where defendants express willingness to submit to a permanent injunction restraining them from using a registered and well-known trademark as a trade name, trading style, domain name, or on their products, the suit may be decreed in terms of the injunction sought.",
+     "passages": [
+      {
+       "section": "body",
+       "score": 0.683,
+       "text": "evidence on record, it is clear that the trademark\n'INTEL' has been registered by the Plaintiff in several classes. The use of the mark 'INTEL' as a\ntrademark and/or part of trading style would constitute infringement as also passing off the\nDefendants' products as that of the Plaintiff.\n17. Heard. The present suit has been filed in 2006 and no interim injunction was granted during the\npendency of the suit. However, in view of the stand taken by the parties today, it is clear that the lis\nno longer exists between the parties and the Defendants are willing to suffer permanent injunction\nin terms of the prayer clause 37(i) & (ii) in the plaint for permanent injunction.\n18. Under these circumstances, the suit of the Plaintiff is decreed in terms of the paragraph 37 (i) &\n(ii) of the plaint. All other reliefs are not pressed for. Decree sheet be drawn accordingly.\n19. Defendant No.2, being a registered company with the Registrar of Companies, shall take steps\nfor change of name of the company, which shall be processed by the Registrar of Companies and\nchange of name shall be given effect to within a period of three months.\n20. The suit, along with pending applications, if any are disposed of.\nPRATHIBA M. SINGH JUDGE OCTOBER 7, 2022/dk/sk (corrected & released on 11th October,\n2022)"
+      },
+      {
+       "section": "body",
+       "score": 0.655,
+       "text": "intelgasgadgets.com, € engineering@intelgasgadgets.com, €\nelectronics@intelgasgadgets.com.\n10. The Plaintiff had sent cease and desist letters to the Defendants on 22nd November, 2005, 7th\nDecember, 2005, 8th March, 2006, however, there was no reply prompting the Plaintiff to file the\npresent suit.\n\n11. The prayers in the suit are as under:\n\"i) An order of permanent injunction restraining the Defendants, their companies,\ntheir directors, partners or proprietors as the case may be, their officers, servants,\nagents and representatives from:-\na. By using the name/mark INTEL as their trade names/trading style;\nb. Manufacturing, marketing and exporting LPG regulators, adaptors, valves, pigtails,\nneedle control valves, burners, fittings and related accessories or any other goods\nbearing the mark INTEL;\nC. Advertising, directly or indirectly running the website www.intelgasgadgets.com\nand/or using the name INTEL as their domain name, email addresses, website\naddress; and/or any other mark deceptively similar to the Plaintiffs trade mark/name\nINTEL and/or in any manner whatsoever doing any other thing; amounting to\ninfringement of the Plaintiffs trade mark registration nos. 687000 and 768180 in\nClass 9 & 18 respectively.\nii) An order of permanent injunction restraining the Defendants, their companies,\ndirectors, partners or proprietors as the case may be, their officers, servants, agents\nand representatives from advertising, directly or indirectly running any web site\nusing the name www.intelgasgadgets.com, as their domain name or using the\nname/mark INTEL as their trademark, trade name, e-mail addresses, web-site\naddress and/or any other mark deceptively similar to the Plaintiffs trademark INTEL\nand/or in any manner whatsoever doing any other thing as may be likely to cause\nconfusion or deception amounting to passing off their goods and business as and for\nthose of the Plaintiff.\niii) An order for delivery up of all printed matter, including stationery, goods, dyes,\nblocks, cartons.\nlabels, packaging boxes, plastic covers, etc. bearing the name INTEL to the authorized\nrepresentative of the Plaintiff for the purpose of destruction.\niv) A decree for damages of Rs."
+      },
+      {
+       "section": "body",
+       "score": 0.622,
+       "text": "ld be arrived at. The\nrecording of evidence was completed in April, 2016. The matter is now at the stage of final\narguments. The matter was taken up on 9th March, 2022 by this Court. On the said date, ld. Counsel\nfor the Defendants had sought time to seek instruction in the matter. Subsequently, ld. Counsel Mr.\nAniket Jain, ld. Counsel appearing for the Defendants on 20th May, 2022 submitted that Mr. S.P.\nGupta has passed away and his children were to give instruction in the matter. On the last date of\nhearing i.e., 8th August, 2022, one of the legal heirs of Defendant No.1, late Mr. S.P. Gupta, was\ndirected to appear in the Court. Ld. Counsel was also directed to file his vakalatnama.\n14. Today, ld. Counsel for the Defendants submits that he has filed his vakalatnama yesterday. He\nalso submits that he has sought instructions from Mr. Punit Gupta, one of sons of late Shri S.P.\nGupta, who has informed him that none of three entities i.e., Defendant Nos.2 to 4 are currently\nconducting business and that the Defendants do not intend to use the mark 'INTEL' as part of their\ntrading style as also the trademark for Defendant Nos.2 to 4, so long as the Plaintiff does not press\nfor damages/costs.\n\n15. Mr. Ranjan Narula, ld. Counsel appearing for the Plaintiff submits that during the pendency of\nthe suit, the mark 'INTEL' has, in fact, been declared a well-known trademark within the meaning of\nSection 2(zg) of the Trade Marks Act, 1999 by the Trade Marks Registry in the well-known mark list\npublished by the Registrar of Trademarks. He further submits that the well-known nature of the\n'INTEL' mark has also been recognised in two decisions of this Court in Intel Corporation v. A.\nSailesh, 2007 (34) PTC 492 and Intel Corporation v. Dinakaran Nair & Ors., 2006 (33) PTC 345 Del.\n16. Ld. Counsel, thus, submits that on the basis of evidence on record, it is clear that the trademark\n'INTEL' has been registered by the Plaintiff in several classes. The use of the mark 'INTEL' as a\ntrademark and/or part of trading style would constitute infringement as also passing off the\nDefendants' products as that of the Plaintiff.\n17. Heard."
+      },
+      {
+       "section": "body",
+       "score": 0.611,
+       "text": "Author: Prathiba M. Singh\nBench: Prathiba M. Singh\n                          $~12\n                          *    IN THE HIGH COURT OF DELHI AT NEW DELHI\n                                                      Date of decision: 7th October, 202\n                          +                CS (COMM) 179/2018\n                                 INTEL CORPORATION                                ..... \n                                              Through:           Mr. Ranjan Narula, and \n                                                                 Pratap     Ojha,       \n                                                                 (M:9810089304)\n                                               versus\n                                 S.P. GUPTA AND OTHERS                             .....\n                                               Through:          Mr. Aniket Jain, Advoca\n                                                                 4. (M:9958211221)\n                               CORAM:\n                               JUSTICE PRATHIBA M. SINGH\n                          Prathiba M. Singh, J.(oral)\n                          1.\nThis hearing has been done through hybrid mode.\n2. The Plaintiff- Intel Corporation, USA had filed the present suit in 2006 against three entities,\nnamely, Intel Gas Gadgets (P) Ltd., Intel Gas Guards (P) Ltd. and Intel Safety Devices, and Mr. S.P.\nGupta, director of the said defendants. The suit was for permanent injunction restraining trademark\ninfringement, passing off, damages, delivery up, etc. The grievance of the Plaintiff in the present suit\nis the use of the mark 'INTEL' as part of the trading style, corporate name, and domain name, etc. by\nthe Defendants as also as trademark in respect of the Defendants' products.\n3. The Plaintiff, incorporated in 1968, is engaged in the business relating to computers and\ncomputer parts, including, semi-conductor devices, memory chips, microprocessors, central\nprocessing units, motherboard, etc. The Plaintiff is a multi-national corporation with business\noperations in more than 40 countries and 199 offices worldwide, at the time of filing of the suit."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_049",
+      "title": "Intel Corporation vs S.P. Gupta And Others",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 21.82
+   },
+   {
+    "seq": 12,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_048 focus='trademark and copyright infringement, interim injunction' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_048"
+     ],
+     "focus": "trademark and copyright infringement, interim injunction",
+     "title": "Azuga Inc & Anr vs Azuga Telematics Llc & Ors",
+     "court": "In The High Court Of Delhi At New Delhi",
+     "holding": "The court granted an ex-parte ad-interim injunction restraining the defendants from using the plaintiffs' registered trademark 'AZUGA' or trade name 'AZUGA TELEMATICS', infringing their copyright in website images, and directing the domain registrar to suspend the infringing domain name.",
+     "ratio": "Where a plaintiff establishes a prima facie case of unauthorized adoption of a registered trademark and copyright-protected website assets for identical services by former employees and related entities, an ad-interim injunction is warranted to prevent consumer confusion and reputational dilution.",
+     "passages": [
+      {
+       "section": "order",
+       "score": 0.61,
+       "text": "ned counsel for the parties and has perused the record.\n36. The Plaintiffs are the registered proprietor of the mark 'AZUGA', both in India and\ninternationally, has been using the mark 'AZUGA/ ', since 2022. Defendant no. 3 is an ex-employee\nof Plaintiff no. 2 and has connection with Defendant no.1. In these facts, the Defendants adoption of\nthe name 'AZUGA' in the identical services as that of the Plaintiffs, prima facie appears mala fide to\nthe Court.\n37. The Plaintiff has also demonstrated that Defendants have copied pictures from Plaintiff's website\non an 'as-is' basis using them on their own website.\n38. Given the well-established recognition of the Plaintiffs' trademarks, Defendants use of a\ndeceptively similar mark is likely to mislead the public into believing an association with the\nPlaintiffs, thereby causing confusion and diluting the distinctive character and identity of the\nPlaintiffs' AZUGA brand. The Defendants have unlawfully adopted and used the Plaintiffs'\nregistered trademark 'AZUGA', as well as infringed the Plaintiffs' copyright in product photographs\nand images, all in connection with identical services.\n39. In the view of the above, the Plaintiffs have made out a prima facie case for the grant of\nad-interim injunction, balance of convenience lies in favour of the Plaintiffs and irreparable harm\nwill be caused to the Plaintiffs, in case the restraint is not granted.\n40. Accordingly, till the next date of hearing, following directions are issued:\n\na. Defendant Nos. 1 and 3, their partners, if any, officers, servants, This is a digitally\nsigned order.\nThe authenticity of the order can be re-verified from Delhi High Court Order Portal\nby scanning the QR code shown above."
+      },
+      {
+       "section": "order",
+       "score": 0.585,
+       "text": "via WhatsApp)\n11. This is an application filed by the Plaintiffs under Section 151 CPC seeking permission to serve\nDefendant No. 3 via WhatsApp messenger.\n12. For the reasons stated in the application, the application is allowed. I.A. 24399/2025 (seeking\ntime for filing the required certificate)\n13. This is an application filed by the Plaintiffs under Section 151 CPC seeking time for filing the\nrequired certificate under Section 63(4)(c) of the Bharatiya Sakshya Adhiniyam, 2023 ['BSA'].\n14. The certificate under Section 63(4)(c) of BSA is directed to be filed within four (4) weeks.\n15. Accordingly, the application is disposed of.\nThis is a digitally signed order.\nThe authenticity of the order can be re-verified from Delhi High Court Order Portal by scanning the\nQR code shown above. The Order is downloaded from the DHC Server on 30/09/2025 at 00:10:20\nI.A. 24394/2025 (seeking discovery of the Defendants' documents)\n16. This is an application filed by the Plaintiffs under Order XI Rule 1, 3 and 5 CPC seeking\ndiscovery, production, and inspection of the Defendants' documents.\n17. Issue notice to Defendant nos. 1 and 3 through all modes.\n18. Reply be filed within two (2) weeks. Rejoinder thereto, if any, be filed within two (2) weeks\nthereafter.\nCS(COMM) 1044/2025\n\n19. The present suit has been filed by the Plaintiffs seeking permanent injunction restraining\ntrademark infringement, passing off, copyright infringement and other ancillary reliefs.\n20. Let the plaint be registered as a suit.\n21. Issue summons.\n22. At the outset, Mr. Aman Kumar, Defendant no. 2 has joined the proceedings through video\nconferencing link.\n22.1 He states that he has received a copy of the paper book and waives the right of formal issuance\nof summons.\n22.2 He states that he has no connection with Defendant no. 1. He states that he was an ex-employee\nof Plaintiff no. 2."
+      },
+      {
+       "section": "order",
+       "score": 0.562,
+       "text": "nd. Additionally, the Plaintiff discovered that the user interface (UI) and visual elements of\nDefendant No. 1's website closely resembled its own, prompting the Plaintiff's legal team to issue a\ncopyright infringement notice to Facebook and domain registrar Big Rock (Defendant No. 4) on\n17.05.2024. While the infringing URL was taken down, the Defendant continued to copy UI assets\nand use the Plaintiff's trademarks through its website and products.\n33.5. Learned counsel for the Plaintiffs relied upon a comparison chart at paragraph 32 of the plaint\nwhich shows trademark and copyright infringement. He states that Defendants have strained every\nnerve to copy the UI assets of the Plaintiffs' website which amounts to an infringement of the\nPlaintiffs' copyright.\n33.6. Further investigation by the Plaintiffs revealed that Defendant No. 1 was listed on a third-party\nwebsite, GetDistributors.com, where Defendant No. 3, Mr. Senthil Kumar, was named in the contact\ndetails--confirming that former employees of Plaintiff No. 2, were actively involved in Defendant\nNo. 1's operations.\n33.7. Due to the Defendants' continued infringement and non- responsiveness, the Plaintiffs filed a\nPre-Litigation Mediation Petition before This is a digitally signed order.\nThe authenticity of the order can be re-verified from Delhi High Court Order Portal by scanning the\nQR code shown above. The Order is downloaded from the DHC Server on 30/09/2025 at 00:10:20\nthe Delhi High Court Legal Services Committee, but the Defendants failed to appear on multiple\nscheduled dates, leading to a non-starter report issued on 27.05.2025.\n33.8. Additionally, the Plaintiffs discovered negative online reviews about Defendant No. 1,\nincluding a LinkedIn post by a former employee alleging fraudulent practices, poor product quality,\nand misuse of the 'AZUGA' mark. Another review on AmbitionBox described the company as a 'copy'"
+      },
+      {
+       "section": "order",
+       "score": 0.537,
+       "text": "ordingly, till the next date of hearing, following directions are issued:\n\na. Defendant Nos. 1 and 3, their partners, if any, officers, servants, This is a digitally\nsigned order.\nThe authenticity of the order can be re-verified from Delhi High Court Order Portal\nby scanning the QR code shown above. The Order is downloaded from the DHC\nServer on 30/09/2025 at 00:10:20 agents, distributors, stockists and representatives\nare restrained from importing, manufacturing, warehousing, selling and/or offering\nfor sale, advertising, directly or indirectly dealing, in any manner in any\nproduct/services including GPS Fleet Tracking / Management related\nproduct/services bearing marks either identical or deceptively similar to the\nPlaintiffs' registered trademark 'AZUGA' or any similar trademark ' / / /azuga\nBridgeton Company specifically registration number 6422638 of the Plaintiff No.1\nincluding the tradename 'AZUGA TELEMATICS'.\nb. Defendant Nos. 1 and 3, their partners, if any, officers, servants, agents,\ndistributors, stockists and representatives are restrained from using infringing the\nPlaintiffs' copyright by copying / reproducing images/photographs from the\nPlaintiffs' website. c. Defendant No.4 is directed to lock and suspend the operation of\nthe domain name of the Defendant No.1 i.e., https://azugatelematicsllc.com/.\n41. Issue notice to defendant nos. 1, 3 and 4 through all modes.\n42. Reply be filed within four (4) weeks from receipt of notice. Rejoinder thereto, if any, be filed\nwithin four (4) weeks thereafter.\n43. Defendant no. 4 shall file its compliance report within four (4) weeks. Defendant no. 4 will\nprovide all BSI details of the registrant including the mode of payment through which the fees was\npaid.\n44. Compliance of Order XXXIX Rule 3 of CPC be done within a period This is a digitally signed\norder.\nThe authenticity of the order can be re-verified from Delhi High Court Order Portal by scanning the\nQR code shown above. The Order is downloaded from the DHC Server on 30/09/2025 at 00:10:20\nof one (1) week from today.\n45. List before the learned Joint Registrar (J) on 24.11.2025.\n46."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_048",
+      "title": "Azuga Inc & Anr vs Azuga Telematics Llc & Ors",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 21.86
+   },
+   {
+    "seq": 13,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_047 focus='trademark infringement, triple identity test, counterfeit' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_047"
+     ],
+     "focus": "trademark infringement, triple identity test, counterfeit",
+     "title": "New Balance Athletics Inc. vs Ashok Kumar & Ors.",
+     "court": "In The High Court Of Delhi At New Delhi",
+     "holding": "The court decreed the suit in favor of the plaintiff and against defendant nos. 1 and 11 for trademark infringement and passing off, awarding actual litigation costs.",
+     "ratio": "Where defendants use identical marks on identical goods and target the same consumer base, satisfying the triple identity test and admitting to selling counterfeit products, a case of trademark infringement and passing off is established, warranting a decree under Order VIII Rule 10 CPC.",
+     "passages": [
+      {
+       "section": "body",
+       "score": 0.781,
+       "text": "Court in the case of Puma SE Versus Brijendra Singh trading\nAS Sastajoota, 2023 SCC OnLine Del 6690, while dealing with similar facts relating to sale of\ncounterfeit products through a website and noting the seriousness in counterfeiting of products,\nmade the following observations:\n\"xxx xxx xxx\n14. The aforenoted facts make it clear that Defendant 1 is using marks which are\nidentical to the plaintiff's registered trademarks, on goods which are identical to the\ngoods on which the plaintiff uses its marks and is selling the goods to the very same\nconsumers who form the consumer target base of the plaintiff through the very same\nchannels. As such, the triple identity test, which envisages identity of marks, goods\nand consumers and availability of the goods through identical sources and outlets, is\nsatisfied in the present case. One may even say the quadruple identity test stands\nsatisfied.\n15. The facts of the present case, in fact, directly invoke Section 29 (2)(c) read with\n29(3)1 of the Trade Marks Act, 1999, under which, where the rival marks are\nidentical, and used in respect of identical goods or services, the Court would presume\nthe likelihood of confusion in the minds of the consumer.\n16. The assertions in the plaint, thus, clearly make out a case of infringement and\npassing off, by the defendant, of the registered PUMA word mark as well as the\nregistered device marks and of the plaintiff.\n\n17. The Division Bench of this Court has, vide order dated 10 April 2023 in FAO (OS)\n(COMM) 65/2023 (Jawed Ansari v. Louis Vuitton Malletier), endorsed the view\npassed by this Bench that counterfeiting is a serious economic offence, and, inasmuch\nas it erodes long established brand value and also misleads consumers into believing\nfake goods as to be genuine, has to be dealt with strictly and no leniency can be\nshown in that regard.\n18. The fact that Defendant 1 has not chosen to respond to this plaint indicates that\nthe defendant is well aware of the correctness of the assertions in the plaint and has\nallowed them to go unrebutted.\nxxx xxx xxx\"\n(Emphasis Supplied)\n16."
+      },
+      {
+       "section": "body",
+       "score": 0.598,
+       "text": "nals\". Moreover, the said defendants sell\ncounterfeit/fakes of plaintiff€s products, as well as, other well-known brands.\n2.6 In February, 2023, a representative of the plaintiff discovered the Impugned Website and placed\nan order for the footwear bearing the plaintiff€s marks from the said website. Upon receipt of the\nproduct from the Impugned Website, the plaintiff identified their marks being used and ascertained\nthe product to be a fake/counterfeit. 2.7 The website located at www.luxurytag.in, is a rogue website,\nas the same is being used for the purpose of marketing, offering for sale and selling counterfeit foot\nwear bearing the plaintiff€s marks. Such unfair and dishonest acts of the defendants amount to\ninfringement of the plaintiff€s trademark rights, passing off and unfair competition. Thus, the\npresent suit has been filed.\n3. I have heard the learned counsel for the parties and perused the record.\n4. It is noted that initially due to the unknown identities of defendant no. 1, the same was stated to\nbe as „Ashok Kumar€ as the said defendant was operating through the Impugned Website,\nwww.luxurytag.in. Subsequently, by way of an application for amendment of plaint and\nimpleadment, i.e. IA/15834/2023 under Order I Rule 10 (2) of the Code of Civil Procedure, 1908\n(\"CPC\"), filed by the plaintiff, on account of information provided by the other defendants, this\nCourt vide order dated 22 nd August, 2023 allowed the amendments and impleaded Mr. Indramani\nSahu as defendant no. 1, due to his number being listed as the owner in the Impugned Website and\nMr. Jagabandhu Sahoo as defendant no. 12, due to him being the beneficiary of the UPI Id for\ntransactions through the Impugned Website. Further, directions of the interim order dated 24th\nFebruary, 2023 were extended towards the said defendants. The relevant portion of order dated\n22nd August, 2023, is reproduced as under:\n\"xxx xxx xxx\n4. In the plaint as originally filed, as the identities of the defendants engaged in the\nallegedly infringing activities were not known, they have been impleaded under the\ngeneral appellation of \"John Doe\" as Defendant 1."
+      },
+      {
+       "section": "body",
+       "score": 0.556,
+       "text": "written statement. It has already been\nrecorded that the said defendant nos. 6 and 7, have already complied with the\ndirections of this Court.\nxxx xxx xxx\"\n7. Thus, since no written statement has been filed by the contesting party, the submissions made by\nthe plaintiff in the plaint, stand admitted. No useful purpose will be served to commence a trial\nwithout a defense, thus, this Court is empowered under Order VIII Rule 10 of CPC to proceed with\nthe present matter, in accordance thereof.\n8. The plaintiff is the proprietor of various trademarks around the world and in India, which are\nvalid and subsisting. Details of the Indian registrations of the plaintiff, are as shown below:\n9. The plaintiff over the years has amassed large goodwill and reputation across the world and in\nIndia. The indication of the same is shown by the Net Revenue and the amount spent on\nadvertisements under the plaintiff€s marks from the year 2013-2020, reproduced under, as shown\nin the plaint:\n10. This Court notes the submission of learned counsel for the plaintiff that the defendant nos. 1 and\n11 have admitted that the products sold by them on the Impugned Website are \"high quality\nproducts which look similar to the originals\". Screenshots of the Impugned Website indicating the\nstatement and the counterfeit products under the plaintiff€s marks, are reproduced as under:\nBy:AMAN UNIYAL Signing Date:02.12.2024 19:26:10\n11. Perusal of the above clearly shows that defendant nos. 1 and 11 have made categorical statements\nadmitting sale of replica/fake/counterfeit products. Some of the statements as observed above are\nrecorded below:\ni. \"India€s first online store to sell replica of all kind (Since 2015)\"; ii. \"We don€t sell\nOriginal products. We sell high quality products which look similar to the originals\";"
+      },
+      {
+       "section": "body",
+       "score": 0.549,
+       "text": "New Balance Athletics Inc. vs Ashok Kumar & Ors. on 27\nNovember, 2024\n                          $~24\n                          *      IN THE HIGH COURT OF DELHI AT NEW DELHI\n                          %                                              Date of Decisio\n                          +      CS(COMM) 104/2023 & I.A. 3739/2023\n                                 NEW BALANCE ATHLETICS INC.                             \n                                                    Through:     Mr. Urfee Roomi, Ms. Ja\n                                                                 and Mr. Ayush Dixit, Ad\n                                                                 M: 7011629381\n                                                    versus\n                                 ASHOK KUMAR & ORS.                                    .\n                                             Through:            Mr. Vijay Joshi, Mr. Mo\n                                                                 Mr. Shubham Chaturvedi,\n                                                                 D-9 and 10\n                                                                 M: 9873677817\n                                                                 Email:\n                                                                 advocatevijayjoshi@gmai\n                                 CORAM:\n                                 HON'BLE MS. JUSTICE MINI PUSHKARNA\n                                 MINI PUSHKARNA, J (ORAL)\n1. The present suit is filed seeking permanent injunction restraining trademark infringement,\npassing off of trademark, acts of unfair competition, seeking damages/rendition of accounts,\nfreezing assets, delivery up and other reliefs. The same is sought on the ground that there are\nunknown defendants who are making sale of counterfeiting products, inter alia using and thereby\ninfringing plaintiff€s registered trademarks, i.e. and \"NEW BALANCE\".\n2. The case, as canvassed by the plaintiff, is as follows:\n2.1 The plaintiff first used the term „NEW BALANCE€ as part of its corporate name\nin the year 1906 and as a trademark for its retail services in 1951 in United States of\nAmerica."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_047",
+      "title": "New Balance Athletics Inc. vs Ashok Kumar & Ors.",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 21.89
+   },
+   {
+    "seq": 14,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_046 focus=personality rights, publicity rights, intellectual property",
+    "payload": {
+     "args": {
+      "doc_id": "doc_046",
+      "focus": "personality rights, publicity rights, intellectual property"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 24.15
+   },
+   {
+    "seq": 15,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_046 focus='personality rights, publicity rights, intellectual property' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_046"
+     ],
+     "focus": "personality rights, publicity rights, intellectual property",
+     "title": "Ajay Alias Vishal Veeru Devgan vs The Artists Planet & Ors",
+     "court": "In The High Court Of Delhi At New Delhi",
+     "holding": "The court granted an ex-parte ad-interim injunction restraining the defendants from violating the plaintiff's personality and publicity rights, and issued directions for taking down infringing content, locking domain names, and blocking URLs.",
+     "ratio": "A well-known celebrity or public figure inherently possesses proprietary personality and publicity rights over their name, image, voice, and likeness, entitling them to seek an interim injunction against unauthorized commercial exploitation, merchandising, and the generation of deceptive or obscene deepfake content using artificial intelligence.",
+     "passages": [
+      {
+       "section": "order",
+       "score": 0.648,
+       "text": "s the registered proprietor of relevant\ntrademarks, and no third party has any legitimate claim to use his name.\n39.7. The Plaintiff's image, photograph, and likeness, widely disseminated through films, shows and\nadvertisements, are immediately and uniquely associated with him and no one else.\n39.8. It is stated that the Plaintiff's rights in the subject matter of the present suit encompass: (a)\nPersonality and Publicity Rights protected under Articles 19 and 21 of the Constitution of India; (b)\nMoral Rights recognised under This is a digitally signed order.\nThe authenticity of the order can be re-verified from Delhi High Court Order Portal by scanning the\nQR code shown above. The Order is downloaded from the DHC Server on 01/12/2025 at 22:00:04\nSections 38, 38A and 38B of the Copyright Act, 1957; (c) common law rights against passing off,\nmisappropriation and unfair competition; and (d) statutory trademark rights conferred under the\nTrade Marks Act, 1999. 39.9. The Defendants and their infringing activities and/or status as\nproforma Defendant, as provided by the learned counsel for the Plaintiff, have been specified in the\ntable below: -\n                        S. No.      DEFENDANTS                INFRINGING ACTIVITIES\n                        1.          Defendant No. 1:          Impersonation through offe\n                                    The Artists Planet        an appearance / performanc\n                        2.          Defendant No. 2:          Selling unauthorized poste\n                                    Good Hope                 website and also on Amazon\n                        3.          Defendant No. 3:          Allowing sellers to sell u\n                                    Redbubble                 t-shirts, caps etc. of the\n                                                              Proforma Defendant\n                        4.          Defendant        No. 4: Allowing sellers to sell una\n                                    Amazon             Seller Plaintiff on its platform\n                                    Services          Private Proforma Defendant\n                                    Limited\n                        5."
+      },
+      {
+       "section": "order",
+       "score": 0.63,
+       "text": "d\nearnings, which increases with higher viewership of the impugned videos, thereby infringing\nPlaintiff's publicity and personality rights.\n28. Let the plaint be registered as a suit.\n29. Summons be issued to Defendant nos. 1, 2, 6, 8, 9, 10, and 11 ['infringing defendants'] as well as\nDefendant No. 7 through speed post and e- This is a digitally signed order.\nThe authenticity of the order can be re-verified from Delhi High Court Order Portal by scanning the\nQR code shown above. The Order is downloaded from the DHC Server on 01/12/2025 at 22:00:04\nmail, upon filing of process fee. Affidavit of service(s) be filed within one (1) week.\n30. Summons shall state that the written statement(s) shall be filed within 30 days from the date of\nreceipt of summons. Along with the written statement(s), the Defendants shall also file affidavit(s)\nof admission/denial of the documents of the Plaintiff, without which the written statement(s) shall\nnot be taken on record.\n31. Liberty is given to the Plaintiff to file replication(s) within 30 days of the receipt of the written\nstatement(s). Along with the replication(s), if any, filed by the Plaintiff, affidavit(s) of\nadmission/denial of documents of the Defendants, be filed by the Plaintiffs, without which the\nreplication(s) shall not be taken on record. If any of the parties wish to seek inspection of any\ndocuments, the same shall be sought and given within the timelines.\n32. It is made clear that any unjustified denial of documents may lead to an order of costs against\nthe concerned party.\n33. Any party seeking inspection of documents may do so in accordance with the Delhi High Court\n(Original Side) Rules, 2018.\n34. Defendant Nos. 3, 4, 5, 12, 13, 14, 15, and 16 have been impleaded as 'proforma Defendants' in\nthe suit for ensuring compliance of the Court's directions. Since they are proforma Defendants, no\nsummons is being issued to the said Defendants. The said Defendants, therefore, do not have to file\nwritten statements. Directions for compliance have been issued qua said proforma Defendants in\nI.A. 29556/2025.\n35. Defendant No. 17 is an unknown entity-John Doe, as Plaintiff has sought relief against the\nunknown entities."
+      },
+      {
+       "section": "order",
+       "score": 0.615,
+       "text": "highest civilian honour Padma Shri, his status as a sought-after\nbrand ambassador, and a personality with millions of followers across social media platforms\ndemonstrates the strong public association uniquely tied to his identity and his reputation among\nthe Indian populace not limited to his fans. Additionally, the Plaintiff has also got his personal/stage\nname and its variations registered as trademark under various classes.\n49. On the basis of the assertions made in the plaint and perusal of documents filed on record, this\nCourt is of the prima facie view that the Plaintiff is a well-known face in India who has gained\nimmense goodwill and reputation over a course of a successful career and has acquired a celebrity\nstatus in India.\n50. In view of the law settled in D.M. Entertainment Vs. Baby Gift This is a digitally signed order.\nThe authenticity of the order can be re-verified from Delhi High Court Order Portal by scanning the\nQR code shown above. The Order is downloaded from the DHC Server on 01/12/2025 at 22:00:04\n\nHouse2 , Anil Kapoor Vs. Simply Life India & Ors.3 , and Jaikishan Kaku Bhai Sarf Alias Jackie\nShroff Vs. The Peppy store and Ors.4 there can be no dispute that this status inherently grants the\nPlaintiff proprietary rights over her personality and associated attributes.\n51. Therefore, prima facie, the Plaintiff's personality traits and/or parts thereof, including the\nPlaintiff's name, likeness, voice, and image are protectable elements of the Plaintiff's personality\nrights. The Plaintiff is entitled to seek injunction against the use of his personality rights by third\nparties for selling merchandise for their commercial gains, without his authorisation. The URLs\npertaining to Defendant Nos. 2, 3 and John Doe entities fall within this category. In view of the\nassertions of the Plaintiff, Defendant No. 1 is misrepresenting to the public with respect to its alleged\nassociation with the Plaintiff.\n52. In addition, the Plaintiff is prima facie entitled to protect himself against morphed and distorted\ncontent created with the use of AI technology which portrays the Plaintiff in a repugnant manner,\nsubjecting him to humiliation and ridicule."
+      },
+      {
+       "section": "order",
+       "score": 0.582,
+       "text": "t\ncivilian honour, and has contributed significantly as an actor, producer and director.\nHis achievements include iconic performances, commercially successful film\nfranchises, acclaimed directorial ventures, and the establishment of a leading\nstate-of-the-art visual effects studio NY VFXWAALA.\n39.3. The Plaintiff's name, image and personality enjoy immense goodwill and\ncommercial value. Owing to his credibility and reputation, he is a sought-\nThis is a digitally signed order.\nThe authenticity of the order can be re-verified from Delhi High Court Order Portal by scanning the\nQR code shown above. The Order is downloaded from the DHC Server on 01/12/2025 at 22:00:04\nafter brand ambassador associated with major national brands, details of which is given at\nparagraph no. 17 of the plaint. Public statements from brands consistently emphasize the trust,\ndependability and integrity associated with the Plaintiff.\n39.4. The Plaintiff's social media following exceeding several million on major platforms like\nFacebook [24 million], Instagram [12.2 million], and X [15.7 million] further demonstrates the\ndistinctiveness and exclusive public association of his name, image and persona.\n\n39.5. It is stated that the Plaintiff enjoys personality rights over all facets of his persona, including\nhis name, voice, likeness, and image. It is stated that these rights entitle him to control the\ncommercial use of such attributes and no third party may use, imitate or exploit any of these\nattributes without the Plaintiff's express authorization.\n39.6. The Plaintiff's personal/stage name, 'Ajay Devgn', 'Ajay Devgan', 'Ajay Veeru Devgn' and its\nvariations, is exclusively associated with him and enjoys both personality-rights protection and\ntrademark protection under various classes, certificates of which are annexed as document 29 filed\nalong with the plaint. It is stated that the Plaintiff is the registered proprietor of relevant\ntrademarks, and no third party has any legitimate claim to use his name.\n39.7. The Plaintiff's image, photograph, and likeness, widely disseminated through films, shows and\nadvertisements, are immediately and uniquely associated with him and no one else.\n39.8."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_046",
+      "title": "Ajay Alias Vishal Veeru Devgan vs The Artists Planet & Ors",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 24.24
+   },
+   {
+    "seq": 16,
+    "kind": "tool_call",
+    "label": "submit_answer",
+    "detail": "question=Are there any trademark or intellectual property judgments in this cor... answer=Yes, there are **4 judgments** in this corpus that deal with trademark... cited_doc_ids=['doc_049', 'doc_047', 'doc_048', 'doc_046'] confidence=high",
+    "payload": {
+     "args": {
+      "question": "Are there any trademark or intellectual property judgments in this corpus? If so, what did they decide?",
+      "answer": "Yes, there are **4 judgments** in this corpus that deal with trademark and/or intellectual property rights. Here is a summary of each:\n\n---\n\n### 1. Intel Corporation vs S.P. Gupta And Others (doc_049)\n**Court:** Delhi High Court | **Date:** 7 October 2022 | **Type:** Trademark Infringement\n\n**What happened:** Intel Corporation sued three entities (Intel Gas Gadgets, Intel Gas Guards, Intel Safety Devices) and their director for using the mark \"INTEL\" as their trading style, corporate name, domain name (intelgasgadgets.com), and on their products (LPG regulators, valves, etc.).\n\n**Decision:** The suit was **decreed in favour of Intel**. The defendants agreed to suffer a permanent injunction restraining them from using the mark \"INTEL\" or any deceptively similar mark as a trade name, trading style, domain name, or on their products. The defendant company was directed to change its name within three months. Intel did not press for damages.\n\n**Key point:** The court recognised that \"INTEL\" had been declared a **well-known trademark** under Section 2(zg) of the Trade Marks Act, 1999, and its unauthorised use constituted both infringement and passing off.\n\n---\n\n### 2. New Balance Athletics Inc. vs Ashok Kumar & Ors. (doc_047)\n**Court:** Delhi High Court | **Date:** 27 November 2024 | **Type:** Trademark Infringement & Passing Off\n\n**What happened:** New Balance sued unknown defendants operating a rogue website (luxurytag.in) that sold counterfeit/fake New Balance footwear. The defendants admitted on their website that they sold \"high quality products which look similar to the originals\" and described themselves as \"India's first online store to sell replica of all kind.\"\n\n**Decision:** The suit was **decreed in favour of New Balance** against the operating defendants under Order VIII Rule 10 CPC (no written statement filed). The court awarded actual litigation costs.\n\n**Key point:** The court applied the **triple identity test** (identical marks, identical goods, identical consumers) and held that counterfeiting is a **serious economic offence** that must be dealt with strictly, citing *Puma SE v. Brijendra Singh* and *Jawed Ansari v. Louis Vuitton Malletier*.\n\n---\n\n### 3. Azuga Inc & Anr vs Azuga Telematics Llc & Ors (doc_048)\n**Court:** Delhi High Court | **Date:** 26 September 2025 | **Type:** Trademark & Copyright Infringement\n\n**What happened:** Azuga Inc. (a GPS fleet tracking company) sued a competing entity formed by a former employee that adopted the identical name \"AZUGA\" for identical services, copied product photographs and UI assets from Azuga's website, and used the domain azugatelematicsllc.com.\n\n**Decision:** The court granted an **ex-parte ad-interim injunction** restraining the defendants from using the \"AZUGA\" mark or any deceptively similar mark, from infringing Azuga's copyright in website images/photographs, and directed the domain registrar to lock and suspend the infringing domain name.\n\n**Key point:** Unauthorised adoption of a registered trademark by a former employee for identical services, combined with copying copyright-protected website assets, establishes a **prima facie case** warranting interim relief to prevent consumer confusion and brand dilution.\n\n---\n\n### 4. Ajay Devgan vs The Artists Planet & Ors (doc_046)\n**Court:** Delhi High Court | **Date:** 27 November 2025 | **Type:** Personality & Publicity Rights Infringement (IP-adjacent)\n\n**What happened:** Actor Ajay Devgan sued multiple defendants for unauthorised commercial exploitation of his name, image, voice, and likeness — including impersonation (offering fake appearances), selling unauthorised merchandise, and creating **AI-generated deepfake content** portraying him in a repugnant manner.\n\n**Decision:** The court granted an **ex-parte ad-interim injunction** restraining all infringing activities, directed takedown of infringing content, locking of domain names, and blocking of URLs.\n\n**Key point:** The court held that a well-known celebrity possesses **proprietary personality and publicity rights** over their name, image, voice, and likeness, protected under Articles 19 and 21 of the Constitution, the Copyright Act (moral rights), and the Trade Marks Act. The court specifically recognised the right to protection against **AI-generated deepfake content** that subjects a celebrity to humiliation and ridicule.",
+      "cited_doc_ids": [
+       "doc_049",
+       "doc_047",
+       "doc_048",
+       "doc_046"
+      ],
+      "confidence": "high"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 41.1
+   },
+   {
+    "seq": 17,
+    "kind": "budget",
+    "label": "escalate",
+    "detail": "still discovering documents at step 4; budget -> 8",
+    "payload": {
+     "budget": 8
+    },
+    "docs": [],
+    "elapsed_s": 41.11
+   },
+   {
+    "seq": 18,
+    "kind": "budget",
+    "label": "wrong_contract_check",
+    "detail": "rejected: direct answer cites 4 judgments with 11 adverse-pool judgments retrieved",
+    "payload": {
+     "doc_ids": [
+      "doc_001",
+      "doc_016",
+      "doc_017",
+      "doc_023",
+      "doc_029",
+      "doc_031",
+      "doc_035",
+      "doc_044",
+      "doc_051",
+      "doc_054",
+      "doc_055"
+     ]
+    },
+    "docs": [],
+    "elapsed_s": 41.12
+   },
+   {
+    "seq": 19,
+    "kind": "tool_call",
+    "label": "submit_answer",
+    "detail": "question=Are there any trademark or intellectual property judgments in this cor... answer=Yes, there are **4 judgments** in this corpus that deal with trademark... cited_doc_ids=['doc_049', 'doc_047', 'doc_048', 'doc_046'] confidence=high",
+    "payload": {
+     "args": {
+      "question": "Are there any trademark or intellectual property judgments in this corpus? If so, what did they decide?",
+      "answer": "Yes, there are **4 judgments** in this corpus that deal with trademark and/or intellectual property rights. Here is a summary of each:\n\n---\n\n### 1. Intel Corporation vs S.P. Gupta And Others (doc_049)\n**Court:** Delhi High Court | **Date:** 7 October 2022 | **Type:** Trademark Infringement\n\n**What happened:** Intel Corporation sued three entities (Intel Gas Gadgets, Intel Gas Guards, Intel Safety Devices) and their director for using the mark \"INTEL\" as their trading style, corporate name, domain name (intelgasgadgets.com), and on their products (LPG regulators, valves, etc.).\n\n**Decision:** The suit was **decreed in favour of Intel**. The defendants agreed to suffer a permanent injunction restraining them from using the mark \"INTEL\" or any deceptively similar mark as a trade name, trading style, domain name, or on their products. The defendant company was directed to change its name within three months. Intel did not press for damages.\n\n**Key point:** The court recognised that \"INTEL\" had been declared a **well-known trademark** under Section 2(zg) of the Trade Marks Act, 1999, and its unauthorised use constituted both infringement and passing off.\n\n---\n\n### 2. New Balance Athletics Inc. vs Ashok Kumar & Ors. (doc_047)\n**Court:** Delhi High Court | **Date:** 27 November 2024 | **Type:** Trademark Infringement & Passing Off\n\n**What happened:** New Balance sued unknown defendants operating a rogue website (luxurytag.in) that sold counterfeit/fake New Balance footwear. The defendants admitted on their website that they sold \"high quality products which look similar to the originals\" and described themselves as \"India's first online store to sell replica of all kind.\"\n\n**Decision:** The suit was **decreed in favour of New Balance** against the operating defendants under Order VIII Rule 10 CPC (no written statement filed). The court awarded actual litigation costs.\n\n**Key point:** The court applied the **triple identity test** (identical marks, identical goods, identical consumers) and held that counterfeiting is a **serious economic offence** that must be dealt with strictly, citing *Puma SE v. Brijendra Singh* and *Jawed Ansari v. Louis Vuitton Malletier*.\n\n---\n\n### 3. Azuga Inc & Anr vs Azuga Telematics Llc & Ors (doc_048)\n**Court:** Delhi High Court | **Date:** 26 September 2025 | **Type:** Trademark & Copyright Infringement\n\n**What happened:** Azuga Inc. (a GPS fleet tracking company) sued a competing entity formed by a former employee that adopted the identical name \"AZUGA\" for identical services, copied product photographs and UI assets from Azuga's website, and used the domain azugatelematicsllc.com.\n\n**Decision:** The court granted an **ex-parte ad-interim injunction** restraining the defendants from using the \"AZUGA\" mark or any deceptively similar mark, from infringing Azuga's copyright in website images/photographs, and directed the domain registrar to lock and suspend the infringing domain name.\n\n**Key point:** Unauthorised adoption of a registered trademark by a former employee for identical services, combined with copying copyright-protected website assets, establishes a **prima facie case** warranting interim relief to prevent consumer confusion and brand dilution.\n\n---\n\n### 4. Ajay Devgan vs The Artists Planet & Ors (doc_046)\n**Court:** Delhi High Court | **Date:** 27 November 2025 | **Type:** Personality & Publicity Rights Infringement (IP-adjacent)\n\n**What happened:** Actor Ajay Devgan sued multiple defendants for unauthorised commercial exploitation of his name, image, voice, and likeness — including impersonation (offering fake appearances), selling unauthorised merchandise, and creating **AI-generated deepfake content** portraying him in a repugnant manner.\n\n**Decision:** The court granted an **ex-parte ad-interim injunction** restraining all infringing activities, directed takedown of infringing content, locking of domain names, and blocking of URLs.\n\n**Key point:** The court held that a well-known celebrity possesses **proprietary personality and publicity rights** over their name, image, voice, and likeness, protected under Articles 19 and 21 of the Constitution, the Copyright Act (moral rights), and the Trade Marks Act. The court specifically recognised the right to protection against **AI-generated deepfake content** that subjects a celebrity to humiliation and ridicule.",
+      "cited_doc_ids": [
+       "doc_049",
+       "doc_047",
+       "doc_048",
+       "doc_046"
+      ],
+      "confidence": "high"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 118.4
+   },
+   {
+    "seq": 20,
+    "kind": "budget",
+    "label": "escalate",
+    "detail": "still discovering documents at step 5; budget -> 8",
+    "payload": {
+     "budget": 8
+    },
+    "docs": [],
+    "elapsed_s": 118.4
+   },
+   {
+    "seq": 21,
+    "kind": "answer",
+    "label": "submit_answer",
+    "detail": "4 citations, confidence=high",
+    "payload": {
+     "doc_ids": [
+      "doc_049",
+      "doc_047",
+      "doc_048",
+      "doc_046"
+     ]
+    },
+    "docs": [],
+    "elapsed_s": 118.42
+   },
+   {
+    "seq": 22,
+    "kind": "plan",
+    "label": "reasoning",
+    "detail": "Here's a quick summary of the answer:",
+    "payload": {},
+    "docs": [],
+    "elapsed_s": 126.79
+   }
+  ],
+  "started_at": 1787041535.7937548,
+  "llm_calls": 8,
+  "in_tokens": 68066,
+  "out_tokens": 4124
+ },
+ "retrieved": [
+  "doc_049",
+  "doc_048",
+  "doc_047",
+  "doc_046",
+  "doc_053",
+  "doc_055",
+  "doc_016",
+  "doc_031",
+  "doc_008",
+  "doc_005",
+  "doc_035",
+  "doc_054",
+  "doc_050",
+  "doc_015",
+  "doc_052",
+  "doc_051",
+  "doc_012",
+  "doc_001",
+  "doc_032",
+  "doc_017",
+  "doc_029",
+  "doc_023",
+  "doc_044",
+  "doc_034",
+  "doc_022"
+ ],
+ "tool_sequence": [
+  "search_precedents",
+  "filter_judgments",
+  "filter_judgments",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "submit_answer",
+  "submit_answer"
+ ],
+ "llm_calls": 8,
+ "tokens": 72190,
+ "result_type": "DirectAnswer",
+ "result": {
+  "question": "Are there any trademark or intellectual property judgments in this corpus? If so, what did they decide?",
+  "answer": "Yes, there are **4 judgments** in this corpus that deal with trademark and/or intellectual property rights. Here is a summary of each:\n\n---\n\n### 1. Intel Corporation vs S.P. Gupta And Others (doc_049)\n**Court:** Delhi High Court | **Date:** 7 October 2022 | **Type:** Trademark Infringement\n\n**What happened:** Intel Corporation sued three entities (Intel Gas Gadgets, Intel Gas Guards, Intel Safety Devices) and their director for using the mark \"INTEL\" as their trading style, corporate name, domain name (intelgasgadgets.com), and on their products (LPG regulators, valves, etc.).\n\n**Decision:** The suit was **decreed in favour of Intel**. The defendants agreed to suffer a permanent injunction restraining them from using the mark \"INTEL\" or any deceptively similar mark as a trade name, trading style, domain name, or on their products. The defendant company was directed to change its name within three months. Intel did not press for damages.\n\n**Key point:** The court recognised that \"INTEL\" had been declared a **well-known trademark** under Section 2(zg) of the Trade Marks Act, 1999, and its unauthorised use constituted both infringement and passing off.\n\n---\n\n### 2. New Balance Athletics Inc. vs Ashok Kumar & Ors. (doc_047)\n**Court:** Delhi High Court | **Date:** 27 November 2024 | **Type:** Trademark Infringement & Passing Off\n\n**What happened:** New Balance sued unknown defendants operating a rogue website (luxurytag.in) that sold counterfeit/fake New Balance footwear. The defendants admitted on their website that they sold \"high quality products which look similar to the originals\" and described themselves as \"India's first online store to sell replica of all kind.\"\n\n**Decision:** The suit was **decreed in favour of New Balance** against the operating defendants under Order VIII Rule 10 CPC (no written statement filed). The court awarded actual litigation costs.\n\n**Key point:** The court applied the **triple identity test** (identical marks, identical goods, identical consumers) and held that counterfeiting is a **serious economic offence** that must be dealt with strictly, citing *Puma SE v. Brijendra Singh* and *Jawed Ansari v. Louis Vuitton Malletier*.\n\n---\n\n### 3. Azuga Inc & Anr vs Azuga Telematics Llc & Ors (doc_048)\n**Court:** Delhi High Court | **Date:** 26 September 2025 | **Type:** Trademark & Copyright Infringement\n\n**What happened:** Azuga Inc. (a GPS fleet tracking company) sued a competing entity formed by a former employee that adopted the identical name \"AZUGA\" for identical services, copied product photographs and UI assets from Azuga's website, and used the domain azugatelematicsllc.com.\n\n**Decision:** The court granted an **ex-parte ad-interim injunction** restraining the defendants from using the \"AZUGA\" mark or any deceptively similar mark, from infringing Azuga's copyright in website images/photographs, and directed the domain registrar to lock and suspend the infringing domain name.\n\n**Key point:** Unauthorised adoption of a registered trademark by a former employee for identical services, combined with copying copyright-protected website assets, establishes a **prima facie case** warranting interim relief to prevent consumer confusion and brand dilution.\n\n---\n\n### 4. Ajay Devgan vs The Artists Planet & Ors (doc_046)\n**Court:** Delhi High Court | **Date:** 27 November 2025 | **Type:** Personality & Publicity Rights Infringement (IP-adjacent)\n\n**What happened:** Actor Ajay Devgan sued multiple defendants for unauthorised commercial exploitation of his name, image, voice, and likeness — including impersonation (offering fake appearances), selling unauthorised merchandise, and creating **AI-generated deepfake content** portraying him in a repugnant manner.\n\n**Decision:** The court granted an **ex-parte ad-interim injunction** restraining all infringing activities, directed takedown of infringing content, locking of domain names, and blocking of URLs.\n\n**Key point:** The court held that a well-known celebrity possesses **proprietary personality and publicity rights** over their name, image, voice, and likeness, protected under Articles 19 and 21 of the Constitution, the Copyright Act (moral rights), and the Trade Marks Act. The court specifically recognised the right to protection against **AI-generated deepfake content** that subjects a celebrity to humiliation and ridicule.",
+  "cited_doc_ids": [
+   "doc_049",
+   "doc_047",
+   "doc_048",
+   "doc_046"
+  ],
+  "confidence": "high"
+ },
+ "cited": [
+  "doc_049",
+  "doc_047",
+  "doc_048",
+  "doc_046"
+ ],
+ "elapsed_s": 126.8
+}

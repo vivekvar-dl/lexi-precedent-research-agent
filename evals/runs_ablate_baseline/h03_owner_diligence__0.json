@@ -1,0 +1,1872 @@
+{
+ "qid": "h03_owner_diligence",
+ "seed": 0,
+ "question": "Find precedents on what an owner must do to check a driver's licence before employing them, and whether failing to check defeats the insurer's defence.",
+ "kind": "research",
+ "ok": true,
+ "trace": {
+  "question": "Find precedents on what an owner must do to check a driver's licence before employing them, and whether failing to check defeats the insurer's defence.",
+  "events": [
+   {
+    "seq": 1,
+    "kind": "budget",
+    "label": "triage",
+    "detail": "research -- The request asks to find precedents on a specific legal duty (owner's obligation to check a driver's licence) and the effect of failing to check on an insurer's defence. This requires searching for and comparing multiple case law precedents, weighing their holdings, and possibly synthesizing a legal strategy, which goes beyond a simple factual lookup or summary.",
+    "payload": {
+     "budget": 14
+    },
+    "docs": [],
+    "elapsed_s": 6.49
+   },
+   {
+    "seq": 2,
+    "kind": "tool_call",
+    "label": "search_precedents",
+    "detail": "query=owner's duty to verify driver's licence before employing driving licen... top_k=15",
+    "payload": {
+     "args": {
+      "query": "owner's duty to verify driver's licence before employing driving licence check employer liability",
+      "top_k": 15
+     }
+    },
+    "docs": [],
+    "elapsed_s": 9.67
+   },
+   {
+    "seq": 3,
+    "kind": "tool_call",
+    "label": "search_precedents",
+    "detail": "query=insurer defence owner failed to check driving licence breach of policy... top_k=15",
+    "payload": {
+     "args": {
+      "query": "insurer defence owner failed to check driving licence breach of policy condition",
+      "top_k": 15
+     }
+    },
+    "docs": [],
+    "elapsed_s": 9.67
+   },
+   {
+    "seq": 4,
+    "kind": "retrieval",
+    "label": "search_precedents",
+    "detail": "query=\"owner's duty to verify driver's licence before employing driving licence check employer liability\" favours=None k=15",
+    "payload": {
+     "query": "owner's duty to verify driver's licence before employing driving licence check employer liability",
+     "favours": null
+    },
+    "docs": [
+     {
+      "doc_id": "doc_027",
+      "title": "The Manager vs Chennamma",
+      "dense_score": 0.5343875586986542,
+      "dense_rank": 5,
+      "sparse_score": 13.118209838867188,
+      "sparse_rank": 5,
+      "fused_score": 0.03076923076923077,
+      "fused_rank": 2,
+      "rerank_score": 9.0,
+      "final_rank": 1,
+      "why": "Directly addresses insurer liability for driver lacking proper licence endorsement, with pay-and-recover order against owner.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_032",
+      "title": "S.Iyyapan vs M/S United India Insurance Co.Ld.& Anr",
+      "dense_score": 0.5583368539810181,
+      "dense_rank": 2,
+      "sparse_score": 11.64216423034668,
+      "sparse_rank": 10,
+      "fused_score": 0.0304147465437788,
+      "fused_rank": 3,
+      "rerank_score": 9.0,
+      "final_rank": 2,
+      "why": "Holds insurer liable despite driver lacking commercial endorsement, directly relevant to owner's duty to verify licence.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_033",
+      "title": "Satto & Ors vs New India Assurance Co Ltd",
+      "dense_score": 0.47913801670074463,
+      "dense_rank": 12,
+      "sparse_score": 17.493873596191406,
+      "sparse_rank": 1,
+      "fused_score": 0.03028233151183971,
+      "fused_rank": 5,
+      "rerank_score": 8.0,
+      "final_rank": 3,
+      "why": "Insurer liable to third party with recovery rights against owner for invalid licence breach, directly on point.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_035",
+      "title": "United India Insurance Company Limited vs V.Vijayakumar",
+      "dense_score": 0.5450157821178436,
+      "dense_rank": 3,
+      "sparse_score": 11.404218673706055,
+      "sparse_rank": 11,
+      "fused_score": 0.029957522915269395,
+      "fused_rank": 6,
+      "rerank_score": 8.0,
+      "final_rank": 4,
+      "why": "Insurer must pay third party then recover from owner for driver lacking proper licence, directly relevant.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_024",
+      "title": "Sunil Shreesail Killiket vs Subbraya",
+      "dense_score": 0.4758189916610718,
+      "dense_rank": 14,
+      "sparse_score": 13.12565803527832,
+      "sparse_rank": 4,
+      "fused_score": 0.029138513513513514,
+      "fused_rank": 9,
+      "rerank_score": 7.0,
+      "final_rank": 5,
+      "why": "Holds lack of valid licence is fundamental breach but insurer pays third party and recovers from owner.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_003",
+      "title": "United India Insurance Co Ltd., vs Smt Parvathi Hebbar W/O Late ...",
+      "dense_score": 0.5311249792575836,
+      "dense_rank": 6,
+      "sparse_score": 6.32380485534668,
+      "sparse_rank": 18,
+      "fused_score": 0.027972027972027972,
+      "fused_rank": 12,
+      "rerank_score": 7.0,
+      "final_rank": 6,
+      "why": "Addresses lapsed licence and insurer's pay-and-recover right against owner, relevant to verification duty.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_034",
+      "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+      "dense_score": 0.5184915661811829,
+      "dense_rank": 9,
+      "sparse_score": 12.406444549560547,
+      "sparse_rank": 7,
+      "fused_score": 0.029418126757516764,
+      "fused_rank": 7,
+      "rerank_score": 6.0,
+      "final_rank": 7,
+      "why": "Insurer liable despite expired licence; touches on owner's liability but not directly on verification duty.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_031",
+      "title": "National Insurance Co. Ltd vs Laxmi Narain Dhut",
+      "dense_score": 0.5163419246673584,
+      "dense_rank": 10,
+      "sparse_score": 6.588903903961182,
+      "sparse_rank": 16,
+      "fused_score": 0.027443609022556388,
+      "fused_rank": 15,
+      "rerank_score": 5.0,
+      "final_rank": 8,
+      "why": "Distinguishes third-party vs own-damage claims; relevant to scope of insurer liability but not owner's verification duty.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_005",
+      "title": "L And T Insurance Co Ltd vs Bindudevi Samharu Yadav",
+      "dense_score": 0.5666629076004028,
+      "dense_rank": 1,
+      "sparse_score": 13.3914213180542,
+      "sparse_rank": 2,
+      "fused_score": 0.03252247488101534,
+      "fused_rank": 1,
+      "rerank_score": 2.0,
+      "final_rank": 9,
+      "why": "Concerns bar under Section 167 MV Act, not driver licence verification or employer liability.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_042",
+      "title": "Nazar Singh vs State Of Punjab And Others",
+      "dense_score": 0.5400388538837433,
+      "dense_rank": 4,
+      "sparse_score": 12.217323303222656,
+      "sparse_rank": 8,
+      "fused_score": 0.030330882352941176,
+      "fused_rank": 4,
+      "rerank_score": 2.0,
+      "final_rank": 10,
+      "why": "Focuses on employer recovery from employee-driver after paying third party, not on pre-employment licence check.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_045",
+      "title": "K. Surappa vs V. Venkatesha Reddy And Others",
+      "dense_score": 0.5154774785041809,
+      "dense_rank": 11,
+      "sparse_score": 12.644166946411133,
+      "sparse_rank": 6,
+      "fused_score": 0.029236022193768675,
+      "fused_rank": 8,
+      "rerank_score": 2.0,
+      "final_rank": 11,
+      "why": "Addresses vicarious liability during vehicle requisition, not duty to verify driver's licence.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_043",
+      "title": "Jagdish Rai vs State Of Punjab And Others",
+      "dense_score": 0.45788484811782837,
+      "dense_rank": 17,
+      "sparse_score": 13.225955963134766,
+      "sparse_rank": 3,
+      "fused_score": 0.02886002886002886,
+      "fused_rank": 10,
+      "rerank_score": 2.0,
+      "final_rank": 12,
+      "why": "Concerns service law procedure for recovery from employee salary, not motor accident or licence verification.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_016",
+      "title": "Reserved On: 21.07.2025 vs State Of H.P",
+      "dense_score": 0.529836118221283,
+      "dense_rank": 7,
+      "sparse_score": 10.089632034301758,
+      "sparse_rank": 13,
+      "fused_score": 0.02862400327131466,
+      "fused_rank": 11,
+      "rerank_score": 1.0,
+      "final_rank": 13,
+      "why": "Criminal revision about rash driving and absence of licence, not employer's duty to verify before employing.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_013",
+      "title": "Mohammed Aynuddin @ Miyam vs State Of Andhra Pradesh",
+      "dense_score": 0.46867436170578003,
+      "dense_rank": 15,
+      "sparse_score": 11.708667755126953,
+      "sparse_rank": 9,
+      "fused_score": 0.02782608695652174,
+      "fused_rank": 13,
+      "rerank_score": 1.0,
+      "final_rank": 14,
+      "why": "Criminal negligence case, no bearing on employer's duty to check driver's licence.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_006",
+      "title": "National Insurance Company Ltd. Thr. ... vs Smt. Meena And 4 Others",
+      "dense_score": 0.4778744578361511,
+      "dense_rank": 13,
+      "sparse_score": 10.543492317199707,
+      "sparse_rank": 12,
+      "fused_score": 0.02758751902587519,
+      "fused_rank": 14,
+      "rerank_score": 1.0,
+      "final_rank": 15,
+      "why": "Concerns contributory negligence and pay-and-recover order, not licence verification duty.",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 33.01
+   },
+   {
+    "seq": 5,
+    "kind": "retrieval",
+    "label": "search_precedents",
+    "detail": "query='insurer defence owner failed to check driving licence breach of policy condition' favours=None k=15",
+    "payload": {
+     "query": "insurer defence owner failed to check driving licence breach of policy condition",
+     "favours": null
+    },
+    "docs": [
+     {
+      "doc_id": "doc_035",
+      "title": "United India Insurance Company Limited vs V.Vijayakumar",
+      "dense_score": 0.7252631783485413,
+      "dense_rank": 1,
+      "sparse_score": 16.980966567993164,
+      "sparse_rank": 1,
+      "fused_score": 0.03278688524590164,
+      "fused_rank": 1,
+      "rerank_score": 10.0,
+      "final_rank": 1,
+      "why": "Directly addresses insurer's defence based on owner's failure to check driving licence, with pay-and-recover remedy for breach of policy condition.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_024",
+      "title": "Sunil Shreesail Killiket vs Subbraya",
+      "dense_score": 0.6980454325675964,
+      "dense_rank": 3,
+      "sparse_score": 15.492053985595703,
+      "sparse_rank": 2,
+      "fused_score": 0.03200204813108039,
+      "fused_rank": 2,
+      "rerank_score": 10.0,
+      "final_rank": 2,
+      "why": "Holds that driving without a valid licence is a fundamental breach, but insurer must pay third party and recover from owner, matching the issue and posture.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_033",
+      "title": "Satto & Ors vs New India Assurance Co Ltd",
+      "dense_score": 0.6509081721305847,
+      "dense_rank": 8,
+      "sparse_score": 14.668584823608398,
+      "sparse_rank": 3,
+      "fused_score": 0.03057889822595705,
+      "fused_rank": 4,
+      "rerank_score": 9.0,
+      "final_rank": 3,
+      "why": "Confirms statutory liability of insurer to third parties despite breach (invalid licence), with recovery rights against owner, directly on point.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_025",
+      "title": "New India Assurance Co., Ltd., vs Yallavva W/O Yamanappa Dharnakeri",
+      "dense_score": 0.6379448175430298,
+      "dense_rank": 10,
+      "sparse_score": 9.2406644821167,
+      "sparse_rank": 9,
+      "fused_score": 0.02877846790890269,
+      "fused_rank": 8,
+      "rerank_score": 9.0,
+      "final_rank": 4,
+      "why": "Establishes that insurer must satisfy third-party award and recover from insured when breach of policy conditions (including licence) is proved.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_003",
+      "title": "United India Insurance Co Ltd., vs Smt Parvathi Hebbar W/O Late ...",
+      "dense_score": 0.6707566976547241,
+      "dense_rank": 5,
+      "sparse_score": 3.774492025375366,
+      "sparse_rank": 25,
+      "fused_score": 0.027149321266968326,
+      "fused_rank": 12,
+      "rerank_score": 9.0,
+      "final_rank": 5,
+      "why": "Addresses lapsed driving licence as breach, with pay-and-recover order, directly relevant to owner's failure to check licence validity.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_001",
+      "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+      "dense_score": 0.6874604821205139,
+      "dense_rank": 4,
+      "sparse_score": 10.912117004394531,
+      "sparse_rank": 7,
+      "fused_score": 0.03055037313432836,
+      "fused_rank": 5,
+      "rerank_score": 8.0,
+      "final_rank": 6,
+      "why": "Involves breach due to missing endorsement on licence, with pay-and-recover; similar issue of owner's failure to ensure proper licence.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_027",
+      "title": "The Manager vs Chennamma",
+      "dense_score": 0.6550184190273285,
+      "dense_rank": 7,
+      "sparse_score": 13.744341850280762,
+      "sparse_rank": 5,
+      "fused_score": 0.030309988518943745,
+      "fused_rank": 6,
+      "rerank_score": 8.0,
+      "final_rank": 7,
+      "why": "Holds insurer liable to third party despite driver lacking appropriate endorsement, with recovery from owner; aligns with question's factual posture.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_034",
+      "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+      "dense_score": 0.7158921957015991,
+      "dense_rank": 2,
+      "sparse_score": 14.357908248901367,
+      "sparse_rank": 4,
+      "fused_score": 0.031754032258064516,
+      "fused_rank": 3,
+      "rerank_score": 7.0,
+      "final_rank": 8,
+      "why": "Holds insurer liable despite expired licence, but treats non-renewal as not fundamental breach; partially relevant but ratio differs on severity.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_032",
+      "title": "S.Iyyapan vs M/S United India Insurance Co.Ld.& Anr",
+      "dense_score": 0.6592638492584229,
+      "dense_rank": 6,
+      "sparse_score": 5.754517555236816,
+      "sparse_rank": 14,
+      "fused_score": 0.028665028665028666,
+      "fused_rank": 9,
+      "rerank_score": 7.0,
+      "final_rank": 9,
+      "why": "Insurer cannot avoid liability for lack of commercial endorsement on LMV licence; relevant to licence breach but not directly about owner's failure to check.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_031",
+      "title": "National Insurance Co. Ltd vs Laxmi Narain Dhut",
+      "dense_score": 0.6457288563251495,
+      "dense_rank": 9,
+      "sparse_score": 4.696196556091309,
+      "sparse_rank": 21,
+      "fused_score": 0.026838432635534086,
+      "fused_rank": 14,
+      "rerank_score": 5.0,
+      "final_rank": 10,
+      "why": "Distinguishes own-damage claims from third-party claims; only tangentially relevant as it limits application of Swaran Singh to third-party context.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_028",
+      "title": "United India Insurance Co. Ltd., Thr ... vs Sukumarbai Suryakant Nikam And Ors",
+      "dense_score": 0.6003777086734772,
+      "dense_rank": 15,
+      "sparse_score": 9.503425598144531,
+      "sparse_rank": 8,
+      "fused_score": 0.02803921568627451,
+      "fused_rank": 10,
+      "rerank_score": 3.0,
+      "final_rank": 11,
+      "why": "Concerns passengers in private vehicle for hire, not licence breach; different issue and factual posture.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_006",
+      "title": "National Insurance Company Ltd. Thr. ... vs Smt. Meena And 4 Others",
+      "dense_score": 0.6170392632484436,
+      "dense_rank": 12,
+      "sparse_score": 13.174108505249023,
+      "sparse_rank": 6,
+      "fused_score": 0.02904040404040404,
+      "fused_rank": 7,
+      "rerank_score": 2.0,
+      "final_rank": 12,
+      "why": "Focuses on contributory negligence and evidence, not on licence breach or owner's duty to check licence.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_005",
+      "title": "L And T Insurance Co Ltd vs Bindudevi Samharu Yadav",
+      "dense_score": 0.6219968795776367,
+      "dense_rank": 11,
+      "sparse_score": 5.7790446281433105,
+      "sparse_rank": 13,
+      "fused_score": 0.027783137179239824,
+      "fused_rank": 11,
+      "rerank_score": 1.0,
+      "final_rank": 13,
+      "why": "Deals with Section 167 bar and dual proceedings, not with driving licence or policy condition breach.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_030",
+      "title": "D a d a p e e r a S / O A b d u l S a l a m S a b v s M a l l e s h M S / O Hanumanthappa",
+      "dense_score": 0.5789710283279419,
+      "dense_rank": 17,
+      "sparse_score": 6.503978729248047,
+      "sparse_rank": 11,
+      "fused_score": 0.027071520029266508,
+      "fused_rank": 13,
+      "rerank_score": 1.0,
+      "final_rank": 14,
+      "why": "Concerns travel on tractor mud-guard violating regulations, not driving licence breach.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_002",
+      "title": "Liyakat Ali vs Smt Chunni Devi",
+      "dense_score": 0.6092076599597931,
+      "dense_rank": 13,
+      "sparse_score": 5.5005784034729,
+      "sparse_rank": 17,
+      "fused_score": 0.02668564312399929,
+      "fused_rank": 15,
+      "rerank_score": 1.0,
+      "final_rank": 15,
+      "why": "Involves non-agricultural use of tractor, not driving licence issue or owner's failure to check licence.",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 55.52
+   },
+   {
+    "seq": 6,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_027 focus=owner's duty to check driving licence, pay and recover, insurer defenc...",
+    "payload": {
+     "args": {
+      "doc_id": "doc_027",
+      "focus": "owner's duty to check driving licence, pay and recover, insurer defence"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 60.76
+   },
+   {
+    "seq": 7,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_032 focus=owner's duty to verify licence, commercial endorsement, insurer liabil...",
+    "payload": {
+     "args": {
+      "doc_id": "doc_032",
+      "focus": "owner's duty to verify licence, commercial endorsement, insurer liability"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 60.76
+   },
+   {
+    "seq": 8,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_033 focus=owner's duty to check licence, invalid licence, pay and recover",
+    "payload": {
+     "args": {
+      "doc_id": "doc_033",
+      "focus": "owner's duty to check licence, invalid licence, pay and recover"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 60.76
+   },
+   {
+    "seq": 9,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_035 focus=owner's failure to check driving licence, insurer defence, pay and rec...",
+    "payload": {
+     "args": {
+      "doc_id": "doc_035",
+      "focus": "owner's failure to check driving licence, insurer defence, pay and recover"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 60.76
+   },
+   {
+    "seq": 10,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_024 focus=owner's duty to verify licence, fundamental breach, pay and recover",
+    "payload": {
+     "args": {
+      "doc_id": "doc_024",
+      "focus": "owner's duty to verify licence, fundamental breach, pay and recover"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 60.76
+   },
+   {
+    "seq": 11,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_027 focus=\"owner's duty to check driving licence, pay and recover, insurer defence\" -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_027"
+     ],
+     "focus": "owner's duty to check driving licence, pay and recover, insurer defence"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_027",
+      "title": "The Manager vs Chennamma",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 60.86
+   },
+   {
+    "seq": 12,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_032 focus=\"owner's duty to verify licence, commercial endorsement, insurer liability\" -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_032"
+     ],
+     "focus": "owner's duty to verify licence, commercial endorsement, insurer liability"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_032",
+      "title": "S.Iyyapan vs M/S United India Insurance Co.Ld.& Anr",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 60.89
+   },
+   {
+    "seq": 13,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_033 focus=\"owner's duty to check licence, invalid licence, pay and recover\" -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_033"
+     ],
+     "focus": "owner's duty to check licence, invalid licence, pay and recover"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_033",
+      "title": "Satto & Ors vs New India Assurance Co Ltd",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 60.94
+   },
+   {
+    "seq": 14,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_035 focus=\"owner's failure to check driving licence, insurer defence, pay and recover\" -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_035"
+     ],
+     "focus": "owner's failure to check driving licence, insurer defence, pay and recover"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_035",
+      "title": "United India Insurance Company Limited vs V.Vijayakumar",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 60.97
+   },
+   {
+    "seq": 15,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_024 focus=\"owner's duty to verify licence, fundamental breach, pay and recover\" -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_024"
+     ],
+     "focus": "owner's duty to verify licence, fundamental breach, pay and recover"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_024",
+      "title": "Sunil Shreesail Killiket vs Subbraya",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 61.01
+   },
+   {
+    "seq": 16,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_003 focus=owner's duty to check licence, lapsed licence, pay and recover",
+    "payload": {
+     "args": {
+      "doc_id": "doc_003",
+      "focus": "owner's duty to check licence, lapsed licence, pay and recover"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 67.48
+   },
+   {
+    "seq": 17,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_001 focus=owner's duty to check licence, missing endorsement, pay and recover",
+    "payload": {
+     "args": {
+      "doc_id": "doc_001",
+      "focus": "owner's duty to check licence, missing endorsement, pay and recover"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 67.48
+   },
+   {
+    "seq": 18,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_034 focus=expired licence, owner's duty to verify, insurer liability",
+    "payload": {
+     "args": {
+      "doc_id": "doc_034",
+      "focus": "expired licence, owner's duty to verify, insurer liability"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 67.48
+   },
+   {
+    "seq": 19,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_003 focus=\"owner's duty to check licence, lapsed licence, pay and recover\" -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_003"
+     ],
+     "focus": "owner's duty to check licence, lapsed licence, pay and recover"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_003",
+      "title": "United India Insurance Co Ltd., vs Smt Parvathi Hebbar W/O Late ...",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 67.57
+   },
+   {
+    "seq": 20,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_001 focus=\"owner's duty to check licence, missing endorsement, pay and recover\" -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_001"
+     ],
+     "focus": "owner's duty to check licence, missing endorsement, pay and recover"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_001",
+      "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 67.6
+   },
+   {
+    "seq": 21,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_034 focus=\"expired licence, owner's duty to verify, insurer liability\" -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_034"
+     ],
+     "focus": "expired licence, owner's duty to verify, insurer liability"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_034",
+      "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 67.65
+   },
+   {
+    "seq": 22,
+    "kind": "tool_call",
+    "label": "search_precedents",
+    "detail": "query=owner satisfied himself driver had licence reasonable care check drivi... top_k=10",
+    "payload": {
+     "args": {
+      "query": "owner satisfied himself driver had licence reasonable care check driving licence fake licence owner not expected to verify with RTO",
+      "top_k": 10
+     }
+    },
+    "docs": [],
+    "elapsed_s": 72.2
+   },
+   {
+    "seq": 23,
+    "kind": "tool_call",
+    "label": "filter_judgments",
+    "detail": "has_licence_defect=True",
+    "payload": {
+     "args": {
+      "has_licence_defect": true
+     }
+    },
+    "docs": [],
+    "elapsed_s": 72.2
+   },
+   {
+    "seq": 24,
+    "kind": "retrieval",
+    "label": "search_precedents",
+    "detail": "query='owner satisfied himself driver had licence reasonable care check driving licence fake licence owner not expected to verify with RTO' favours=None k=10",
+    "payload": {
+     "query": "owner satisfied himself driver had licence reasonable care check driving licence fake licence owner not expected to verify with RTO",
+     "favours": null
+    },
+    "docs": [
+     {
+      "doc_id": "doc_031",
+      "title": "National Insurance Co. Ltd vs Laxmi Narain Dhut",
+      "dense_score": 0.5440583527088165,
+      "dense_rank": 3,
+      "sparse_score": 13.839635848999023,
+      "sparse_rank": 8,
+      "fused_score": 0.03057889822595705,
+      "fused_rank": 4,
+      "rerank_score": 9.0,
+      "final_rank": 1,
+      "why": "Directly addresses fake driving licence and owner's liability; holds that Swaran Singh principles (owner not expected to verify with RTO) do not apply to non-third-party claims.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_024",
+      "title": "Sunil Shreesail Killiket vs Subbraya",
+      "dense_score": 0.46203339099884033,
+      "dense_rank": 14,
+      "sparse_score": 16.517051696777344,
+      "sparse_rank": 4,
+      "fused_score": 0.029138513513513514,
+      "fused_rank": 11,
+      "rerank_score": 8.0,
+      "final_rank": 2,
+      "why": "Holds that driving without a valid licence is a fundamental breach, but insurer must pay third party first; touches on owner's duty to ensure valid licence.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_003",
+      "title": "United India Insurance Co Ltd., vs Smt Parvathi Hebbar W/O Late ...",
+      "dense_score": 0.5448909997940063,
+      "dense_rank": 2,
+      "sparse_score": 7.539241313934326,
+      "sparse_rank": 14,
+      "fused_score": 0.02964254577157803,
+      "fused_rank": 7,
+      "rerank_score": 7.0,
+      "final_rank": 3,
+      "why": "Deals with lapsed licence and owner's liability; insurer pays and recovers, implying owner's failure to check licence validity.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_027",
+      "title": "The Manager vs Chennamma",
+      "dense_score": 0.5053120851516724,
+      "dense_rank": 9,
+      "sparse_score": 20.214691162109375,
+      "sparse_rank": 1,
+      "fused_score": 0.030886196246139225,
+      "fused_rank": 3,
+      "rerank_score": 6.0,
+      "final_rank": 4,
+      "why": "Addresses driver lacking proper endorsement; insurer liable to third party but can recover from owner, relevant to owner's duty to verify licence.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_035",
+      "title": "United India Insurance Company Limited vs V.Vijayakumar",
+      "dense_score": 0.5259193480014801,
+      "dense_rank": 6,
+      "sparse_score": 15.198629379272461,
+      "sparse_rank": 7,
+      "fused_score": 0.03007688828584351,
+      "fused_rank": 5,
+      "rerank_score": 6.0,
+      "final_rank": 5,
+      "why": "Similar to doc_027: driver lacked proper licence; insurer pays third party then recovers from owner, bearing on owner's verification duty.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_001",
+      "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+      "dense_score": 0.5266715586185455,
+      "dense_rank": 5,
+      "sparse_score": 8.893982887268066,
+      "sparse_rank": 12,
+      "fused_score": 0.029273504273504274,
+      "fused_rank": 9,
+      "rerank_score": 5.0,
+      "final_rank": 6,
+      "why": "Concerns missing special endorsement for hazardous goods; owner's duty to check licence is relevant but factual posture differs (special endorsement vs fake licence).",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_032",
+      "title": "S.Iyyapan vs M/S United India Insurance Co.Ld.& Anr",
+      "dense_score": 0.517345130443573,
+      "dense_rank": 8,
+      "sparse_score": 13.279006958007812,
+      "sparse_rank": 9,
+      "fused_score": 0.02919863597612958,
+      "fused_rank": 10,
+      "rerank_score": 5.0,
+      "final_rank": 7,
+      "why": "Holds insurer liable despite missing commercial endorsement; touches on owner's reliance on licence but does not address fake licence or RTO verification.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_034",
+      "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+      "dense_score": 0.5223612487316132,
+      "dense_rank": 7,
+      "sparse_score": 17.543912887573242,
+      "sparse_rank": 2,
+      "fused_score": 0.031054405392392875,
+      "fused_rank": 2,
+      "rerank_score": 4.0,
+      "final_rank": 8,
+      "why": "Deals with expired licence, not fake; insurer liable to third party; ratio does not directly address owner's duty to verify with RTO.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_016",
+      "title": "Reserved On: 21.07.2025 vs State Of H.P",
+      "dense_score": 0.608482152223587,
+      "dense_rank": 1,
+      "sparse_score": 15.8848876953125,
+      "sparse_rank": 6,
+      "fused_score": 0.031544957774465976,
+      "fused_rank": 1,
+      "rerank_score": 2.0,
+      "final_rank": 9,
+      "why": "Criminal revision on rash driving; mentions absence of licence but does not address owner's duty to verify or fake licence.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_005",
+      "title": "L And T Insurance Co Ltd vs Bindudevi Samharu Yadav",
+      "dense_score": 0.5362411737442017,
+      "dense_rank": 4,
+      "sparse_score": 11.865887641906738,
+      "sparse_rank": 10,
+      "fused_score": 0.029910714285714284,
+      "fused_rank": 6,
+      "rerank_score": 2.0,
+      "final_rank": 10,
+      "why": "Concerns procedural bar under Section 167 MV Act; no bearing on licence verification or owner's duty.",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 103.0
+   },
+   {
+    "seq": 25,
+    "kind": "filter",
+    "label": "filter_judgments",
+    "detail": "WHERE has_licence_defect = true  ->  14 of 56 judgments",
+    "payload": {
+     "where": "has_licence_defect = true",
+     "n_matched": 14,
+     "doc_ids": [
+      "doc_001",
+      "doc_003",
+      "doc_005",
+      "doc_006",
+      "doc_009",
+      "doc_016",
+      "doc_017",
+      "doc_024",
+      "doc_027",
+      "doc_031",
+      "doc_032",
+      "doc_033",
+      "doc_034",
+      "doc_035"
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_001",
+      "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_003",
+      "title": "United India Insurance Co Ltd., vs Smt Parvathi Hebbar W/O Late ...",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_005",
+      "title": "L And T Insurance Co Ltd vs Bindudevi Samharu Yadav",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_006",
+      "title": "National Insurance Company Ltd. Thr. ... vs Smt. Meena And 4 Others",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_009",
+      "title": "Kamal S/O Shiv Ram vs Mursleem S/O Mohd. Akil",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_016",
+      "title": "Reserved On: 21.07.2025 vs State Of H.P",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_017",
+      "title": "Sanjay vs State Of Haryana",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_024",
+      "title": "Sunil Shreesail Killiket vs Subbraya",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_027",
+      "title": "The Manager vs Chennamma",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_031",
+      "title": "National Insurance Co. Ltd vs Laxmi Narain Dhut",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_032",
+      "title": "S.Iyyapan vs M/S United India Insurance Co.Ld.& Anr",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_033",
+      "title": "Satto & Ors vs New India Assurance Co Ltd",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_034",
+      "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_035",
+      "title": "United India Insurance Company Limited vs V.Vijayakumar",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 103.01
+   },
+   {
+    "seq": 26,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_031 focus=fake driving licence, owner's duty to verify, RTO enquiry, Swaran Sing...",
+    "payload": {
+     "args": {
+      "doc_id": "doc_031",
+      "focus": "fake driving licence, owner's duty to verify, RTO enquiry, Swaran Singh"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 107.56
+   },
+   {
+    "seq": 27,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_042 focus=employer recovery from employee driver, owner's duty to check licence",
+    "payload": {
+     "args": {
+      "doc_id": "doc_042",
+      "focus": "employer recovery from employee driver, owner's duty to check licence"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 107.56
+   },
+   {
+    "seq": 28,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_031 focus=\"fake driving licence, owner's duty to verify, RTO enquiry, Swaran Singh\" -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_031"
+     ],
+     "focus": "fake driving licence, owner's duty to verify, RTO enquiry, Swaran Singh"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_031",
+      "title": "National Insurance Co. Ltd vs Laxmi Narain Dhut",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 107.66
+   },
+   {
+    "seq": 29,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_042 focus=\"employer recovery from employee driver, owner's duty to check licence\" -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_042"
+     ],
+     "focus": "employer recovery from employee driver, owner's duty to check licence"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_042",
+      "title": "Nazar Singh vs State Of Punjab And Others",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 107.7
+   },
+   {
+    "seq": 30,
+    "kind": "tool_call",
+    "label": "search_precedents",
+    "detail": "query=owner failed to verify driving licence at all no enquiry made employer... top_k=10",
+    "payload": {
+     "args": {
+      "query": "owner failed to verify driving licence at all no enquiry made employer did not check licence before employing driver",
+      "top_k": 10
+     }
+    },
+    "docs": [],
+    "elapsed_s": 113.97
+   },
+   {
+    "seq": 31,
+    "kind": "retrieval",
+    "label": "search_precedents",
+    "detail": "query='owner failed to verify driving licence at all no enquiry made employer did not check licence before employing driver' favours=None k=10",
+    "payload": {
+     "query": "owner failed to verify driving licence at all no enquiry made employer did not check licence before employing driver",
+     "favours": null
+    },
+    "docs": [
+     {
+      "doc_id": "doc_024",
+      "title": "Sunil Shreesail Killiket vs Subbraya",
+      "dense_score": 0.4760352373123169,
+      "dense_rank": 14,
+      "sparse_score": 11.584394454956055,
+      "sparse_rank": 6,
+      "fused_score": 0.028665028665028666,
+      "fused_rank": 12,
+      "rerank_score": 9.0,
+      "final_rank": 1,
+      "why": "Directly addresses employer's failure to verify driving licence; holds that driving without a valid licence is a fundamental breach, and insurer can recover from owner.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_035",
+      "title": "United India Insurance Company Limited vs V.Vijayakumar",
+      "dense_score": 0.5440929234027863,
+      "dense_rank": 3,
+      "sparse_score": 10.352546691894531,
+      "sparse_rank": 10,
+      "fused_score": 0.030158730158730156,
+      "fused_rank": 4,
+      "rerank_score": 8.0,
+      "final_rank": 2,
+      "why": "Deals with breach of policy conditions due to driver lacking proper licence; insurer pays third party then recovers from owner, relevant to employer's failure to check.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_033",
+      "title": "Satto & Ors vs New India Assurance Co Ltd",
+      "dense_score": 0.44427573680877686,
+      "dense_rank": 18,
+      "sparse_score": 16.02147674560547,
+      "sparse_rank": 1,
+      "fused_score": 0.02921395544346364,
+      "fused_rank": 7,
+      "rerank_score": 8.0,
+      "final_rank": 3,
+      "why": "Holds insurer statutorily liable despite invalid driving licence, with recovery rights against owner; directly relevant to owner's failure to verify licence.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_027",
+      "title": "The Manager vs Chennamma",
+      "dense_score": 0.5194490253925323,
+      "dense_rank": 9,
+      "sparse_score": 11.646434783935547,
+      "sparse_rank": 5,
+      "fused_score": 0.029877369007803793,
+      "fused_rank": 5,
+      "rerank_score": 7.0,
+      "final_rank": 4,
+      "why": "Addresses driver lacking proper endorsement; insurer liable to third party with recovery from owner, relevant to employer's failure to check licence.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_003",
+      "title": "United India Insurance Co Ltd., vs Smt Parvathi Hebbar W/O Late ...",
+      "dense_score": 0.535762369632721,
+      "dense_rank": 6,
+      "sparse_score": 8.494882583618164,
+      "sparse_rank": 14,
+      "fused_score": 0.028665028665028666,
+      "fused_rank": 11,
+      "rerank_score": 7.0,
+      "final_rank": 5,
+      "why": "Concerns expired licence and insurer's recovery from owner; relevant to employer's failure to ensure valid licence at time of accident.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_034",
+      "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+      "dense_score": 0.5012284815311432,
+      "dense_rank": 11,
+      "sparse_score": 10.772506713867188,
+      "sparse_rank": 8,
+      "fused_score": 0.028790389395194696,
+      "fused_rank": 10,
+      "rerank_score": 6.0,
+      "final_rank": 6,
+      "why": "Holds insurer liable despite expired licence; touches on breach of policy conditions but does not directly address employer's failure to verify.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_032",
+      "title": "S.Iyyapan vs M/S United India Insurance Co.Ld.& Anr",
+      "dense_score": 0.5415700078010559,
+      "dense_rank": 5,
+      "sparse_score": 9.987709045410156,
+      "sparse_rank": 12,
+      "fused_score": 0.029273504273504274,
+      "fused_rank": 6,
+      "rerank_score": 5.0,
+      "final_rank": 7,
+      "why": "Focuses on licence endorsement for commercial vehicle; less directly relevant to complete failure to verify licence.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_016",
+      "title": "Reserved On: 21.07.2025 vs State Of H.P",
+      "dense_score": 0.5823946297168732,
+      "dense_rank": 1,
+      "sparse_score": 10.089632034301758,
+      "sparse_rank": 11,
+      "fused_score": 0.03047794966520434,
+      "fused_rank": 3,
+      "rerank_score": 3.0,
+      "final_rank": 8,
+      "why": "Criminal revision about negligence and driving without licence; does not address employer's duty to verify or civil liability for failure to check.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_005",
+      "title": "L And T Insurance Co Ltd vs Bindudevi Samharu Yadav",
+      "dense_score": 0.5699558556079865,
+      "dense_rank": 2,
+      "sparse_score": 13.402508735656738,
+      "sparse_rank": 2,
+      "fused_score": 0.03225806451612903,
+      "fused_rank": 1,
+      "rerank_score": 2.0,
+      "final_rank": 9,
+      "why": "Concerns Section 167 bar and different proceedings; no bearing on employer's failure to verify driving licence.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_042",
+      "title": "Nazar Singh vs State Of Punjab And Others",
+      "dense_score": 0.5262213349342346,
+      "dense_rank": 8,
+      "sparse_score": 13.25852108001709,
+      "sparse_rank": 3,
+      "fused_score": 0.03057889822595705,
+      "fused_rank": 2,
+      "rerank_score": 2.0,
+      "final_rank": 10,
+      "why": "Addresses employer's recovery from employee after paying compensation; does not address failure to verify licence before employing.",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 125.46
+   },
+   {
+    "seq": 32,
+    "kind": "tool_call",
+    "label": "submit_research_report",
+    "detail": "question=What must an owner do to check a driver's licence before employing the... supporting=[{'doc_id': 'doc_027', 'title': 'The Manager vs Chennamma', 'principle... adverse=[{'doc_id': 'doc_031', 'title': 'National Insurance Co. Ltd vs Laxmi N... strategy={'priority_arguments': [\"Lead with the Le",
+    "payload": {
+     "args": {
+      "question": "What must an owner do to check a driver's licence before employing them, and does failing to check defeat the insurer's defence?",
+      "supporting": [
+       {
+        "doc_id": "doc_027",
+        "title": "The Manager vs Chennamma",
+        "principle": "The owner's duty is to check whether the driver produces a driving licence that on the face of it looks genuine, and to satisfy himself that the driver is competent. The owner is NOT expected to verify with the RTO whether the licence was actually issued by a competent authority.",
+        "fact_alignment": "The owner hired a driver who produced a licence to drive LMV with a transport vehicle endorsement. The driver lacked a specific HGV endorsement. The court held the owner had done enough by checking the licence on its face.",
+        "why_it_matters": "This is the most directly applicable precedent. It quotes Lehru v. United India Insurance Co. Ltd. (2003) 3 SCC 338 verbatim, establishing the standard of care: the owner checks the licence on its face and tests the driver's competence. No duty to make RTO enquiries.",
+        "strength": "strong",
+        "quote": "'When an owner is hiring a driver he will therefore have to check whether the driver has a driving licence. If the driver produces a driving licence which on the face of it looks genuine, the owner is not expected to find out whether the licence has in fact been issued by a competent authority or not. The owner would then take the test of the driver. If he finds that the driver is competent to drive the vehicle, he will hire the driver.'"
+       },
+       {
+        "doc_id": "doc_033",
+        "title": "Satto & Ors vs New India Assurance Co Ltd",
+        "principle": "The breach of policy conditions must be a 'conscious and wilful' breach on the part of the insured. Even if a conscious breach is established, the insurer has a statutory liability to pay third-party compensation and can only recover from the insured afterwards.",
+        "fact_alignment": "The driver possessed only an LMV (non-transport) licence but was driving a goods vehicle (commercial). The insurer proved the breach but was still directed to pay and recover.",
+        "why_it_matters": "Establishes that even where the insurer successfully proves breach (invalid licence), the 'pay and recover' remedy applies for third-party claims. The insurer's defence does not defeat the claim against it.",
+        "strength": "strong",
+        "quote": "'Even if a conscious breach on the part of the insured is established, still the insurer has a statutory liability to pay the compensation to the third party and will simply have the right to recover the same from the insured/tortfeasor.'"
+       },
+       {
+        "doc_id": "doc_032",
+        "title": "S.Iyyapan vs M/S United India Insurance Co.Ld.& Anr",
+        "principle": "An insurer cannot avoid its statutory liability to third parties merely because the driver lacked a specific endorsement on their licence to drive a vehicle as a commercial vehicle, where the driver held a valid LMV licence.",
+        "fact_alignment": "Driver held a valid LMV licence but lacked endorsement to drive a Mahindra Maxi Cab (commercial vehicle). The Supreme Court held the insurer liable to pay third-party compensation.",
+        "why_it_matters": "The Supreme Court directly holds that the absence of a specific endorsement (e.g., for commercial vehicle) does not allow the insurer to escape third-party liability. This reinforces that the owner's failure to check for such endorsements does not defeat the claim.",
+        "strength": "strong",
+        "quote": "'Merely because the driver did not get any endorsement in the driving licence to drive Mahindra Maxi Cab, which is a light motor vehicle, the High Court has committed grave error of law in holding that the insurer is not liable to pay compensation.'"
+       },
+       {
+        "doc_id": "doc_035",
+        "title": "United India Insurance Company Limited vs V.Vijayakumar",
+        "principle": "Where the driver of a transport vehicle holds only an LMV licence without the specific authorisation/badge required for a transport vehicle, there is a breach of policy conditions, but the insurer must pay the third party and recover from the insured owner.",
+        "fact_alignment": "Driver had an LMV licence but no badge/authorisation to drive a transport vehicle (maxi cab). The court applied the 'pay and recover' principle.",
+        "why_it_matters": "Confirms that even where the insurer proves the driver lacked proper authorisation, the remedy is pay-and-recover, not exoneration from third-party liability.",
+        "strength": "moderate",
+        "quote": "'The insurer and insured are bound by the conditions enumerated in the Policy and the insurer is not liable to the insured if there is violation of Policy conditions... [but] the doctrine of pay and recover has been recognised by the Supreme Court.'"
+       },
+       {
+        "doc_id": "doc_024",
+        "title": "Sunil Shreesail Killiket vs Subbraya",
+        "principle": "Driving without a valid licence is a fundamental and statutory breach of the insurance policy. However, to protect third-party rights, the insurer may be ordered to pay compensation first and recover from the owner.",
+        "fact_alignment": "The driver had no licence at all. The owner failed to produce the driving licence. The tribunal held this was a fundamental breach but still applied pay-and-recover for the third-party claimant.",
+        "why_it_matters": "Even in the most extreme case (driver with no licence at all, owner failing to produce any licence), the third-party claimant is protected. The insurer pays and recovers from the owner.",
+        "strength": "moderate",
+        "quote": "'It is held that the respondent No.2 is not liable to pay the compensation and he is absolved from its liability... [but] the petitioner is third party, cannot be made to suffer due to fault of owner... direct the respondent No.2 to pay the compensation by reserving liberty to recover the same from the respondent No.1.'"
+       },
+       {
+        "doc_id": "doc_003",
+        "title": "United India Insurance Co Ltd vs Smt Parvathi Hebbar",
+        "principle": "Where a driving licence has lapsed and is renewed more than 30 days after expiry, the renewal takes effect only from the date of renewal, not retrospectively. The insurer must pay the third party and recover from the owner.",
+        "fact_alignment": "Driver's licence expired on 30-04-2008, accident on 02-07-2008, licence renewed on 04-07-2008. The court held the driver had no valid licence on the accident date but directed pay-and-recover.",
+        "why_it_matters": "Even where the licence had lapsed (not just a missing endorsement), the insurer's defence does not defeat the third-party claim. The owner's failure to ensure the licence was current results in pay-and-recover, not denial of the claim.",
+        "strength": "moderate",
+        "quote": "'Since it is the statutory right of the third party to recover the amount of compensation so awarded either from the owner or the driver, as the vehicle in question is insured, the insurance company shall pay the amount and recover the same from driver or the insured.'"
+       },
+       {
+        "doc_id": "doc_034",
+        "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+        "principle": "The mere non-renewal of an otherwise valid driving licence on the date of accident does not constitute a fundamental breach absolving the insurer of its third-party liability, especially where the licence was subsequently renewed.",
+        "fact_alignment": "Drivers held valid licences that had expired before the accident but were renewed afterwards. The court held the insurer liable, finding no wilful breach by the owner.",
+        "why_it_matters": "This case is favourable to owners: it holds that an expired-but-subsequently-renewed licence is not a fundamental breach, and the insurer remains directly liable (not even pay-and-recover).",
+        "strength": "moderate",
+        "quote": "'The insurers in both cases have failed to establish before the Tribunal that there was a wilful breach of the condition of the policy and that the insured had placed the vehicle in the hands of a person who did not hold an effective driving licence on the date of accident.'"
+       }
+      ],
+      "adverse": [
+       {
+        "doc_id": "doc_031",
+        "title": "National Insurance Co. Ltd vs Laxmi Narain Dhut",
+        "principle": "The Swaran Singh principles (including the rule that an owner is not expected to verify a licence with the RTO) apply ONLY to third-party claims, not to own-damage claims. A fake licence cannot be cured by subsequent renewal.",
+        "risk_to_client": "If the claim is an own-damage claim (the owner's own vehicle damage, not third-party injury/death), the insurer can repudiate liability entirely if the driver's licence was fake. The owner cannot rely on the 'pay-and-recover' protection that applies to third-party claims. This is a complete defence for the insurer in own-damage cases.",
+        "risk_level": "high",
+        "distinguishing_argument": "This case is expressly limited to own-damage/non-third-party claims. For third-party injury/death claims (which form the vast majority of motor accident claims), Swaran Singh and the pay-and-recover principle continue to apply. The client must identify whether the claim is third-party or own-damage.",
+        "quote": "'The decision in Swaran Singh's case (supra) has no application to cases other than third party risks... Where originally the license was a fake one, renewal cannot cure the inherent fatality.'"
+       },
+       {
+        "doc_id": "doc_024",
+        "title": "Sunil Shreesail Killiket vs Subbraya",
+        "principle": "Driving without a valid licence is a fundamental and statutory breach. The insurer is not liable to indemnify the owner for the loss suffered, though it must pay the third party first.",
+        "risk_to_client": "The insurer can argue that the owner's failure to check the licence at all (the owner did not produce the licence, and the driver had no licence) constitutes a fundamental breach. While the third party gets paid, the owner faces a recovery action from the insurer for the entire compensation amount plus interest.",
+        "risk_level": "medium",
+        "distinguishing_argument": "In this case, the owner did not even attempt to check the licence and failed to produce it in proceedings. If the owner can show they actually asked for and inspected the licence (even if it turned out to be fake or inadequate), the stronger line of authority (Lehru, Chennamma) protects them from being found to have committed a 'conscious and wilful' breach.",
+        "quote": "'It is held that the respondent No.1 has breached the fundamental condition of the policy by allowing the driver who has no driving licence to drive the vehicle.'"
+       },
+       {
+        "doc_id": "doc_035",
+        "title": "United India Insurance Company Limited vs V.Vijayakumar",
+        "principle": "Where the driver lacks the specific authorisation/badge required for a transport vehicle, there is a breach of policy conditions, and the insurer can recover from the owner after paying the third party.",
+        "risk_to_client": "The insurer can argue that the owner should have checked not just for a licence but for the specific class of vehicle endorsement and badge. If the vehicle is a transport/goods vehicle, the owner's duty extends to verifying the appropriate class of licence and any required badge.",
+        "risk_level": "medium",
+        "distinguishing_argument": "The court still applied pay-and-recover, not outright denial. The owner's liability is secondary (reimbursement to insurer). Moreover, the Lehru/Chennamma standard applies: if the licence produced on its face appeared to cover the vehicle type, the owner has done enough.",
+        "quote": "'The absence of any endorsement in the driving licence as to the issuance of authorisation to drive the transport vehicle and non-mention of allotment of badge number clearly shows that the 3rd Respondent was not in possession of a valid driving licence.'"
+       },
+       {
+        "doc_id": "doc_001",
+        "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+        "principle": "For driving a goods carriage vehicle carrying dangerous/hazardous goods, a special endorsement on the driving licence is mandatory under the Central Motor Vehicles Rules. The absence thereof constitutes a breach entitling the insurer to pay and recover.",
+        "risk_to_client": "If the vehicle carries hazardous goods (e.g., a tanker), the owner's duty is higher: they must ensure the driver has a special endorsement under Rule 9 read with Rule 132 of the CMVR. A standard driving licence check is insufficient.",
+        "risk_level": "medium",
+        "distinguishing_argument": "This applies only to vehicles carrying dangerous/hazardous goods. For ordinary vehicles, the standard Lehru/Chennamma test applies. The owner can argue they had no reason to know the goods were hazardous or that a special endorsement was needed.",
+        "quote": "'As per Rule 132 (5) of Central Motor Vehicles Rule, 1989, it is the duty of the owner to ensure that the driver of the goods carriage carrying dangerous or hazardous goods holds a driving license as per the rule 9.'"
+       }
+      ],
+      "strategy": {
+       "priority_arguments": [
+        "Lead with the Lehru standard (as quoted in Chennamma/doc_027): the owner's duty is to check the licence on its face and test the driver's competence. The owner is NOT expected to verify with the RTO or detect a fake licence.",
+        "Argue that the insurer bears the burden of proving a 'conscious and wilful breach' by the owner (Satto/doc_033, Swaran Singh principles as cited in doc_035). Mere absence of a licence or a missing endorsement does not automatically defeat the claim.",
+        "For third-party claims, the insurer's statutory liability is primary. Even if breach is proved, the remedy is pay-and-recover, not exoneration (Satto/doc_033, Chennamma/doc_027, S.Iyyapan/doc_032).",
+        "If the licence was expired but subsequently renewed within the permissible period, argue under Srinivasamurthy/doc_034 that this is not a fundamental breach at all.",
+        "If the licence was fake, argue that the owner relied on a document that appeared genuine on its face, and the insurer must prove the owner knew or had notice it was fake (Lehru standard, cited in Chennamma/doc_027)."
+       ],
+       "compensation_range": "Not applicable to this research question (which concerns liability/defence, not quantum). However, if quantum is needed: the compensation payable to third parties is computed under the Sarla Verma/Pranay Sethi framework regardless of the licence breach.",
+       "compensation_reasoning": "The licence breach issue affects who ultimately bears the compensation (owner vs insurer), not the quantum of compensation payable to the third-party claimant.",
+       "risks": [
+        "If the claim is an own-damage claim (not third-party), Laxmi Narain Dhut/doc_031 is a HIGH risk: the insurer can repudiate entirely if the licence was fake. The pay-and-recover protection does not apply.",
+        "If the owner made NO attempt whatsoever to check the licence (as in Sunil Shreesail Killiket/doc_024), the tribunal may find a fundamental breach, exposing the owner to a recovery action from the insurer.",
+        "If the vehicle carries hazardous goods (Neelam Devi/doc_001), the owner's duty is elevated: they must ensure a special endorsement under CMVR Rules. A standard licence check is insufficient.",
+        "If the vehicle is a transport/commercial vehicle, the owner should check for the appropriate class endorsement and badge (Vijayakumar/doc_035). Failure to do so may result in pay-and-recover against the owner."
+       ],
+       "recommended_forum_or_relief": "For a third-party claimant: file under Section 166 MV Act before the MACT. The insurer's licence-breach defence will not defeat the claim; at worst, the insurer pays and recovers from the owner. For an owner facing a recovery action: argue the Lehru standard — that they checked the licence on its face and it appeared genuine."
+      },
+      "caveats": [
+       "This corpus does not contain the full text of United India Insurance Co. Ltd. v. Lehru (2003) 3 SCC 338 or National Insurance Co. Ltd. v. Swaran Singh (2004) 3 SCC 297, which are the foundational Supreme Court authorities on this topic. However, both are extensively quoted and applied in the corpus judgments (especially doc_027, doc_033, doc_035).",
+       "The corpus is mixed — some judgments deal with criminal revision or service law and are not relevant to the civil insurance liability question.",
+       "The analysis assumes a third-party claim (injury/death to a third party). For own-damage claims, the legal position is materially different per Laxmi Narain Dhut (doc_031).",
+       "The standard of care may vary by state if state-specific motor vehicle rules impose additional requirements (e.g., Tamil Nadu badge requirements in doc_035)."
+      ]
+     }
+    },
+    "docs": [],
+    "elapsed_s": 187.31
+   },
+   {
+    "seq": 33,
+    "kind": "answer",
+    "label": "submit_research_report",
+    "detail": "7 supporting, 4 adverse, 8 still unaddressed",
+    "payload": {
+     "doc_ids": [
+      "doc_027",
+      "doc_033",
+      "doc_032",
+      "doc_035",
+      "doc_024",
+      "doc_003",
+      "doc_034",
+      "doc_031",
+      "doc_024",
+      "doc_035",
+      "doc_001"
+     ],
+     "unreconciled_adverse": [
+      "doc_002",
+      "doc_006",
+      "doc_009",
+      "doc_016",
+      "doc_017",
+      "doc_025",
+      "doc_028",
+      "doc_030"
+     ]
+    },
+    "docs": [],
+    "elapsed_s": 187.34
+   },
+   {
+    "seq": 34,
+    "kind": "plan",
+    "label": "reasoning",
+    "detail": "Here is a summary of the research findings:",
+    "payload": {},
+    "docs": [],
+    "elapsed_s": 194.58
+   }
+  ],
+  "started_at": 1786976135.958708,
+  "llm_calls": 13,
+  "in_tokens": 182350,
+  "out_tokens": 8384
+ },
+ "retrieved": [
+  "doc_027",
+  "doc_032",
+  "doc_033",
+  "doc_035",
+  "doc_024",
+  "doc_003",
+  "doc_034",
+  "doc_031",
+  "doc_005",
+  "doc_042",
+  "doc_045",
+  "doc_043",
+  "doc_016",
+  "doc_013",
+  "doc_006",
+  "doc_025",
+  "doc_001",
+  "doc_028",
+  "doc_030",
+  "doc_002",
+  "doc_009",
+  "doc_017"
+ ],
+ "tool_sequence": [
+  "search_precedents",
+  "search_precedents",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "search_precedents",
+  "filter_judgments",
+  "read_judgment",
+  "read_judgment",
+  "search_precedents",
+  "submit_research_report"
+ ],
+ "llm_calls": 13,
+ "tokens": 190734,
+ "result_type": "PrecedentResearchReport",
+ "result": {
+  "question": "What must an owner do to check a driver's licence before employing them, and does failing to check defeat the insurer's defence?",
+  "supporting": [
+   {
+    "doc_id": "doc_027",
+    "title": "The Manager vs Chennamma",
+    "principle": "The owner's duty is to check whether the driver produces a driving licence that on the face of it looks genuine, and to satisfy himself that the driver is competent. The owner is NOT expected to verify with the RTO whether the licence was actually issued by a competent authority.",
+    "fact_alignment": "The owner hired a driver who produced a licence to drive LMV with a transport vehicle endorsement. The driver lacked a specific HGV endorsement. The court held the owner had done enough by checking the licence on its face.",
+    "why_it_matters": "This is the most directly applicable precedent. It quotes Lehru v. United India Insurance Co. Ltd. (2003) 3 SCC 338 verbatim, establishing the standard of care: the owner checks the licence on its face and tests the driver's competence. No duty to make RTO enquiries.",
+    "strength": "strong",
+    "quote": "'When an owner is hiring a driver he will therefore have to check whether the driver has a driving licence. If the driver produces a driving licence which on the face of it looks genuine, the owner is not expected to find out whether the licence has in fact been issued by a competent authority or not. The owner would then take the test of the driver. If he finds that the driver is competent to drive the vehicle, he will hire the driver.'"
+   },
+   {
+    "doc_id": "doc_033",
+    "title": "Satto & Ors vs New India Assurance Co Ltd",
+    "principle": "The breach of policy conditions must be a 'conscious and wilful' breach on the part of the insured. Even if a conscious breach is established, the insurer has a statutory liability to pay third-party compensation and can only recover from the insured afterwards.",
+    "fact_alignment": "The driver possessed only an LMV (non-transport) licence but was driving a goods vehicle (commercial). The insurer proved the breach but was still directed to pay and recover.",
+    "why_it_matters": "Establishes that even where the insurer successfully proves breach (invalid licence), the 'pay and recover' remedy applies for third-party claims. The insurer's defence does not defeat the claim against it.",
+    "strength": "strong",
+    "quote": "'Even if a conscious breach on the part of the insured is established, still the insurer has a statutory liability to pay the compensation to the third party and will simply have the right to recover the same from the insured/tortfeasor.'"
+   },
+   {
+    "doc_id": "doc_032",
+    "title": "S.Iyyapan vs M/S United India Insurance Co.Ld.& Anr",
+    "principle": "An insurer cannot avoid its statutory liability to third parties merely because the driver lacked a specific endorsement on their licence to drive a vehicle as a commercial vehicle, where the driver held a valid LMV licence.",
+    "fact_alignment": "Driver held a valid LMV licence but lacked endorsement to drive a Mahindra Maxi Cab (commercial vehicle). The Supreme Court held the insurer liable to pay third-party compensation.",
+    "why_it_matters": "The Supreme Court directly holds that the absence of a specific endorsement (e.g., for commercial vehicle) does not allow the insurer to escape third-party liability. This reinforces that the owner's failure to check for such endorsements does not defeat the claim.",
+    "strength": "strong",
+    "quote": "'Merely because the driver did not get any endorsement in the driving licence to drive Mahindra Maxi Cab, which is a light motor vehicle, the High Court has committed grave error of law in holding that the insurer is not liable to pay compensation.'"
+   },
+   {
+    "doc_id": "doc_035",
+    "title": "United India Insurance Company Limited vs V.Vijayakumar",
+    "principle": "Where the driver of a transport vehicle holds only an LMV licence without the specific authorisation/badge required for a transport vehicle, there is a breach of policy conditions, but the insurer must pay the third party and recover from the insured owner.",
+    "fact_alignment": "Driver had an LMV licence but no badge/authorisation to drive a transport vehicle (maxi cab). The court applied the 'pay and recover' principle.",
+    "why_it_matters": "Confirms that even where the insurer proves the driver lacked proper authorisation, the remedy is pay-and-recover, not exoneration from third-party liability.",
+    "strength": "moderate",
+    "quote": "'The insurer and insured are bound by the conditions enumerated in the Policy and the insurer is not liable to the insured if there is violation of Policy conditions... [but] the doctrine of pay and recover has been recognised by the Supreme Court.'"
+   },
+   {
+    "doc_id": "doc_024",
+    "title": "Sunil Shreesail Killiket vs Subbraya",
+    "principle": "Driving without a valid licence is a fundamental and statutory breach of the insurance policy. However, to protect third-party rights, the insurer may be ordered to pay compensation first and recover from the owner.",
+    "fact_alignment": "The driver had no licence at all. The owner failed to produce the driving licence. The tribunal held this was a fundamental breach but still applied pay-and-recover for the third-party claimant.",
+    "why_it_matters": "Even in the most extreme case (driver with no licence at all, owner failing to produce any licence), the third-party claimant is protected. The insurer pays and recovers from the owner.",
+    "strength": "moderate",
+    "quote": "'It is held that the respondent No.2 is not liable to pay the compensation and he is absolved from its liability... [but] the petitioner is third party, cannot be made to suffer due to fault of owner... direct the respondent No.2 to pay the compensation by reserving liberty to recover the same from the respondent No.1.'"
+   },
+   {
+    "doc_id": "doc_003",
+    "title": "United India Insurance Co Ltd vs Smt Parvathi Hebbar",
+    "principle": "Where a driving licence has lapsed and is renewed more than 30 days after expiry, the renewal takes effect only from the date of renewal, not retrospectively. The insurer must pay the third party and recover from the owner.",
+    "fact_alignment": "Driver's licence expired on 30-04-2008, accident on 02-07-2008, licence renewed on 04-07-2008. The court held the driver had no valid licence on the accident date but directed pay-and-recover.",
+    "why_it_matters": "Even where the licence had lapsed (not just a missing endorsement), the insurer's defence does not defeat the third-party claim. The owner's failure to ensure the licence was current results in pay-and-recover, not denial of the claim.",
+    "strength": "moderate",
+    "quote": "'Since it is the statutory right of the third party to recover the amount of compensation so awarded either from the owner or the driver, as the vehicle in question is insured, the insurance company shall pay the amount and recover the same from driver or the insured.'"
+   },
+   {
+    "doc_id": "doc_034",
+    "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+    "principle": "The mere non-renewal of an otherwise valid driving licence on the date of accident does not constitute a fundamental breach absolving the insurer of its third-party liability, especially where the licence was subsequently renewed.",
+    "fact_alignment": "Drivers held valid licences that had expired before the accident but were renewed afterwards. The court held the insurer liable, finding no wilful breach by the owner.",
+    "why_it_matters": "This case is favourable to owners: it holds that an expired-but-subsequently-renewed licence is not a fundamental breach, and the insurer remains directly liable (not even pay-and-recover).",
+    "strength": "moderate",
+    "quote": "'The insurers in both cases have failed to establish before the Tribunal that there was a wilful breach of the condition of the policy and that the insured had placed the vehicle in the hands of a person who did not hold an effective driving licence on the date of accident.'"
+   }
+  ],
+  "adverse": [
+   {
+    "doc_id": "doc_031",
+    "title": "National Insurance Co. Ltd vs Laxmi Narain Dhut",
+    "principle": "The Swaran Singh principles (including the rule that an owner is not expected to verify a licence with the RTO) apply ONLY to third-party claims, not to own-damage claims. A fake licence cannot be cured by subsequent renewal.",
+    "risk_to_client": "If the claim is an own-damage claim (the owner's own vehicle damage, not third-party injury/death), the insurer can repudiate liability entirely if the driver's licence was fake. The owner cannot rely on the 'pay-and-recover' protection that applies to third-party claims. This is a complete defence for the insurer in own-damage cases.",
+    "risk_level": "high",
+    "distinguishing_argument": "This case is expressly limited to own-damage/non-third-party claims. For third-party injury/death claims (which form the vast majority of motor accident claims), Swaran Singh and the pay-and-recover principle continue to apply. The client must identify whether the claim is third-party or own-damage.",
+    "quote": "'The decision in Swaran Singh's case (supra) has no application to cases other than third party risks... Where originally the license was a fake one, renewal cannot cure the inherent fatality.'"
+   },
+   {
+    "doc_id": "doc_024",
+    "title": "Sunil Shreesail Killiket vs Subbraya",
+    "principle": "Driving without a valid licence is a fundamental and statutory breach. The insurer is not liable to indemnify the owner for the loss suffered, though it must pay the third party first.",
+    "risk_to_client": "The insurer can argue that the owner's failure to check the licence at all (the owner did not produce the licence, and the driver had no licence) constitutes a fundamental breach. While the third party gets paid, the owner faces a recovery action from the insurer for the entire compensation amount plus interest.",
+    "risk_level": "medium",
+    "distinguishing_argument": "In this case, the owner did not even attempt to check the licence and failed to produce it in proceedings. If the owner can show they actually asked for and inspected the licence (even if it turned out to be fake or inadequate), the stronger line of authority (Lehru, Chennamma) protects them from being found to have committed a 'conscious and wilful' breach.",
+    "quote": "'It is held that the respondent No.1 has breached the fundamental condition of the policy by allowing the driver who has no driving licence to drive the vehicle.'"
+   },
+   {
+    "doc_id": "doc_035",
+    "title": "United India Insurance Company Limited vs V.Vijayakumar",
+    "principle": "Where the driver lacks the specific authorisation/badge required for a transport vehicle, there is a breach of policy conditions, and the insurer can recover from the owner after paying the third party.",
+    "risk_to_client": "The insurer can argue that the owner should have checked not just for a licence but for the specific class of vehicle endorsement and badge. If the vehicle is a transport/goods vehicle, the owner's duty extends to verifying the appropriate class of licence and any required badge.",
+    "risk_level": "medium",
+    "distinguishing_argument": "The court still applied pay-and-recover, not outright denial. The owner's liability is secondary (reimbursement to insurer). Moreover, the Lehru/Chennamma standard applies: if the licence produced on its face appeared to cover the vehicle type, the owner has done enough.",
+    "quote": "'The absence of any endorsement in the driving licence as to the issuance of authorisation to drive the transport vehicle and non-mention of allotment of badge number clearly shows that the 3rd Respondent was not in possession of a valid driving licence.'"
+   },
+   {
+    "doc_id": "doc_001",
+    "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+    "principle": "For driving a goods carriage vehicle carrying dangerous/hazardous goods, a special endorsement on the driving licence is mandatory under the Central Motor Vehicles Rules. The absence thereof constitutes a breach entitling the insurer to pay and recover.",
+    "risk_to_client": "If the vehicle carries hazardous goods (e.g., a tanker), the owner's duty is higher: they must ensure the driver has a special endorsement under Rule 9 read with Rule 132 of the CMVR. A standard driving licence check is insufficient.",
+    "risk_level": "medium",
+    "distinguishing_argument": "This applies only to vehicles carrying dangerous/hazardous goods. For ordinary vehicles, the standard Lehru/Chennamma test applies. The owner can argue they had no reason to know the goods were hazardous or that a special endorsement was needed.",
+    "quote": "'As per Rule 132 (5) of Central Motor Vehicles Rule, 1989, it is the duty of the owner to ensure that the driver of the goods carriage carrying dangerous or hazardous goods holds a driving license as per the rule 9.'"
+   }
+  ],
+  "strategy": {
+   "priority_arguments": [
+    "Lead with the Lehru standard (as quoted in Chennamma/doc_027): the owner's duty is to check the licence on its face and test the driver's competence. The owner is NOT expected to verify with the RTO or detect a fake licence.",
+    "Argue that the insurer bears the burden of proving a 'conscious and wilful breach' by the owner (Satto/doc_033, Swaran Singh principles as cited in doc_035). Mere absence of a licence or a missing endorsement does not automatically defeat the claim.",
+    "For third-party claims, the insurer's statutory liability is primary. Even if breach is proved, the remedy is pay-and-recover, not exoneration (Satto/doc_033, Chennamma/doc_027, S.Iyyapan/doc_032).",
+    "If the licence was expired but subsequently renewed within the permissible period, argue under Srinivasamurthy/doc_034 that this is not a fundamental breach at all.",
+    "If the licence was fake, argue that the owner relied on a document that appeared genuine on its face, and the insurer must prove the owner knew or had notice it was fake (Lehru standard, cited in Chennamma/doc_027)."
+   ],
+   "compensation_range": "Not applicable to this research question (which concerns liability/defence, not quantum). However, if quantum is needed: the compensation payable to third parties is computed under the Sarla Verma/Pranay Sethi framework regardless of the licence breach.",
+   "compensation_reasoning": "The licence breach issue affects who ultimately bears the compensation (owner vs insurer), not the quantum of compensation payable to the third-party claimant.",
+   "risks": [
+    "If the claim is an own-damage claim (not third-party), Laxmi Narain Dhut/doc_031 is a HIGH risk: the insurer can repudiate entirely if the licence was fake. The pay-and-recover protection does not apply.",
+    "If the owner made NO attempt whatsoever to check the licence (as in Sunil Shreesail Killiket/doc_024), the tribunal may find a fundamental breach, exposing the owner to a recovery action from the insurer.",
+    "If the vehicle carries hazardous goods (Neelam Devi/doc_001), the owner's duty is elevated: they must ensure a special endorsement under CMVR Rules. A standard licence check is insufficient.",
+    "If the vehicle is a transport/commercial vehicle, the owner should check for the appropriate class endorsement and badge (Vijayakumar/doc_035). Failure to do so may result in pay-and-recover against the owner."
+   ],
+   "recommended_forum_or_relief": "For a third-party claimant: file under Section 166 MV Act before the MACT. The insurer's licence-breach defence will not defeat the claim; at worst, the insurer pays and recovers from the owner. For an owner facing a recovery action: argue the Lehru standard — that they checked the licence on its face and it appeared genuine."
+  },
+  "caveats": [
+   "This corpus does not contain the full text of United India Insurance Co. Ltd. v. Lehru (2003) 3 SCC 338 or National Insurance Co. Ltd. v. Swaran Singh (2004) 3 SCC 297, which are the foundational Supreme Court authorities on this topic. However, both are extensively quoted and applied in the corpus judgments (especially doc_027, doc_033, doc_035).",
+   "The corpus is mixed — some judgments deal with criminal revision or service law and are not relevant to the civil insurance liability question.",
+   "The analysis assumes a third-party claim (injury/death to a third party). For own-damage claims, the legal position is materially different per Laxmi Narain Dhut (doc_031).",
+   "The standard of care may vary by state if state-specific motor vehicle rules impose additional requirements (e.g., Tamil Nadu badge requirements in doc_035)."
+  ]
+ },
+ "cited": [
+  "doc_027",
+  "doc_033",
+  "doc_032",
+  "doc_035",
+  "doc_024",
+  "doc_003",
+  "doc_034",
+  "doc_031",
+  "doc_001"
+ ],
+ "elapsed_s": 194.6
+}

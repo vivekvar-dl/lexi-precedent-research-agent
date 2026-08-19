@@ -1,0 +1,19 @@
+{
+ "reliability": {
+  "precision": 0.7379545454545455,
+  "ndcg": 0.7164501507747023,
+  "retrieval_recall": 0.9424242424242424,
+  "answer_recall": 0.7772727272727272,
+  "synthesis_loss": 0.16515151515151513,
+  "adverse_recall": 0.3541666666666667,
+  "adverse_strict": 0.3888888888888889,
+  "buried": 0,
+  "contract": 1.0,
+  "abstention": null,
+  "tool_calls": 27.0,
+  "tokens": 385087.6666666667,
+  "latency_s": 357.3333333333333,
+  "heldout_answer_recall": 0.875,
+  "heldout_precision": 0.8136363636363637
+ }
+}

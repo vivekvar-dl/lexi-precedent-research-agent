@@ -1,0 +1,310 @@
+{
+ "dimension_1_precision": {
+  "queries_citing_nothing": [],
+  "mean_precision_cited": 0.5295454545454545,
+  "mean_precision_retrieved@10": 0.5,
+  "mean_ndcg@10": 0.5761472616678752,
+  "mean_faithfulness": 0.0,
+  "hallucinated_citations": 0,
+  "per_query": {
+   "h01_minor_death": {
+    "precision_cited": 1.0,
+    "precision_retrieved@10": 0.9,
+    "ndcg@10": 0.7627039242193163,
+    "n_cited": 7,
+    "false_positives": [],
+    "nonexistent_citations": []
+   },
+   "h02_permit_breach": {
+    "precision_cited": 0.125,
+    "precision_retrieved@10": 0.0,
+    "ndcg@10": 0.0,
+    "n_cited": 8,
+    "false_positives": [
+     "doc_002",
+     "doc_014",
+     "doc_026",
+     "doc_029",
+     "doc_028",
+     "doc_001",
+     "doc_025"
+    ],
+    "nonexistent_citations": []
+   },
+   "h03_owner_diligence": {
+    "precision_cited": 0.7272727272727273,
+    "precision_retrieved@10": 0.8,
+    "ndcg@10": 0.97396948931731,
+    "n_cited": 11,
+    "false_positives": [
+     "doc_025",
+     "doc_001",
+     "doc_006"
+    ],
+    "nonexistent_citations": []
+   },
+   "h04_interest_rate": {
+    "precision_cited": 0.625,
+    "precision_retrieved@10": 0.5,
+    "ndcg@10": 0.951231200062686,
+    "n_cited": 8,
+    "false_positives": [
+     "doc_010",
+     "doc_034",
+     "doc_024"
+    ],
+    "nonexistent_citations": []
+   },
+   "h05_insurer_appeal": {
+    "precision_cited": 0.7,
+    "precision_retrieved@10": 0.8,
+    "ndcg@10": 0.7689789564079392,
+    "n_cited": 10,
+    "false_positives": [
+     "doc_009",
+     "doc_041",
+     "doc_022"
+    ],
+    "nonexistent_citations": []
+   },
+   "h06_absent_tax": {
+    "precision_cited": 0.0,
+    "precision_retrieved@10": 0.0,
+    "ndcg@10": 0.0,
+    "n_cited": 1,
+    "false_positives": [
+     "doc_044"
+    ],
+    "nonexistent_citations": []
+   }
+  },
+  "faithfulness_detail": {}
+ },
+ "dimension_2_recall": {
+  "skipped_no_recall_expected": [
+   "h06_absent_tax"
+  ],
+  "mean_evidence_score": 1.0,
+  "mean_retrieval_recall": 1.0,
+  "mean_answer_recall": 0.8166666666666667,
+  "mean_synthesis_loss": 0.18333333333333332,
+  "mean_on_point_recall": 0.9666666666666666,
+  "per_query": {
+   "h01_minor_death": {
+    "retrieval_recall": 1.0,
+    "answer_recall": 0.5,
+    "evidence_score": 1.0,
+    "synthesis_loss": 0.5,
+    "on_point_recall": 1.0,
+    "n_relevant": 14,
+    "n_retrieved": 37,
+    "missed": [],
+    "found_but_dropped": [
+     "doc_001",
+     "doc_004",
+     "doc_011",
+     "doc_012",
+     "doc_019",
+     "doc_021",
+     "doc_041"
+    ]
+   },
+   "h02_permit_breach": {
+    "retrieval_recall": 1.0,
+    "answer_recall": 1.0,
+    "evidence_score": 1.0,
+    "synthesis_loss": 0.0,
+    "on_point_recall": 1.0,
+    "n_relevant": 1,
+    "n_retrieved": 22,
+    "missed": [],
+    "found_but_dropped": []
+   },
+   "h03_owner_diligence": {
+    "retrieval_recall": 1.0,
+    "answer_recall": 1.0,
+    "evidence_score": 1.0,
+    "synthesis_loss": 0.0,
+    "on_point_recall": 1.0,
+    "n_relevant": 8,
+    "n_retrieved": 21,
+    "missed": [],
+    "found_but_dropped": []
+   },
+   "h04_interest_rate": {
+    "retrieval_recall": 1.0,
+    "answer_recall": 1.0,
+    "evidence_score": 1.0,
+    "synthesis_loss": 0.0,
+    "on_point_recall": 1.0,
+    "n_relevant": 5,
+    "n_retrieved": 16,
+    "missed": [],
+    "found_but_dropped": []
+   },
+   "h05_insurer_appeal": {
+    "retrieval_recall": 1.0,
+    "answer_recall": 0.5833333333333334,
+    "evidence_score": 1.0,
+    "synthesis_loss": 0.41666666666666663,
+    "on_point_recall": 0.8333333333333334,
+    "n_relevant": 12,
+    "n_retrieved": 35,
+    "missed": [],
+    "found_but_dropped": [
+     "doc_001",
+     "doc_014",
+     "doc_020",
+     "doc_030",
+     "doc_035"
+    ]
+   }
+  }
+ },
+ "dimension_4_adverse": {
+  "scored_queries": [
+   "h01_minor_death",
+   "h03_owner_diligence",
+   "h05_insurer_appeal"
+  ],
+  "skipped_non_adversarial": [
+   "h02_permit_breach",
+   "h04_interest_rate",
+   "h06_absent_tax"
+  ],
+  "mean_adverse_recall": 0.3333333333333333,
+  "mean_adverse_recall_strict": 0.9166666666666666,
+  "n_queries_with_strict_adverse": 3,
+  "total_buried": 1,
+  "mean_risk_entropy": 0.6334789556297883,
+  "pct_with_adverse_section": 1.0,
+  "total_miscast": 1,
+  "total_mixed_as_supporting": 10,
+  "sycophancy": {},
+  "per_query": {
+   "h01_minor_death": {
+    "n_adverse_available": 6,
+    "n_flagged_adverse": 2,
+    "n_strict_adverse": 1,
+    "adverse_recall": 0.3333333333333333,
+    "adverse_recall_strict": 1.0,
+    "buried_adverse": [],
+    "n_buried": 0,
+    "n_distinguished_in_caveats": 2,
+    "risk_levels": [
+     "medium",
+     "medium"
+    ],
+    "risk_entropy": -0.0,
+    "has_adverse_section": true,
+    "miscast_as_supporting": [],
+    "mixed_cited_as_supporting": [
+     "doc_006",
+     "doc_023",
+     "doc_033"
+    ]
+   },
+   "h03_owner_diligence": {
+    "n_adverse_available": 6,
+    "n_flagged_adverse": 3,
+    "n_strict_adverse": 1,
+    "adverse_recall": 0.16666666666666666,
+    "adverse_recall_strict": 1.0,
+    "buried_adverse": [],
+    "n_buried": 0,
+    "n_distinguished_in_caveats": 3,
+    "risk_levels": [
+     "low",
+     "medium",
+     "low"
+    ],
+    "risk_entropy": 0.9182958340544896,
+    "has_adverse_section": true,
+    "miscast_as_supporting": [],
+    "mixed_cited_as_supporting": [
+     "doc_003",
+     "doc_024",
+     "doc_027",
+     "doc_033",
+     "doc_035"
+    ]
+   },
+   "h05_insurer_appeal": {
+    "n_adverse_available": 10,
+    "n_flagged_adverse": 7,
+    "n_strict_adverse": 4,
+    "adverse_recall": 0.5,
+    "adverse_recall_strict": 0.75,
+    "buried_adverse": [
+     "doc_020"
+    ],
+    "n_buried": 1,
+    "n_distinguished_in_caveats": 3,
+    "risk_levels": [
+     "high",
+     "medium",
+     "high",
+     "high",
+     "medium",
+     "low",
+     "low"
+    ],
+    "risk_entropy": 0.9821410328348752,
+    "has_adverse_section": true,
+    "miscast_as_supporting": [
+     "doc_004"
+    ],
+    "mixed_cited_as_supporting": [
+     "doc_023",
+     "doc_033"
+    ]
+   }
+  }
+ },
+ "dimension_5_behaviour": {
+  "abstention_rate": null,
+  "n_abstention_queries": 0,
+  "contract_accuracy": null,
+  "contract_failures_high_severity": [],
+  "trajectory_accuracy": null,
+  "trajectory_failures": [],
+  "mean_tool_calls": 0.0,
+  "mean_tokens": 0.0,
+  "mean_latency_s": 0.0,
+  "max_latency_s": null,
+  "run_success_rate": 0.0,
+  "per_query": {}
+ },
+ "gold": {
+  "h01_minor_death": {
+   "n_relevant": 14,
+   "kappa": 0.952,
+   "gwet_ac1": 0.978
+  },
+  "h02_permit_breach": {
+   "n_relevant": 1,
+   "kappa": 0.0,
+   "gwet_ac1": 0.964
+  },
+  "h03_owner_diligence": {
+   "n_relevant": 8,
+   "kappa": 0.0,
+   "gwet_ac1": 0.805
+  },
+  "h04_interest_rate": {
+   "n_relevant": 5,
+   "kappa": 0.785,
+   "gwet_ac1": 0.961
+  },
+  "h05_insurer_appeal": {
+   "n_relevant": 12,
+   "kappa": 0.408,
+   "gwet_ac1": 0.79
+  },
+  "h06_absent_tax": {
+   "n_relevant": 0,
+   "kappa": 1.0,
+   "gwet_ac1": 1.0
+  }
+ }
+}

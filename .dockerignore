@@ -1,0 +1,11 @@
+.venv/
+.git/
+.pytest_cache/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+evals/runs*/
+evals/results/
+lexi_research_take_home_assessment_docs/
+ADR.pdf

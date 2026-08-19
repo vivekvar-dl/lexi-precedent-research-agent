@@ -1,0 +1,26 @@
+# --- Agent orchestration -----------------------------------------------------
+langgraph>=0.2.60
+langchain-core>=0.3.29
+# Azure AI Foundry serves DeepSeek over an OpenAI-compatible endpoint, so the
+# OpenAI client is the right adapter -- no Azure-specific SDK needed.
+langchain-openai>=0.2.14
+
+# --- Retrieval ---------------------------------------------------------------
+lancedb>=0.17.0                 # embedded vector + full-text store (no server)
+sentence-transformers>=3.3.1    # Qwen3-Embedding-0.6B (Apache-2.0)
+tantivy>=0.22.0                 # backs LanceDB's BM25 full-text index
+
+# --- Documents ---------------------------------------------------------------
+pymupdf>=1.25.0
+
+# --- Core --------------------------------------------------------------------
+pydantic>=2.10.0
+pydantic-settings>=2.7.0
+python-dotenv>=1.0.1
+numpy>=1.26.0
+
+# --- App ---------------------------------------------------------------------
+streamlit>=1.41.0
+
+# --- Evaluation --------------------------------------------------------------
+pytest>=8.3.0

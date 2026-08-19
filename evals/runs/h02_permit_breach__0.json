@@ -1,0 +1,1707 @@
+{
+ "qid": "h02_permit_breach",
+ "seed": 0,
+ "question": "Which judgments deal with a breach of permit or route conditions, rather than a driving licence defect?",
+ "kind": "structured",
+ "ok": true,
+ "trace": {
+  "question": "Which judgments deal with a breach of permit or route conditions, rather than a driving licence defect?",
+  "events": [
+   {
+    "seq": 1,
+    "kind": "budget",
+    "label": "triage",
+    "detail": "research / side=none -- The request asks for a comparative analysis of judgments distinguishing breach of permit/route conditions from driving licence defects. This requires searching for, comparing, and weighing multiple precedents, not a simple factual lookup.",
+    "payload": {
+     "budget": 14,
+     "client_side": "none"
+    },
+    "docs": [],
+    "elapsed_s": 87.24
+   },
+   {
+    "seq": 2,
+    "kind": "tool_call",
+    "label": "search_precedents",
+    "detail": "query=breach of permit conditions route conditions permit violation motor ve... top_k=15",
+    "payload": {
+     "args": {
+      "query": "breach of permit conditions route conditions permit violation motor vehicle insurance",
+      "top_k": 15
+     }
+    },
+    "docs": [],
+    "elapsed_s": 89.08
+   },
+   {
+    "seq": 3,
+    "kind": "tool_call",
+    "label": "filter_judgments",
+    "detail": "principle_contains=permit",
+    "payload": {
+     "args": {
+      "principle_contains": "permit"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 89.08
+   },
+   {
+    "seq": 4,
+    "kind": "retrieval",
+    "label": "search_precedents",
+    "detail": "query='breach of permit conditions route conditions permit violation motor vehicle insurance' favours=None k=15",
+    "payload": {
+     "query": "breach of permit conditions route conditions permit violation motor vehicle insurance",
+     "favours": null
+    },
+    "docs": [
+     {
+      "doc_id": "doc_035",
+      "title": "United India Insurance Company Limited vs V.Vijayakumar",
+      "dense_score": 0.601580023765564,
+      "dense_rank": 2,
+      "sparse_score": 14.779316902160645,
+      "sparse_rank": 1,
+      "fused_score": 0.03252247488101534,
+      "fused_rank": 1,
+      "rerank_score": 9.0,
+      "final_rank": 1,
+      "why": "Directly addresses breach of permit/route conditions (driver's license mismatch) and insurer's pay-and-recover remedy, matching the issue and ratio.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_034",
+      "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+      "dense_score": 0.5812765955924988,
+      "dense_rank": 4,
+      "sparse_score": 12.639172554016113,
+      "sparse_rank": 3,
+      "fused_score": 0.03149801587301587,
+      "fused_rank": 2,
+      "rerank_score": 8.0,
+      "final_rank": 2,
+      "why": "Deals with breach of policy conditions (expired license) and insurer's liability to third parties, closely aligned with the question's factual posture.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_025",
+      "title": "New India Assurance Co., Ltd., vs Yallavva W/O Yamanappa Dharnakeri",
+      "dense_score": 0.5885351300239563,
+      "dense_rank": 3,
+      "sparse_score": 10.902460098266602,
+      "sparse_rank": 4,
+      "fused_score": 0.03149801587301587,
+      "fused_rank": 3,
+      "rerank_score": 8.0,
+      "final_rank": 3,
+      "why": "Establishes insurer's liability and recovery rights for breach of policy conditions under Section 149(2), directly relevant to the legal issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_001",
+      "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+      "dense_score": 0.6364571750164032,
+      "dense_rank": 1,
+      "sparse_score": 8.42441177368164,
+      "sparse_rank": 10,
+      "fused_score": 0.030679156908665108,
+      "fused_rank": 4,
+      "rerank_score": 8.0,
+      "final_rank": 4,
+      "why": "Concerns breach due to missing license endorsement for hazardous goods, analogous to permit/route condition breach, with pay-and-recover remedy.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_024",
+      "title": "Sunil Shreesail Killiket vs Subbraya",
+      "dense_score": 0.5643789172172546,
+      "dense_rank": 5,
+      "sparse_score": 10.597557067871094,
+      "sparse_rank": 6,
+      "fused_score": 0.030536130536130537,
+      "fused_rank": 5,
+      "rerank_score": 7.0,
+      "final_rank": 5,
+      "why": "Addresses fundamental breach (no valid license) and pay-and-recover principle, relevant to breach of conditions but not specifically route/permit.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_033",
+      "title": "Satto & Ors vs New India Assurance Co Ltd",
+      "dense_score": 0.5588917136192322,
+      "dense_rank": 6,
+      "sparse_score": 10.22715950012207,
+      "sparse_rank": 7,
+      "fused_score": 0.03007688828584351,
+      "fused_rank": 7,
+      "rerank_score": 7.0,
+      "final_rank": 6,
+      "why": "Holds insurer liable despite breach (invalid license) with recovery rights, matching the legal issue of breach and third-party compensation.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_027",
+      "title": "The Manager vs Chennamma",
+      "dense_score": 0.5030571222305298,
+      "dense_rank": 18,
+      "sparse_score": 9.307533264160156,
+      "sparse_rank": 9,
+      "fused_score": 0.027313266443701224,
+      "fused_rank": 10,
+      "rerank_score": 7.0,
+      "final_rank": 7,
+      "why": "Similar to doc_035, deals with driver lacking proper endorsement for vehicle class, relevant to breach of policy conditions.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_032",
+      "title": "S.Iyyapan vs M/S United India Insurance Co.Ld.& Anr",
+      "dense_score": 0.5370765030384064,
+      "dense_rank": 12,
+      "sparse_score": 2.1690139770507812,
+      "sparse_rank": 22,
+      "fused_score": 0.0260840108401084,
+      "fused_rank": 14,
+      "rerank_score": 7.0,
+      "final_rank": 8,
+      "why": "Holds insurer cannot avoid liability for third parties due to missing commercial endorsement, directly relevant to breach of conditions.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_002",
+      "title": "Liyakat Ali vs Smt Chunni Devi",
+      "dense_score": 0.5480303168296814,
+      "dense_rank": 8,
+      "sparse_score": 10.654037475585938,
+      "sparse_rank": 5,
+      "fused_score": 0.030090497737556562,
+      "fused_rank": 6,
+      "rerank_score": 6.0,
+      "final_rank": 9,
+      "why": "Involves breach of policy conditions (non-agricultural use), but factual posture (tractor/trailer) is less aligned with general permit/route violation.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_028",
+      "title": "United India Insurance Co. Ltd., Thr ... vs Sukumarbai Suryakant Nikam And Ors",
+      "dense_score": 0.5388339161872864,
+      "dense_rank": 11,
+      "sparse_score": 9.62077808380127,
+      "sparse_rank": 8,
+      "fused_score": 0.028790389395194696,
+      "fused_rank": 9,
+      "rerank_score": 5.0,
+      "final_rank": 10,
+      "why": "Concerns breach (passenger in private vehicle for hire) but focuses on 'third party' definition, not directly on permit/route conditions.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_030",
+      "title": "D a d a p e e r a S / O A b d u l S a l a m S a b v s M a l l e s h M S / O Hanumanthappa",
+      "dense_score": 0.5328159332275391,
+      "dense_rank": 13,
+      "sparse_score": 5.812540054321289,
+      "sparse_rank": 15,
+      "fused_score": 0.027031963470319637,
+      "fused_rank": 11,
+      "rerank_score": 4.0,
+      "final_rank": 11,
+      "why": "Involves breach of regulations (riding on mud-guard) but not permit/route conditions; factual posture is distinct.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_031",
+      "title": "National Insurance Co. Ltd vs Laxmi Narain Dhut",
+      "dense_score": 0.540227085351944,
+      "dense_rank": 10,
+      "sparse_score": 2.138956069946289,
+      "sparse_rank": 24,
+      "fused_score": 0.026190476190476188,
+      "fused_rank": 13,
+      "rerank_score": 4.0,
+      "final_rank": 12,
+      "why": "Distinguishes third-party vs own-damage claims; not directly about breach of permit/route conditions in motor vehicle insurance.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_006",
+      "title": "National Insurance Company Ltd. Thr. ... vs Smt. Meena And 4 Others",
+      "dense_score": 0.5156155824661255,
+      "dense_rank": 17,
+      "sparse_score": 13.299365997314453,
+      "sparse_rank": 2,
+      "fused_score": 0.029116045245077504,
+      "fused_rank": 8,
+      "rerank_score": 3.0,
+      "final_rank": 13,
+      "why": "Focuses on contributory negligence and evidence, not on breach of permit/route conditions or policy conditions.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_009",
+      "title": "Kamal S/O Shiv Ram vs Mursleem S/O Mohd. Akil",
+      "dense_score": 0.4832912087440491,
+      "dense_rank": 21,
+      "sparse_score": 7.197579383850098,
+      "sparse_rank": 11,
+      "fused_score": 0.0264301860545992,
+      "fused_rank": 12,
+      "rerank_score": 3.0,
+      "final_rank": 14,
+      "why": "Deals with contributory negligence and standard of proof, not directly with breach of permit/route conditions.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_005",
+      "title": "L And T Insurance Co Ltd vs Bindudevi Samharu Yadav",
+      "dense_score": 0.5454926192760468,
+      "dense_rank": 9,
+      "sparse_score": 2.0756924152374268,
+      "sparse_rank": 30,
+      "fused_score": 0.025603864734299518,
+      "fused_rank": 15,
+      "rerank_score": 2.0,
+      "final_rank": 15,
+      "why": "Concerns Section 167 bar and workmen's compensation, unrelated to breach of permit/route conditions in motor vehicle insurance.",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 110.07
+   },
+   {
+    "seq": 5,
+    "kind": "filter",
+    "label": "filter_judgments",
+    "detail": "WHERE principles_joined LIKE '%permit%'  ->  4 of 56 judgments",
+    "payload": {
+     "where": "principles_joined LIKE '%permit%'",
+     "n_matched": 4,
+     "doc_ids": [
+      "doc_009",
+      "doc_051",
+      "doc_053",
+      "doc_055"
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_009",
+      "title": "Kamal S/O Shiv Ram vs Mursleem S/O Mohd. Akil",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_051",
+      "title": "Sh. Yashpal Chaudhrani & Ors. vs State (Govt. Of Nct Delhi) & Anr.",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_053",
+      "title": "Ashokbhai Shankar Chaudhary & vs Jayendra Virendra Sharma &",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_055",
+      "title": "Smt Iravva K Purantar vs S Venkatesh",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 110.08
+   },
+   {
+    "seq": 6,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_035 focus=breach of permit conditions route conditions permit violation",
+    "payload": {
+     "args": {
+      "doc_id": "doc_035",
+      "focus": "breach of permit conditions route conditions permit violation"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 141.78
+   },
+   {
+    "seq": 7,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_001 focus=permit conditions route conditions hazardous goods endorsement",
+    "payload": {
+     "args": {
+      "doc_id": "doc_001",
+      "focus": "permit conditions route conditions hazardous goods endorsement"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 141.78
+   },
+   {
+    "seq": 8,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_002 focus=permit route conditions tractor trailer agricultural use non-agricultu...",
+    "payload": {
+     "args": {
+      "doc_id": "doc_002",
+      "focus": "permit route conditions tractor trailer agricultural use non-agricultural"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 141.78
+   },
+   {
+    "seq": 9,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_028 focus=permit route conditions passenger private vehicle hire",
+    "payload": {
+     "args": {
+      "doc_id": "doc_028",
+      "focus": "permit route conditions passenger private vehicle hire"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 141.78
+   },
+   {
+    "seq": 10,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_035 focus='breach of permit conditions route conditions permit violation' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_035"
+     ],
+     "focus": "breach of permit conditions route conditions permit violation",
+     "title": "United India Insurance Company Limited vs V.Vijayakumar",
+     "court": "In The High Court Of Judicature At Madras",
+     "holding": "The High Court modified the Tribunal's award, holding that the Insurance Company must first pay the compensation amount to the claimant and then recover the same from the insured owner due to breach of policy conditions regarding the driver's license.",
+     "ratio": "Where the driver of a transport vehicle holds only a light motor vehicle licence without the specific authorisation or badge required to drive a transport vehicle, there is a breach of policy conditions permitting the insurer to pay the third-party compensation first and subsequently recover the amount from the insured owner.",
+     "passages": [
+      {
+       "section": "judgment",
+       "score": 0.44,
+       "text": "of driver's licence\", it is stated as \"1407/96 \u0016 5.6.2016\".\nIn his evidence, R.W.1 has clearly stated that the 3rd Respondent was not granted any authorisation\nto drive the transport vehicle nor allotted a badge number and therefore 3rd Respondent was not\nduly licensed to drive a transport vehicle. By examining R.W.1 and by adducing evidence on the\ndriving licence particulars of 3rd Respondent, the Insurance Company has discharged the burden\ncast upon it in establishing that the driver did not have a valid driving licence to drive a transport\nvehicle and that there was violation of policy conditions.\n26. During the cross examination of R.W.1, it was suggested to him that the 3rd Respondent might\nhave obtained badge elsewhere in Tamil Nadu or in India and office of R.W.1 might not have known\nabout the same. To that question, R.W.1 has replied as under:\n@mth; v';fs; mYtyfj;jpy; jhd; mg;go tpy;iy my;yJ ngl;$; bgwntz;Lbkd;W fl;lhak; ,y;iy/\nvdnt mth; ,e;jpahtpy; ntW ve;j ,lj;jpYk; mg;go ngl;$; my;yJ tpy;iy bgWtjw;F\ntha;g;g[s;sJ/ / / / / / / md;iwa njjpapy; bjhHpy;Kiw rhh;e;j ngl;$; tpy;iy bgWtjw;F\nnjitahd jFjpfs; midj;Jk; me;j Xl;LeUf;F ,Ue;jpUf;fpwJ/@\n27. Referring to the above answer of R.W.1, and referring to 2004 ACJ 1 (ORIETNAL INSURANCE\nCO.LTD. VS. SWARAN SINGH) the Tribunal held that 3rd Respondent might have obtained the\nbadge elsewhere and that the same might not have been brought to the notice of the licensing\nauthority and that there was no fundamental breach of the policy conditions. The Tribunal further\nheld that even though the 3rd Respondent \u0016 driver was not in possession of valid driving licence to\ndrive a maxi cab there was no fundamental breach of the policy conditions and therefore Insurance\nCompany cannot avoid their liability on the ground that there was breach of condition.\n28. There is no force in the contention that the driver might have obtained badge elsewhere and that\nthe same might not have been brought to the notice of the office of the Motor Vehicles Inspector in\nMettur. As per Rule 35 of Tamil Nadu Motor Vehicles Rules, a licensing authority renewing a driving"
+      },
+      {
+       "section": "judgment",
+       "score": 0.42,
+       "text": "Respondent was having a driving licence for LMV, he\nhad not obtained necessary authorisation to drive a transport vehicle and badge was not allotted to\nhim and he has not obtained the badge for driving a transport vehicle \u0016 tourist maxi cab.\n38. The 3rd Respondent had a licence, but not a valid one. As there was violation of conditions of\npolicy, Tribunal was not right in fastening the statutory liability upon the Insurance Company. Since\nthere was violation of policy conditions the Tribunal ought not to have fastened the statutory\nliability upon the Insurance Company. Keeping in view the nature of injuries sustained by the\nclaimant and that the claimant is now reduced to vegetable existence, the only just and reasonable\ncourse would be to direct the Insurance Company to pay compensation to the 1st Respondent \u0016\nClaimant and recover it from the owner for his breach of the policy conditions.\n39. Point No.4:- In the instant case, claimant has sustained severe head injuries \u0016 diffuse axonal\ninjury \u0016 avulsion of right pinna. Because of severe head injury, after the accident, claimant became\nunconscious. In her evidence, P.W.1 \u0016 mother of claimant has stated that after the accident,\nclaimant became unconscious. After the accident, claimant was admitted in Kovai Medical Center\nand Hospital Limited, where he was in intensive care unit for about 5 1/2 months. He was on\nventilator for a period of 46 days. Tracheostomy was performed for better tracheal toileting. From\nEx.A.8- discharge summary, patient was given chest physiotherapy and occupational therapy was"
+      },
+      {
+       "section": "judgment",
+       "score": 0.406,
+       "text": "e the defence\nraised by the insurers as regards the question as to whether there has been any breach or violation of\npolicy conditions of the insurance policy has been issued or not, would be upon the insurer and the\nevidence adduced by the Appellant - Insurer is not sufficient to prove the defence. It was further\nsubmitted that to absolve the liability of insurer, the breach on the part of insured must be a wilful\none, being of the fundamental condition by the insured himself and the burden of proof, therefore,\nwould be on the insurer. It was further submitted that with a view to avoid its liability, it is not\nsufficient to show that the 3rd Respondent was not duly licensed but it must be further established\nthat there was breach on the part of the insured, which is lacking in this case.\n9. We have carefully considered the rival contentions, materials on record and the award passed by\nthe Tribunal. The points falling for our consideration in this case are:\n\n(1) Whether the Tribunal was right in fastening the liability on the Appellant -\nInsurance Company jointly along with the owner and driver of the vehicle \u0016 maxi cab\nbearing Regn.No.TN 27 L 3638?\n(2) Whether the Appellant - Insurer has proved the defence as to breach or violation\nof policy conditions?\n(3) Whether based upon Section 149(1) of Motor Vehicles Act and the principle laid\ndown in the case of NATIONAL INSURANCE COMPANY LTD. VS. SWARAN SINGH\nAND OTHERS (2004) 3 SCC 297, \"pay and recover from the owner\" can be ordered?\n(4) Whether the quantum of compensation awarded by the Tribunal is without basis\nand excessive as contended by the Appellant Insurance Company?\n10. Points No.1 to 3:- The manner of accident is not in dispute. On 7.7.2002, at about 7.45 P.M,\nwhile the 1st Respondent/Claimant was walking on the road opposite to Annur Bus stand, the 3rd\nRespondent drove the Mahendra van bearing Registration No.TN 27 L 3638 from west to east in a\nrash and negligent manner, hit against the claimant and the claimant sustained severe head injuries.\nTo prove the accident and negligence of van driver, P.W.6 \u0016 Praveen was examined."
+      },
+      {
+       "section": "judgment",
+       "score": 0.405,
+       "text": "rive the Tourist Maxi Cab Mahendra van. It was further averred that the offending vehicle bearing\nRegn.No.TN 27 L 3638 driven by the 3rd Respondent is a public service tourist maxi cab requiring\ndriver of the vehicle to be specifically authorised by way of badge as required by rules and\nregulations. Further contention was that since the 3rd Respondent was not holding a badge, the\nterms and conditions of the policy and the corresponding stipulations of the Motor Vehicles Act\nhave been violated by the owner-insurer, who had permitted the 3rd Respondent to drive the vehicle\nand therefore no liability could be fastened on the Insurance Company and only owner and driver of\nthe vehicle are liable to pay the compensation.\n5. In the trial Court, mother of the Claimant was examined as P.W.1. Eye witness Praveen was\nexamined as P.W.6. The doctors were examined as P.Ws.3 to 5. Easwaramurthy, owner of the\ngarment company and Dr.C.Venugopal \u0016 Physiotherapist were examined as P.Ws.2 and 7 and\nExs.A.1 to A.14 were marked. On the side of Respondents, Motor Vehicles Inspector was examined\nas R.W.1 and Assistant Administrative Officer in the Insurance Company was examined as R.W.2\nand Exs.B.1 and B.2 were marked.\n\n6. Upon consideration of oral and documentary evidence, Tribunal held that there was no evidence\nto show that the driver of the offending vehicle/ 3rd Respondent was not competent to drive the\ntourist maxi cab. The Tribunal further held that even if there is violation of policy conditions the\nInsurer cannot avoid liability unless there had been breach of policy conditions. The Tribunal\nfurther held that the 3rd Respondent had LMV driving licence and there was no proof to show that\nthe 4th Respondent failed to take reasonable care and there was no fundamental breach of the policy\nconditions and held that the Appellant Insurance Company is liable to pay the compensation.\nInsofar as the quantum of compensation the Tribunal has taken the monthly income of the claimant\nat Rs.4,500/- and the percentage of disability at 95 percent and awarded compensation of\nRs.19,59,895/- under the following heads:\nPermanent disability            :            Rs."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_035",
+      "title": "United India Insurance Company Limited vs V.Vijayakumar",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 141.86
+   },
+   {
+    "seq": 11,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_001 focus='permit conditions route conditions hazardous goods endorsement' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_001"
+     ],
+     "focus": "permit conditions route conditions hazardous goods endorsement",
+     "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+     "court": "In The High Court Of Punjab And Haryana At Chandigarh",
+     "holding": "The High Court modified the compensation amounts awarded in the connected claim cases (partly enhancing some and upholding others) and granted pay-and-recover rights to the insurance company upon finding a breach of policy conditions due to the lack of a special endorsement on the driver's license for transporting hazardous goods.",
+     "ratio": "For driving a goods carriage vehicle carrying dangerous or hazardous goods, a special endorsement on the driving license as prescribed under the Central Motor Vehicles Rules, 1989 is mandatory, and the absence thereof constitutes a breach of insurance policy terms entitling the insurer to pay and recover.",
+     "passages": [
+      {
+       "section": "body",
+       "score": 0.604,
+       "text": "authority in whose jurisdiction he resides for making necessary\nendorsement in his driving license and thereafter, the licensing authority will make endorsement on\nhis driving license that he is authorized to drive goods carriage vehicle carrying goods of dangerous\nor hazardous nature to human life. Apart from this, as per Rule 132 and 133 responsibility is cast\nupon the transporter or owner of goods carriage vehicle as well as responsibility is also imposed on\nthe driver. Therefore, considering the provisions of Motor Vehicles Act read with the Central Motor\nVehicles Rule, 1989, a special endorsement is required on the driving license for driving a vehicle\ncarrying dangerous or hazardous goods. In the case in hand, there is no such endorsement on the\ndriving license of Sandeep. Therefore, he was not competent to drive Truck/Tanker and there is\nclear cut violation of the terms and conditions of insurance policy. No doubt, the aforesaid\nTruck/Tanker was duly insured with the insurance company, 25 of 26 Neutral Citation\nNo:=2023:PHHC:141930 2023:PHHC:141930 FAO-1113-2018 (O&M) and other connected cases\ntherefore, the insurance company cannot escape its liability to make payment of compensation\nawarded in favour of the claimants. Once the payment is made, the insurance company has right to\nrecover the same from the insured.\nWith this observation, the findings given by the learned Motor Accident Claims Tribunal, Jind on\nissue No. 3 are accordingly, reversed, by partly accepting the aforesaid appeals.\nAll the four appeals along with cross-objections are accordingly, disposed of.\nThe copies of records received from the Tribunal be sent back to the concerned quarter.\nPending application(s), if any, shall also stands disposed off. Photocopy of this order be placed on\nthe connected files.\n06.11.2023                                             (AMARJOT BHATTI)\nlalit                                                      JUDGE\n             Whether speaking/reasoned:          Yes\n             Whether reportable:                 Yes\n                                                           Neutral Citation No:=2023:PHH\n                                      26 of 26"
+      },
+      {
+       "section": "body",
+       "score": 0.551,
+       "text": "spondents in MACP case.\n27. The learned counsel for the insurance company raised the issue that the findings given by the\nlearned Motor Accident Claims 22 of 26 Neutral Citation No:=2023:PHHC:141930\n2023:PHHC:141930 FAO-1113-2018 (O&M) and other connected cases Tribunal, Jind pertaining to\nissue No. 3 are erroneous and against the provisions of law. It is wrongly held by the learned Motor\nAccident Claims Tribunal, Jind that the driver was having valid Driving License. It is duly proved on\nrecord that the vehicle involved in this case was a Tanker. For driving a Tanker, it requires special\nendorsement that the driver was competent to drive a vehicle carrying dangerous or hazardous\ngoods. As per Rule 132 (5) of Central Motor Vehicles Rule, 1989, it is the duty of the owner to ensure\nthat the driver of the goods carriage carrying dangerous or hazardous goods holds a driving license\nas per the rule 9 of the aforesaid Central Motor Vehicles Rules. The learned Motor Accident Claims\n\nTribunal, Jind has failed to appreciate the legal position in this regard. To support his arguments,\nthe learned counsel for the insurance company has relied upon the judgment of Coordinate Bench of\nour own High Court in FAO-5232-2013 (O&M), titled \"Hardeep Singh versus Rajesh Singh and\nothers\", where it was rightly concluded that \"special endorsement is required for driving a goods\ncarriage vehicle meant for transporting dangerous or hazardous goods, as provided under Section\n14(2) of the Motor Vehicles Act read with the rules provided under Central Motor Vehicles Rule,\n1989.\" It is argued that once it was established that there was no such endorsement on the driving\nlicense of the driver of offending Tanker, then it was a clear cut case of violation of terms and\nconditions of the insurance policy which entitled the insurance company to recover the amount of\ncompensation awarded by the Tribunal from the insured."
+      },
+      {
+       "section": "body",
+       "score": 0.533,
+       "text": "pe its liability to make the payment of compensation\nawarded by the learned Motor Accident Claims Tribunal, Jind.\n29. I have considered the arguments advanced pertaining to issue No. 3 and have gone through the\nrecord carefully. There is no dispute regarding findings given pertaining to issue No. 1. The accident\ntook place on 21.11.2013 due to rash and negligent driving of Truck/Tanker bearing Registration No.\nHR-38F-4365, driven rashly and negligently by respondent No. 1 in the MACP case. As per the copy\nof RC, the offending Truck bearing Registration No. HR-38F-4365 is a Tanker. This fact is further\nclarified from the copy of insurance policy proved on record as Ex.R-1. The driving license of\nSandeep is Ex.R-2, according to which he 24 of 26 Neutral Citation No:=2023:PHHC:141930\n2023:PHHC:141930 FAO-1113-2018 (O&M) and other connected cases was competent to drive MC,\nLMV, HGV, HTV only. The driving license was valid from 15.01.2010 to 14.01.2016 and further\nrenewed on 23.04.2013 and the verification reports are also placed on record as Ex.R-5 and Ex.R-6.\nSince, the offending vehicle was a Tanker, therefore, as per the rules prescribed under Central Motor\nVehicles Rule, 1989, special endorsement was required for driving a goods carriage vehicle carrying\ndangerous or hazardous goods. As per Rule 9, special educational qualification is required to drive\n\nsuch vehicle. Such driver is required to have driving license to drive transport vehicle as well as\nability to read and write atleast one Indian language and English and also possess a certificate of\nhaving successfully passed a course with a syllabus prescribed under the rules. Thereafter, the\nholder of driving license is required to file application along with his driving license and relevant\ncertificate to the licensing authority in whose jurisdiction he resides for making necessary\nendorsement in his driving license and thereafter, the licensing authority will make endorsement on\nhis driving license that he is authorized to drive goods carriage vehicle carrying goods of dangerous\nor hazardous nature to human life."
+      },
+      {
+       "section": "body",
+       "score": 0.445,
+       "text": "that there was no such endorsement on the driving\nlicense of the driver of offending Tanker, then it was a clear cut case of violation of terms and\nconditions of the insurance policy which entitled the insurance company to recover the amount of\ncompensation awarded by the Tribunal from the insured. He has relied upon the authority cited in\n(2018) AIR(SCW) 592, Supreme Court of India, in case titled \"Pappu versus Vinod Kumar Lamba\",\nwhere in that case on account of breach of terms and conditions of insurance policy, the insurance\ncompany was given 23 of 26 Neutral Citation No:=2023:PHHC:141930 2023:PHHC:141930\nFAO-1113-2018 (O&M) and other connected cases liberty to recovery this amount of compensation\nfrom the owner of the vehicle in accordance with law. Therefore, the findings given by the learned\nMotor Accident Claims Tribunal, Jind pertaining to issue No. 3 are liable to be reversed, giving\nliberty to the insurance company to recover the amount of compensation awarded in this case from\nthe insured.\n28. The learned counsel for the owner of offending vehicle pointed out that the findings given by the\nlearned Motor Accident Claims Tribunal, Jind pertaining to issue No. 3 are fully justified. As per the\ndriving license Ex.R-2, Sandeep - respondent No. 1 in the claim petition was having valid driving\nlicense to drive MC, LMV, HGV, HTV and the driving license was valid from 15.01.2010 to\n14.01.2016 and renewed on 23.04.2013. The verification report of the driving license under RTI is\nEx.R-3 and the verification report of Gita Ram Parmar, Advocate is Ex.R-\n5. The driving license standing in the name of Sandeep - respondent No. 1 was found to be genuine.\nThe vehicle was duly insured with the insurance company vide insurance policy Ex.R1/R7.\nTherefore, the insurance company cannot escape its liability to make the payment of compensation\nawarded by the learned Motor Accident Claims Tribunal, Jind.\n29. I have considered the arguments advanced pertaining to issue No. 3 and have gone through the\nrecord carefully. There is no dispute regarding findings given pertaining to issue No. 1."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_001",
+      "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 141.91
+   },
+   {
+    "seq": 12,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_002 focus='permit route conditions tractor trailer agricultural use non-agricultural' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_002"
+     ],
+     "focus": "permit route conditions tractor trailer agricultural use non-agricultural",
+     "title": "Liyakat Ali vs Smt Chunni Devi",
+     "court": "Motor Accident Claims Tribunal, Unnao",
+     "holding": "The Court held that while an attached trailer/trolley is part of an insured tractor and does not require separate insurance, the insurance company is absolved from liability because the tractor was being used to transport bricks and iron rods for construction rather than for agricultural purposes, violating the insurance policy terms.",
+     "ratio": "A trailer attached to a tractor is considered part of the tractor and does not require separate insurance under the Motor Vehicles Act; however, if the tractor is used for non-agricultural purposes in violation of the insurance policy, the insurer is not liable to pay compensation.",
+     "passages": [
+      {
+       "section": "body",
+       "score": 0.487,
+       "text": "ctor means a motor vehicle which is not itself constructed to\ncarry any load other than (the equipments used for the purpose) or propulsion but excludes a road\nroller.\nOn a perusal of the definition of word 'tractor' shows that the tractor itself is not able to carry any\nload without the equipments. Therefore, any equipments attached to the tractor is a part of the\ntractor and covered under the insurance policy.\nIn view of the above, we observed that the trailer/trolley, which is attached with the tractor is a part\nof the tractor, which was duly insured from the insurance company. Hence, the insurance company\ncannot escape from its liability to pay compensation by taking the plea that the trailer was not\nseparately insured.\nBut in the instant case, fact remains that at the time of accident, the trolley which was attached with\nthe tractor was carrying the Iron Rods and Bricks for the purpose of construction of a room to cover\nthe pakki boring as admitted by the appellant in paragraph-3 of the affidavit. Transportation of iron\nrods and bricks is certainly not an agricultural activity. The tractor was insured only for the purpose\nof agricultural activity. The tractor will have to be used only for agricultural purpose not for any\nother purpose including the construction of a room. Thus, there is a violation of the terms and\nconditions of the insurance policy. When it is so, then we are of the view that in the instant case, the\ninsurance company is not liable to pay the compensation and the owner of the tractor will have to\npay the compensation.\nHence, we uphold the judgment and order dated 27.01.2009 passed by Motor Accident Claims\nTribunal, Unnao in Claim Petition No. 117 of 2001, of course for different reason, as stated above.\nSince, the quantum is not disputed, the appellant shall deposit the balance amount, if any, before\nthe Motor Accident Claims Tribunal, Unnao within a period of two months. We further direct the\nregistry to transmit the entire amount to the Motor Accident Claims Tribunal, Unnao, and the\nTribunal will proceed in terms of the award.\n\nIn view of the aforesaid, the appeal is dismissed.\nOrder Date :-16.07.2010 VNP/-"
+      },
+      {
+       "section": "body",
+       "score": 0.478,
+       "text": "or and it has no independent driving system.\nTherefore, it is not required to be insured under the provisions of Motor Vehicles Act, 1988 and\ninsurance company is liable to pay the compensation.\nAccording to the appellant's counsel, deceased was driving the scooter without holding any valid\nlicense. He also submits that at the time of accident, the tractor was used to transport the bricks and\niron rods for the purpose of construction of Pakki Boring in a room to secure the boring equipments\nfor irrigation purposes. So, the tractor was used for agricultural purposes. Its driver was having the\n\nvalid driving license to drive the tractor and at the time of accident, the tractor was duly insured. So,\nthe liability will have to be fixed against the insurance company. He relied on the ratio laid down in\nthe cases of Nagashetty v. United India Insurance Company Ltd.; 2001 A.C.J. 1441; 2001 (3) T.A.C.\n511 and also a judgement in the case of Oriental Insurance Co. Ltd. v. J. Kotiratnama, 2000 (3) An.\nW.R. 91.\nOn the other hand, learned counsel for the insurance company submits that the tractor was insured\nbut trolley was not insured. No premium was paid for the trolley as per Section 61 of the Motor\nVehicles Act, 1988. He further submits that the tractor was insured only for the purpose of\nagricultural use but the appellant was carrying the bricks and iron rods in the trolley. So, it is the\nviolation of the terms and conditions of the policy. Again, he repeated that the trolley is not the part\nof the tractor as no premium for the trolley was paid to the insurance company.\nWe have heard both the parties at length and gone through the material available on record.\nThere is no dispute regarding the accident or amount of compensation. The only dispute is that who\nwill pay the compensation i.e. the owner of the tractor or the insurance company.\nIn the instant case, the tractor in question (No. U.P. 35-B 1649) was duly insured with the insurance\ncompany. Admittedly, no separate premium was paid for the trolley. This was the specific defense\ntaken by the insurance company.\nThe Hon'ble Supreme Court in the case of National Insurance Company v."
+      },
+      {
+       "section": "body",
+       "score": 0.454,
+       "text": "Author: Devi Prasad Singh\nBench: Devi Prasad Singh\n                                        -1-\n                                                                       Reserved\n        Case :- FIRST APPEAL FROM ORDER No. - 600 of 2009\nPetitioner :- Liyakat Ali\nRespondent :- Smt Chunni Devi\nPetitioner Counsel :- Rajeev Kr. Sinha\n                                     ***********\nHon'ble Devi Prasad Singh,J.\nHon'ble Dr. Satish Chandra,J.\n(Delivered by Hon'ble Dr. Satish Chandra, J) This appeal is filed under Section 173 of the Motor\nVehicles Act, 1988 against the judgment and order dated 27.01.2009 passed by Motor Accident\nClaims Tribunal, Unnao in Claim Petition No. 117 of 2001 whereby an award of Rs.1,18,850/- was\nawarded against the appellant.\nThe brief facts of the case in narrow compass are that on 02.12.2000, one Sri Arvind Kumar was\ngoing on scooter to see off his relative. When he reached near Hyderabad Paisara, one Tractor No.\nU.P. 35-B 1649 took a sharp turn. The Iron Rods loaded in the trolley (trailer) attached to the tractor\nin question hits the deceased Arvind Kumar, who died on the spot. The FIR was lodged. The Tractor\nwas insured but trolley was not insured. So, the liability was fixed against the owner of the Tractor\ni.e. appellant by the Motor Accident Claims Tribunal for Rs.1,18,850/-. Being aggrieved, he filed the\npresent appeal.\nDuring the course of argument, learned counsel for the appellant submits that the trailer is the part\nof the tractor and tractor was duly insured. Independently, the tractor or trolley is not of any use.\nWith the tractor, some equipments or trolley will have to be attached for the purpose of agricultural\nactivity. He further submits that trailer/trolley falls within the definition of the vehicles, as such, it is\nan attachment made to the prime mover of tractor and it has no independent driving system.\nTherefore, it is not required to be insured under the provisions of Motor Vehicles Act, 1988 and\ninsurance company is liable to pay the compensation.\nAccording to the appellant's counsel, deceased was driving the scooter without holding any valid\nlicense."
+      },
+      {
+       "section": "body",
+       "score": 0.444,
+       "text": "n the instant case, the tractor in question (No. U.P. 35-B 1649) was duly insured with the insurance\ncompany. Admittedly, no separate premium was paid for the trolley. This was the specific defense\ntaken by the insurance company.\nThe Hon'ble Supreme Court in the case of National Insurance Company v. Chinnamma and others;\n2004 (3) TAC 577 SC defines the meaning of tractor and trailer, which reads as under:\n\"Tractor: 'tractor' means a motor vehicle which is not itself constructed to carry any\nload (other than equipment used for the purpose of population); but excludes a road\nroller.\nTrailer: trailer means by any vehicle, other than a semi-trailer and a side-car, drawn\nor intended to be drawn by a motor vehicles.\"\nIn the case of Parsottambhai Kanbhai v. Panchiben alias Ratanben, 1977 A.C.J. 441 Hon'ble Gujarat\nHigh Court made an observation that \"As the trailer is included in the expression motor vehicle, it\nwas required to be insured.\nThe word 'trailer' was separately defined from the inclusive definition, which was made. In such an\nevent, the meaning assigned to the respective words has to be culled out. As can be seen from the\nvarious definitions like articulated vehicles, contract carriage, goods carriage, heavy goods vehicle,\nheavy passenger, motor vehicle, invalid carriage, maxi cab, motor cab, motor car, motor cycle,\nomnibus, private service vehicles, they were defined as motor vehicles including tractor, but the\ntrailer was defined as motor vehicle, which was intended to drawn by a motor vehicle. Thus, it is\nevident that it is not a mechanically propelled vehicle either power of propulsion is transmitted from\nexternal or internal sources. Therefore, even though, Section 2 (46) embraces trailer within the"
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_002",
+      "title": "Liyakat Ali vs Smt Chunni Devi",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 141.95
+   },
+   {
+    "seq": 13,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_028 focus='permit route conditions passenger private vehicle hire' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_028"
+     ],
+     "focus": "permit route conditions passenger private vehicle hire",
+     "title": "United India Insurance Co. Ltd., Thr ... vs Sukumarbai Suryakant Nikam And Ors",
+     "court": "In The High Court Of Judicature At Bombay Bench At Aurangabad",
+     "holding": "The Tribunal erred in passing an order of 'pay and recover' against the insurance company when passengers travelling in a private vehicle for hire or reward are not third parties and their risk is not covered under the Act policy, and therefore the insurer is completely exonerated.",
+     "ratio": "Where a passenger is travelling in a private vehicle for hire or reward in breach of policy conditions, such a passenger is not a 'third party' under the Act policy, and the Tribunal or Court cannot invoke 'pay and recover' to compel the insurer to satisfy the award and recover from the owner.",
+     "passages": [
+      {
+       "section": "body",
+       "score": 0.399,
+       "text": "vered held to be justified.\n14 Further, note can be taken of the decision of the Hon'ble Apex Court in New India Assurance\nCompany Ltd. Vs. Asha Rani [AIR 2003 SC 607]. It has been laid down that the term \"any person\"\nused in Section 147 of the Motor Vehicle Act mean \"third Party\" but not passenger. The Hon'ble\nApex Court has further laid down in Asha Rani's case (supra), that in the new provisions and\n\"post-1994\" also, there is no statutory liability on the owner of the vehicle to get insurance for any\npassenger travelling in goods vehicle. In view of this, it was further observed that the insurer cannot\nbe made liable to pay compensation in respect of such passenger. In other words, it has been clearly\nlaid down that the passengers in a private vehicle are not to be treated as \"third party\". Further the\nratio in Asha Rani & Ors is reiterated by another Three Judge Bench of the Apex Court by\nsubsequent decisions in Oriental Insurance Company Ltd Vs. Devireddy Konda Reddy & Others\n[2003 (2) S.C.C. 339] and in 13 FA_2021_2018_Jd National Insurance Co. Ltd Vs. Ajit Kumar And\nOrs [2003 A.C.C. 277 (SC)] holding that the insurer of vehicle owner for unauthorized passenger of a\ngoods vehicle travelling cannot be made liable from the Act policy to indemnify; unless there is a\nspecific coverage of the risk by contractual policy obligations as envisaged under Section 147 of the\nAct.\n15 Further, in National Insurance Company Ltd. Vs. Parvathneni [2009(8) SCC 785], three Judge\nBench of Apex Court has pointed out that Article 142 of the Constitution of India does not cover the\ncases of pay and recover and that if the Insurance Company has no liability to pay at all, then it\ncannot be compelled by order of the Court in exercise of its jurisdiction under Article 142 of the\nConstitution of India to pay the compensation amount and later on recover it from the owner of the\nvehicle.\" However, the reference that was made has been disposed of on 17-09- 2013 by keeping the\nquestion of law open to be decided in an appropriate case."
+      },
+      {
+       "section": "body",
+       "score": 0.356,
+       "text": "o.1 towards passengers and\ntherefore, the Tribunal had come to a conclusion that there was breach of policy under Section\n149(2)(A)(ia) of the Motor Vehicles Act. In fact, before the Tribunal also many Judgments of Apex\nCourt were referred, however, based on the 9 FA_2021_2018_Jd decision in Saju P. Paul (supra)\nthe learned Tribunal had passed the order of pay and recover.\n11 Now those various pronouncements relied by both sides are required to be considered. In Baljit\nKaur's case, it was the case, wherein person travelling in goods vehicle as gratuitous passenger was\ninvolved. Taking into consideration the earlier pronouncements it was observed -\n\"Therefore, instead and in place of the insurer the owner of the vehicle shall be liable\nto satisfy the decree. However, since the law was not clear so long, the legal position\nas clarified herein shall have prospective effect. Therefore, in the interest of justice\nwill be subserved if the appellant herein (insurance company) is directed to satisfy\nthe awarded amount in favour of the claimant, if not already satisfied, and recover\nthe same from the owner of the vehicle.\"\n\nThereafter, this ratio was followed in many other cases. In Manuara Khatun's case (supra) taking\nnote of Saju P. Paul's case it was observed -\n\"We find no merit in any of the submissions. Firstly, as mentioned above, we find\nmarked similarity in the facts of this case and the one involved in Saju P. Paul case.\nSecondly, merely because the compensation has not yet been paid to the claimants\nthough the case is quite old (16 years) like the one in Sanju P. Paul case, it cannot be a\nground to deny the claimants the relief claimed in these appeals. Thirdly, this Court\nhas already considered and rejected the argument 10 FA_2021_2018_Jd regarding\nnot granting of the relief of the nature claimed herein due to pendency of the\nreference to a larger Bench as would be clear from para 26 of the judgment in Saju P.\nPaul. That apart, the learned counsel for the appellants stated at the Bar that the\nreference made to the larger Bench has since been disposed of by keeping the issue\nundecided."
+      },
+      {
+       "section": "body",
+       "score": 0.353,
+       "text": "ent No.1, was \"Act\nPolicy\". The said policy does not cover the risk of the occupants. As per Section 147 of Motor\nVehicles Act, question that is required to be answered is, whether the risk of said occupant is\ncovered under the terms of policy. Tribunal had considered only Section 147(2) of the M.V. Act, but\nfailed to consider that deceased could not have 6 FA_2021_2018_Jd been termed as \"third party\";\nsince he himself was the occupant of the jeep. Risk of occupant i.e. deceased was not covered at all,\nso also, his risk cannot be said to have been statutorily covered. Under such circumstance, the order\nof 'pay and recover' passed against the insurance company is illegal, deserves to be set aside.\n8 It has been also vehemently submitted on behalf of the appellant that in the catena of Judgments\nby the Supreme Court; though the order of 'pay and recover' has been passed, the said course was\nadopted by Apex Court while exercising its power under Section 142 of the Constitution of India.\nThe said power cannot be used by the Tribunal or by this Court. He, therefore, prayed for\nexonerating the insurance company. He has relied on -\n1 Traders Pvt. Ltd., Ahmedabad and another vs. Sunanda wd/o Krishna Machivale and others, 2008\nSCC OnLine Bom 2 United India Insurance Company Ltd. vs. Anubai Gopichand Thakare and\n\nothers, 2008(1) Mh.L.J. 73 3 Manuara Khatun and others vs. Rajesh Kumar Singh and others, 2017\n(4) SCC 796 4 National Insurance Co. Ltd. vs. Baljit Kaur and others, (2004) 2 SCC 1 5 Manager,\nNational Insurance Company Ltd. vs. Saju P. Paul 7 FA_2021_2018_Jd and another, (2013) 2 SCC\n41 6 National Insurance Company Ltd. vs. Anand Sawant and others, 2009 SCC OnLine Bom 490 7\nShamanna vs. Divisional Manager the Oriental Insurance Co.\nLtd., 2018 SCC OnLine SC 849 8 Rani and others vs. National Insurance Company Limited and\nothers, (2018) 8 SCC 492 9 Singh Ram vs. Nirmala and others, (2018) 3 SCC 800 10 Bajaj Allianz\nGeneral Insurance Company Ltd. vs. Deoram, 2017 SCC OnLine Bom 9326 11 Dr. T.V. Jose vs.\nChacko P.M. alias Thankachan and others, (2001) 8 SCC 748 12 United India Insurance Co. Ltd.,\nShimla vs."
+      },
+      {
+       "section": "body",
+       "score": 0.352,
+       "text": "ion the other evidence on record, compensation of\nRs.7,79,800/- has been awarded together with interest. The said amount of compensation has been\ndirected to be paid by the insurance company, first and then liberty was granted to recover the said\namount from respondent No.1 to the insurance company. The insurance company is challenging the\norder of pay and recover in this case.\n6 Heard learned Advocate Mr. S.G. Chapalgaonkar for appellant, learned Advocate Mr. R.S. Shinde\nfor respondent Nos.1 to 3 and learned Advocate Mr. V.V. Bhavthankar for respondent No.4. It can\nbe seen that the original claimants have not filed any appeal challenging the quantum of\ncompensation. So also, the respondent No.4 driver-cum-owner has also not filed any appeal\nchallenging the findings, which have been given against him.\n5 FA_2021_2018_Jd Under such circumstance, the scope of the appeal is limited. Taking into\nconsideration the limited scope, following points arise for determination. Findings and reasons for\nthe same are as follows.\nWhether the learned Member, Motor Accident Claims Tribunal was justified in passing order of 'pay\nand recover' against the insurance company or the insurance company ought to have been totally\nexonerated from liability to pay the amount of compensation ?\nREASONS 7 It has been vehemently submitted on behalf of the appellant that the defence, that was\ntaken by the insurance company, was that the deceased was travelling in a private jeep for 'hire or\nreward'. When the said fact was proved and it was against the policy terms/ conditions, then it being\ninherent breach; no question of liability to pay compensation to the claimants had arisen. In fact,\nthe deceased was a 'gratuitous passenger'. The policy, which was taken by respondent No.1, was \"Act\nPolicy\". The said policy does not cover the risk of the occupants. As per Section 147 of Motor\nVehicles Act, question that is required to be answered is, whether the risk of said occupant is\ncovered under the terms of policy. Tribunal had considered only Section 147(2) of the M.V."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_028",
+      "title": "United India Insurance Co. Ltd., Thr ... vs Sukumarbai Suryakant Nikam And Ors",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 141.98
+   },
+   {
+    "seq": 14,
+    "kind": "tool_call",
+    "label": "search_precedents",
+    "detail": "query=\"permit\" \"route\" breach of permit conditions vehicle used outside perm... top_k=15",
+    "payload": {
+     "args": {
+      "query": "\"permit\" \"route\" breach of permit conditions vehicle used outside permitted route area unauthorized route",
+      "top_k": 15
+     }
+    },
+    "docs": [],
+    "elapsed_s": 145.5
+   },
+   {
+    "seq": 15,
+    "kind": "tool_call",
+    "label": "screen_corpus",
+    "detail": "criteria=Judgment dealing with breach of permit conditions or route conditions ...",
+    "payload": {
+     "args": {
+      "criteria": "Judgment dealing with breach of permit conditions or route conditions (as opposed to driving licence defects). This includes: vehicle used outside permitted area/route, vehicle used for purpose not covered by permit, unauthorized passengers in a goods vehicle, vehicle used for hire without proper permit, or any other breach of the terms of the permit/route authorization."
+     }
+    },
+    "docs": [],
+    "elapsed_s": 145.5
+   },
+   {
+    "seq": 16,
+    "kind": "retrieval",
+    "label": "search_precedents",
+    "detail": "query='\"permit\" \"route\" breach of permit conditions vehicle used outside permitted route area unauthorized route' favours=None k=15",
+    "payload": {
+     "query": "\"permit\" \"route\" breach of permit conditions vehicle used outside permitted route area unauthorized route",
+     "favours": null
+    },
+    "docs": [
+     {
+      "doc_id": "doc_025",
+      "title": "New India Assurance Co., Ltd., vs Yallavva W/O Yamanappa Dharnakeri",
+      "dense_score": 0.3652957081794739,
+      "dense_rank": 21,
+      "sparse_score": 8.493552207946777,
+      "sparse_rank": 5,
+      "fused_score": 0.027730294396961064,
+      "fused_rank": 5,
+      "rerank_score": 3.0,
+      "final_rank": 1,
+      "why": "General breach of policy conditions under Section 149(2) is tangentially relevant but no specific route/permit issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_033",
+      "title": "Satto & Ors vs New India Assurance Co Ltd",
+      "dense_score": 0.3751786947250366,
+      "dense_rank": 18,
+      "sparse_score": 6.215866565704346,
+      "sparse_rank": 12,
+      "fused_score": 0.026709401709401708,
+      "fused_rank": 10,
+      "rerank_score": 3.0,
+      "final_rank": 2,
+      "why": "General breach of policy conditions with pay-and-recover, but no specific route/permit issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_035",
+      "title": "United India Insurance Company Limited vs V.Vijayakumar",
+      "dense_score": 0.4401741623878479,
+      "dense_rank": 3,
+      "sparse_score": 10.048881530761719,
+      "sparse_rank": 3,
+      "fused_score": 0.031746031746031744,
+      "fused_rank": 1,
+      "rerank_score": 2.0,
+      "final_rank": 3,
+      "why": "Issue is driver's license breach, not route/permit breach; factual posture does not match.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_001",
+      "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+      "dense_score": 0.4621122479438782,
+      "dense_rank": 2,
+      "sparse_score": 5.439060211181641,
+      "sparse_rank": 17,
+      "fused_score": 0.029116045245077504,
+      "fused_rank": 2,
+      "rerank_score": 2.0,
+      "final_rank": 4,
+      "why": "Issue is special endorsement for hazardous goods, not route/permit breach; no factual alignment.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_002",
+      "title": "Liyakat Ali vs Smt Chunni Devi",
+      "dense_score": 0.39236003160476685,
+      "dense_rank": 7,
+      "sparse_score": 5.504404067993164,
+      "sparse_rank": 16,
+      "fused_score": 0.028083267871170464,
+      "fused_rank": 4,
+      "rerank_score": 2.0,
+      "final_rank": 5,
+      "why": "Issue is agricultural vs non-agricultural use, not route/permit breach; factual posture differs.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_024",
+      "title": "Sunil Shreesail Killiket vs Subbraya",
+      "dense_score": 0.37581920623779297,
+      "dense_rank": 17,
+      "sparse_score": 8.304363250732422,
+      "sparse_rank": 8,
+      "fused_score": 0.027692895339954164,
+      "fused_rank": 6,
+      "rerank_score": 2.0,
+      "final_rank": 6,
+      "why": "Issue is invalid driving licence, not route/permit breach; ratio does not bear on question.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_034",
+      "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+      "dense_score": 0.3808388113975525,
+      "dense_rank": 16,
+      "sparse_score": 7.783567428588867,
+      "sparse_rank": 10,
+      "fused_score": 0.027443609022556388,
+      "fused_rank": 8,
+      "rerank_score": 2.0,
+      "final_rank": 7,
+      "why": "Issue is expired licence, not route/permit breach; ratio on statutory liability does not address unauthorized route.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_032",
+      "title": "S.Iyyapan vs M/S United India Insurance Co.Ld.& Anr",
+      "dense_score": 0.38322973251342773,
+      "dense_rank": 11,
+      "sparse_score": 2.9398951530456543,
+      "sparse_rank": 21,
+      "fused_score": 0.0264301860545992,
+      "fused_rank": 11,
+      "rerank_score": 2.0,
+      "final_rank": 8,
+      "why": "Issue is licence endorsement for commercial vehicle, not route/permit breach; ratio does not apply.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_030",
+      "title": "D a d a p e e r a S / O A b d u l S a l a m S a b v s M a l l e s h M S / O Hanumanthappa",
+      "dense_score": 0.3813090920448303,
+      "dense_rank": 15,
+      "sparse_score": 4.147249221801758,
+      "sparse_rank": 20,
+      "fused_score": 0.025833333333333333,
+      "fused_rank": 14,
+      "rerank_score": 2.0,
+      "final_rank": 9,
+      "why": "Issue is unauthorized passenger on tractor mud-guard, not vehicle used outside permitted route; ratio on Regulation 28 does not match.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_027",
+      "title": "The Manager vs Chennamma",
+      "dense_score": 0.36525505781173706,
+      "dense_rank": 22,
+      "sparse_score": 5.575298309326172,
+      "sparse_rank": 14,
+      "fused_score": 0.025708635464733027,
+      "fused_rank": 15,
+      "rerank_score": 2.0,
+      "final_rank": 10,
+      "why": "Issue is driver's licence endorsement, not route/permit breach; ratio does not bear on question.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_028",
+      "title": "United India Insurance Co. Ltd., Thr ... vs Sukumarbai Suryakant Nikam And Ors",
+      "dense_score": 0.36818379163742065,
+      "dense_rank": 20,
+      "sparse_score": 9.270428657531738,
+      "sparse_rank": 4,
+      "fused_score": 0.028125,
+      "fused_rank": 3,
+      "rerank_score": 1.0,
+      "final_rank": 11,
+      "why": "Issue is passenger status in private vehicle, not route/permit breach; ratio irrelevant.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_009",
+      "title": "Kamal S/O Shiv Ram vs Mursleem S/O Mohd. Akil",
+      "dense_score": 0.3580113649368286,
+      "dense_rank": 23,
+      "sparse_score": 8.479703903198242,
+      "sparse_rank": 6,
+      "fused_score": 0.02719970792259949,
+      "fused_rank": 9,
+      "rerank_score": 1.0,
+      "final_rank": 12,
+      "why": "Issue is contributory negligence and no licence, not route/permit breach; ratio irrelevant.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_055",
+      "title": "Smt Iravva K Purantar vs S Venkatesh",
+      "dense_score": 0.35194694995880127,
+      "dense_rank": 28,
+      "sparse_score": 10.69900894165039,
+      "sparse_rank": 2,
+      "fused_score": 0.02749266862170088,
+      "fused_rank": 7,
+      "rerank_score": 0.0,
+      "final_rank": 13,
+      "why": "Completely different area (specific performance); no relevance to motor accident or permit conditions.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_015",
+      "title": "State Of H.P vs Krishan Lal",
+      "dense_score": 0.3885972499847412,
+      "dense_rank": 9,
+      "sparse_score": 2.0215892791748047,
+      "sparse_rank": 26,
+      "fused_score": 0.026120660599932594,
+      "fused_rank": 12,
+      "rerank_score": 0.0,
+      "final_rank": 14,
+      "why": "Criminal appeal on rash driving; no connection to permit conditions or route breach.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_053",
+      "title": "Ashokbhai Shankar Chaudhary & vs Jayendra Virendra Sharma &",
+      "dense_score": 0.3520190119743347,
+      "dense_rank": 27,
+      "sparse_score": 8.086263656616211,
+      "sparse_rank": 9,
+      "fused_score": 0.025987006496751626,
+      "fused_rank": 13,
+      "rerank_score": 0.0,
+      "final_rank": 15,
+      "why": "Civil injunction case; no relevance to motor accident or permit conditions.",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 169.67
+   },
+   {
+    "seq": 17,
+    "kind": "screen",
+    "label": "screen_corpus",
+    "detail": "criteria='Judgment dealing with breach of permit conditions or route conditions (as opposed to driving licence defects). This includes: vehicle used outside permitted area/route, vehicle used for purpose not covered by permit, unauthorized passengers in a goods vehicle, vehicle used for hire without proper permit, or any other breach of the terms of the permit/route authorization.' -- screened 56/56, 10 qualified",
+    "payload": {
+     "criteria": "Judgment dealing with breach of permit conditions or route conditions (as opposed to driving licence defects). This includes: vehicle used outside permitted area/route, vehicle used for purpose not covered by permit, unauthorized passengers in a goods vehicle, vehicle used for hire without proper permit, or any other breach of the terms of the permit/route authorization.",
+     "n_screened": 56,
+     "doc_ids": [
+      "doc_001",
+      "doc_002",
+      "doc_014",
+      "doc_025",
+      "doc_026",
+      "doc_028",
+      "doc_029",
+      "doc_030",
+      "doc_033",
+      "doc_035"
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_001",
+      "title": "",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "The judgment deals with a breach of policy conditions (permit/route conditions) leading to pay-and-recover rights for the insurer.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_002",
+      "title": "",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "The judgment concerns use of a tractor for transporting passengers (unauthorized purpose), which is a breach of permit/route conditions.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_014",
+      "title": "",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "The judgment deals with gratuitous passengers in a goods vehicle (unauthorized passengers), a breach of permit conditions.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_025",
+      "title": "",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "The judgment deals with breach of policy conditions under Section 149(2) MV Act, which includes permit/route breaches.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_026",
+      "title": "",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "The judgment concerns passengers in a goods vehicle (unauthorized passengers), a breach of permit conditions.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_028",
+      "title": "",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "The judgment concerns passengers in a private vehicle for hire/reward (unauthorized use), a breach of permit conditions.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_029",
+      "title": "",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "The judgment concerns gratuitous passengers in a goods vehicle/tractor (unauthorized passengers), a breach of permit conditions.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_030",
+      "title": "",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "The judgment concerns travelling on tractor mud-guard (violation of Regulation 28), a breach of route/permit conditions.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_033",
+      "title": "",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "The judgment deals with breach of policy conditions leading to pay-and-recover, which includes permit/route breaches.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_035",
+      "title": "",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "The judgment deals with breach of policy conditions (pay-and-recover), which includes permit/route breaches.",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 224.9
+   },
+   {
+    "seq": 18,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_014 focus=gratuitous passenger goods vehicle permit breach unauthorized passenge...",
+    "payload": {
+     "args": {
+      "doc_id": "doc_014",
+      "focus": "gratuitous passenger goods vehicle permit breach unauthorized passenger"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 228.45
+   },
+   {
+    "seq": 19,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_026 focus=passenger goods vehicle permit breach unauthorized",
+    "payload": {
+     "args": {
+      "doc_id": "doc_026",
+      "focus": "passenger goods vehicle permit breach unauthorized"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 228.45
+   },
+   {
+    "seq": 20,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_029 focus=gratuitous passenger tractor goods vehicle permit breach",
+    "payload": {
+     "args": {
+      "doc_id": "doc_029",
+      "focus": "gratuitous passenger tractor goods vehicle permit breach"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 228.45
+   },
+   {
+    "seq": 21,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_030 focus=mud-guard regulation 28 tractor permit route breach",
+    "payload": {
+     "args": {
+      "doc_id": "doc_030",
+      "focus": "mud-guard regulation 28 tractor permit route breach"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 228.45
+   },
+   {
+    "seq": 22,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_014 focus='gratuitous passenger goods vehicle permit breach unauthorized passenger' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_014"
+     ],
+     "focus": "gratuitous passenger goods vehicle permit breach unauthorized passenger",
+     "title": "Shivlal And Ors. Etc. vs Smt. Rukmabai And Ors.",
+     "court": "Motor Accident Claims Tribunal Ratlam / Madhya Pradesh High Court",
+     "holding": "The High Court held that the insurer is not liable to pay compensation for the death of a gratuitous passenger carried in a goods vehicle, dismissed the owners' appeal regarding negligence and quantum, and dismissed the claimants' cross-objections for enhancement.",
+     "ratio": "Where a passenger travelling in a goods vehicle is a gratuitous passenger whose risk is not statutorily required to be covered under Section 95 of the Motor Vehicles Act and is not covered by the terms of the insurance policy, the insurer cannot be held liable for compensation.",
+     "passages": [
+      {
+       "section": "judgment",
+       "score": 0.555,
+       "text": "the\ncontention that the insurance policy in respect of a goods vehicle did not prohibit carrying of\npassengers as such but only prohibited carrying them for hire or reward was negatived as involving\nviolation of permit condition and also of the trust which is the basis of the contract of insurance.\n\n19. The contract of insurance in this case was as per terms and conditions embodied in Ex. D-1.\nThereunder the accident tractor was to be used only under a public carrier's permit under the Act.\nThe policy expressly prohibits use of the vehicle for conveyance of passengers for hire or reward and\nin consideration of additional premium covers the risk of only two categories of the employees of the\ninsured. It may also be pointed out that under Section 96(2)(b)(i) of the Act the insurance company\nis entitled to avoid its liability if the vehicle is used in contravention of specified condition of the\npermit.\n20. We are aware of the D. B. decision in Patharibai's case 1985 Acc CJ 526 : (AIR 1985 Madh Pra\n103) where this Court holding that the contract of employment occurring in proviso (ii) to Section\n95(1)(b) of the Act need not necessarily be with the insured alone, held the insurer liable where the\ndeath of a labourer of the hirer of the truck had taken place while being carried in the truck. In this\nconnection the decisions in Abdul Razak's case 1984 Acc a 44 : (AIR 1983 All 400) and Ramesh\nKumar's case AIR 1979 Madh Pra 124 are also pertinent.\n21. The conflict of judicial opinion noted in Patharibai's case (supra) need not however, detain us. In\nthe instant case, the deceased Laxminarayan cannot be said to be travelling in the tractor by reason\nof or in pursuance of a contract of employment. There is nothing to indicate that he had hired the\ntractor or had goods to take care of. Therefore, the ratio of the decision in Patharibai's case (supra)\nis not attracted."
+      },
+      {
+       "section": "judgment",
+       "score": 0.437,
+       "text": "at\nthe truck in question was not a vehicle in which passengers were carried for hire or\nreward. Learned counsel for the appellants failed to satisfy us that the insurance\ncompany could be held liable either by virtue of the provisions of Section 95 of the\nAct or by the terms of the insurance policy. There is nothing on record to show that\nthe policy of insurance covered the liability in question even though it was not\nrequired to be covered under the provisions of Section 95 of the Act.\"\nIn the D.B. decision in New India Assurance Co. v. Mehrunnisa (1983 Jab LJ (Note) 21) it has been\nheld that the liability of the insurer has to be decided in accordance with Section 95 of the Act or the\nterms of the policy and Rule 111 of the M. P. Motor Vehicles Rules 1974 does not affect the\nprovisions of Section 95. Rule 111(1) reads thus : --\n\"Rule 111(1). Save in the eases of a vehicle which is being used for the carriage of\npolice (public?) or a stage carriage in which goods are being carried in addition to\npassengers no person shall be carried in goods vehicle other than a bona fide\nemployee of the owner or the hirer of the vehicle, or the owner or the hirer and except\nin accordance with this rule.\"\nIt was held that the insurer was not liable in respect of the death of the owner of goods travelling in\nthe goods vehicle. In the D.B. decision in Thakurbai's case 1983 MPWN 355 according to the policy\nthe goods vehicle was to be used only under a public carrier's permit and use for conveyance of\npassengers for hire or reward was not covered, it was held by this Court that in respect of the death\nof a passenger in the truck, the insurer was not liable irrespective of the fact whether he was being\ncarried gratuitously or for hire. In the S.B. decision in Chameli Devi's case 1982 Jab LJ 290 the\ncontention that the insurance policy in respect of a goods vehicle did not prohibit carrying of\npassengers as such but only prohibited carrying them for hire or reward was negatived as involving\nviolation of permit condition and also of the trust which is the basis of the contract of insurance."
+      },
+      {
+       "section": "judgment",
+       "score": 0.416,
+       "text": "on of\nnegligence, the standard of proof required in a criminal trial is not to be applied and broad view on\nthe basis of probabilities is the proper approach.\n16. In the instant case, a heavy vehicle like the tractor had turned turtle and normally such a thing\ndoes not happen with a careful driving. The applicability of the maxim res ipsa loquitur is clearly,\ntherefore, attracted in this case and there is no credible material to rebut the presumption of\nnegligence. We, therefore, hold that the learned Tribunal committed no error in coming to the\nconclusion that a negligence on the part of Shivlal was the cause of the accident.\n17. It is well settled that the insurer's liability is limited to the statutory minimum required by\nSection 95(2) of the Act. The policy taken to cover the required minimum is generally referred to as\n\nan Act policy. The law does not require that contract of insurance as respects goods vehicle must\nalso cover risk to the passengers. The Supreme Court decision in Pushpabai's case, AIR 1977 SC 1735\n: 1977 Acc CJ 343 relates to the death of a passenger in a Car. In para 22, the Supreme Court\nobserved as under : --\nTherefore it is not required that a policy of insurance should cover risk to the passengers who are\nnot carried for hire or reward. As under Section 95, the risk to a passenger in a vehicle who is not\ncarried for hire or reward is not required to be insured the plea of the counsel for the insurance\ncompany will have to be accepted and the insurance company held not liable under the\nrequirements of the Motor Vehicles Act.\n18. In the D. B. decision in Manguba's case (1982) 2 MPWN 193 this Court had observed to the\nfollowing effect :--\n\"As regards the liability of the insurance Company, it was not disputed before us that\nthe truck in question was not a vehicle in which passengers were carried for hire or\nreward. Learned counsel for the appellants failed to satisfy us that the insurance\ncompany could be held liable either by virtue of the provisions of Section 95 of the\nAct or by the terms of the insurance policy."
+      },
+      {
+       "section": "judgment",
+       "score": 0.387,
+       "text": "deceased Laxminarayan cannot be said to be travelling in the tractor by reason\nof or in pursuance of a contract of employment. There is nothing to indicate that he had hired the\ntractor or had goods to take care of. Therefore, the ratio of the decision in Patharibai's case (supra)\nis not attracted. Laxminarayan was, on the material on record, a gratuitous passenger and in view of\nthe decision in Pushpabai's case, (AIR 1977 SC 1735) (supra) his risk was not required to be covered\nunder Section 95 of the Act and the absence of any terms in the policy of insurance covering the risk\nof such a passenger, no liability can certainly be fastened on the insurance company. We hold\naccordingly.\n22. This brings us to the question of adequacy of the award.\n23. Under Section 110-B of the Act, the Tribunal is required to make an award determining the\namount of compensation which appears to it to be just. The provision has a wider ambit than the\nwords under Sections 1A and 2 of the Fatal Accidents Act.\n24. There can be no exact uniform rule for measuring the value of the human life and the measure of\ndamages cannot be arrived at by any precise mathematical calculation. It has rightly been observed\nthat in the assessment of compensation arithmetic is a good servant but a bad master. Fall in the\npurchasing power of ruppe has also to be kept in view in determining the amount of compensation.\n25. One of the methods of assessing damages is by finding out tAhe amount of annual dependency\ni.e. the multiplicand and the number of years' purchase i.e. the multiplier and it was adopted in this\nCourt's decision in State of M.P. v. Devi Ramat, 1981 Jab LJ 42 : (AIR 1981 Madh Pra 173).\n26. On a careful consideration of the material on record, we find that the amount of compensation\nawarded by the learned Tribunal is adequate. It is certainly not such as to require any interference."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_014",
+      "title": "Shivlal And Ors. Etc. vs Smt. Rukmabai And Ors.",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 228.53
+   },
+   {
+    "seq": 23,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_026 focus='passenger goods vehicle permit breach unauthorized' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_026"
+     ],
+     "focus": "passenger goods vehicle permit breach unauthorized",
+     "title": "National Insurance Co. Ltd vs Ellappa ... 1St",
+     "court": "In The High Court Of Judicature At Madras",
+     "holding": "The insurance company is not statutorily liable to cover passengers travelling in a goods vehicle, but considering the prolonged litigation and status of the claimants, a 'pay and recover' order is issued against the insurance company.",
+     "ratio": "The insurance company has no statutory liability to pay compensation to passengers travelling in a goods vehicle, but appellate courts retain the discretion to apply the 'pay and recover' doctrine depending on the facts and circumstances of each case.",
+     "passages": [
+      {
+       "section": "body",
+       "score": 0.497,
+       "text": "These petitions are not maintainable. It is true that the goods vehicle belonging to\nthe first respondent involved in the accident, was insured with this respondent. But,\nas per the policy conditions, passengers could not be carried in a goods vehicle and\nsuch travel is not authorised by the policy. The first respondent received payment\nfrom 52 persons and asked them to travel in his vehicle as passengers, which is\nviolative of the policy conditions and hence this respondent is not liable to pay\ncompensation. Excepting the averments in MCOP No.430/1996 to 432/1996, the\nother claimants and the three other deceased persons by name Govindappa,\nSikkalamma and Iyanarappa had gone to attend the marriage of the brother-in-law of\nfirst respondent and on return in the vehicle of first respondent, the accident\nhappened. Since the first respondent has allowed passengers to travel in a goods\nvehicle, the insurance company is not liable to pay compensation. The allegations as\nregards the nature of injuries, disablement, pain and suffering, avocation, age and\nincome are denied. Hence the petitions have to be dismissed.\nb) In the additional counter filed by the second respondent, it is stated thus, at the\ntime of the accident, first respondent did not have any valid licence to drive the\nvehicle and on this ground, the petitions should be dismissed.\n4. The following are the particulars of claim in each claim petition and quantum of compensation\nawarded by the Tribunal.\n\nSl.No. MCOP No. Compensation claimed Compensation awarded by the Tribunal 226/1996\n30,000/-\n13,000/-\n264/1996 50,000/-\n7,000/-\n263/1996 50,000/-\n23,000/-\n240/1996 30,000/-\n9,000/-\n239/1996 30,000/-\n10,000/-\n430/1996 1,00,000/-\n64,000/-\n265/1996 50,000/-\n12,000/-\n432/1996 50,000/-\n40,000/-\n271/1996 30,000/-\n7,000/-\n227/1996 30,000/-\n9,000/-\n431/1996 50,000/-\n40,000/-"
+      },
+      {
+       "section": "body",
+       "score": 0.459,
+       "text": "he\nSupreme Court and finally concluded that travel in the goods vehicle by the passengers not being the\nowner of any goods carried thereon, are not expected to be covered by the policy and the insurance\ncompany could not be anchored with the liability to pay compensation. The Supreme Court has also\n\nclarified the earlier positions settled already and laid down law in this regard.\n12. In the above case, the earlier decision of the Supreme Court rendered by a larger bench in\n2003(2)SCC 223 \u0016 New India Assurance Co. Ltd. v. Asha Rani and Others has been followed and the\nview has been expressed in paragraph 10 as follows:-\n\" 10. The effect of the 1994 Amendment came up for consideration in National\nInsurance Co. Ltd. v. Baljit Kaur and others, 2004 (1) TN MAC 1(SC):2004 (2) S.C.C.\n1, wherein this Court following Asha Rani, 2004(2) TN MAC 387 (SC) (supra) opined\nthat the words \"injury to any person\" would only mean a third party and not a\npassenger travelling on a goods carriage whether gratuitous or otherwise. The\nquestion came up for consideration again in National Insurance Co. Ltd. v. Bommithi\nSubbhayamma, 2995(1) TN MAC 169 (SC) : 2005(12) S.C.C. 243, wherein upon\ntaking into consideration a large number of decisions, the said view was reiterated.\"\n13. In New India Assurance Co. Ltd. v. Vedwati and others, reported in 2007(1) TN MAC 205(SC) :\n2007(3) SCALE 397, the Hon'ble Supreme court has held as follows:-\n\" 13. The difference in the language of \"goods vehicle\" as appearing in the old Act and\n\"goods carriage\" in the Act is of significance. A bare reading of the provisions makes\nit clear that the legislative intent was to prohibit goods vehicle from carrying any\npassenger. This is clear from the expression \"in addition to passengers\" as contained\nin the definition of \"goods vehicle\" in the old Act. The position becomes further clear\nbecause the expression used \"goods carriage\" is solely for the carriage of goods.\nCarrying of passengers in a goods carriage is not contemplated in the Act. There is no\nprovision similar to Clause (ii) of the proviso appended to Section 95 of the old Act\nprescribing requirement of insurance policy."
+      },
+      {
+       "section": "body",
+       "score": 0.429,
+       "text": "heir Lordships had held that the passenger\ntravelling in a goods vehicle is not deemed to have been covered by insurance since there is no\nstatutory liability upon the insurer to compensate him since there is no contract to that effect. The\noperative portion of the judgment is extracted hereunder:-\n\n\" 10. The inevitable conclusion, therefore, is that provisions of the Act do not enjoin\nany statutory liability on the owner of a vehicle to get his vehicle insured for any\npassenger travelling in a goods carriage and the Insurer would have no liability\ntherefor.\"\n15. Similar view has been highlighted in Oriental Insurance Company Ltd. v. Devireddy Konda\nReddy and Ors \u0016 AIR 2003 S.C. 1009 : 2004 (2) TNMAC 383(SC) and National Insurance Company\nLtd. v. Ajit Kumar and Ors. reported in AIR 2003 S.C.3093 : 2004(1) TNMAC 9 (SC).\n16. An identical view has been echoed by a Full Bench decision of this court in a decision rendered in\n2009-I-CTC-1 between Branch Manager, United India Insurance Company Ltd., Dharmapuri Town\nvs. Nagammal and others. The decision is outcome of the following reference, made by a learned\nsingle judge of this court raising some doubts regarding applicability of the ratio contained in a\nDivision Bench decision of this court reported in 2006(1) MLJ 154 (M/s.United India Insurance vs.\nSelvam and others). The reference is as follows:-\n\" 28. In the light of the latest decisions of the Supreme Court, exonerating the\nInsurance Company from its liability to pay compensation for the death/injury to the\ngratuitous passenger travelling in a goods vehicle, substantial doubt arises whether\nthe decision of the Division Bench of this Court made in 2006(1) MLJ 154 could be\nfollowed.\n29. In view of the latest decisions of the Supreme Court, in my considered view, the\ndecision of the Division Bench of this Court made in 2006(1) MLJ 154 is to be\nclarified.\"\n17."
+      },
+      {
+       "section": "body",
+       "score": 0.407,
+       "text": "because the expression used \"goods carriage\" is solely for the carriage of goods.\nCarrying of passengers in a goods carriage is not contemplated in the Act. There is no\nprovision similar to Clause (ii) of the proviso appended to Section 95 of the old Act\nprescribing requirement of insurance policy. Even Section 147 of the Act mandates\ncompulsory coverage against death of or bodily injury to any passenger of \"public\nservice vehicle\". The proviso makes it further clear that compulsory coverage in\nrespect of drivers and conductors of public service vehicle and employees carried in\ngoods vehicle would be limited to liability under the Workmen\u0012s Compensation Act,\n1923 (in short \"W.C. Act\"). There is no reference to any passenger in \"goods carriage\".\n14. The inevitable conclusion, therefore, is that provisions of the Act do not enjoin any statutory\nliability on the owner of a vehicle to get his vehicle insured for any passenger travelling in a goods\ncarriage and the insurer would have no liability therefor.\"\n14. The learned counsel for the appellant also garnered support from another decision of Supreme\nCourt in 2008 (1) TNMAC 59 (SC) \u0016 Smt.Thokchom Ongbi Sangeeta alias Sangi Devi and Another\nV. Oriental Insurance Co. Ltd. and others, in which, Their Lordships had held that the passenger\ntravelling in a goods vehicle is not deemed to have been covered by insurance since there is no\nstatutory liability upon the insurer to compensate him since there is no contract to that effect. The\noperative portion of the judgment is extracted hereunder:-"
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_026",
+      "title": "National Insurance Co. Ltd vs Ellappa ... 1St",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 228.58
+   },
+   {
+    "seq": 24,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_029 focus='gratuitous passenger tractor goods vehicle permit breach' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_029"
+     ],
+     "focus": "gratuitous passenger tractor goods vehicle permit breach",
+     "title": "United India Insurance Co.Ltd vs Minor Mahesh Kanubhai & 2",
+     "court": "In The High Court Of Gujarat At Ahmedabad",
+     "holding": "The Court held that where passengers carried in a goods vehicle or tractor are gratuitous passengers whose risk is neither covered by statute nor by the insurance policy, the Claims Tribunal has no power under Section 149(4) and (5) to direct the insurance company to first pay the compensation and then recover it from the owner.",
+     "ratio": "In cases where a risk is neither statutorily required to be covered nor covered under the terms of the insurance policy (such as gratuitous passengers in a goods vehicle), the provisions of sub-sections (4) and (5) of Section 149 of the Motor Vehicles Act are not attracted, and neither the Claims Tribunal nor the High Court has the power to direct the insurer to pay the compensation and recover it from the owner.",
+     "passages": [
+      {
+       "section": "body",
+       "score": 0.563,
+       "text": "that as the provisions thereof do not enjoin any statutory liability on the owner of a\nvehicle to get his vehicle insured for any passenger travelling in a goods vehicle, the insurer would\nnot be liable therefor. It was further pointed out that in the present case the offending vehicle is a\ntractor. Reference was made to the Rules of Road Regulations, 1989 and more particularly to rule 28\nthereof which bears the heading 'Driving of tractors and goods vehicles' and lays down that a driver\nwhen driving a tractor shall not carry or allow any person to be carried on tractor. A driver of goods\ncarriage shall not carry in the driver's cabin more number of persons than that is mentioned in the\nregistration certificate and shall not carry passengers for hire and reward. It was submitted that\ntherefore, by virtue of rule 28, there is a prohibition against the driver in taking passengers in a\ntractor more than the number specified in the driver's cabin. Thus, the very act of taking more\npassengers than permissible in law is contrary to the provisions of the rules.\n\n9.2 Reference was made to the decision of the Supreme Court in the case of Deddappa & Ors. v.\nBranch Manager, National Insurance Co. Ltd., 2008 (3) G.L.H. 168, which was a case wherein the\ninsurance company had taken a plea that although the vehicle in question was insured by the owner\nfor the relevant period, but the cheque issued having been dishonoured, the policy was cancelled\nand thus, it was not liable therefor. The Supreme Court held that there is no doubt that beneficial\nlegislations should have liberal construction with a view to implementing the legislative intent but\nwhere such beneficial legislation has a scheme of its own, there is no C/FA/710/2007 JUDGMENT\nwarrant for the court to travel beyond the scheme and extend the scope of the statute on the pretext\nof extending the statutory benefit to those who are not covered by the scheme. Mr."
+      },
+      {
+       "section": "body",
+       "score": 0.534,
+       "text": "unambiguous. Where earlier, the words \"any person\" could not be held to include the owner of the\ngoods or his authorised representative travelling in the goods vehicle, Parliament has now made it\nclear that such a construction is not possible. The scope of the rationale does not, however, extend to\n\ncover the class of cases where gratuitous passengers for whom no insurance policy was envisaged\nand for whom no insurance premium was paid, employ the goods vehicle as a medium of\nconveyance. The court further held that having regard to the definition of \"goods carriage\" vis-a-vis\n\"public service vehicle\", it is clear that whereas goods carriage carrying any passenger is not\ncontemplated under the Act of 1988 as the same must be used solely for carrying the goods. The\ncourt held thus:\n\"17. By reason of the 1994 amendment what was added is, \"including owner of the\ngoods or his authorised representative carried in the vehicle\". The liability of the\nowner of the vehicle to insure it compulsorily, thus, by reason of the aforementioned\namendment included only the owner of the goods or his authorised representative\ncarried in the vehicle besides the third parties. The intention of Parliament, therefore,\ncould not have been that the words 'any person' occurring in section 147 would cover\nall persons who were travelling in a goods carriage in any capacity whatsoever. If\nsuch was the intention there was no necessity of Parliament to carry out an\namendment inasmuch as the expression 'any person' contained in sub-clause (i) of\nclause (b) of sub-section (1) of section 147 would have included the owner of the\ngoods or his authorised representative besides the passengers who are gratuitous or\notherwise.\n19."
+      },
+      {
+       "section": "body",
+       "score": 0.531,
+       "text": "icy conditions on account of the vehicle being\ndriven without a valid driving licence. Learned counsel for the insured contended\nthat it is enough if he establishes that he made all due enquiries and believed bona\nfide that the driver employed by him had a valid driving licence, in which case there\n\nwas no breach of the policy condition. As we have not decided on that contention it is\nopen to the insured to raise it before the Claims Claims Tribunal. In the present case,\nif the insurance company succeeds in establishing that there was breach of the policy\ncondition, the Claims Claims Tribunal shall direct the insured to pay that amount to\nthe insurer. In default the insurer shall be allowed to recover that amount (which the\ninsurer is directed to pay to the claimants-third parties) from the insured person.\"\n(Emphasis supplied)\n28. It may be noted that the other decisions of the Supreme Court which have been cited by the\nlearned advocates for the respective parties are in respect of cases where the insurance company has\nsought to avoid its liability to indemnify the persons insured under the insurance policy on the\nground of breach of conditions of the policy or on the ground that the cheque issued for payment of\npremium has been dishonoured and the policy had been cancelled by the insurance company, all of\nwhich pertain to cases involving third parties, where there was a statutory policy in existence. None\nof the said decisions relates to gratuitous passengers.\n29. Insofar as the gratuitous passengers travelling in a goods vehicle or other vehicles are concerned,\nwhen there is C/FA/710/2007 JUDGMENT an 'Act only' policy, the liability of the insurance\ncompany would be limited to its statutory liability under the Act as provided under sub-sections (1)\nand (2) of section 147 of the Act viz."
+      },
+      {
+       "section": "body",
+       "score": 0.493,
+       "text": "the deceased and the injured\nclaimants were travelling on the mudguard of the wheels of the tractor and therefore, the insurance\ncompany is not liable to indemnify the owner. The Claims Tribunal, placed reliance upon the\ndecision of the Supreme Court in the case of National Insurance Company Ltd. v. Swaran Singh,\n2004 ACJ 1 and held that there is a breach of policy, but insofar as the award of compensation is\nconcerned, at the first instance, the insurance company has to satisfy the award and then recover the\nawarded amount from the owner of the tractor. The Claims Tribunal, accordingly, held that the\nclaimants were entitled to recover the compensation awarded by it from all the opponents therein,\nincluding the appellant- insurance company, jointly and severally.\n4. At the outset, it may be noted that the main issue involved in the present case is as to whether in a\ncase where the insurance policy obtained in respect of the offending vehicle is an \"Act only\" policy\nand the claim petitions are filed by or in respect of gratuitous passengers travelling in a goods\nvehicle or other vehicle and the Claims Tribunal comes to the conclusion that the insurance\ncompany is not liable, it is thereafter permissible for the Claims Tribunal to direct the insurance\ncompany to first satisfy the award and then recover such amount from the insured/owner. Having\nregard to the significance of the issue involved, the learned counsel who appear on behalf of the\ninsurance companies as well as claimants before this court on a regular basis, had requested\nC/FA/710/2007 JUDGMENT that they be afforded an opportunity of addressing the court on the\nissue. Accordingly the court has also heard the learned Advocates, both, on behalf of insurance\ncompanies as well as claimants, who are otherwise not appearing in these appeals.\n5. Mr. Sunil Parikh, learned advocate appearing on behalf of the appellant in First Appeal\nNo.3852/2008 and Mr. H.G."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_029",
+      "title": "United India Insurance Co.Ltd vs Minor Mahesh Kanubhai & 2",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 228.61
+   },
+   {
+    "seq": 25,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_030 focus='mud-guard regulation 28 tractor permit route breach' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_030"
+     ],
+     "focus": "mud-guard regulation 28 tractor permit route breach",
+     "title": "D a d a p e e r a S / O A b d u l S a l a m S a b v s M a l l e s h M S / O Hanumanthappa",
+     "court": "In The High Court Of Karnataka, Dharwad Bench",
+     "holding": "The court held that the insurance company is not liable to pay compensation or subject to pay-and-recover since travelling on the tractor's mud-guard violates Regulation 28, but enhanced the total compensation awarded to Rs.2,33,680/- to be paid by the owner of the tractor.",
+     "ratio": "A person travelling on the mud-guard of a tractor is not covered by statutory insurance under Section 147 of the Motor Vehicles Act, and when such travel violates Regulation 28 of the Rules of the Road Regulations, a pay-and-recovery order against the insurer cannot be granted.",
+     "passages": [
+      {
+       "section": "judgment",
+       "score": 0.663,
+       "text": "power tiller are shown in the\nnon-transport classification, but power tiller and tractors using public roads are\nshown as transport vehicle. The tractor-tiller is a non-transporting vehicle but when\nused on roads, is considered as a transport vehicle from the gist of the judgments\nreferred to above. It is crystal clear when the tractor-trailer combined would\nconstitute a goods carriage, therefore permits are necessary for its use on the roads.\nUnder Motor Vehicles Act, by Sections 2 (44) and 2 (46) the definitions of tractor-\ntrailer would definitely indicate when the trailer drawn or intended to be drawn by\nmotor vehicle, it becomes a goods vehicle.\"\n24. According to this, a tractor is attached to trailer can be said as a transport vehicle, but definitely\nno person can be permitted to travel or allowed to travel by sitting on the mud guard of tractor\nengine. In the present case, as held above, it is proved that the claimant was not allowed to sit on the\nmud guard of the tractor engine. Therefore, it is the ILR 2011 KAR 4139\n- 14 -\nNC: 2025:KHC-D:590 violation of Regulation 28 of Rules of the Road Regulations, 1989. Therefore,\nin the present case, defence available for the Insurance Company is violation of Regulation 28 of\nRules of the Road Regulations, 1989, but not as stated under Sub- section (2) of Section 149 of\nMotor Vehicles Act. Therefore, order of pay and recovery cannot be made.\n25. If tractor and trailer is combinedly used for transporting agricultural materials and if there is\nany violation or the said Tractor and Trailer is used other than the permit given, then it can be said\nthat the Insurance Company has established its defence under Sub-clause (c) of Clause (i)(a) of\nSub-Section (2) of Section 149 of Motor Vehicle Act. Therefore, under those circumstances only,\nthird party is entitled for the statutory benefit of pay and recovery.\n26. Therefore, under these circumstances only, the third party is entitled for statutory benefit of pay\nand recovery."
+      },
+      {
+       "section": "judgment",
+       "score": 0.612,
+       "text": "From the discussion made above, it is held that the claimant was sitting over the mud guard of\nTractor engine. The permit is given for the purpose of transportation of agricultural produce, but\nnot for carrying persons on the mud guard. The insurance coverage is there for agricultural purpose\nonly. If it is proved that the claimant had travelled by sitting on the Trailer as an agricultural coolie\nrelating to the transportation of agricultural produce, then the risk would have been covered. But\nthe case of the claimant is, he was sitting on the mud guard of Tractor engine, which means as a\ngratuitous passenger. Even though, the claimant is claiming to be as loader and un-loader, but the\nfacts in issue remain to prove that the claimant had travelled by sitting over the mud guard of\nTractor and Trailer. Upon considering these facts involved in the case, one thing is unequivocally\nproved that the Tractor engine is used for the purpose other than the permit as per the insurance\npolicy. Admittedly, the Tractor and Trailer is a transport vehicle permitted for transportation of\nagricultural produce. Therefore, as per the submissions made by the learned counsel for the\nclaimant as NC: 2025:KHC-D:590 to whether an order of pay and recovery can be made is the\nquestion for consideration.\n13. Sub-section (2) of Section 149 of Motor Vehicle Act reads as follows:\n149. Duty of insurers to satisfy judgments and awards against persons insured in\nrespect of third party risks.\n(1) X X X (2) No sum shall be payable by an insurer under sub-section (1) in respect\nof any judgment or award unless, before the commencement of the proceedings in\nwhich the judgment or award is given the insurer had notice through the Court or, as\nthe case may be, the Claims Tribunal of the bringing of the proceedings, or in respect\nof such judgment or award so long as execution is stayed thereon pending an appeal;\nand an insurer to whom notice of the bringing of any such proceedings is so given\nshall be entitled to be made a party thereto and to defend the action on any of the\nfollowing grounds, namely:--\n(a) that there has been a breach of a specified condition of the policy, being one of the\nfollowing co"
+      },
+      {
+       "section": "judgment",
+       "score": 0.582,
+       "text": "if the said certificate that means\npermit is issued and if the transport vehicle is used other than for the purpose allowed in the permit,\nthen only it can be said that the Insurance Company has established its defence, then the claimant is\nentitled for the benefit of order of pay and recovery.\n19. Section 2(31) of Motor Vehicle Act reads as follows:\n\"2(31)-\"permit\" means a permit issued by a State or Regional Transport Authority or\nan authority prescribed in this behalf under this Act\n- 12 -\nNC: 2025:KHC-D:590 authorising the use of a motor vehicle as a transport vehicle;\"\n20. Rule 28 of Rules of Road Regulations, 1989 reads as follows:\n\"28 Driving of tractors and goods vehicles --A driver when driving a tractor shall not\ncarry or allow any person to be carried on tractor. A driver of goods carriage shall not\ncarry in the driver's cabin more number of persons than that is mentioned in the\nregistration certificate and shall not carry passengers for hire or reward.\"\n21. Rule 2(b) and Rule 2(c) of the Central Motor Vehicle Rules, 1989 reads as follows:\n(b) \"authorisation fee\" means the fee to be paid by the permit holder of one country\nto the other country for obtaining authorisation ;\n(c) \"bus crew\" means driver, conductor and the liaison officer;\nDadapeera S/O Abdul Salam Sab vs Mallesh M S/O Hanumanthappa on 15 January, 2025\n\n22. Therefore, upon combined reading of these definitions, agricultural tractor is a non-transport\nvehicle when it is not attached to trailer. It can be said that the tractor and trailer combined together\nis a transport vehicle\n- 13 -\nNC: 2025:KHC-D:590 because of having characteristic of transporting agricultural materials.\n23. The Division Bench of this Court in the case of National Insurance Co. Ltd. Vs. Sri Maruthi and\nOthers2 has held at paragraph No.33 as follows:\n\"33. As per the table agricultural tractor and power tiller are shown in the\nnon-transport classification, but power tiller and tractors using public roads are\nshown as transport vehicle. The tractor-tiller is a non-transporting vehicle but when\nused on roads, is considered as a transport vehicle from the gist of the judgments\nreferred to above."
+      },
+      {
+       "section": "judgment",
+       "score": 0.573,
+       "text": "held correct parameters while\nassessing and quantifying the compensation. Therefore, the claimant is NC: 2025:KHC-D:590\nentitled to enhanced compensation. Further sought to fasten liability on the Insurance Company to\nDadapeera S/O Abdul Salam Sab vs Mallesh M S/O Hanumanthappa on 15 January, 2025\n\npay compensation. RE. LIABILITY:\n7. In the present case, the Tribunal held that the claimant had sat on the mud guard of tractor\nengine at the time of tilling the land along with driver of the said tractor engine and the driver lost\ncontrol over the vehicle due to rash and negligent driving and caused accident. Hence the claimant\nsustained injuries. The Tribunal has fastened liability on the owner and driver of the tractor.\n8. Learned counsel for the Insurance Company submitted that the claimant was sitting on the mud\nguard of the tractor engine. This is evident from the FIR at Ex.P.1. Therefore, submitted that\nclaimant was sitting on the mud guard of engine and hence, risk is not covered under the insurance\npolicy. Therefore, when it is proved by the complaint and FIR, which is produced by the claimant\nhimself that he sat on the mud guard of tractor engine, Insurance Company is not liable to\nindemnify and the owner is held liable to pay compensation to the claimant.\nNC: 2025:KHC-D:590\n9. The Full Bench of this Court in the case of Gadhilingappa @ Gadhilinga and another vs. K.\nGuleppa and others1 has formulated the questions of law to be considered as follows:\nI) Whether a person travelling on a mud-guard of a tractor can be construed as an\nauthorized passenger or an unauthorized passenger and liability of such person is\ncovered or not?\nII) Whether the persons who are working either on the ploughing or crushing\nmachines attached to the tractor can be construed as employees so as to cover their\nrisk statutorily under Section 147 of MV Act though there is only one seating capacity\nin the tractor apart from the driver?\nIII) Whether the crushing machine or ploughing machine or any other instrument\nattached to the tractor can be considered to be an attachment to the tractor so as to\ncover the risk of the insured in respect of employees and the policy taken in respect of\nt"
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_030",
+      "title": "D a d a p e e r a S / O A b d u l S a l a m S a b v s M a l l e s h M S / O Hanumanthappa",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 228.65
+   },
+   {
+    "seq": 26,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_025 focus=breach of policy conditions permit route conditions section 149",
+    "payload": {
+     "args": {
+      "doc_id": "doc_025",
+      "focus": "breach of policy conditions permit route conditions section 149"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 231.52
+   },
+   {
+    "seq": 27,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_033 focus=breach of policy conditions permit route conditions section 149",
+    "payload": {
+     "args": {
+      "doc_id": "doc_033",
+      "focus": "breach of policy conditions permit route conditions section 149"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 231.52
+   },
+   {
+    "seq": 28,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_025 focus='breach of policy conditions permit route conditions section 149' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_025"
+     ],
+     "focus": "breach of policy conditions permit route conditions section 149",
+     "title": "New India Assurance Co., Ltd., vs Yallavva W/O Yamanappa Dharnakeri",
+     "court": "In The High Court Of Karnataka At Bengaluru",
+     "holding": "The Full Bench held that when a breach of policy conditions under Section 149(2) is established, the insurer remains liable to satisfy the award to the third party and is entitled to recover the amount from the insured, irrespective of whether the policy is a statutory 'Act' policy or a contractual policy.",
+     "ratio": "Pursuant to the mandate of Section 149(1) and (4) of the Motor Vehicles Act 1988, an insurer is bound to satisfy a third-party judgment or award as a judgment debtor and recover the amount from the insured even if a breach of policy conditions under Section 149(2) is successfully proved, unless fraud or collusion between the victim and the insured is established.",
+     "passages": [
+      {
+       "section": "judgment",
+       "score": 0.63,
+       "text": "al in\nnature, however, subject to any supervening statutory conditions under the Act. For instance, the\ngrounds of defence which are enumerated in Section 149 (2) of the Act are meant for avoidance of\nliability. However, the said provision is subject to sub- sections (3), (4) and (7) of Section 149. They\nare reiterated as under for immediate reference:\n(a) there has been a breach of a specified condition of policy, being one of the\nfollowing, namely-\n(i) A condition excluding the use of the vehicle-\n(A) for hire or reward, where the vehicle is not covered by a permit to ply for hire or\nreward on the date of the contract of insurance, or (B) for organised racing and speed\ntesting, or (C) for a purpose not allowed by the permit under which the vehicle is used\nwhere the vehicle is a transport vehicle, or (D) without side car being attached where\nthe vehicle is Motor Cycle; or\n(ii) a condition excluding driving by a named person or persons or/by any person\nwho is not duly licensed or by any person who has been disqualified for holding or\nobtaining a driving licence during the period of disqualification; or\n(iii) a condition excluding liability for injury caused or contributed to by conditions of\nwar, civil war, riot or civil commotion; or\n(b) that the policy is void on the ground that it was obtained by the non-disclosure of\na material fact or by a representation of fact which was false in some material\nparticular.\n\n28. The defences available under the statute alone can be taken by the insurer and none other as\nagainst third parties. Thus under Section 149(2) (a) and (b) specified defences of an insurer who is\nissued notice of a claim to defend an action are enumerated. If the insurer succeeds in his defence\nwhether the third party victim has to execute the decree against the insured only or the third party\nvictim is protected by the statute is the conundrum in this case.\n29. In British India General Insurance Company Limited vs. Capt."
+      },
+      {
+       "section": "judgment",
+       "score": 0.586,
+       "text": "d under Section 147 (2) of the Act and any other conditions which\nare mutually agreed upon by the parties.\n63. In this background, it can be safely understood that the policy of insurance may also contain\nconditions otherwise than the conditions which are recognized under Section 147 (2) of the Act. But\nbreach of only those conditions, which are recognized under Section 149(2) of the Act, can be\npermitted to be raised by the insurer against third parties. The other conditions though incorporated\nin the insurance policy cannot be pressed into service in order to resist a claim before the Tribunal\nbecause the other conditions, even though mutually agreed upon between the parties, can only be\nenforced between the insurer and the insured but it will not have any effect so far as the third parties\nare concerned. So, those conditions which are within the statutory purview of Section 149 (2) of the\nAct are considered as defendable conditions by the insurer. However, all those conditions can be\nenforced between the insurer and insured inter se exclusively between themselves if they are not\nvoid or voidable at the instance of the said parties.\n64. Once there is breach of any of the conditions of the policy and the conditions are recognized\nunder Section 149(2) of the Act, still the legal aspect remains, whether breach of those conditions\nare recognized under Section 149(2) as fundamental breach i.e., whether the particular breach can\nbe called as a breach which has contributed to the cause of accident. In this regard, main purpose\nrule will have to be also borne in mind. Therefore, we have to understand the concept of"
+      },
+      {
+       "section": "judgment",
+       "score": 0.578,
+       "text": "re prior to claim, if the policy has been cancelled\nby the Insurance Company, even then under sub-section (1) of Section 149 of the Act,\nthe Insurance Company is bound to pay and recover.\n9. Sub-section (2) of Section 149 of the Act to which reference has been made, deals\nwith a situation different. Sub-section (2) makes it clear no sum shall be payable by\nan insurer under sub-section (1) in respect of any judgment or award unless, before\nthe commencement of the proceedings in which the judgment or award is given the\ninsurer had notice through the court or, as the case may be, the Claims Tribunal of\nthe bringing of the proceedings, or in respect of such judgment or award so long as\nexecution is stayed thereon pending an appeal; and an insurer to whom notice of the\nbrining of any such proceedings is so given shall be entitled to be made a party\nthereto and to defend the action on any of the following grounds, namely:\n(a) that there has been a breach of a specified condition of the policy, being one of the\nfollowing conditions, namely:-\n(i) a condition excluding the use of the vehicle -\n           (a) for hire or reward,\n               where the vehicle is on\n               the    date    of   the\n               contract of insurance a\n               vehicle is not covered\n               by a permit to ply for\n               higher or reward, or\n           (b) for organized racing\n               and speed testing, or\n           (c) for a purpose not\n               allowed by the permit\n\n               under     which    the\n               vehicle is used, where\n                the   vehicle    is   a\n                transport vehicle, or\n             (d) without side - car\n                 being attached where\n                 the vehicle is a motor\n                 cycle; or\n     (ii) a condition excluding driving by a\n           named person or persons or by\n           any person who is not duly\n           licensed, or by any person who\n           has been disqualified for holding\n           or obtaining a driving licence\n           during       the     period    of\n           disqualification; or\n(iii) a condition excluding liability for injury caused or contri"
+      },
+      {
+       "section": "judgment",
+       "score": 0.571,
+       "text": "hicle accident. Therefore, if the conditions which are incorporated in the\npolicies, do not fall under any one of the categories recognized under Section 149 (2) of the Act,\nthose conditions cannot be said to be the conditions which can be defendable by the Insurance\ncompany before the Court of law. Thus, the breach of those conditions which are specifically\nrecognized under the said section and further, particularly the breach of those conditions which are\nreferable to the cause of accident only, can be called as fundamental conditions and breach of those\n\nconditions amount to fundamental breach of conditions. Therefore, the intention of the Parliament\nis very clear indicating that whatever may be the breach of conditions recognized under Section 149\n(2) of the Act, if breach of those conditions has no connection with the cause of accident, such\nbreach cannot be called as fundamental breach. Therefore, a mere breach of any condition, even if it\nfalls under Section 149 (2) of the Act but which is not responsible for the cause of accident, in such\nan eventuality, the insurance company cannot absolve itself from its liability because under the\ndoctrine of indemnity, the insurer is liable to reimburse the awarded amount to the insured.\n67. The point can be further simplified by observing that, if a fundamental breach of a condition has\noccurred which is the cause for the accident or the incident and such breach is successfully proved to\nthe satisfaction of the Courts by the insurer, even as per the guidelines in Swaran singh's and\nShamanna's case noted above, the courts have the discretionary power to direct the insurance\ncompany to pay the compensation and recover the same from the owner so far as third parties are\nconcerned. It is also made clear that the principles enunciated in Swaran Singh's case are not\napplicable to cases otherwise than those of third parties.\n68. However, we make it further clear that, the Insurance Company can take a particular defence\nand successfully defend and prove the breach of condition which is enumerated under Section 149\n(2) of the Act, even if that breach is referable to the cause of accident."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_025",
+      "title": "New India Assurance Co., Ltd., vs Yallavva W/O Yamanappa Dharnakeri",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 231.61
+   },
+   {
+    "seq": 29,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_033 focus='breach of policy conditions permit route conditions section 149' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_033"
+     ],
+     "focus": "breach of policy conditions permit route conditions section 149",
+     "title": "Satto & Ors vs New India Assurance Co Ltd",
+     "court": "In The High Court Of Delhi At New Delhi",
+     "holding": "The court held that the insurance company is statutorily liable to satisfy the third-party award with recovery rights against the owner and driver, and adjusted the quantum of compensation accordingly.",
+     "ratio": "An insurer has a statutory liability to pay compensation to third parties even if there is a breach of policy conditions (such as an invalid driving licence), and is entitled to recover the same from the insured.",
+     "passages": [
+      {
+       "section": "judgment",
+       "score": 0.505,
+       "text": "n to the legal representatives of\nthe two deceased as it is proved that the deceased Naresh Kumar @ Setu was travelling as owner of\nthe goods whereas the deceased Naresh Kumar son of Kashmira was travelling as representative of\nthe owner (Ajay Pal) of the goods.\nBREACH OF THE TERMS OF THE POLICY\n21. The Claims Tribunal on the issue of liability held that a notice under Order XII Rule 8 CPC was\nduly served upon the owner and driver of the offending vehicle to produce the original policy and\ndriving licence, etc. which were not produced in the court by them. The copy of the insurance policy\nand the postal receipts were duly proved during inquiry before the Claims Tribunal. The Claims\nTribunal further held that as per the certificate Ex.R2W1/C issued by Transport Authority,\nMuzaffarnagar, the driver possessed a licence to drive only a Light Motor Vehicle (Non Transport)\nwhereas he was found to be driving a goods vehicle which was a commercial vehicle. Thus, the\nClaims Tribunal opined that the Insurance Company successfully proved the breach of the terms\nand conditions of the policy, yet while granting recovery rights made it liable to pay the\ncompensation.\n22. The issue of satisfying the third party liability even in case of breach of the terms of insurance\npolicy is settled by a three Judge Bench report in Sohan Lal Passi v. P. Sesh Reddy, (1996) 5 SCC 21.\nAs per Section 149(2) of the Motor Vehicles Act (the Act), an insurer is entitled to defend the action\non the grounds as mentioned under Section 149(2)(a)(i)(ii) of the Act. Thus, the onus is on the\ninsurer to prove that there is breach of the condition of the policy. It is well settled that the breach\nmust be conscious and willful. Even if a conscious breach on the part of the insured is established,\nstill the insurer has a statutory liability to pay the compensation to the third party and will simply\nhave the right to recover the same from the insured/tortfeasor either in the same proceedings or by\nindependent proceedings as the case may be, as ordered by the Claims Tribunal or the Court."
+      },
+      {
+       "section": "judgment",
+       "score": 0.444,
+       "text": "otor vehicle can be\nused in a public place only if that vehicle is covered by a policy of insurance is not for\nthe purpose of promoting the business of the insurance company but to protect the\nmembers of the community who become suffers on account of accidents arising from\nthe use of motor vehicles. It is pointed out in the decision that such protection would\nhave remained only a paper protection if the compensation awarded by the courts\nwere not recoverable by the victims (or dependants of the victims) of the accident.\nThis is the raison d'etre for the legislature making it prohibitory for motor vehicles\nbeing used in public places without covering third-party risks by a policy of\ninsurance.\n24.The principle laid down in the said decision has been followed by a three-Judge\nBench of this Court with approval in Sohan Lal Passi v. P. Sesh Reddy, (1996) 5 SCC\n21.\n\n25.The position can be summed up thus:\nThe insurer and the insured are bound by the conditions enumerated in the policy\nand the insurer is not liable to the insured if there is violation of any policy condition.\nBut the insurer who is made statutorily liable to pay compensation to third parties on\naccount of the certificate of insurance issued shall be entitled to recover from the\ninsured the amount paid to the third parties, if there was any breach of policy\nconditions on account of the vehicle being driven without a valid driving\nlicence.........\"\n23. Again in United India Insurance Company Ltd. v. Lehru & Ors., (2003) 3 SCC 338, in para 18 of\nthe report the Supreme Court referred to the decision in Skandia, Sohan Lal Passi and Kamla and\nheld that even where it is proved that there was a conscious or willful breach as provided under\nSection 149(2)(a) (ii) of the Motor Vehicle Act, the Insurance Company would still remain liable to\nthe innocent third party but may recover the compensation paid from the insured. The relevant\nportion of the report is extracted hereunder:\n\"18. Now let us consider Section 149(2). Reliance has been placed on Section\n149(2)(a)(ii). As seen, in order to avoid liability under this provision it must be shown\nthat there is a \"breach\"."
+      },
+      {
+       "section": "judgment",
+       "score": 0.436,
+       "text": "the\ncompensation on the basis of minimum wages and after making an addition of non-pecuniary\ndamages awarded an overall compensation of `2,24,500/-.\n8. The Claims Tribunal held that the deceased were travelling as owner of the goods and thus, the\nInsurance Company was liable to pay the compensation. At the same time, relying on National\nInsurance Company Limited v. Kusum Rai & Ors. (2006) 4 SCC 250, the Claims Tribunal opined\nthat since the driver was not competent to drive a transport/commercial vehicle, there was\nintentional and willful breach of the terms and conditions of the policy and thus, while making the\nInsurance Company liable to pay the compensation initially also granted it recovery rights.\n9. In the two Appeals filed by the Insurance Company (MAC APP.138/2011 and MAC APP.143/2011)\nthe following contentions are raised by the Appellant Insurance Company:-\n(i) Since the deceased were travelling as gratuitous passengers, the Insurance\nCompany was not liable to pay the compensation even if it is assumed that the\ndeceased were the owner /representative of the owner of the goods, they could travel\nonly in the cabin beside the driver. Since the deceased were travelling on the top of\nthe tempo, the Insurance Company is not liable to pay the compensation.\n(ii) The Insurance Company successfully proved the breach of the terms and\nconditions of the policy as the owner willfully allowed its driver to drive the vehicle\ninvolved in the accident without holding a valid and effective driving licence to drive\nthe same.\nThus, the Insurance Company was not liable to pay the compensation.\n(iii) In the absence of any evidence with regard to future prospects, no addition in the income of the\ndeceased could have been made by the Claims Tribunal. In MAC APP.138/2011 it is also urged that"
+      },
+      {
+       "section": "judgment",
+       "score": 0.428,
+       "text": "the Appellant Insurance Company that the testimony of\nPW-3 Ram Saran and PW-4 Lokender Kumar, who were eye witnesses to the accident and who were\ntravelling in the tempo is contrary to what has been stated in the FIR with regard to the place where\nthe two deceased were sitting in the tempo. Mr. K.L. Nandwani argues that as per the FIR lodged on\nthe statement of Lokender Kumar (PW-4) the two deceased were sitting on the top of the vehicle\nafter placing wooden fatta (plank). No suggestion was given to either PW-4 Lokender Kumar or to\nPW-3 Ram Saran that deceased Naresh Kumar @ Setu and Naresh Kumar son of Kashmira were\ntravelling on the wooden plank fixed on the top of the tempo nor they were confronted with the FIR\nlodged with the police. In the circumstances, on the basis of the evidence adduced it has to be held\nthat the two deceased persons along with PWs Ram Saran and Lokender Kumar were travelling\ninside the cabin of the tempo. A three Judge Bench decision of the Supreme Court in New India\nAssurance Co. Ltd. v. Asha Rani, (2003) 2 SCC 223 while overruling the judgment in New India\nAssurance Co. Ltd. v. Satpal Singh, (2000) 1 SCC 237 that the provisions of the Motor Vehicles Act\nprior to its amendment in 1994 included liability in respect of every person travelling in a goods\nvehicle ruled that after the amendment to Section 147 of the Motor Vehicles Act w.e.f. 1994 (by\nvirtue of Section 6 of Act of 1994) it was compulsory for the insurer to insure the risk of the owner of\nthe goods or his authorized representative being carried in a goods vehicle.\n18. It is true that in the case of National Insurance Co. Ltd. v. Cholleti Bharatamma, (2008) 1 SCC\n423, the Supreme Court held that the risk of the owner of the goods or his representative would be\ncovered only if he travels in the cabin with the driver. I have already observed above that there is\nample evidence to show that the two deceased were travelling in the cabin along with the driver. A\ncopy of the certificate of insurance as also a certificate Ex.RW-2/1 has been proved on record which\nshows the sitting capacity of the vehicle involved in the accident to be three, that is, 1+2."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_033",
+      "title": "Satto & Ors vs New India Assurance Co Ltd",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 231.65
+   },
+   {
+    "seq": 30,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_051 focus=permit route conditions motor vehicle",
+    "payload": {
+     "args": {
+      "doc_id": "doc_051",
+      "focus": "permit route conditions motor vehicle"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 234.9
+   },
+   {
+    "seq": 31,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_051 focus='permit route conditions motor vehicle' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_051"
+     ],
+     "focus": "permit route conditions motor vehicle",
+     "title": "Sh. Yashpal Chaudhrani & Ors. vs State (Govt. Of Nct Delhi) & Anr.",
+     "court": "In The High Court Of Delhi At New Delhi",
+     "holding": "The petitions seeking quashing of criminal proceedings based on settlements in serious economic frauds and offences involving mental depravity are dismissed.",
+     "ratio": "Criminal proceedings involving serious, heinous, or economic offences that have a significant adverse impact on society and the financial well-being of the State or banking institutions cannot be quashed under Section 482 Cr.P.C. merely on the basis of a private settlement or mediation agreement.",
+     "passages": [
+      {
+       "section": "body",
+       "score": 0.298,
+       "text": "Aarti Machanda, Advs.\n                                   versus\n        STATE & ANR.                                             ..... Respondents\nCrl.MC 5765/18, 5768/18, 5785/18, 5805/18 & 5995/18                  Page 1 of 65\n                                    Through:           Mr. Kewal Singh Ahuja, APP\n                                                      for the State with SI Alok\n                                                      Bajpai, Spl. Cell/SR.\n                                                      Mr. Dayan Krishnan, Sr. Adv.\n                                                      with Mr. Harsh Sinha, Adv. for\n                                                      R-2.\n\n+       CRL.M.C. 5785/2018\n        RAJIV ARORA & ORS                                        ..... Petitioners\n                                   Through:           Mr. Gurmit Singh Hans & Ms.\n                                                      Aarti Machanda, Advs.\n                                   versus\n        STATE (GOVT. OF NCT DELHI) & ANR. ..... Respondents\n                                   Through:           Mr. Kewal Singh Ahuja, APP\n                                                      for the State with SI Alok\n                                                      Bajpai, Spl. Cell/SR.\n                                                      Mr. Dayan Krishnan, Sr. Adv.\n                                                      with Mr. Harsh Sinha, Adv. for\n                                                      R-2.\n+       CRL.M.C. 5805/2018\n        MANISH JAIN & ORS.                                       ..... Petitioners\n                                   Through:           Mr. Gurmit Singh Hans & Ms.\n                                                      Aarti Machanda, Advs.\n                                   versus\n        STATE (GOVT. OF NCT DELHI) & ANR. ..... Respondents\n                                   Through:           Mr. Kewal Singh Ahuja, APP\n                                                      for the State with SI Alok\n                                                      Bajpai, Spl."
+      },
+      {
+       "section": "body",
+       "score": 0.287,
+       "text": "on 89 CPC and the\nquestion as to whether such provision empowers the court to so refer the parties \"without the\nconsent of both parties\" had arisen for consideration by the Supreme Court in decision reported as\nAfcons Infrastructure Ltd. Vs. Cherian Varkey Construction Co. (P) Ltd., (2010) 8 SCC 24. The court\nembarked upon a detailed scrutiny of the subject including on the question as to whether reference\nto ADR process is mandatory and, while answering the said question in the affirmative, carved out\nexceptions, by specifying the category of cases which would be treated as \"excluded\", they being \"not\nsuitable for ADR process having regard to their nature\", referring in this context (para 27), inter alia,\nto the following :\n\"(iv). Cases involving serious and specific allegations of fraud, fabrication of\ndocuments, forgery, impersonation, coercion, etc.\n(vi). Cases involving prosecution for criminal offences\"\nCriminal cases\n35. The Code of Criminal Procedure, 1973 (Cr.P.C.) governs the process of investigation, inquiry, or\ntrial pertaining to criminal offences. The Indian Penal Code, 1860 (IPC) is the general law defining\nvarious offences prescribing the punishment therefor. The said law (IPC) is supplemented by\nvarious other enactments (special statutes) which also define certain other offences prescribing the\npunishment for each. Generally speaking, the procedural law, as provided by Cr.P.C., governs all\nsuch criminal law processes, be it relating to offences under IPC or under special statutes (see\nSection 4 Cr.P.C.). The special criminal laws, however, at times, make a departure from the general\ncriminal procedure and for such purposes come with necessary provisions indicating the extent to\nwhich Cr.P.C. is to be applied with requisite modification.\n36. The objective of criminal law is primarily to visit the offender with certain consequences. He\nmay be made to suffer punishment or may be given opportunity to reform by release on probation\n(or after admonition), or, further to make amends (may be in addition to punishment) by paying\ncompensation to the victim."
+      },
+      {
+       "section": "body",
+       "score": 0.28,
+       "text": "and laid down principles / guidelines which may be kept in\nmind by the High Court while exercising its power under Section 482 Cr. PC by\nquashing the criminal proceedings in cases involving non compoundable offences\nwhere amicably settlement otherwise is reached between the contesting parties ...\n6. By laying down and applying the above stated principles and guidelines from time\nto time, Supreme Court has recognized the permissibility of quashing the criminal\nprosecutions in non-compoundable cases by High Court in exercise of its inherent\njurisdiction under Section 482 of the Cr. PC. The Supreme Court has accepted\ncompromises / settlements in non- compoundable offences upon evaluation of the\nfactors like genuineness, fairness, equity, stage of the criminal proceedings and\ninterests of justice.\"\n\n(emphasis supplied) THE LAW Civil Disputes\n34. The process of mediation has evolved over the period as one of the effective tools of alternative\ndispute resolution (ADR) mechanism. The provision contained in Section 89 of the Code of Civil\nProcedure, 1908 (CPC), reinserted by Act 46 of 1999 (brought in force with effect from 01.07.2002),\ngives it statutory recognition, the civil court being obliged to refer the disputants before it to such\nprocess if \"there exist elements of a settlement which may be acceptable\" the court required to\n\"formulate the terms of settlement\" modifying the same, if required, in light of observations of the\nparties thereto and if such process were to succeed to \"effect a compromise between the parties\" and\nto \"follow such procedure as may be prescribed\". The general scope of Section 89 CPC and the\nquestion as to whether such provision empowers the court to so refer the parties \"without the\nconsent of both parties\" had arisen for consideration by the Supreme Court in decision reported as\nAfcons Infrastructure Ltd. Vs. Cherian Varkey Construction Co. (P) Ltd., (2010) 8 SCC 24."
+      },
+      {
+       "section": "body",
+       "score": 0.277,
+       "text": "t be permissible\nor lawful.\n71. To sum up, this Court is of the considered opinion that there has to be circumspection at all\nstages and:\n(i) The court while considering reference of the parties to a criminal case to\nmediation must before even ascertaining as to whether elements of settlement exist\n\nfirst examine, by preliminary scrutiny, the permissibility in law for the criminal\naction to be brought to an end either because the offence involved is compoundable\nor because the High Court would have no inhibition to quash it, bearing in mind the\nbroad principles that govern the exercise of jurisdiction under Section 482 Cr.P.C.\n(ii) The mediator (before commencing mediation) must undertake a preliminary\nscrutiny of the facts of the criminal case and satisfy himself as to the possibility of\nassisting the parties to such a settlement as would be acceptable to the court, bearing\nin mind the law governing the compounding of the offences or exercise of power of\nthe High Court under Section 482 Cr.P.C. For this, an institutional mechanism has to\nbe created in the mediation centres so that there is consistency and uniformity in\napproach. The scrutiny in above nature would also need to be undertaken, as the\nmediation process continues, should any such criminal case, as mentioned above, be\nbrought on the table by the parties (for being included in the settlement), as takes it\nbeyond the case initially referred.\n(iii) The system of vetting, at the conclusion of the mediation process, needs to be\ninstitutionalised so that before a settlement vis-a-vis a criminal case is formally\nexecuted by the parties, satisfaction is reached that the criminal charge involved is\none which is either compoundable or one respecting which there would be no\ninhibition felt by the High court in exercise of its inherent power under Section 482\nCr.P.C., bearing in mind the relevant jurisprudence.\n72. It is hoped and expected that the criminal courts, and the mediation centres shall abide by the\nabove guidelines in future. It may be added that the above would equally apply mutatis mutandis to\nthe other ADR methods.\nDECISION ON THE PETITIONS\n73."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_051",
+      "title": "Sh. Yashpal Chaudhrani & Ors. vs State (Govt. Of Nct Delhi) & Anr.",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 234.99
+   },
+   {
+    "seq": 32,
+    "kind": "tool_call",
+    "label": "submit_answer",
+    "detail": "question=Which judgments deal with a breach of permit or route conditions, rath... answer=Based on the corpus of 56 judgments, the following judgments deal with... cited_doc_ids=['doc_002', 'doc_030', 'doc_014', 'doc_026', 'doc_029', 'doc_028', 'do... confidence=high",
+    "payload": {
+     "args": {
+      "question": "Which judgments deal with a breach of permit or route conditions, rather than a driving licence defect?",
+      "answer": "Based on the corpus of 56 judgments, the following judgments deal with a **breach of permit or route conditions** (as opposed to a driving licence defect). I have categorised them by the type of permit/route breach involved:\n\n---\n\n## 1. VEHICLE USED FOR A PURPOSE NOT ALLOWED BY THE PERMIT\n\n### (a) Tractor used for non-agricultural purposes (construction, not farming)\n**doc_002 — *Liyakat Ali vs Smt Chunni Devi*** (MACT/Allahabad HC, 2010)\n- **Breach:** The tractor was insured only for agricultural use, but at the time of the accident it was transporting bricks and iron rods for construction of a room (non-agricultural purpose). This was a violation of the terms and conditions of the insurance policy.\n- **Outcome:** Insurer absolved of liability entirely (not even pay-and-recover).\n- **Key quote:** *\"Transportation of iron rods and bricks is certainly not an agricultural activity. The tractor was insured only for the purpose of agricultural activity... Thus, there is a violation of the terms and conditions of the insurance policy.\"*\n\n### (b) Tractor used for carrying persons on mud-guard — use beyond permit\n**doc_030 — *Dadapeera S/O Abdul Salam Sab vs Mallesh M S/O Hanumanthappa*** (Karnataka HC, 2025)\n- **Breach:** The tractor-trailer was permitted for transportation of agricultural produce, but the claimant was sitting on the mud-guard of the tractor engine. This violated Regulation 28 of the Rules of the Road Regulations, 1989, and constituted use of the vehicle \"other than the permit given.\"\n- **Outcome:** Insurer not liable; no pay-and-recover ordered (since the risk was not statutorily required to be covered).\n- **Key quote:** *\"If tractor and trailer is combinedly used for transporting agricultural materials and if there is any violation or the said Tractor and Trailer is used other than the permit given, then it can be said that the Insurance Company has established its defence under Sub-clause (c) of Clause (i)(a) of Sub-Section (2) of Section 149.\"*\n\n---\n\n## 2. CARRYING UNAUTHORISED PASSENGERS (BREACH OF PERMIT CONDITIONS)\n\n### (a) Gratuitous passengers in a goods vehicle\n**doc_014 — *Shivlal And Ors. vs Smt. Rukmabai And Ors.*** (MP HC, 1985)\n- **Breach:** The deceased was a gratuitous passenger travelling in a tractor (goods vehicle). The policy expressly prohibited use for conveyance of passengers, and carrying passengers violated the permit condition.\n- **Outcome:** Insurer not liable.\n- **Key quote:** *\"The contract of insurance... expressly prohibits use of the vehicle for conveyance of passengers for hire or reward... under Section 96(2)(b)(i) of the Act the insurance company is entitled to avoid its liability if the vehicle is used in contravention of specified condition of the permit.\"*\n\n**doc_026 — *National Insurance Co. Ltd vs Ellappa*** (Madras HC, 2009)\n- **Breach:** Passengers were carried in a goods vehicle, which is not authorised by the policy or the permit. The vehicle was a goods carriage meant solely for carriage of goods.\n- **Outcome:** Insurer not statutorily liable, but pay-and-recover ordered considering the prolonged litigation.\n- **Key quote:** *\"As per the policy conditions, passengers could not be carried in a goods vehicle and such travel is not authorised by the policy.\"*\n\n**doc_029 — *United India Insurance Co.Ltd vs Minor Mahesh Kanubhai*** (Gujarat HC, 2014)\n- **Breach:** Gratuitous passengers carried in a goods vehicle/tractor. The risk was neither statutorily required to be covered nor covered under the policy terms.\n- **Outcome:** Insurer completely exonerated; no power to order pay-and-recover for gratuitous passengers.\n- **Key quote:** *\"In cases where a risk is neither statutorily required to be covered nor covered under the terms of the insurance policy (such as gratuitous passengers in a goods vehicle), the provisions of sub-sections (4) and (5) of Section 149... are not attracted.\"*\n\n### (b) Passengers in a private vehicle for hire/reward\n**doc_028 — *United India Insurance Co. Ltd. vs Sukumarbai Suryakant Nikam*** (Bombay HC, 2019)\n- **Breach:** The deceased was travelling in a private jeep for hire or reward, which was against the policy terms. The vehicle was being used as a transport vehicle without a proper permit.\n- **Outcome:** Insurer completely exonerated (no pay-and-recover).\n- **Key quote:** *\"The deceased was travelling in a private jeep for 'hire or reward'. When the said fact was proved and it was against the policy terms/conditions, then it being inherent breach; no question of liability to pay compensation to the claimants had arisen.\"*\n\n---\n\n## 3. VEHICLE USED FOR HAZARDOUS GOODS WITHOUT REQUISITE PERMIT/ENDORSEMENT\n\n**doc_001 — *United India Insurance Company Ltd vs Neelam Devi And Others*** (Punjab & Haryana HC, 2023)\n- **Breach:** The vehicle was a tanker carrying hazardous goods, but the driver lacked the special endorsement required under Rule 132 of the Central Motor Vehicles Rules, 1989. This is a breach of the terms and conditions of the insurance policy relating to the permit/authorisation for carrying dangerous goods.\n- **Outcome:** Pay-and-recover ordered.\n- **Key quote:** *\"For driving a goods carriage vehicle carrying dangerous or hazardous goods, a special endorsement on the driving license as prescribed under the Central Motor Vehicles Rules, 1989 is mandatory, and the absence thereof constitutes a breach of insurance policy terms entitling the insurer to pay and recover.\"*\n\n---\n\n## 4. GENERAL PRINCIPLE: BREACH OF PERMIT CONDITIONS UNDER SECTION 149(2)(a)(i)(c)\n\n**doc_025 — *New India Assurance Co., Ltd. vs Yallavva*** (Karnataka HC, 2020 — Full Bench)\n- This is a **framework judgment** that sets out the law on breach of policy conditions under Section 149(2) MV Act. It specifically identifies the following as a recognised defence ground under Section 149(2)(a)(i)(c):\n  > *\"A condition excluding the use of the vehicle for a purpose not allowed by the permit under which the vehicle is used where the vehicle is a transport vehicle.\"*\n- This is the statutory basis for permit/route condition breach defences.\n\n---\n\n## DISTINGUISHED: Judgments about DRIVING LICENCE DEFECTS (NOT permit/route breaches)\n\nThe following judgments in the corpus deal with **driving licence defects** (no valid licence, wrong class of licence, expired licence, no badge/endorsement for transport vehicles) — these are NOT permit/route condition cases:\n- **doc_035** — *United India Insurance Co. vs V. Vijayakumar* (driver lacked badge for transport vehicle — licence defect)\n- **doc_034** — *K.G. Srinivasamurthy vs Habib Khathun* (expired licence)\n- **doc_024** — *Sunil Shreesail Killiket vs Subbraya* (no valid licence)\n- **doc_033** — *Satto & Ors vs New India Assurance Co Ltd* (driver held LMV licence but drove goods vehicle — licence class defect)\n- **doc_032** — *S. Iyyapan vs United India Insurance Co.* (missing commercial endorsement — licence defect)\n- **doc_027** — *The Manager vs Chennamma* (driver lacking proper endorsement)\n\n---\n\n## SUMMARY TABLE\n\n| Doc ID | Case Name | Type of Permit/Route Breach | Outcome |\n|--------|-----------|----------------------------|---------|\n| doc_002 | Liyakat Ali vs Chunni Devi | Tractor used for non-agricultural purpose (construction) | Insurer absolved |\n| doc_030 | Dadapeera vs Mallesh | Tractor used beyond permit (person on mud-guard) | Insurer absolved |\n| doc_014 | Shivlal vs Rukmabai | Gratuitous passenger in goods vehicle | Insurer absolved |\n| doc_026 | National Insurance vs Ellappa | Passengers in goods vehicle | Pay-and-recover |\n| doc_029 | United India vs Mahesh Kanubhai | Gratuitous passengers in goods vehicle/tractor | Insurer absolved |\n| doc_028 | United India vs Sukumarbai | Private vehicle used for hire/reward | Insurer absolved |\n| doc_001 | United India vs Neelam Devi | Tanker carrying hazardous goods without special endorsement | Pay-and-recover |\n| doc_025 | New India Assurance vs Yallavva | Framework: Section 149(2)(a)(i)(c) — purpose not allowed by permit | (Principle) |",
+      "cited_doc_ids": [
+       "doc_002",
+       "doc_030",
+       "doc_014",
+       "doc_026",
+       "doc_029",
+       "doc_028",
+       "doc_001",
+       "doc_025"
+      ],
+      "confidence": "high"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 250.57
+   },
+   {
+    "seq": 33,
+    "kind": "budget",
+    "label": "wrong_contract_check",
+    "detail": "rejected: direct answer cites 8 judgments with 17 adverse-pool judgments retrieved",
+    "payload": {
+     "doc_ids": [
+      "doc_001",
+      "doc_002",
+      "doc_006",
+      "doc_009",
+      "doc_014",
+      "doc_024",
+      "doc_025",
+      "doc_026",
+      "doc_027",
+      "doc_028",
+      "doc_029",
+      "doc_030",
+      "doc_031",
+      "doc_033",
+      "doc_035",
+      "doc_051",
+      "doc_055"
+     ]
+    },
+    "docs": [],
+    "elapsed_s": 250.59
+   },
+   {
+    "seq": 34,
+    "kind": "tool_call",
+    "label": "submit_answer",
+    "detail": "question=Which judgments deal with a breach of permit or route conditions, rath... answer=Based on the corpus of 56 judgments, the following **8 judgments** dea... cited_doc_ids=['doc_002', 'doc_030', 'doc_014', 'doc_026', 'doc_029', 'doc_028', 'do... confidence=high",
+    "payload": {
+     "args": {
+      "question": "Which judgments deal with a breach of permit or route conditions, rather than a driving licence defect?",
+      "answer": "Based on the corpus of 56 judgments, the following **8 judgments** deal with a breach of **permit or route conditions** (as opposed to a driving licence defect). I have categorised them by the type of breach:\n\n---\n\n## 1. VEHICLE USED FOR A PURPOSE NOT ALLOWED BY THE PERMIT\n\n### (a) Tractor used for non-agricultural purposes (construction, not farming)\n**doc_002 — *Liyakat Ali vs Smt Chunni Devi*** (MACT/Allahabad HC, 16 July 2010)\n- **Breach:** The tractor was insured only for agricultural use, but at the time of the accident it was transporting bricks and iron rods for construction of a room (non-agricultural purpose). This violated the terms and conditions of the insurance policy.\n- **Outcome:** Insurer absolved of liability entirely (not even pay-and-recover).\n- **Key quote:** *\"Transportation of iron rods and bricks is certainly not an agricultural activity. The tractor was insured only for the purpose of agricultural activity... Thus, there is a violation of the terms and conditions of the insurance policy.\"*\n\n### (b) Tractor used for carrying persons on mud-guard — use beyond permit\n**doc_030 — *Dadapeera S/O Abdul Salam Sab vs Mallesh M S/O Hanumanthappa*** (Karnataka HC, 15 January 2025)\n- **Breach:** The tractor-trailer was permitted for transportation of agricultural produce, but the claimant was sitting on the mud-guard of the tractor engine. This violated Regulation 28 of the Rules of the Road Regulations, 1989, and constituted use of the vehicle \"other than the permit given.\"\n- **Outcome:** Insurer not liable; no pay-and-recover ordered.\n- **Key quote:** *\"If tractor and trailer is combinedly used for transporting agricultural materials and if there is any violation or the said Tractor and Trailer is used other than the permit given, then it can be said that the Insurance Company has established its defence under Sub-clause (c) of Clause (i)(a) of Sub-Section (2) of Section 149.\"*\n\n---\n\n## 2. CARRYING UNAUTHORISED PASSENGERS (BREACH OF PERMIT CONDITIONS)\n\n### (a) Gratuitous passengers in a goods vehicle\n**doc_014 — *Shivlal And Ors. vs Smt. Rukmabai And Ors.*** (MP HC, 17 December 1985)\n- **Breach:** The deceased was a gratuitous passenger travelling in a tractor (goods vehicle). The policy expressly prohibited use for conveyance of passengers, and carrying passengers violated the permit condition.\n- **Outcome:** Insurer not liable.\n- **Key quote:** *\"The contract of insurance... expressly prohibits use of the vehicle for conveyance of passengers for hire or reward... under Section 96(2)(b)(i) of the Act the insurance company is entitled to avoid its liability if the vehicle is used in contravention of specified condition of the permit.\"*\n\n**doc_026 — *National Insurance Co. Ltd vs Ellappa*** (Madras HC, 13 February 2009)\n- **Breach:** Passengers were carried in a goods vehicle, which is not authorised by the policy or the permit. The vehicle was a goods carriage meant solely for carriage of goods.\n- **Outcome:** Insurer not statutorily liable, but pay-and-recover ordered considering the prolonged litigation.\n- **Key quote:** *\"As per the policy conditions, passengers could not be carried in a goods vehicle and such travel is not authorised by the policy.\"*\n\n**doc_029 — *United India Insurance Co.Ltd vs Minor Mahesh Kanubhai*** (Gujarat HC, 7 April 2014)\n- **Breach:** Gratuitous passengers carried in a goods vehicle/tractor. The risk was neither statutorily required to be covered nor covered under the policy terms.\n- **Outcome:** Insurer completely exonerated; no power to order pay-and-recover for gratuitous passengers.\n- **Key quote:** *\"In cases where a risk is neither statutorily required to be covered nor covered under the terms of the insurance policy (such as gratuitous passengers in a goods vehicle), the provisions of sub-sections (4) and (5) of Section 149... are not attracted.\"*\n\n### (b) Passengers in a private vehicle for hire/reward\n**doc_028 — *United India Insurance Co. Ltd. vs Sukumarbai Suryakant Nikam*** (Bombay HC, 5 August 2019)\n- **Breach:** The deceased was travelling in a private jeep for hire or reward, which was against the policy terms. The vehicle was being used as a transport vehicle without a proper permit.\n- **Outcome:** Insurer completely exonerated (no pay-and-recover).\n- **Key quote:** *\"The deceased was travelling in a private jeep for 'hire or reward'. When the said fact was proved and it was against the policy terms/conditions, then it being inherent breach; no question of liability to pay compensation to the claimants had arisen.\"*\n\n---\n\n## 3. VEHICLE USED FOR HAZARDOUS GOODS WITHOUT REQUISITE PERMIT/ENDORSEMENT\n\n**doc_001 — *United India Insurance Company Ltd vs Neelam Devi And Others*** (Punjab & Haryana HC, 6 November 2023)\n- **Breach:** The vehicle was a tanker carrying hazardous goods, but the driver lacked the special endorsement required under Rule 132 of the Central Motor Vehicles Rules, 1989. This is a breach relating to the permit/authorisation for carrying dangerous goods.\n- **Outcome:** Pay-and-recover ordered.\n- **Key quote:** *\"For driving a goods carriage vehicle carrying dangerous or hazardous goods, a special endorsement on the driving license as prescribed under the Central Motor Vehicles Rules, 1989 is mandatory, and the absence thereof constitutes a breach of insurance policy terms entitling the insurer to pay and recover.\"*\n\n---\n\n## 4. FRAMEWORK JUDGMENT ON PERMIT CONDITION BREACHES\n\n**doc_025 — *New India Assurance Co., Ltd. vs Yallavva*** (Karnataka HC Full Bench, 12 May 2020)\n- This judgment sets out the law on breach of policy conditions under Section 149(2) MV Act. It specifically identifies the following as a recognised defence ground under **Section 149(2)(a)(i)(c)**:\n  > *\"A condition excluding the use of the vehicle for a purpose not allowed by the permit under which the vehicle is used where the vehicle is a transport vehicle.\"*\n- This is the statutory basis for permit/route condition breach defences.\n\n---\n\n## DISTINGUISHED: Judgments about DRIVING LICENCE DEFECTS (NOT permit/route breaches)\n\nThe following judgments in the corpus deal with **driving licence defects** (no valid licence, wrong class of licence, expired licence, no badge/endorsement for transport vehicles) — these are NOT permit/route condition cases:\n- **doc_035** — *United India Insurance Co. vs V. Vijayakumar* (driver lacked badge for transport vehicle — licence defect)\n- **doc_034** — *K.G. Srinivasamurthy vs Habib Khathun* (expired licence)\n- **doc_024** — *Sunil Shreesail Killiket vs Subbraya* (no valid licence)\n- **doc_033** — *Satto & Ors vs New India Assurance Co Ltd* (driver held LMV licence but drove goods vehicle — licence class defect)\n- **doc_032** — *S. Iyyapan vs United India Insurance Co.* (missing commercial endorsement — licence defect)\n- **doc_027** — *The Manager vs Chennamma* (driver lacking proper endorsement)\n\n---\n\n## SUMMARY TABLE\n\n| Doc ID | Case Name | Type of Permit/Route Breach | Outcome |\n|--------|-----------|----------------------------|---------|\n| doc_002 | Liyakat Ali vs Chunni Devi | Tractor used for non-agricultural purpose (construction) | Insurer absolved |\n| doc_030 | Dadapeera vs Mallesh | Tractor used beyond permit (person on mud-guard) | Insurer absolved |\n| doc_014 | Shivlal vs Rukmabai | Gratuitous passenger in goods vehicle | Insurer absolved |\n| doc_026 | National Insurance vs Ellappa | Passengers in goods vehicle | Pay-and-recover |\n| doc_029 | United India vs Mahesh Kanubhai | Gratuitous passengers in goods vehicle/tractor | Insurer absolved |\n| doc_028 | United India vs Sukumarbai | Private vehicle used for hire/reward | Insurer absolved |\n| doc_001 | United India vs Neelam Devi | Tanker carrying hazardous goods without special endorsement | Pay-and-recover |\n| doc_025 | New India Assurance vs Yallavva | Framework: Section 149(2)(a)(i)(c) — purpose not allowed by permit | (Principle) |",
+      "cited_doc_ids": [
+       "doc_002",
+       "doc_030",
+       "doc_014",
+       "doc_026",
+       "doc_029",
+       "doc_028",
+       "doc_001",
+       "doc_025"
+      ],
+      "confidence": "high"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 270.33
+   },
+   {
+    "seq": 35,
+    "kind": "answer",
+    "label": "submit_answer",
+    "detail": "8 citations, confidence=high",
+    "payload": {
+     "doc_ids": [
+      "doc_002",
+      "doc_030",
+      "doc_014",
+      "doc_026",
+      "doc_029",
+      "doc_028",
+      "doc_001",
+      "doc_025"
+     ]
+    },
+    "docs": [],
+    "elapsed_s": 270.34
+   },
+   {
+    "seq": 36,
+    "kind": "plan",
+    "label": "reasoning",
+    "detail": "Here is the answer to your question.",
+    "payload": {},
+    "docs": [],
+    "elapsed_s": 280.98
+   }
+  ],
+  "started_at": 1787043230.563325,
+  "llm_calls": 13,
+  "in_tokens": 213422,
+  "out_tokens": 10185
+ },
+ "retrieved": [
+  "doc_035",
+  "doc_034",
+  "doc_025",
+  "doc_001",
+  "doc_024",
+  "doc_033",
+  "doc_027",
+  "doc_032",
+  "doc_002",
+  "doc_028",
+  "doc_030",
+  "doc_031",
+  "doc_006",
+  "doc_009",
+  "doc_005",
+  "doc_051",
+  "doc_053",
+  "doc_055",
+  "doc_015",
+  "doc_014",
+  "doc_026",
+  "doc_029"
+ ],
+ "tool_sequence": [
+  "search_precedents",
+  "filter_judgments",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "search_precedents",
+  "screen_corpus",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "submit_answer",
+  "submit_answer"
+ ],
+ "llm_calls": 13,
+ "tokens": 223607,
+ "result_type": "DirectAnswer",
+ "result": {
+  "question": "Which judgments deal with a breach of permit or route conditions, rather than a driving licence defect?",
+  "answer": "Based on the corpus of 56 judgments, the following **8 judgments** deal with a breach of **permit or route conditions** (as opposed to a driving licence defect). I have categorised them by the type of breach:\n\n---\n\n## 1. VEHICLE USED FOR A PURPOSE NOT ALLOWED BY THE PERMIT\n\n### (a) Tractor used for non-agricultural purposes (construction, not farming)\n**doc_002 — *Liyakat Ali vs Smt Chunni Devi*** (MACT/Allahabad HC, 16 July 2010)\n- **Breach:** The tractor was insured only for agricultural use, but at the time of the accident it was transporting bricks and iron rods for construction of a room (non-agricultural purpose). This violated the terms and conditions of the insurance policy.\n- **Outcome:** Insurer absolved of liability entirely (not even pay-and-recover).\n- **Key quote:** *\"Transportation of iron rods and bricks is certainly not an agricultural activity. The tractor was insured only for the purpose of agricultural activity... Thus, there is a violation of the terms and conditions of the insurance policy.\"*\n\n### (b) Tractor used for carrying persons on mud-guard — use beyond permit\n**doc_030 — *Dadapeera S/O Abdul Salam Sab vs Mallesh M S/O Hanumanthappa*** (Karnataka HC, 15 January 2025)\n- **Breach:** The tractor-trailer was permitted for transportation of agricultural produce, but the claimant was sitting on the mud-guard of the tractor engine. This violated Regulation 28 of the Rules of the Road Regulations, 1989, and constituted use of the vehicle \"other than the permit given.\"\n- **Outcome:** Insurer not liable; no pay-and-recover ordered.\n- **Key quote:** *\"If tractor and trailer is combinedly used for transporting agricultural materials and if there is any violation or the said Tractor and Trailer is used other than the permit given, then it can be said that the Insurance Company has established its defence under Sub-clause (c) of Clause (i)(a) of Sub-Section (2) of Section 149.\"*\n\n---\n\n## 2. CARRYING UNAUTHORISED PASSENGERS (BREACH OF PERMIT CONDITIONS)\n\n### (a) Gratuitous passengers in a goods vehicle\n**doc_014 — *Shivlal And Ors. vs Smt. Rukmabai And Ors.*** (MP HC, 17 December 1985)\n- **Breach:** The deceased was a gratuitous passenger travelling in a tractor (goods vehicle). The policy expressly prohibited use for conveyance of passengers, and carrying passengers violated the permit condition.\n- **Outcome:** Insurer not liable.\n- **Key quote:** *\"The contract of insurance... expressly prohibits use of the vehicle for conveyance of passengers for hire or reward... under Section 96(2)(b)(i) of the Act the insurance company is entitled to avoid its liability if the vehicle is used in contravention of specified condition of the permit.\"*\n\n**doc_026 — *National Insurance Co. Ltd vs Ellappa*** (Madras HC, 13 February 2009)\n- **Breach:** Passengers were carried in a goods vehicle, which is not authorised by the policy or the permit. The vehicle was a goods carriage meant solely for carriage of goods.\n- **Outcome:** Insurer not statutorily liable, but pay-and-recover ordered considering the prolonged litigation.\n- **Key quote:** *\"As per the policy conditions, passengers could not be carried in a goods vehicle and such travel is not authorised by the policy.\"*\n\n**doc_029 — *United India Insurance Co.Ltd vs Minor Mahesh Kanubhai*** (Gujarat HC, 7 April 2014)\n- **Breach:** Gratuitous passengers carried in a goods vehicle/tractor. The risk was neither statutorily required to be covered nor covered under the policy terms.\n- **Outcome:** Insurer completely exonerated; no power to order pay-and-recover for gratuitous passengers.\n- **Key quote:** *\"In cases where a risk is neither statutorily required to be covered nor covered under the terms of the insurance policy (such as gratuitous passengers in a goods vehicle), the provisions of sub-sections (4) and (5) of Section 149... are not attracted.\"*\n\n### (b) Passengers in a private vehicle for hire/reward\n**doc_028 — *United India Insurance Co. Ltd. vs Sukumarbai Suryakant Nikam*** (Bombay HC, 5 August 2019)\n- **Breach:** The deceased was travelling in a private jeep for hire or reward, which was against the policy terms. The vehicle was being used as a transport vehicle without a proper permit.\n- **Outcome:** Insurer completely exonerated (no pay-and-recover).\n- **Key quote:** *\"The deceased was travelling in a private jeep for 'hire or reward'. When the said fact was proved and it was against the policy terms/conditions, then it being inherent breach; no question of liability to pay compensation to the claimants had arisen.\"*\n\n---\n\n## 3. VEHICLE USED FOR HAZARDOUS GOODS WITHOUT REQUISITE PERMIT/ENDORSEMENT\n\n**doc_001 — *United India Insurance Company Ltd vs Neelam Devi And Others*** (Punjab & Haryana HC, 6 November 2023)\n- **Breach:** The vehicle was a tanker carrying hazardous goods, but the driver lacked the special endorsement required under Rule 132 of the Central Motor Vehicles Rules, 1989. This is a breach relating to the permit/authorisation for carrying dangerous goods.\n- **Outcome:** Pay-and-recover ordered.\n- **Key quote:** *\"For driving a goods carriage vehicle carrying dangerous or hazardous goods, a special endorsement on the driving license as prescribed under the Central Motor Vehicles Rules, 1989 is mandatory, and the absence thereof constitutes a breach of insurance policy terms entitling the insurer to pay and recover.\"*\n\n---\n\n## 4. FRAMEWORK JUDGMENT ON PERMIT CONDITION BREACHES\n\n**doc_025 — *New India Assurance Co., Ltd. vs Yallavva*** (Karnataka HC Full Bench, 12 May 2020)\n- This judgment sets out the law on breach of policy conditions under Section 149(2) MV Act. It specifically identifies the following as a recognised defence ground under **Section 149(2)(a)(i)(c)**:\n  > *\"A condition excluding the use of the vehicle for a purpose not allowed by the permit under which the vehicle is used where the vehicle is a transport vehicle.\"*\n- This is the statutory basis for permit/route condition breach defences.\n\n---\n\n## DISTINGUISHED: Judgments about DRIVING LICENCE DEFECTS (NOT permit/route breaches)\n\nThe following judgments in the corpus deal with **driving licence defects** (no valid licence, wrong class of licence, expired licence, no badge/endorsement for transport vehicles) — these are NOT permit/route condition cases:\n- **doc_035** — *United India Insurance Co. vs V. Vijayakumar* (driver lacked badge for transport vehicle — licence defect)\n- **doc_034** — *K.G. Srinivasamurthy vs Habib Khathun* (expired licence)\n- **doc_024** — *Sunil Shreesail Killiket vs Subbraya* (no valid licence)\n- **doc_033** — *Satto & Ors vs New India Assurance Co Ltd* (driver held LMV licence but drove goods vehicle — licence class defect)\n- **doc_032** — *S. Iyyapan vs United India Insurance Co.* (missing commercial endorsement — licence defect)\n- **doc_027** — *The Manager vs Chennamma* (driver lacking proper endorsement)\n\n---\n\n## SUMMARY TABLE\n\n| Doc ID | Case Name | Type of Permit/Route Breach | Outcome |\n|--------|-----------|----------------------------|---------|\n| doc_002 | Liyakat Ali vs Chunni Devi | Tractor used for non-agricultural purpose (construction) | Insurer absolved |\n| doc_030 | Dadapeera vs Mallesh | Tractor used beyond permit (person on mud-guard) | Insurer absolved |\n| doc_014 | Shivlal vs Rukmabai | Gratuitous passenger in goods vehicle | Insurer absolved |\n| doc_026 | National Insurance vs Ellappa | Passengers in goods vehicle | Pay-and-recover |\n| doc_029 | United India vs Mahesh Kanubhai | Gratuitous passengers in goods vehicle/tractor | Insurer absolved |\n| doc_028 | United India vs Sukumarbai | Private vehicle used for hire/reward | Insurer absolved |\n| doc_001 | United India vs Neelam Devi | Tanker carrying hazardous goods without special endorsement | Pay-and-recover |\n| doc_025 | New India Assurance vs Yallavva | Framework: Section 149(2)(a)(i)(c) — purpose not allowed by permit | (Principle) |",
+  "cited_doc_ids": [
+   "doc_002",
+   "doc_030",
+   "doc_014",
+   "doc_026",
+   "doc_029",
+   "doc_028",
+   "doc_001",
+   "doc_025"
+  ],
+  "confidence": "high"
+ },
+ "cited": [
+  "doc_002",
+  "doc_030",
+  "doc_014",
+  "doc_026",
+  "doc_029",
+  "doc_028",
+  "doc_001",
+  "doc_025"
+ ],
+ "elapsed_s": 281.0
+}

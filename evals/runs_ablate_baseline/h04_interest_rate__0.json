@@ -1,0 +1,963 @@
+{
+ "qid": "h04_interest_rate",
+ "seed": 0,
+ "question": "What rates of interest have been awarded on motor accident compensation, and from which date does interest run?",
+ "kind": "structured",
+ "ok": true,
+ "trace": {
+  "question": "What rates of interest have been awarded on motor accident compensation, and from which date does interest run?",
+  "events": [
+   {
+    "seq": 1,
+    "kind": "budget",
+    "label": "triage",
+    "detail": "research -- The request asks for rates of interest awarded on motor accident compensation and the date from which interest runs. This requires finding, comparing, and weighing multiple precedents (e.g., different jurisdictions, types of damages, statutory vs. common law rates) and possibly analyzing case law to determine the applicable rules. It is not a simple factual lookup from a single document or metadata.",
+    "payload": {
+     "budget": 14
+    },
+    "docs": [],
+    "elapsed_s": 14.04
+   },
+   {
+    "seq": 2,
+    "kind": "tool_call",
+    "label": "search_precedents",
+    "detail": "query=interest rate on motor accident compensation award top_k=15",
+    "payload": {
+     "args": {
+      "query": "interest rate on motor accident compensation award",
+      "top_k": 15
+     }
+    },
+    "docs": [],
+    "elapsed_s": 16.64
+   },
+   {
+    "seq": 3,
+    "kind": "tool_call",
+    "label": "filter_judgments",
+    "detail": "principle_contains=interest",
+    "payload": {
+     "args": {
+      "principle_contains": "interest"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 16.64
+   },
+   {
+    "seq": 4,
+    "kind": "retrieval",
+    "label": "search_precedents",
+    "detail": "query='interest rate on motor accident compensation award' favours=None k=15",
+    "payload": {
+     "query": "interest rate on motor accident compensation award",
+     "favours": null
+    },
+    "docs": [
+     {
+      "doc_id": "doc_023",
+      "title": "Suman Lata And Ors. vs Madan Mohan Sonkar And Ors.",
+      "dense_score": 0.665186882019043,
+      "dense_rank": 4,
+      "sparse_score": 7.454740524291992,
+      "sparse_rank": 2,
+      "fused_score": 0.031754032258064516,
+      "fused_rank": 2,
+      "rerank_score": 10.0,
+      "final_rank": 1,
+      "why": "Directly addresses the interest rate on motor accident compensation, reducing it from 9% to 7.5%.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_004",
+      "title": "Oriental Insurance Company vs Soma Devi & Others",
+      "dense_score": 0.6806643307209015,
+      "dense_rank": 2,
+      "sparse_score": 8.051849365234375,
+      "sparse_rank": 1,
+      "fused_score": 0.03252247488101534,
+      "fused_rank": 1,
+      "rerank_score": 9.0,
+      "final_rank": 2,
+      "why": "Reduces interest rate to 6% per annum in a motor accident compensation case, directly on point.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_034",
+      "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+      "dense_score": 0.5632880926132202,
+      "dense_rank": 17,
+      "sparse_score": 7.255507469177246,
+      "sparse_rank": 3,
+      "fused_score": 0.02886002886002886,
+      "fused_rank": 8,
+      "rerank_score": 8.0,
+      "final_rank": 3,
+      "why": "Enhances compensation but reduces interest rate, directly bearing on the interest rate issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_041",
+      "title": "No.4 Is A Mother Of The Deceased Sri. M. ... vs No.1 Has Filed The Written Statement To ...",
+      "dense_score": 0.6657987833023071,
+      "dense_rank": 3,
+      "sparse_score": 5.469330787658691,
+      "sparse_rank": 4,
+      "fused_score": 0.03149801587301587,
+      "fused_rank": 3,
+      "rerank_score": 7.0,
+      "final_rank": 4,
+      "why": "Awards interest at 9% p.a., providing a benchmark for interest rate in motor accident compensation.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_022",
+      "title": "Sangeeta Devi W/O Sh. Vinod Kumar Singh vs Mahesh Chand & Ors",
+      "dense_score": 0.6830377578735352,
+      "dense_rank": 1,
+      "sparse_score": 3.909914016723633,
+      "sparse_rank": 8,
+      "fused_score": 0.031099324975891997,
+      "fused_rank": 4,
+      "rerank_score": 7.0,
+      "final_rank": 5,
+      "why": "Awards 9% interest per annum from filing date, directly relevant to interest rate determination.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_018",
+      "title": "The Oriental Insurance Comp. Ltd. ... vs Smt. Rani And Ors.",
+      "dense_score": 0.6319979429244995,
+      "dense_rank": 7,
+      "sparse_score": 4.884192943572998,
+      "sparse_rank": 6,
+      "fused_score": 0.03007688828584351,
+      "fused_rank": 5,
+      "rerank_score": 5.0,
+      "final_rank": 6,
+      "why": "Confirms compensation with interest but does not specify rate or discuss interest rate reasoning.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_010",
+      "title": "Raju Gupta S/O Sh. Madan Mohan Gupta vs Himachal Road",
+      "dense_score": 0.6225157380104065,
+      "dense_rank": 8,
+      "sparse_score": 4.308791637420654,
+      "sparse_rank": 7,
+      "fused_score": 0.029631255487269532,
+      "fused_rank": 6,
+      "rerank_score": 3.0,
+      "final_rank": 7,
+      "why": "Awards compensation with interest but focuses on proof of accident, not interest rate.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_019",
+      "title": "Surendra Singh And Another vs Vijay Singh And Another",
+      "dense_score": 0.6644367575645447,
+      "dense_rank": 5,
+      "sparse_score": 3.1177775859832764,
+      "sparse_rank": 13,
+      "fused_score": 0.029083245521601686,
+      "fused_rank": 7,
+      "rerank_score": 3.0,
+      "final_rank": 8,
+      "why": "Discusses multiplier and future prospects, not the interest rate on compensation.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_021",
+      "title": "Both R/O E−365 vs Naseem",
+      "dense_score": 0.6367502510547638,
+      "dense_rank": 6,
+      "sparse_score": 2.638543128967285,
+      "sparse_rank": 19,
+      "fused_score": 0.027809742999616416,
+      "fused_rank": 9,
+      "rerank_score": 2.0,
+      "final_rank": 9,
+      "why": "Focuses on negligence standard, not on interest rate.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_001",
+      "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+      "dense_score": 0.5797022581100464,
+      "dense_rank": 14,
+      "sparse_score": 3.2168660163879395,
+      "sparse_rank": 11,
+      "fused_score": 0.027598020555767037,
+      "fused_rank": 10,
+      "rerank_score": 2.0,
+      "final_rank": 10,
+      "why": "Concerns pay-and-recover rights and policy breach, not interest rate.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_024",
+      "title": "Sunil Shreesail Killiket vs Subbraya",
+      "dense_score": 0.5535775721073151,
+      "dense_rank": 22,
+      "sparse_score": 5.334871292114258,
+      "sparse_rank": 5,
+      "fused_score": 0.027579737335834898,
+      "fused_rank": 11,
+      "rerank_score": 2.0,
+      "final_rank": 11,
+      "why": "Deals with licence breach and pay-and-recover, not interest rate.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_042",
+      "title": "Nazar Singh vs State Of Punjab And Others",
+      "dense_score": 0.5630454421043396,
+      "dense_rank": 18,
+      "sparse_score": 3.5646865367889404,
+      "sparse_rank": 9,
+      "fused_score": 0.027313266443701224,
+      "fused_rank": 12,
+      "rerank_score": 1.0,
+      "final_rank": 12,
+      "why": "Concerns employer recovery from driver, not compensation interest rate.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_020",
+      "title": "Yogeshkumar Badharsinh Baria vs Dilipkumar Ranchhodbhai Damor",
+      "dense_score": 0.5899964869022369,
+      "dense_rank": 12,
+      "sparse_score": 2.8211209774017334,
+      "sparse_rank": 15,
+      "fused_score": 0.027222222222222224,
+      "fused_rank": 13,
+      "rerank_score": 1.0,
+      "final_rank": 13,
+      "why": "Focuses on functional disability and future prospects, not interest rate.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_011",
+      "title": "Asfaq Ahmad Father vs Satender & Ors And 124/18 Titled",
+      "dense_score": 0.617110550403595,
+      "dense_rank": 10,
+      "sparse_score": 2.6466636657714844,
+      "sparse_rank": 18,
+      "fused_score": 0.027106227106227107,
+      "fused_rank": 14,
+      "rerank_score": 1.0,
+      "final_rank": 14,
+      "why": "Deals with standard of proof for negligence, not interest rate.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_014",
+      "title": "Shivlal And Ors. Etc. vs Smt. Rukmabai And Ors.",
+      "dense_score": 0.5522428452968597,
+      "dense_rank": 23,
+      "sparse_score": 3.2568867206573486,
+      "sparse_rank": 10,
+      "fused_score": 0.026333907056798625,
+      "fused_rank": 15,
+      "rerank_score": 1.0,
+      "final_rank": 15,
+      "why": "Concerns gratuitous passenger liability, not interest rate.",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 34.19
+   },
+   {
+    "seq": 5,
+    "kind": "filter",
+    "label": "filter_judgments",
+    "detail": "WHERE principles_joined LIKE '%interest%'  ->  0 of 56 judgments",
+    "payload": {
+     "where": "principles_joined LIKE '%interest%'",
+     "n_matched": 0,
+     "doc_ids": []
+    },
+    "docs": [],
+    "elapsed_s": 34.19
+   },
+   {
+    "seq": 6,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_023 focus=interest rate",
+    "payload": {
+     "args": {
+      "doc_id": "doc_023",
+      "focus": "interest rate"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 36.86
+   },
+   {
+    "seq": 7,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_004 focus=interest rate",
+    "payload": {
+     "args": {
+      "doc_id": "doc_004",
+      "focus": "interest rate"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 36.86
+   },
+   {
+    "seq": 8,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_034 focus=interest rate",
+    "payload": {
+     "args": {
+      "doc_id": "doc_034",
+      "focus": "interest rate"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 36.86
+   },
+   {
+    "seq": 9,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_041 focus=interest rate",
+    "payload": {
+     "args": {
+      "doc_id": "doc_041",
+      "focus": "interest rate"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 36.86
+   },
+   {
+    "seq": 10,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_022 focus=interest rate",
+    "payload": {
+     "args": {
+      "doc_id": "doc_022",
+      "focus": "interest rate"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 36.86
+   },
+   {
+    "seq": 11,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_023 focus='interest rate' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_023"
+     ],
+     "focus": "interest rate"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_023",
+      "title": "Suman Lata And Ors. vs Madan Mohan Sonkar And Ors.",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 36.96
+   },
+   {
+    "seq": 12,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_004 focus='interest rate' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_004"
+     ],
+     "focus": "interest rate"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_004",
+      "title": "Oriental Insurance Company vs Soma Devi & Others",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 36.99
+   },
+   {
+    "seq": 13,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_034 focus='interest rate' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_034"
+     ],
+     "focus": "interest rate"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_034",
+      "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 37.02
+   },
+   {
+    "seq": 14,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_041 focus='interest rate' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_041"
+     ],
+     "focus": "interest rate"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_041",
+      "title": "No.4 Is A Mother Of The Deceased Sri. M. ... vs No.1 Has Filed The Written Statement To ...",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 37.06
+   },
+   {
+    "seq": 15,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_022 focus='interest rate' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_022"
+     ],
+     "focus": "interest rate"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_022",
+      "title": "Sangeeta Devi W/O Sh. Vinod Kumar Singh vs Mahesh Chand & Ors",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 37.09
+   },
+   {
+    "seq": 16,
+    "kind": "tool_call",
+    "label": "screen_corpus",
+    "detail": "criteria=Judgment discusses or awards interest rate on motor accident compensat...",
+    "payload": {
+     "args": {
+      "criteria": "Judgment discusses or awards interest rate on motor accident compensation, specifying the percentage rate and/or the date from which interest runs"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 39.05
+   },
+   {
+    "seq": 17,
+    "kind": "screen",
+    "label": "screen_corpus",
+    "detail": "criteria='Judgment discusses or awards interest rate on motor accident compensation, specifying the percentage rate and/or the date from which interest runs' -- screened 56/56, 4 qualified",
+    "payload": {
+     "criteria": "Judgment discusses or awards interest rate on motor accident compensation, specifying the percentage rate and/or the date from which interest runs",
+     "n_screened": 56,
+     "doc_ids": [
+      "doc_004",
+      "doc_022",
+      "doc_023",
+      "doc_041"
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_004",
+      "title": "",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "Reduced interest rate to 6% per annum on compensation.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_022",
+      "title": "",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "Awarded 9% interest per annum from date of filing of petition till realization.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_023",
+      "title": "",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "Reduced interest rate from 9% to 7.5% per annum.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_041",
+      "title": "",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "Awarded compensation with interest at 9% p.a.",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 85.16
+   },
+   {
+    "seq": 18,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_018 focus=interest rate",
+    "payload": {
+     "args": {
+      "doc_id": "doc_018",
+      "focus": "interest rate"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 87.12
+   },
+   {
+    "seq": 19,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_018 focus='interest rate' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_018"
+     ],
+     "focus": "interest rate"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_018",
+      "title": "The Oriental Insurance Comp. Ltd. ... vs Smt. Rani And Ors.",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 87.2
+   },
+   {
+    "seq": 20,
+    "kind": "tool_call",
+    "label": "submit_answer",
+    "detail": "question=What rates of interest have been awarded on motor accident compensatio... answer=## Interest Rates Awarded on Motor Accident Compensation\n\nBased on the... cited_doc_ids=['doc_004', 'doc_018', 'doc_022', 'doc_023', 'doc_034', 'doc_041'] confidence=high",
+    "payload": {
+     "args": {
+      "question": "What rates of interest have been awarded on motor accident compensation, and from which date does interest run?",
+      "answer": "## Interest Rates Awarded on Motor Accident Compensation\n\nBased on the corpus of 56 judgments, the following interest rates have been awarded, along with the date from which interest runs:\n\n### 1. 6% per annum\n- **Oriental Insurance Company vs Soma Devi & Others** (doc_004) — Himachal Pradesh High Court, 2020\n  - Reduced interest from 7.5% to **6% per annum**, reasoning that \"prevalent interest rates are around 5%.\"\n  - **From:** Date of filing of the petition (27 August 2010), retrospectively.\n\n### 2. 7% per annum\n- **The Oriental Insurance Co. Ltd. vs Smt. Rani And Ors.** (doc_018) — Allahabad High Court, 2019\n  - Confirmed the Tribunal's award of **7% per annum**.\n  - **From:** Date of petition till actual payment.\n\n### 3. 7.5% per annum\n- **Suman Lata And Ors. vs Madan Mohan Sonkar And Ors.** (doc_023) — MACT Faizabad, 2005\n  - Reduced interest from 9% to **7.5% per annum**, following *Tamil Nadu State Road Transport Corporation v. Section Raj Priya* (SC) which held that \"keeping in view the Bank rate the interest was allowed @ 7.5% per annum only.\"\n  - **From:** (Not explicitly stated in the reduction, but the original Tribunal award ran from the date of petition.)\n\n### 4. 9% per annum\n- **Sangeeta Devi vs Mahesh Chand & Ors** (doc_022) — MACT Delhi, 2018\n  - Awarded **9% p.a.** on compensation of Rs. 5,74,000/-\n  - **From:** Date of filing of petition till realization.\n- **No.4 Is A Mother Of The Deceased... vs No.1** (doc_041) — MACT Bangalore, 2016\n  - Awarded **9% p.a.** on compensation of Rs. 25,95,346/-\n  - **From:** Date of petition till date of payment.\n- **K.G. Srinivasamurthy vs Habib Khathun And Ors.** (doc_034) — MACT Madhugiri, 2001\n  - Reduced interest from 12% to **9% per annum**, following *Kaushnuma Begum v. New India Assurance Co. Ltd.* (SC) which held that \"in view of the change in economy and policy of Reserve Bank of India and the prevalent rate of interest for fixed deposit by the nationalised banks, it would be reasonable to award interest at 9 per cent per annum.\"\n  - **From:** Date of petition to date of payment.\n\n### Summary Table\n\n| Rate | Judgment | Court | Year | Interest Runs From |\n|------|----------|-------|------|-------------------|\n| **6% p.a.** | Oriental Insurance vs Soma Devi (doc_004) | HP High Court | 2020 | Date of filing of petition |\n| **7% p.a.** | Oriental Insurance vs Rani (doc_018) | Allahabad High Court | 2019 | Date of petition till payment |\n| **7.5% p.a.** | Suman Lata vs Madan Mohan (doc_023) | MACT Faizabad | 2005 | Date of petition (implied) |\n| **9% p.a.** | Sangeeta Devi vs Mahesh Chand (doc_022) | MACT Delhi | 2018 | Date of filing of petition till realization |\n| **9% p.a.** | Mother of Deceased vs No.1 (doc_041) | MACT Bangalore | 2016 | Date of petition till payment |\n| **9% p.a.** | K.G. Srinivasamurthy vs Habib Khathun (doc_034) | MACT Madhugiri | 2001 | Date of petition till payment |\n\n### Key Observations\n\n1. **Interest uniformly runs from the date of filing of the claim petition** (not from the date of accident). No judgment in this corpus awarded interest from the accident date.\n\n2. **Rates have trended downward over time**: 9% was common in the early 2000s (doc_034, 2001) and remained common through 2016–2018 (doc_041, doc_022). By 2019–2020, courts began reducing rates to 7% (doc_018, 2019) and 6% (doc_004, 2020), citing falling bank interest rates and the Reserve Bank of India's policy.\n\n3. **The rate is discretionary**: Courts adjust the rate based on prevailing economic conditions. The *Kaushnuma Begum* principle (cited in doc_034) — that interest should reflect the prevalent bank deposit rates — remains the guiding framework.",
+      "cited_doc_ids": [
+       "doc_004",
+       "doc_018",
+       "doc_022",
+       "doc_023",
+       "doc_034",
+       "doc_041"
+      ],
+      "confidence": "high"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 101.04
+   },
+   {
+    "seq": 21,
+    "kind": "budget",
+    "label": "wrong_contract_check",
+    "detail": "rejected: direct answer cites 6 judgments with 4 adverse-pool judgments retrieved",
+    "payload": {
+     "doc_ids": [
+      "doc_001",
+      "doc_014",
+      "doc_023",
+      "doc_024"
+     ]
+    },
+    "docs": [],
+    "elapsed_s": 101.05
+   },
+   {
+    "seq": 22,
+    "kind": "tool_call",
+    "label": "submit_research_report",
+    "detail": "question=What rates of interest have been awarded on motor accident compensatio... supporting=[{'doc_id': 'doc_004', 'title': 'Oriental Insurance Company vs Soma De... adverse=[{'doc_id': 'doc_004', 'title': 'Oriental Insurance Company vs Soma De... strategy={'priority_arguments': ['The conventional",
+    "payload": {
+     "args": {
+      "question": "What rates of interest have been awarded on motor accident compensation, and from which date does interest run?",
+      "supporting": [
+       {
+        "doc_id": "doc_004",
+        "title": "Oriental Insurance Company vs Soma Devi & Others",
+        "principle": "Interest rate on compensation should reflect prevailing economic conditions and bank deposit rates; the court may reduce interest to 6% p.a. where prevalent rates are around 5%.",
+        "fact_alignment": "The court reduced interest from 7.5% to 6% p.a., noting a trend of falling interest rates and that prevalent rates were around 5%.",
+        "why_it_matters": "Establishes the most recent (2020) High Court authority for a 6% interest rate, reflecting current economic realities. Also confirms interest runs from the date of filing of the petition.",
+        "strength": "strong",
+        "quote": "The prevalent interest rates are around 5%. As such, it shall be appropriate if the rate of interest on the compensation amount is reduced from 7.5% per annum to 6% per annum, retrospectively, i.e. from the date of the filing of the petition."
+       },
+       {
+        "doc_id": "doc_018",
+        "title": "The Oriental Insurance Comp. Ltd. ... vs Smt. Rani And Ors.",
+        "principle": "Interest at 7% per annum from the date of petition till actual payment is a proper rate.",
+        "fact_alignment": "The Allahabad High Court confirmed the Tribunal's award of 7% p.a. interest, describing it as 'awarded at the proper rate'.",
+        "why_it_matters": "Provides a 2019 High Court authority for a 7% rate, intermediate between the 6% and 9% rates seen in other cases.",
+        "strength": "moderate",
+        "quote": "The interest is also awarded at the proper rate of 7% per annum, chargeable from the date of petition till the date of actual payment."
+       },
+       {
+        "doc_id": "doc_023",
+        "title": "Suman Lata And Ors. vs Madan Mohan Sonkar And Ors.",
+        "principle": "Interest at 7.5% p.a. is appropriate keeping in view the prevailing bank rate, following Tamil Nadu State Road Transport Corporation v. Section Raj Priya (SC).",
+        "fact_alignment": "The court reduced interest from 9% to 7.5% p.a., citing the Supreme Court's view that bank rates justified 7.5%.",
+        "why_it_matters": "Shows a 2005 authority for 7.5% p.a., and demonstrates that courts adjust interest downward from 9% when bank rates fall.",
+        "strength": "moderate",
+        "quote": "keeping in view the Bank rate the interest was allowed @ 7.5% per annum only. In view of the above, we are of the view that the interest should be reduced to 7.5% per annum."
+       },
+       {
+        "doc_id": "doc_022",
+        "title": "Sangeeta Devi W/O Sh. Vinod Kumar Singh vs Mahesh Chand & Ors",
+        "principle": "Interest at 9% p.a. on compensation from the date of filing of petition till realization.",
+        "fact_alignment": "The MACT Delhi awarded 9% p.a. on Rs. 5,74,000 compensation in a 2018 child death case.",
+        "why_it_matters": "Demonstrates that 9% p.a. was still being awarded as recently as 2018 by MACTs, though this is a Tribunal-level decision.",
+        "strength": "moderate",
+        "quote": "Claimant is also entitled to the interest @ 09% p.a. on the total compensation amount from the date of filing of petition till realization."
+       },
+       {
+        "doc_id": "doc_041",
+        "title": "No.4 Is A Mother Of The Deceased Sri. M. ... vs No.1 Has Filed The Written Statement To ...",
+        "principle": "Interest at 9% p.a. from the date of petition till the date of payment.",
+        "fact_alignment": "The MACT Bangalore awarded 9% p.a. on Rs. 25,95,346 compensation in a 2016 fatal accident case.",
+        "why_it_matters": "Another Tribunal-level decision awarding 9% p.a., showing this was the standard rate in the mid-2010s.",
+        "strength": "moderate",
+        "quote": "The Petitioners are entitled for compensation of Rupees 25,95,346/- with interest at the rate of 9% p.a. from the date of the petition till the date of payment."
+       },
+       {
+        "doc_id": "doc_034",
+        "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+        "principle": "Interest at 9% p.a. from the date of petition to the date of payment is reasonable, following Kaushnuma Begum v. New India Assurance Co. Ltd. (SC).",
+        "fact_alignment": "The court reduced interest from 12% to 9% p.a., citing the Supreme Court's view that prevalent bank deposit rates justified 9%.",
+        "why_it_matters": "Establishes the 2001 Supreme Court principle (via Kaushnuma Begum) that interest should track bank deposit rates, and that 9% was then reasonable.",
+        "strength": "moderate",
+        "quote": "The Apex Court in Kaushnuma Begum v. New India Assurance Co. Ltd. has held that, in view of the change in the economy and policy of Reserve Bank of India and the prevalent rate of interest for the fixed deposit by the nationalised banks, it would be reasonable to award interest at 9 per cent per annum."
+       }
+      ],
+      "adverse": [
+       {
+        "doc_id": "doc_004",
+        "title": "Oriental Insurance Company vs Soma Devi & Others",
+        "principle": "Interest rate can be reduced to 6% p.a. where prevalent rates are low, and this reduction can be applied retrospectively from the date of filing.",
+        "risk_to_client": "If a claimant argues for 9% or even 7.5% interest, the insurer can cite this 2020 High Court judgment to argue that 6% is the appropriate current rate given falling interest rates. The court expressly noted 'prevalent interest rates are around 5%'.",
+        "risk_level": "high",
+        "distinguishing_argument": "This was a Himachal Pradesh High Court decision; other High Courts may take a different view. The claimant can argue that 9% remains the conventional rate and that the Supreme Court has not reduced the standard rate to 6%. Additionally, the reduction was applied in a case where the Tribunal had already awarded 7.5%, not 9%.",
+        "quote": "The prevalent interest rates are around 5%. As such, it shall be appropriate if the rate of interest on the compensation amount is reduced from 7.5% per annum to 6% per annum."
+       },
+       {
+        "doc_id": "doc_023",
+        "title": "Suman Lata And Ors. vs Madan Mohan Sonkar And Ors.",
+        "principle": "Interest at 7.5% p.a. is sufficient; 9% is excessive when bank rates are lower.",
+        "risk_to_client": "An insurer can argue that even 9% is too high and that 7.5% (or lower) is the correct rate, citing this judgment and the Supreme Court's view in Tamil Nadu State Road Transport Corporation v. Section Raj Priya.",
+        "risk_level": "medium",
+        "distinguishing_argument": "This is a 2005 MCT decision, not a High Court or Supreme Court ruling on the point. The economic context has changed since 2005. The claimant can argue that 9% has been consistently awarded in more recent Tribunal decisions (doc_022, doc_041).",
+        "quote": "keeping in view the Bank rate the interest was allowed @ 7.5% per annum only."
+       }
+      ],
+      "strategy": {
+       "priority_arguments": [
+        "The conventional rate of interest on motor accident compensation is 9% per annum from the date of filing of the petition, as consistently awarded by MACTs across jurisdictions (doc_022, doc_041, doc_034).",
+        "The Supreme Court in Kaushnuma Begum v. New India Assurance Co. Ltd. held that 9% is reasonable in view of prevalent bank deposit rates — this remains good law (doc_034).",
+        "Any reduction below 9% should be supported by specific evidence of prevailing bank rates; the burden is on the party seeking a lower rate.",
+        "Interest uniformly runs from the date of filing of the claim petition, not from the date of accident — this is consistent across all judgments in the corpus."
+       ],
+       "compensation_range": "Not applicable — this is a survey of interest rates, not a quantum computation.",
+       "compensation_reasoning": "N/A",
+       "risks": [
+        "The 2020 Himachal Pradesh High Court judgment (doc_004) reducing interest to 6% p.a. is the most recent High Court authority in this corpus and could be cited by insurers to argue for a lower rate.",
+        "The trend is clearly downward: 12% (pre-2001) → 9% (2001-2018) → 7.5%/7% (2005-2019) → 6% (2020). A court in 2025-2026 may well award 6% or even lower.",
+        "No Supreme Court judgment in this corpus definitively fixes the interest rate; it remains within judicial discretion based on economic conditions."
+       ],
+       "recommended_forum_or_relief": "For a claimant: Argue for 9% p.a. from date of petition, citing doc_022, doc_041, doc_034 and the Kaushnuma Begum principle. For an insurer: Argue for 6-7% citing doc_004 and doc_018, and the trend of falling interest rates."
+      },
+      "caveats": [
+       "This corpus contains only 6 judgments that expressly discuss interest rates on motor accident compensation. The sample is small and may not reflect the full range of rates awarded across Indian courts.",
+       "No Supreme Court judgment in this corpus directly fixes the interest rate; the highest authority cited is the Supreme Court's observation in Kaushnuma Begum (via doc_034) and Tamil Nadu State Road Transport Corporation v. Section Raj Priya (via doc_023).",
+       "The most recent authority (doc_004, 2020) is a single-judge bench of the Himachal Pradesh High Court; its 6% rate may not be followed by other High Courts.",
+       "Interest rates are inherently discretionary and fact-dependent; no binding rule mandates a particular percentage."
+      ]
+     }
+    },
+    "docs": [],
+    "elapsed_s": 129.97
+   },
+   {
+    "seq": 23,
+    "kind": "answer",
+    "label": "submit_research_report",
+    "detail": "6 supporting, 2 adverse, 3 still unaddressed",
+    "payload": {
+     "doc_ids": [
+      "doc_004",
+      "doc_018",
+      "doc_023",
+      "doc_022",
+      "doc_041",
+      "doc_034",
+      "doc_004",
+      "doc_023"
+     ],
+     "unreconciled_adverse": [
+      "doc_001",
+      "doc_014",
+      "doc_024"
+     ]
+    },
+    "docs": [],
+    "elapsed_s": 129.99
+   },
+   {
+    "seq": 24,
+    "kind": "plan",
+    "label": "reasoning",
+    "detail": "Here is a summary of the findings:",
+    "payload": {},
+    "docs": [],
+    "elapsed_s": 136.39
+   }
+  ],
+  "started_at": 1786976135.9600499,
+  "llm_calls": 10,
+  "in_tokens": 108974,
+  "out_tokens": 7679
+ },
+ "retrieved": [
+  "doc_023",
+  "doc_004",
+  "doc_034",
+  "doc_041",
+  "doc_022",
+  "doc_018",
+  "doc_010",
+  "doc_019",
+  "doc_021",
+  "doc_001",
+  "doc_024",
+  "doc_042",
+  "doc_020",
+  "doc_011",
+  "doc_014"
+ ],
+ "tool_sequence": [
+  "search_precedents",
+  "filter_judgments",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "screen_corpus",
+  "read_judgment",
+  "submit_answer",
+  "submit_research_report"
+ ],
+ "llm_calls": 10,
+ "tokens": 116653,
+ "result_type": "PrecedentResearchReport",
+ "result": {
+  "question": "What rates of interest have been awarded on motor accident compensation, and from which date does interest run?",
+  "supporting": [
+   {
+    "doc_id": "doc_004",
+    "title": "Oriental Insurance Company vs Soma Devi & Others",
+    "principle": "Interest rate on compensation should reflect prevailing economic conditions and bank deposit rates; the court may reduce interest to 6% p.a. where prevalent rates are around 5%.",
+    "fact_alignment": "The court reduced interest from 7.5% to 6% p.a., noting a trend of falling interest rates and that prevalent rates were around 5%.",
+    "why_it_matters": "Establishes the most recent (2020) High Court authority for a 6% interest rate, reflecting current economic realities. Also confirms interest runs from the date of filing of the petition.",
+    "strength": "strong",
+    "quote": "The prevalent interest rates are around 5%. As such, it shall be appropriate if the rate of interest on the compensation amount is reduced from 7.5% per annum to 6% per annum, retrospectively, i.e. from the date of the filing of the petition."
+   },
+   {
+    "doc_id": "doc_018",
+    "title": "The Oriental Insurance Comp. Ltd. ... vs Smt. Rani And Ors.",
+    "principle": "Interest at 7% per annum from the date of petition till actual payment is a proper rate.",
+    "fact_alignment": "The Allahabad High Court confirmed the Tribunal's award of 7% p.a. interest, describing it as 'awarded at the proper rate'.",
+    "why_it_matters": "Provides a 2019 High Court authority for a 7% rate, intermediate between the 6% and 9% rates seen in other cases.",
+    "strength": "moderate",
+    "quote": "The interest is also awarded at the proper rate of 7% per annum, chargeable from the date of petition till the date of actual payment."
+   },
+   {
+    "doc_id": "doc_023",
+    "title": "Suman Lata And Ors. vs Madan Mohan Sonkar And Ors.",
+    "principle": "Interest at 7.5% p.a. is appropriate keeping in view the prevailing bank rate, following Tamil Nadu State Road Transport Corporation v. Section Raj Priya (SC).",
+    "fact_alignment": "The court reduced interest from 9% to 7.5% p.a., citing the Supreme Court's view that bank rates justified 7.5%.",
+    "why_it_matters": "Shows a 2005 authority for 7.5% p.a., and demonstrates that courts adjust interest downward from 9% when bank rates fall.",
+    "strength": "moderate",
+    "quote": "keeping in view the Bank rate the interest was allowed @ 7.5% per annum only. In view of the above, we are of the view that the interest should be reduced to 7.5% per annum."
+   },
+   {
+    "doc_id": "doc_022",
+    "title": "Sangeeta Devi W/O Sh. Vinod Kumar Singh vs Mahesh Chand & Ors",
+    "principle": "Interest at 9% p.a. on compensation from the date of filing of petition till realization.",
+    "fact_alignment": "The MACT Delhi awarded 9% p.a. on Rs. 5,74,000 compensation in a 2018 child death case.",
+    "why_it_matters": "Demonstrates that 9% p.a. was still being awarded as recently as 2018 by MACTs, though this is a Tribunal-level decision.",
+    "strength": "moderate",
+    "quote": "Claimant is also entitled to the interest @ 09% p.a. on the total compensation amount from the date of filing of petition till realization."
+   },
+   {
+    "doc_id": "doc_041",
+    "title": "No.4 Is A Mother Of The Deceased Sri. M. ... vs No.1 Has Filed The Written Statement To ...",
+    "principle": "Interest at 9% p.a. from the date of petition till the date of payment.",
+    "fact_alignment": "The MACT Bangalore awarded 9% p.a. on Rs. 25,95,346 compensation in a 2016 fatal accident case.",
+    "why_it_matters": "Another Tribunal-level decision awarding 9% p.a., showing this was the standard rate in the mid-2010s.",
+    "strength": "moderate",
+    "quote": "The Petitioners are entitled for compensation of Rupees 25,95,346/- with interest at the rate of 9% p.a. from the date of the petition till the date of payment."
+   },
+   {
+    "doc_id": "doc_034",
+    "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+    "principle": "Interest at 9% p.a. from the date of petition to the date of payment is reasonable, following Kaushnuma Begum v. New India Assurance Co. Ltd. (SC).",
+    "fact_alignment": "The court reduced interest from 12% to 9% p.a., citing the Supreme Court's view that prevalent bank deposit rates justified 9%.",
+    "why_it_matters": "Establishes the 2001 Supreme Court principle (via Kaushnuma Begum) that interest should track bank deposit rates, and that 9% was then reasonable.",
+    "strength": "moderate",
+    "quote": "The Apex Court in Kaushnuma Begum v. New India Assurance Co. Ltd. has held that, in view of the change in the economy and policy of Reserve Bank of India and the prevalent rate of interest for the fixed deposit by the nationalised banks, it would be reasonable to award interest at 9 per cent per annum."
+   }
+  ],
+  "adverse": [
+   {
+    "doc_id": "doc_004",
+    "title": "Oriental Insurance Company vs Soma Devi & Others",
+    "principle": "Interest rate can be reduced to 6% p.a. where prevalent rates are low, and this reduction can be applied retrospectively from the date of filing.",
+    "risk_to_client": "If a claimant argues for 9% or even 7.5% interest, the insurer can cite this 2020 High Court judgment to argue that 6% is the appropriate current rate given falling interest rates. The court expressly noted 'prevalent interest rates are around 5%'.",
+    "risk_level": "high",
+    "distinguishing_argument": "This was a Himachal Pradesh High Court decision; other High Courts may take a different view. The claimant can argue that 9% remains the conventional rate and that the Supreme Court has not reduced the standard rate to 6%. Additionally, the reduction was applied in a case where the Tribunal had already awarded 7.5%, not 9%.",
+    "quote": "The prevalent interest rates are around 5%. As such, it shall be appropriate if the rate of interest on the compensation amount is reduced from 7.5% per annum to 6% per annum."
+   },
+   {
+    "doc_id": "doc_023",
+    "title": "Suman Lata And Ors. vs Madan Mohan Sonkar And Ors.",
+    "principle": "Interest at 7.5% p.a. is sufficient; 9% is excessive when bank rates are lower.",
+    "risk_to_client": "An insurer can argue that even 9% is too high and that 7.5% (or lower) is the correct rate, citing this judgment and the Supreme Court's view in Tamil Nadu State Road Transport Corporation v. Section Raj Priya.",
+    "risk_level": "medium",
+    "distinguishing_argument": "This is a 2005 MCT decision, not a High Court or Supreme Court ruling on the point. The economic context has changed since 2005. The claimant can argue that 9% has been consistently awarded in more recent Tribunal decisions (doc_022, doc_041).",
+    "quote": "keeping in view the Bank rate the interest was allowed @ 7.5% per annum only."
+   }
+  ],
+  "strategy": {
+   "priority_arguments": [
+    "The conventional rate of interest on motor accident compensation is 9% per annum from the date of filing of the petition, as consistently awarded by MACTs across jurisdictions (doc_022, doc_041, doc_034).",
+    "The Supreme Court in Kaushnuma Begum v. New India Assurance Co. Ltd. held that 9% is reasonable in view of prevalent bank deposit rates — this remains good law (doc_034).",
+    "Any reduction below 9% should be supported by specific evidence of prevailing bank rates; the burden is on the party seeking a lower rate.",
+    "Interest uniformly runs from the date of filing of the claim petition, not from the date of accident — this is consistent across all judgments in the corpus."
+   ],
+   "compensation_range": "Not applicable — this is a survey of interest rates, not a quantum computation.",
+   "compensation_reasoning": "N/A",
+   "risks": [
+    "The 2020 Himachal Pradesh High Court judgment (doc_004) reducing interest to 6% p.a. is the most recent High Court authority in this corpus and could be cited by insurers to argue for a lower rate.",
+    "The trend is clearly downward: 12% (pre-2001) → 9% (2001-2018) → 7.5%/7% (2005-2019) → 6% (2020). A court in 2025-2026 may well award 6% or even lower.",
+    "No Supreme Court judgment in this corpus definitively fixes the interest rate; it remains within judicial discretion based on economic conditions."
+   ],
+   "recommended_forum_or_relief": "For a claimant: Argue for 9% p.a. from date of petition, citing doc_022, doc_041, doc_034 and the Kaushnuma Begum principle. For an insurer: Argue for 6-7% citing doc_004 and doc_018, and the trend of falling interest rates."
+  },
+  "caveats": [
+   "This corpus contains only 6 judgments that expressly discuss interest rates on motor accident compensation. The sample is small and may not reflect the full range of rates awarded across Indian courts.",
+   "No Supreme Court judgment in this corpus directly fixes the interest rate; the highest authority cited is the Supreme Court's observation in Kaushnuma Begum (via doc_034) and Tamil Nadu State Road Transport Corporation v. Section Raj Priya (via doc_023).",
+   "The most recent authority (doc_004, 2020) is a single-judge bench of the Himachal Pradesh High Court; its 6% rate may not be followed by other High Courts.",
+   "Interest rates are inherently discretionary and fact-dependent; no binding rule mandates a particular percentage."
+  ]
+ },
+ "cited": [
+  "doc_004",
+  "doc_018",
+  "doc_023",
+  "doc_022",
+  "doc_041",
+  "doc_034"
+ ],
+ "elapsed_s": 136.4
+}

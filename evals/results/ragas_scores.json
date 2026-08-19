@@ -1,0 +1,33 @@
+{
+ "means": {
+  "faithfulness": 0.20987494728113937,
+  "llm_context_precision_without_reference": 0.6597222222043981
+ },
+ "per_query": {
+  "q01_brief": {
+   "llm_context_precision_without_reference": 0.999999999975,
+   "faithfulness": 0.08246641040119301,
+   "faithfulness_segments_scored": "13/13"
+  },
+  "q04_adverse_licence": {
+   "llm_context_precision_without_reference": 0.999999999975,
+   "faithfulness": 0.13523850692849265,
+   "faithfulness_segments_scored": "13/13"
+  },
+  "q12_s166": {
+   "llm_context_precision_without_reference": 0.0,
+   "faithfulness": 0.0,
+   "faithfulness_segments_scored": "2/2"
+  },
+  "q14_summarise": {
+   "llm_context_precision_without_reference": 0.6388888888675925,
+   "faithfulness": 0.6217948717948718,
+   "faithfulness_segments_scored": "2/2"
+  }
+ },
+ "n_runs": 4,
+ "n_scored": {
+  "faithfulness": 4,
+  "llm_context_precision_without_reference": 4
+ }
+}

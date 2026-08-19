@@ -1,0 +1,2025 @@
+{
+ "qid": "q12_s166",
+ "seed": 0,
+ "question": "Which judgments decide claims under Section 166 of the Motor Vehicles Act?",
+ "kind": "structured",
+ "ok": true,
+ "trace": {
+  "question": "Which judgments decide claims under Section 166 of the Motor Vehicles Act?",
+  "events": [
+   {
+    "seq": 1,
+    "kind": "budget",
+    "label": "triage",
+    "detail": "simple / side=none -- The request asks for a factual enumeration of judgments that decide claims under a specific statutory provision. This is a straightforward lookup or list, not requiring weighing of precedents or taking a position.",
+    "payload": {
+     "budget": 4,
+     "client_side": "none"
+    },
+    "docs": [],
+    "elapsed_s": 1.53
+   },
+   {
+    "seq": 2,
+    "kind": "tool_call",
+    "label": "search_precedents",
+    "detail": "query=Section 166 Motor Vehicles Act claim petition top_k=25",
+    "payload": {
+     "args": {
+      "query": "Section 166 Motor Vehicles Act claim petition",
+      "top_k": 25
+     }
+    },
+    "docs": [],
+    "elapsed_s": 3.99
+   },
+   {
+    "seq": 3,
+    "kind": "tool_call",
+    "label": "filter_judgments",
+    "detail": "statute_contains=section 166",
+    "payload": {
+     "args": {
+      "statute_contains": "section 166"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 3.99
+   },
+   {
+    "seq": 4,
+    "kind": "retrieval",
+    "label": "search_precedents",
+    "detail": "query='Section 166 Motor Vehicles Act claim petition' favours=None k=25",
+    "payload": {
+     "query": "Section 166 Motor Vehicles Act claim petition",
+     "favours": null
+    },
+    "docs": [
+     {
+      "doc_id": "doc_012",
+      "title": "Smt. Rekha Kumari W/O Late Sh. Sachin vs Himachal Road",
+      "dense_score": 0.5726001858711243,
+      "dense_rank": 1,
+      "sparse_score": 6.428460597991943,
+      "sparse_rank": 2,
+      "fused_score": 0.03252247488101534,
+      "fused_rank": 2,
+      "rerank_score": 10.0,
+      "final_rank": 1,
+      "why": "Directly addresses the standard of proof and evidentiary requirements for a Section 166 claim petition.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_021",
+      "title": "Both R/O E−365 vs Naseem",
+      "dense_score": 0.5511403381824493,
+      "dense_rank": 4,
+      "sparse_score": 5.836827754974365,
+      "sparse_rank": 4,
+      "fused_score": 0.03125,
+      "fused_rank": 3,
+      "rerank_score": 10.0,
+      "final_rank": 2,
+      "why": "Directly addresses negligence and standard of proof under Section 166 MV Act claim petitions.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_009",
+      "title": "Kamal S/O Shiv Ram vs Mursleem S/O Mohd. Akil",
+      "dense_score": 0.5620302557945251,
+      "dense_rank": 3,
+      "sparse_score": 4.449596881866455,
+      "sparse_rank": 7,
+      "fused_score": 0.030798389007344232,
+      "fused_rank": 4,
+      "rerank_score": 10.0,
+      "final_rank": 3,
+      "why": "Directly addresses standard of proof and contributory negligence in a Section 166 claim petition.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_010",
+      "title": "Raju Gupta S/O Sh. Madan Mohan Gupta vs Himachal Road",
+      "dense_score": 0.4688952565193176,
+      "dense_rank": 14,
+      "sparse_score": 5.505444049835205,
+      "sparse_rank": 5,
+      "fused_score": 0.0288981288981289,
+      "fused_rank": 8,
+      "rerank_score": 10.0,
+      "final_rank": 4,
+      "why": "Directly addresses the standard of proof for accident and negligence in a Section 166 claim petition.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_011",
+      "title": "Asfaq Ahmad Father vs Satender & Ors And 124/18 Titled",
+      "dense_score": 0.4640728831291199,
+      "dense_rank": 15,
+      "sparse_score": 4.111780166625977,
+      "sparse_rank": 13,
+      "fused_score": 0.027031963470319637,
+      "fused_rank": 12,
+      "rerank_score": 10.0,
+      "final_rank": 5,
+      "why": "Directly addresses standard of proof for negligence in a Section 166 claim petition.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_022",
+      "title": "Sangeeta Devi W/O Sh. Vinod Kumar Singh vs Mahesh Chand & Ors",
+      "dense_score": 0.48713213205337524,
+      "dense_rank": 9,
+      "sparse_score": 6.3927998542785645,
+      "sparse_rank": 3,
+      "fused_score": 0.03036576949620428,
+      "fused_rank": 5,
+      "rerank_score": 9.0,
+      "final_rank": 6,
+      "why": "Addresses compensation calculation for a child's death under Section 166, directly relevant to quantum.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_004",
+      "title": "Oriental Insurance Company vs Soma Devi & Others",
+      "dense_score": 0.47924935817718506,
+      "dense_rank": 10,
+      "sparse_score": 4.1761579513549805,
+      "sparse_rank": 11,
+      "fused_score": 0.028370221327967807,
+      "fused_rank": 9,
+      "rerank_score": 9.0,
+      "final_rank": 7,
+      "why": "Addresses the court's duty to award just compensation and power to enhance under Section 166.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_041",
+      "title": "No.4 Is A Mother Of The Deceased Sri. M. ... vs No.1 Has Filed The Written Statement To ...",
+      "dense_score": 0.42716842889785767,
+      "dense_rank": 22,
+      "sparse_score": 4.534967422485352,
+      "sparse_rank": 6,
+      "fused_score": 0.027346637102734665,
+      "fused_rank": 11,
+      "rerank_score": 9.0,
+      "final_rank": 8,
+      "why": "Addresses future prospects and compensation calculation in a fatal accident claim under Section 166.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_019",
+      "title": "Surendra Singh And Another vs Vijay Singh And Another",
+      "dense_score": 0.40313589572906494,
+      "dense_rank": 27,
+      "sparse_score": 4.17197322845459,
+      "sparse_rank": 12,
+      "fused_score": 0.025383141762452106,
+      "fused_rank": 18,
+      "rerank_score": 9.0,
+      "final_rank": 9,
+      "why": "Addresses multiplier, future prospects, and appellate power to enhance compensation under Section 166.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_018",
+      "title": "The Oriental Insurance Comp. Ltd. ... vs Smt. Rani And Ors.",
+      "dense_score": 0.4876161813735962,
+      "dense_rank": 7,
+      "sparse_score": 4.369162082672119,
+      "sparse_rank": 9,
+      "fused_score": 0.029418126757516764,
+      "fused_rank": 7,
+      "rerank_score": 8.0,
+      "final_rank": 10,
+      "why": "Addresses burden of proof for contributory negligence and insurer's right to contest in a Section 166 claim.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_023",
+      "title": "Suman Lata And Ors. vs Madan Mohan Sonkar And Ors.",
+      "dense_score": 0.47270798683166504,
+      "dense_rank": 13,
+      "sparse_score": 2.4315237998962402,
+      "sparse_rank": 28,
+      "fused_score": 0.025062266500622665,
+      "fused_rank": 19,
+      "rerank_score": 8.0,
+      "final_rank": 11,
+      "why": "Addresses res ipsa loquitur and insurer's right to challenge quantum in a Section 166 claim.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_005",
+      "title": "L And T Insurance Co Ltd vs Bindudevi Samharu Yadav",
+      "dense_score": 0.5678843259811401,
+      "dense_rank": 2,
+      "sparse_score": 7.163043022155762,
+      "sparse_rank": 1,
+      "fused_score": 0.03252247488101534,
+      "fused_rank": 1,
+      "rerank_score": 7.0,
+      "final_rank": 12,
+      "why": "Addresses Section 167 bar, which is procedurally relevant to maintaining a Section 166 claim.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_001",
+      "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+      "dense_score": 0.44273829460144043,
+      "dense_rank": 18,
+      "sparse_score": 3.9842634201049805,
+      "sparse_rank": 15,
+      "fused_score": 0.026153846153846153,
+      "fused_rank": 14,
+      "rerank_score": 7.0,
+      "final_rank": 13,
+      "why": "Addresses breach of policy conditions and pay-and-recover in a Section 166 claim context.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_024",
+      "title": "Sunil Shreesail Killiket vs Subbraya",
+      "dense_score": 0.4348844885826111,
+      "dense_rank": 20,
+      "sparse_score": 3.8690004348754883,
+      "sparse_rank": 16,
+      "fused_score": 0.025657894736842105,
+      "fused_rank": 16,
+      "rerank_score": 7.0,
+      "final_rank": 14,
+      "why": "Addresses breach of policy (no licence) and pay-and-recover in a Section 166 claim.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_027",
+      "title": "The Manager vs Chennamma",
+      "dense_score": 0.4146583080291748,
+      "dense_rank": 24,
+      "sparse_score": 4.059177398681641,
+      "sparse_rank": 14,
+      "fused_score": 0.02541827541827542,
+      "fused_rank": 17,
+      "rerank_score": 7.0,
+      "final_rank": 15,
+      "why": "Addresses insurer's liability and pay-and-recover for licence endorsement breach in a third-party claim.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_034",
+      "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+      "dense_score": 0.41003215312957764,
+      "dense_rank": 25,
+      "sparse_score": 2.8253252506256104,
+      "sparse_rank": 23,
+      "fused_score": 0.02381289865343728,
+      "fused_rank": 22,
+      "rerank_score": 7.0,
+      "final_rank": 16,
+      "why": "Addresses insurer's liability for expired licence in a third-party claim under Section 166.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_035",
+      "title": "United India Insurance Company Limited vs V.Vijayakumar",
+      "dense_score": 0.49439501762390137,
+      "dense_rank": 5,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": 0.015384615384615385,
+      "fused_rank": 25,
+      "rerank_score": 7.0,
+      "final_rank": 17,
+      "why": "Addresses breach of policy (licence) and pay-and-recover in a third-party claim under Section 166.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_029",
+      "title": "United India Insurance Co.Ltd vs Minor Mahesh Kanubhai & 2",
+      "dense_score": 0.47488635778427124,
+      "dense_rank": 12,
+      "sparse_score": 3.863769769668579,
+      "sparse_rank": 17,
+      "fused_score": 0.026875901875901876,
+      "fused_rank": 13,
+      "rerank_score": 6.0,
+      "final_rank": 18,
+      "why": "Addresses insurer's liability for gratuitous passengers in goods vehicle, relevant to coverage under Section 166.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_045",
+      "title": "K. Surappa vs V. Venkatesha Reddy And Others",
+      "dense_score": 0.47762513160705566,
+      "dense_rank": 11,
+      "sparse_score": 2.4897468090057373,
+      "sparse_rank": 26,
+      "fused_score": 0.02571241401899771,
+      "fused_rank": 15,
+      "rerank_score": 6.0,
+      "final_rank": 19,
+      "why": "Addresses vicarious liability of owner for driver's negligence, relevant to liability in a Section 166 claim.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_014",
+      "title": "Shivlal And Ors. Etc. vs Smt. Rukmabai And Ors.",
+      "dense_score": 0.4417681097984314,
+      "dense_rank": 19,
+      "sparse_score": 2.540837287902832,
+      "sparse_rank": 24,
+      "fused_score": 0.024562989752863168,
+      "fused_rank": 21,
+      "rerank_score": 6.0,
+      "final_rank": 20,
+      "why": "Addresses insurer's liability for gratuitous passengers in goods vehicle, relevant to coverage under Section 166.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_031",
+      "title": "National Insurance Co. Ltd vs Laxmi Narain Dhut",
+      "dense_score": 0.489102303981781,
+      "dense_rank": 6,
+      "sparse_score": 4.4221510887146,
+      "sparse_rank": 8,
+      "fused_score": 0.029857397504456328,
+      "fused_rank": 6,
+      "rerank_score": 3.0,
+      "final_rank": 21,
+      "why": "Concerns own-damage claims and Swaran Singh applicability, not directly relevant to a Section 166 claim petition.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_016",
+      "title": "Reserved On: 21.07.2025 vs State Of H.P",
+      "dense_score": 0.48752695322036743,
+      "dense_rank": 8,
+      "sparse_score": 3.451852321624756,
+      "sparse_rank": 19,
+      "fused_score": 0.027364110201042444,
+      "fused_rank": 10,
+      "rerank_score": 2.0,
+      "final_rank": 22,
+      "why": "Criminal revision on rash driving, not a civil claim petition under Section 166.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_017",
+      "title": "Sanjay vs State Of Haryana",
+      "dense_score": 0.3943749666213989,
+      "dense_rank": 29,
+      "sparse_score": 3.117453098297119,
+      "sparse_rank": 21,
+      "fused_score": 0.023581634068525453,
+      "fused_rank": 24,
+      "rerank_score": 2.0,
+      "final_rank": 23,
+      "why": "Criminal revision on rash driving, not a civil claim petition under Section 166.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_042",
+      "title": "Nazar Singh vs State Of Punjab And Others",
+      "dense_score": 0.45023131370544434,
+      "dense_rank": 17,
+      "sparse_score": 2.5136303901672363,
+      "sparse_rank": 25,
+      "fused_score": 0.02475171886936593,
+      "fused_rank": 20,
+      "rerank_score": 1.0,
+      "final_rank": 24,
+      "why": "Concerns employer's recovery from employee-driver, not a Section 166 claim petition.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_043",
+      "title": "Jagdish Rai vs State Of Punjab And Others",
+      "dense_score": 0.3941153287887573,
+      "dense_rank": 30,
+      "sparse_score": 3.3081297874450684,
+      "sparse_rank": 20,
+      "fused_score": 0.02361111111111111,
+      "fused_rank": 23,
+      "rerank_score": 1.0,
+      "final_rank": 25,
+      "why": "Concerns service law recovery from salary, not a Section 166 claim petition.",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 15.66
+   },
+   {
+    "seq": 5,
+    "kind": "filter",
+    "label": "filter_judgments",
+    "detail": "WHERE statutes_joined LIKE '%section 166%'  ->  19 of 56 judgments",
+    "payload": {
+     "where": "statutes_joined LIKE '%section 166%'",
+     "n_matched": 19,
+     "doc_ids": [
+      "doc_001",
+      "doc_004",
+      "doc_005",
+      "doc_006",
+      "doc_007",
+      "doc_009",
+      "doc_010",
+      "doc_011",
+      "doc_012",
+      "doc_018",
+      "doc_019",
+      "doc_021",
+      "doc_022",
+      "doc_024",
+      "doc_027",
+      "doc_029",
+      "doc_031",
+      "doc_041",
+      "doc_043"
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_001",
+      "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_004",
+      "title": "Oriental Insurance Company vs Soma Devi & Others",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_005",
+      "title": "L And T Insurance Co Ltd vs Bindudevi Samharu Yadav",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_006",
+      "title": "National Insurance Company Ltd. Thr. ... vs Smt. Meena And 4 Others",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_007",
+      "title": "National Insurance Co.Ltd. vs Harpreet Singh And Ors.",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_009",
+      "title": "Kamal S/O Shiv Ram vs Mursleem S/O Mohd. Akil",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_010",
+      "title": "Raju Gupta S/O Sh. Madan Mohan Gupta vs Himachal Road",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_011",
+      "title": "Asfaq Ahmad Father vs Satender & Ors And 124/18 Titled",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_012",
+      "title": "Smt. Rekha Kumari W/O Late Sh. Sachin vs Himachal Road",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_018",
+      "title": "The Oriental Insurance Comp. Ltd. ... vs Smt. Rani And Ors.",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_019",
+      "title": "Surendra Singh And Another vs Vijay Singh And Another",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_021",
+      "title": "Both R/O E−365 vs Naseem",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_022",
+      "title": "Sangeeta Devi W/O Sh. Vinod Kumar Singh vs Mahesh Chand & Ors",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_024",
+      "title": "Sunil Shreesail Killiket vs Subbraya",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_027",
+      "title": "The Manager vs Chennamma",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_029",
+      "title": "United India Insurance Co.Ltd vs Minor Mahesh Kanubhai & 2",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_031",
+      "title": "National Insurance Co. Ltd vs Laxmi Narain Dhut",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_041",
+      "title": "No.4 Is A Mother Of The Deceased Sri. M. ... vs No.1 Has Filed The Written Statement To ...",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_043",
+      "title": "Jagdish Rai vs State Of Punjab And Others",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 15.67
+   },
+   {
+    "seq": 6,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_012 focus=Section 166 claim",
+    "payload": {
+     "args": {
+      "doc_id": "doc_012",
+      "focus": "Section 166 claim"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 57.49
+   },
+   {
+    "seq": 7,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_021 focus=Section 166 claim",
+    "payload": {
+     "args": {
+      "doc_id": "doc_021",
+      "focus": "Section 166 claim"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 57.49
+   },
+   {
+    "seq": 8,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_009 focus=Section 166 claim",
+    "payload": {
+     "args": {
+      "doc_id": "doc_009",
+      "focus": "Section 166 claim"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 57.49
+   },
+   {
+    "seq": 9,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_004 focus=Section 166 claim",
+    "payload": {
+     "args": {
+      "doc_id": "doc_004",
+      "focus": "Section 166 claim"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 57.49
+   },
+   {
+    "seq": 10,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_005 focus=Section 166 claim",
+    "payload": {
+     "args": {
+      "doc_id": "doc_005",
+      "focus": "Section 166 claim"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 57.49
+   },
+   {
+    "seq": 11,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_012 focus='Section 166 claim' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_012"
+     ],
+     "focus": "Section 166 claim",
+     "title": "Smt. Rekha Kumari W/O Late Sh. Sachin vs Himachal Road",
+     "court": "Motor Accident Claims Tribunal( Pilot Court) Karkardooma Courts, Delhi",
+     "holding": "The tribunal held that the claimants in both petitions are entitled to compensation for death and injuries caused by the rash and negligent driving of the offending vehicle, payable by the insurance company.",
+     "ratio": "In motor accident claim petitions under Section 166 of the Motor Vehicles Act, the claimants must establish the occurrence on the touchstone of preponderance of probability, and criminal records such as an FIR and chargesheet are sufficient prima facie proof of negligence when unrebutted.",
+     "passages": [
+      {
+       "section": "body",
+       "score": 0.523,
+       "text": "R/o H. No. 667, Gali No. 10, Sewa Nagar, Ghaziabad, UP \nMACT Nos. 416/16 & 417/16                                                     1 of 28\n                 Sh. G. N. Pandey,  Motor Accident Claims Tribunal( Pilot Court) \n                                 Karkardooma Courts, Delhi.\n\n        3.      Reliance General Insurance Co. Ltd. \n                6Th floor, Unit No. 19, Plot No. D−5, Noida,\n                Gautam Budh Nagar, UP \n                                                   ........ Respondents \nDate of Institution of petition : 05.09.2016 Date of Judgment/Order     : 07.06.2018\nIN THE MATTER OF :− Sh. Naresh S/o Sh. Munesh, aged about 25 years  R/o H. No. A−\n490, Gali No. 3, Part−6, 1st Pusta,  Sonia Vihar, Delhi−94 ............ Petitioner V E R S U S\n1 . S h . G o p a l M a l a h a k a r S / o S h . S a t r o o g h a n M a l a h a k a r\nR/o Laptol Bicholi, Bhagwanpur, Begusarai, Bihar. \n2 . S h . S a n j e e v K u m a r S / o S h . R a m J i S i n g h \nR/o H. No. 667, Gali No. 10, Sewa Nagar, Ghaziabad, UP \n3. Reliance General Insurance Co. Ltd. \n6Th floor, Unit No. 19, Plot No. D−5, Noida, Gautam Budh Nagar, UP  ........ Respondents \nDate of Institution of petition : 05.09.2016 Date of Judgment/Order     : 07.06.2018 A W A R D:−\n1. By   this   order,   I   shall   dispose   off   two   connected   claim   petitions bearing No. 416/16\n & 417/16. Petitioners  have  filed the  claim petitions MACT Nos. 416/16 & 417/16  2 of 28\nSh. G. N. Pandey,  Motor Accident Claims Tribunal( Pilot Court)  Karkardooma Courts, Delhi.\nunder Sec. 166 & 140 of MV Act.\n2 . B o t h   p e t i t i o n s   a r e   f i l e d   b y   t h e   p e t i t i o n e r s   s t a t i n g   t h a t   o n\n1 9 . 0 5 . 2 0 1 6 , t h e d e c e a s e d S a c h i n a l o n g w i t h p e t i t i o n e r N a r e s h w a s g o i n g\nf r o m h i s h o m e t o S a m b a l b y m o t o r c y c l e N o . D L 5 S A M 2 6 8 8 w h i c h\nwas being driven by deceased in slow speed, carefully."
+      },
+      {
+       "section": "body",
+       "score": 0.501,
+       "text": "r e s p o n d e n t\nN o . 1 a n d 2 a n d l d . C o u n s e l f o r i n s u r a n c e c o m p a n y a n d c o n s i d e r e d t h e\nrelevant materials on record. My issue wise findings are as below :−\n11.  My findings on the aforesaid issues are as follows :− Issue No. 1 in petition No. 416/16:−\n1 .   W h e t h e r   d e c e a s e d   S a c h i n   d i e d   o n   a c c o u n t   o f   i n j u r i e s\nsustained in accident taking place on 19.05.2016 at about 8 AM   at   near   Rajiv   Colony   Karheda,  \nM o h a n   n a g a r , S a h i b a b a d , U P w i t h i n t h e j u r i s d i c t i o n o f P S S a h i b a b a d d u e\nto rash and negligent driving of vehicle No. UP 14 ET 9761 by respondent No. 1?OPP\nIssue No. 1 in petition No. 417/16:−\n1 .   W h e t h e r   c l a i m a n t   s u s t a i n e d   i n j u r i e s   i n   m o t o r   a c c i d e n t\nc a u s e d b y r a s h a n d n e g l i g e n t d r i v i n g o f v e h i c l e N o . U P 1 4\nE T 9 7 6 1 b y d e f e n d a n t N o . 1 o n 1 9 . 0 5 . 2 0 1 6 a t a b o u t 8 A M\nn e a r R a j i v C o l o n y K a r h e d a , M o h a n N a g a r , S a h i b a b a d , U P\nwithin the jurisdiction of PS Sahibabad, UP  ?OPP MACT Nos. 416/16 & 417/16  6 of 28\nSh. G. N. Pandey,  Motor Accident Claims Tribunal( Pilot Court)  Karkardooma Courts, Delhi.\n1 2 . T o s u c c e e d i n t h e c l a i m p e t i t i o n s i n v i e w o f S e c t i o n 1 6 6 o f t h e M V\nA c t , i t i s f o r t h e c l a i m a n t t o p r o v e t h a t v e h i c l e w h i c h c a u s e d t h e a c c i d e n t\nwas being driven rashly and negligently by its driver.  Issue No. 1 in both the   cases   is   taken   up  \nt o g e t h e r .   P e t i t i o n e r   /   i n j u r e d   R e k h a   K u m a r i   a n d\nNaresh were examined and deposed about the facts of the case. They were cross−examined   by   ld.  \nC o u n s e l   f o r   r e s p o n d e n t s   a n d   d u r i n g   c r o s s −\nexamination nothing has come forward in their testimony to disbelieve the version   of   PWs."
+      },
+      {
+       "section": "body",
+       "score": 0.482,
+       "text": "has   been   left   to  a   secondary importance   and   it   was   held   that,   mere   use   or   involvement\n  of motor vehicle in causing bodily injuries or death to a human being   or   damage   to   property  \nwould   made   the   petition maintainable under section 166 and 140 of the Act. It is also settled   law\n  t h a t   t h e   t e r m   r a s h n e s s   a n d   n e g l i g e n c e   h a s   t o   b e\nc o n s t r u e d l i g h t l y w h i l e m a k i n g a d e c i s i o n o n a p e t i t i o n f o r c l a i m\nf o r t h e s a m e a s c o m p a r e d t o t h e w o r d r a s h n e s s a n d n e g l i g e n c e\na s f i n d s m e n t i o n i n t h e I n d i a n P e n a l C o d e . T h i s i s b e c a u s e t h e\nc h a p t e r i n t h e M o t o r V e h i c l e A c t d e a l i n g w i t h c o m p e n s a t i o n i s a\nbenevolent legislation and not a penal one. \nF u r t h e r t h e H o n ' b l e H i g h C o u r t o f D e l h i i n M A C A p p . N o . 2 0 0 / 2 0 1 2\ni n c a s e t i t l e d a s U n i t e d I n d i a I n s u r a n c e C o . L t d . V / s . S m t . R i n k i @ R i n k u &\nOrs  decided on 23/07/2012 by Hon'ble Delhi High Court, held as under:\n\" T h e C l a i m s T r i b u n a l w a s c o n s c i o u s o f t h e f a c t t h a t n e g l i g e n c e\ni s a s i n e q u a n o n t o a P e t i t i o n u n d e r S e c t i o n 1 6 6 o f t h e M o t o r\nV e h i c l e s A c t , 1 9 8 8 ( t h e A c t ) . I t i s a l s o t r u e t h a t t h e p r o c e e d i n g s\nf o r g r a n t o f c o m p e n s a t i o n u n d e r t h e A c t a r e n e i t h e r g o v e r n e d b y\nthe criminal procedures nor are a civil suit. \n1 5 . T h e r e f o r e , i n v i e w o f t h e c r i m i n a l c a s e r e c o r d a n d s t a t e m e n t o f P W s ,\nit is proved that the deceased Sachin and injured Naresh sustained fatal MACT\nNos. 416/16 & 417/16  9 of 28 Sh. G. N. Pandey,  Motor Accident Claims Tribunal( Pilot Court) \nKarkardooma Courts, Delhi.\ni n j u r i e s / g r i e v o u s i n j u r i e s o n 1 9 . 0 5 . 2 0 1 6 d u e t o r a s h a n d n e g l i g e n t d r i v i n g\no f o f f e n d i n g v e h i c l e b e a r i n g N o ."
+      },
+      {
+       "section": "body",
+       "score": 0.477,
+       "text": "n t   o f   i n j u r i e s\nsustained in accident taking place on 19.05.2016 at about 8 AM   at   near   Rajiv   Colony   Karheda,  \nM o h a n   n a g a r , S a h i b a b a d , U P w i t h i n t h e j u r i s d i c t i o n o f P S S a h i b a b a d d u e\nto rash and negligent driving of vehicle No. UP 14 ET 9761 by respondent No. 1?OPP\n2. Whether petitioners are entitled to compensation? If so, to what amount and from whom? OPP\n3. Relief. \n5. Following   issues   were   framed   in   petition   No.   417/16   on 22.03.2017:−\n1 .   W h e t h e r   c l a i m a n t   s u s t a i n e d   i n j u r i e s   i n   m o t o r   a c c i d e n t\nc a u s e d b y r a s h a n d n e g l i g e n t d r i v i n g o f v e h i c l e N o . U P 1 4\nE T 9 7 6 1 b y d e f e n d a n t N o . 1 o n 1 9 . 0 5 . 2 0 1 6 a t a b o u t 8 A M\nn e a r R a j i v C o l o n y K a r h e d a , M o h a n N a g a r , S a h i b a b a d , U P\nwithin the jurisdiction of PS Sahibabad, UP  ?OPP\n2.  Whether  claimant  is  entitled  to  compensation?   If  so,  to what amount and from whom? OPP\n3. Relief.\nM\nA\nC\nT\n \nN\no\ns\n.\n\n/\n\n&\n\n/\n\no\nf\n\nSh. G. N. Pandey,  Motor Accident Claims Tribunal( Pilot Court)  Karkardooma Courts, Delhi.\n\nThe   evidence   were   recorded   in   the   matter   for   disposal   of   the petitions:−\n Evidence in Petition  No. 416/16−\n6 . P e t i t i o n e r s e x a m i n e d e y e w i t n e s s o f t h e c a s e i . e . N a r e s h a s P W −1\nby way of affidavit Ex. PW 1/ A. Witness has relied upon the documents i.e:−\n(i) Photocopy of treatment record Ex. PW 1/ 1\n(ii) Photocopy of criminal case record Ex PW 1/ 2 \n(iii) Photocopy of identity card of deponent  Ex. PW 1/ 3\n( i v ) P h o t o c o p y o f t r e a t m e n t r e c o r d m a r k A .   \nPetitioner No. 1 filed her affidavit by way of evidence Ex. PW 2/A   and   examined   herself   as  \nPW−2.   Witness   has   relied   upon   the abovesaid documents i.e:−\n(i) Photocopy of adhar card of Rekha E.x PW 2/ 1\n(ii) Photocopy of adhar card of Chahat Ex. PW 2/ 2\n(iii) Photocopy of adhar card of Samar Ex. PW 2/ 3\n(iv) Photocopy of adhar card of Duarka Prasad Ex. 2/ 4\n(v) Photocopy of adhar card of Maya Devi Ex. PW 2/ 5."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_012",
+      "title": "Smt. Rekha Kumari W/O Late Sh. Sachin vs Himachal Road",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 57.59
+   },
+   {
+    "seq": 12,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_021 focus='Section 166 claim' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_021"
+     ],
+     "focus": "Section 166 claim",
+     "title": "Both R/O E−365 vs Naseem",
+     "court": "Motor Accident Claims Tribunal (Pilot Court), Karkardooma Courts, Delhi",
+     "holding": "The tribunal held that the accident was caused by the rash and negligent driving of the offending truck by Respondent No. 1, and awarded compensation across the four connected claim petitions to be paid by the insurance company.",
+     "ratio": "In motor accident claim cases under Section 166 of the MV Act, the claimants must establish negligence on the touchstone of preponderance of probability based on the criminal record and oral testimony, and strict rules of evidence are not applicable.",
+     "passages": [
+      {
+       "section": "body",
+       "score": 0.484,
+       "text": "dg, 18 Barakhamba Road, New Delhi. \n........ Respondents  Date of Institution of petition : 04.08.2015 Date of Judgment/Order \n   : 16.04.2018 IN THE MATTER OF :− Vansh Shukla S/o Sh. Sandeep Kumar Shukla\naged about 9 months ( Minor through his natural guardian/ Father Sandeep  Kumar Shukla) R/o E−\n\n3 6 5 , G a l i N o . 5 , J a g j e e t N a g a r , D e l h i −5 3   . . . . . . . . . . . . P e t i t i o n e r M A C T\nN o s . 1 4 6 1 5 / 1 5 , 1 5 1 2 8 / 1 5 , 1 5 1 2 9 / 1 5 & 1 5 1 8 2 / 1 5  3 o f 4 6\nSh. G. N. Pandey,  Motor Accident Claims Tribunal( Pilot Court)  Karkardooma Courts, Delhi.\nV E R S U S\n1. Naseem Ahmed S/o Gayasuddin  R/o Parmod Transport Co.\nRampur Road, Moradabad, UP \n2. M/s Sparsh Transport Carrier Pvt. Ltd.\nThrough its Manager/ Managing Director Piprola, Shahjahanpur, UP  Also at:−\n C/o Sanjay Transport Co.\nBareilly, UP \n3. United India Insurance Co.  Ltd.\nThrough its Manager 8th Floor, Kanchanjunga Bldg, 18 Barakhamba Road, New Delhi. \n........ Respondents  Date of Institution of petition : 04.08.2015 Date of Judgment/Order \n   : 16.04.2018 A W A R D:−\n1. By   this   order,   I   shall   dispose   off   four   connected   claim   petitions bearing No.\n 1 4 6 1 5 / 1 5 , 1 5 1 2 8 / 1 5 , 1 5 1 2 9 / 1 5 & 1 5 1 8 2 / 1 5 . P e t i t i o n e r s h a v e\nfiled the claim petitions under Sec. 166 & 140 of MV Act.\n2. These   petitions   are   filed   by   the   petitioners   stating   that   on 09.06.2015,   Shaksham  \nS h u k l a ,   A n u s h k a   S h u k l a ,   M e e n a   S h u k l a   a n d\nV a n s h S h u k l a a l o n g w i t h o t h e r r e l a t i v e s w e r e g o i n g o n W a g o n −R N o . D L\n2 CAL 3562 from Delhi to Faizabad, UP. At about 5:45 hrs, when they reached   NH   24   Village  \nK o t r a ,   P S   P r a s w a ,   S u b   D i v i s i o n   M o h a m d i ,\nL a k h i m p u r K h e r i , U P , i n t h e m e a n w h i l e , a s p e e d i n g t r u c k N o . U P 2 7\n5376 coming from opposite side in high speed and in gross violation of MACT\nN o s . 1 4 6 1 5 / 1 5 , 1 5 1 2 8 / 1 5 , 1 5 1 2 9 / 1 5 & 1 5 1 8 2 / 1 5  4 o f 4 6\nSh. G. N."
+      },
+      {
+       "section": "body",
+       "score": 0.474,
+       "text": "c o m p a n y . I t i s f u r t h e r c o n t e n d e d t h a t d r i v e r o f\nthe offending vehicle has valid DL. While denying rest of the claim of the petitioner   in   the  \npetition,   the   respondent   No.   2   prayed   to   dismiss   the petition with cost.\nT h e r e s p o n d e n t N o . 3 / i n s u r a n c e c o m p a n y f i l e d W S o f t h e c l a i m\npetition contended that vehicle No. UP 27 5376 was insured with the answering   respondent   being\n  insurance   policy   No. 0805013114P107786597   valid   for   the   period   from   31.12.2014   to\n30.12.2015 in favour of M/s Sparsh Transport Carrier Pvt. Ltd. \n4 . I n   v i e w   o f   t h e   r e c o r d s ,   f o l l o w i n g   i s s u e s   w e r e   f r a m e d   o n\n22.01.2016 in petition No. 14615/15:−\n1 . W h e t h e r d e c e a s e d S h a k s h a m S h u k l a d i e d o n a c c o u n t o f\ninjuries sustained in accident taking place on 09.06.2015 at about  5:45  hrs  on  NH   24  Village  \nKotra,   PS  Praswa,  Sub Division   Mohamdi,   Lakhimpur   Kheri,   UP   within   the jurisdiction   of\n\n  PS   Praswa,   Sub   Division   Mohamdi, Lakhimpur Kheri, UP due to rash and negligent driving of\nvehicle bearing No. UP 27 5376 by respondent No. 1. ?OPP\n2. Whether petitioners are entitled to compensation? If so, to what amount and from whom? OPP\nM A C T N o s . 1 4 6 1 5 / 1 5 , 1 5 1 2 8 / 1 5 , 1 5 1 2 9 / 1 5 & 1 5 1 8 2 / 1 5  6 o f 4 6\nSh. G. N. Pandey,  Motor Accident Claims Tribunal( Pilot Court)  Karkardooma Courts, Delhi.\n3. Relief. \n5. Following   issues   were   framed   in   petition   No.   15128/15   on 22.01.2016 :−\n1 .   W h e t h e r   p e t i t i o n e r   s u s t a i n e d   i n j u r i e s   i n   m o t o r   a c c i d e n t\nc a u s e d b y r a s h a n d n e g l i g e n t d r i v i n g o f v e h i c l e N o . U P 2 7\n5 3 7 6 b y r e s p o n d e n t N o . 1 o n 0 9 . 0 6 . 2 0 1 5 a t a b o u t 5 : 4 5 h o u r s\no n N H 2 4 v i l l a g e K o t r a , P S P r a s w a , S u b D i v i s i o n M o h a m d i ,\nL a k h i m p u r K h e r i , U P w i t h i n t h e j u r i s d i c t i o n o f P S P r a s w a ,\nSub Division Mohamdi, Lakhimpur Kheri, UP ?OPP\n2."
+      },
+      {
+       "section": "body",
+       "score": 0.455,
+       "text": "/ 1 5  1 2 o f 4 6\nSh. G. N. Pandey,  Motor Accident Claims Tribunal( Pilot Court)  Karkardooma Courts, Delhi.\nt h e M o t o r V e h i c l e s A c t a r e n o t a k i n t o t h e p r o c e e d i n g s i n a\ncivil suit and hence strict rules of evidence are not required to be followed in this regard. \nF u r t h e r ,   i n  K a u s h n u m m a   B e g u m   a n d   o t h e r s   V / s   N e w\nI n d i a A s s u r a n c e C o m p a n y L i m i t e d , 2 0 0 1 A C J 4 2 1 S C , t h e i s s u e\nof wrongful act or omission on the part of driver of the motor vehicle   involved   in  the   accident  \nhas   been   left   to  a   secondary importance   and   it   was   held   that,   mere   use   or   involvement\n  of motor vehicle in causing bodily injuries or death to a human being   or   damage   to   property  \nwould   made   the   petition maintainable under section 166 and 140 of the Act. It is also settled   law\n  t h a t   t h e   t e r m   r a s h n e s s   a n d   n e g l i g e n c e   h a s   t o   b e\nc o n s t r u e d l i g h t l y w h i l e m a k i n g a d e c i s i o n o n a p e t i t i o n f o r c l a i m\nf o r t h e s a m e a s c o m p a r e d t o t h e w o r d r a s h n e s s a n d n e g l i g e n c e\na s f i n d s m e n t i o n i n t h e I n d i a n P e n a l C o d e . T h i s i s b e c a u s e t h e\nc h a p t e r i n t h e M o t o r V e h i c l e A c t d e a l i n g w i t h c o m p e n s a t i o n i s a\nbenevolent legislation and not a penal one. \nF u r t h e r t h e H o n ' b l e H i g h C o u r t o f D e l h i i n M A C A p p . N o . 2 0 0 / 2 0 1 2\ni n c a s e t i t l e d a s U n i t e d I n d i a I n s u r a n c e C o . L t d . V / s . S m t . R i n k i @ R i n k u &\nOrs  decided on 23/07/2012 by Hon'ble Delhi High Court, held as under:\n\" T h e C l a i m s T r i b u n a l w a s c o n s c i o u s o f t h e f a c t t h a t n e g l i g e n c e\ni s a s i n e q u a n o n t o a P e t i t i o n u n d e r S e c t i o n 1 6 6 o f t h e M o t o r\nV e h i c l e s A c t , 1 9 8 8 ( t h e A c t ) ."
+      },
+      {
+       "section": "body",
+       "score": 0.448,
+       "text": "1 o n 0 9 . 0 6 . 2 0 1 5 a t a b o u t 5 : 4 5 h o u r s\no n N H 2 4 v i l l a g e K o t r a , P S P r a s w a , S u b D i v i s i o n M o h a m d i ,\nL a k h i m p u r K h e r i , U P w i t h i n t h e j u r i s d i c t i o n o f P S P r a s w a ,\nSub Division Mohamdi, Lakhimpur Kheri, UP ?OPP\n2. Whether petitioner is entitled to compensation? If so, to what amount and from whom? OPP\n3. Relief.\n6. Following   issues   were   framed   in   petition   No.   15129/15   on 22.01.2016:−\n1 .   W h e t h e r   p e t i t i o n e r   s u s t a i n e d   i n j u r i e s   i n   m o t o r   a c c i d e n t\nc a u s e d b y r a s h a n d n e g l i g e n t d r i v i n g o f v e h i c l e N o . U P 2 7\n5 3 7 6 b y r e s p o n d e n t N o . 1 o n 0 9 . 0 6 . 2 0 1 5 a t a b o u t 5 : 4 5 h o u r s\no n N H 2 4 v i l l a g e K o t r a , P S P r a s w a , S u b D i v i s i o n M o h a m d i ,\nL a k h i m p u r K h e r i , U P w i t h i n t h e j u r i s d i c t i o n o f P S P r a s w a ,\nSub Division Mohamdi, Lakhimpur Kheri, UP ?OPP\n2. Whether petitioner is entitled to compensation? If so, to what amount and from whom? OPP\n3. Relief.\n7. Following   issues   were   framed   in   petition   No.   15182/15   on 22.01.2016:−\n1 .   W h e t h e r   p e t i t i o n e r   s u s t a i n e d   i n j u r i e s   i n   m o t o r   a c c i d e n t M A C T\nN o s . 1 4 6 1 5 / 1 5 , 1 5 1 2 8 / 1 5 , 1 5 1 2 9 / 1 5 & 1 5 1 8 2 / 1 5  7 o f 4 6\nSh. G. N. Pandey,  Motor Accident Claims Tribunal( Pilot Court)  Karkardooma Courts, Delhi.\nc a u s e d b y r a s h a n d n e g l i g e n t d r i v i n g o f v e h i c l e N o . U P 2 7\n5 3 7 6 b y r e s p o n d e n t N o . 1 o n 0 9 . 0 6 . 2 0 1 5 a t a b o u t 5 : 4 5 h o u r s\no n N H 2 4 v i l l a g e K o t r a , P S P r a s w a , S u b D i v i s i o n M o h a m d i ,"
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_021",
+      "title": "Both R/O E−365 vs Naseem",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 57.62
+   },
+   {
+    "seq": 13,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_009 focus='Section 166 claim' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_009"
+     ],
+     "focus": "Section 166 claim",
+     "title": "Kamal S/O Shiv Ram vs Mursleem S/O Mohd. Akil",
+     "court": "Motor Accident Claims Tribunal (Pilot Court) Karkardooma Courts, Delhi",
+     "holding": "The Tribunal held the insurance company liable to pay compensation to the three injured claimants after deducting 50% for contributory negligence due to driving without a license and helmets.",
+     "ratio": "In motor accident claim cases under Section 166 of the MV Act, the standard of proof is based on preponderance of probabilities, and police record documents such as the FIR and charge sheet are sufficient to establish negligence in the absence of rebuttal. Furthermore, contributory negligence is established when the injured rider is proven to have been driving without a valid driving license and without wearing a helmet.",
+     "passages": [
+      {
+       "section": "body",
+       "score": 0.438,
+       "text": ": 04.01.2019 IN THE MATTER OF :− Tannu D/o Ramesh\nKumar R/o 4 ½ Pusta, Gali No. 6, Sonia Vihar, Delhi. ............ Petitioner VERSUS\n1. Mursleem S/o Mohd. Akil R/o H. No. 78, Village Mursadpur, Hansipur, Distt. Hapur, UP\n2. Ashif S/o Mohd. Abdulla Khan R/o L−68, L Block, Welcome Seelampur, Delhi.\n\n3. Bajaj Allianz General Insurance Co. Ltd. ..... Respondents Date of Institution of petition :\n05.11.2018 Date of Judgment/Order : 04.01.2019 A W A R D:−\n1. By this common award, three DAR petitions for grant of compensation U/s 166 and 140 of the MV\nAct, 1988 is disposed off.\n2. Briefly the facts of all three cases are that on 31.08.2018, injured persons were going through\nmotorcycle and when they reached near 4 th pushta, Sonia Vihar, Delhi, in the meanwhile, offending\nvehicle bearing No. DL 1 LX 2320 which was being driven by its driver at a very high speed, rashly\nand negligently came and hit the motorcycle of the injured. Due to which, they fell down on the road\nand sustained serious and grievous injuries; they were immediately taken to Sushruta Trauma\nCentre and got admitted. Injured Kamal was remained admitted in the DAR Nos. 402/18, 403/18 &\n404/18 2 of 34 Sh. G. N. Pandey, Motor Accident Claims Tribunal( Pilot Court) Karkardooma\nCourts, Delhi.\nhospital till 18.09.2018 i.e. 19 days and right leg and right hand of the injured was got operated.\nInjured Rajni was remained admitted in the hospital till 01.09.2018 and kacha plaster was made on\nher right foot for the period of more than one month. Injured Tannu was remained admitted in the\nhospital till 06.09.2018 and kacha plaster was made on her right leg after got operated for the\nperiod of more than one month. FIR No. 188/18 was registered at PS Sonia Vihar regarding the\naccident and thereafter the petitions for comp ensation under MV Act, 1988. The respondents in all\nthe petitions are common.\n3. The respondent No. 1 and 2 jointly filed their WS denying the averments made in the petition\ncontending that this petition is not maintainable and there is no cause of action for filing of the\nsame. As contended, respondent No."
+      },
+      {
+       "section": "body",
+       "score": 0.427,
+       "text": "18\n& 404/18 8 of 34 Sh. G. N. Pandey, Motor Accident Claims Tribunal( Pilot Court) Karkardooma\nCourts, Delhi.\nor in addition the recovery memo and the mechanical inspection report of the offending vehicle,\nthese documents are sufficient proof to reach to the conclusion that the driver was negligent. It was\nfurther held that the proceedings under the Motor Vehicles Act are not akin to the proceedings in a\ncivil suit and hence strict rules of evidence are not required to be followed in this regard.\nFurther, in Kaushnumma Begum and others V/s New India Assurance Company Limited, 2001 ACJ\n421 SC, the issue of wrongful act or omission on the part of driver of the motor vehicle involved in\nthe accident has been left to a secondary importance and it was held that, mere use or involvement\nof motor vehicle in causing bodily injuries or death to a human being or damage to property would\nmade the petition maintainable under section 166 and 140 of the Act. It is also settled law that the\nterm rashness and negligence has to be construed lightly while making a decision on a petition for\nclaim for the same as compared to the word rashness and negligence as finds mention in the Indian\nPenal Code. This is because the chapter in the Motor Vehicle Act dealing with compensation is a\nbenevolent legislation and not a penal one.\nFurther the Hon'ble High Court of Delhi in MAC App. No.200/2012 in case titled as United India\nInsurance Co. Ltd. V/s. Smt. Rinki @ Rinku & Ors decided on 23/07/2012 by Hon'ble Delhi High\nCourt, held as under:\n\"The Claims Tribunal was conscious of the fact that negligence is a sine qua non to a\nPetition under Section 166 of the Motor Vehicles Act, 1988(the Act). It is also true\nthat the proceedings for grant of compensation under the Act are neither governed by\nDAR Nos. 402/18, 403/18 & 404/18 9 of 34 Sh. G. N. Pandey, Motor Accident Claims\nTribunal( Pilot Court) Karkardooma Courts, Delhi.\nthe criminal procedures nor are a civil suit.\n18. Therefore, in view of the criminal case record and statement of PWs, it is proved that injured\nKamal, Rajni and Tannu sustained injuries on 31.08.2018 due to rash and negligent driving of\noffending vehicle bearing No."
+      },
+      {
+       "section": "body",
+       "score": 0.417,
+       "text": "Kamal S/O Shiv Ram vs Mursleem S/O Mohd. Akil on 4 January,\n2019\n                 Sh. G. N. Pandey, Motor Accident Claims Tribunal( Pilot Court)\n                                  Karkardooma Courts, Delhi.\n                        In the Court of Sh. G. N Pandey\n                  Motor Accident Claims Tribunal(Pilot Court)\n                         Karkardooma Courts, Delhi.\n                         DAR Nos. 402/18, 403/18 & 404/18\n                                                       DAR No. 402/18\nIN THE MATTER OF :−\n                 Kamal S/o Shiv Ram\n                 R/o 4 ½ Pusta, Shivaji Mohalla,\n                 Sonia Vihar, Delhi.             ............ Petitioner\n                                  VERSUS\n        1.       Mursleem S/o Mohd. Akil\n                 R/o H. No. 78, Village Mursadpur,\n                 Hansipur, Distt. Hapur, UP\n        2.       Ashif S/o Mohd. Abdulla Khan\n                 R/o L−68, L Block, Welcome Seelampur, Delhi.\n        3.       Bajaj Allianz General Insurance Co. Ltd.                .... Respondent\nDate of Institution of petition : 05.11.2018 Date of Judgment/Order : 04.01.2019 IN THE MATTER\nOF :− Rajni D/o Shiv Ram R/o 4 ½ Pusta, Sonia Vihar, Delhi. ............ Petitioner VERSUS\n1. Mursleem S/o Mohd. Akil R/o H. No. 78, Village Mursadpur, Hansipur, Distt. Hapur, UP\n2. Ashif S/o Mohd. Abdulla Khan R/o L−68, L Block, Welcome Seelampur, Delhi.\nDAR Nos. 402/18, 403/18 & 404/18 1 of 34 Sh. G. N. Pandey, Motor Accident Claims Tribunal( Pilot\nCourt) Karkardooma Courts, Delhi.\n3. Bajaj Allianz General Insurance Co. Ltd. .... Respondents Date of Institution of petition :\n05.11.2018 Date of Judgment/Order : 04.01.2019 IN THE MATTER OF :− Tannu D/o Ramesh\nKumar R/o 4 ½ Pusta, Gali No. 6, Sonia Vihar, Delhi. ............ Petitioner VERSUS\n1. Mursleem S/o Mohd. Akil R/o H. No. 78, Village Mursadpur, Hansipur, Distt. Hapur, UP\n2. Ashif S/o Mohd. Abdulla Khan R/o L−68, L Block, Welcome Seelampur, Delhi."
+      },
+      {
+       "section": "body",
+       "score": 0.38,
+       "text": "he nature of profession, occupation or job, age, education and\nother factors.\n20. I have gone through the testimony of the witnesses alongwith DAR Nos. 402/18, 403/18 &\n404/18 14 of 34 Sh. G. N. Pandey, Motor Accident Claims Tribunal( Pilot Court) Karkardooma\nCourts, Delhi.\ncomplete medical records. It is deposed that due to the accident, all the injured fell down on the\nroad and sustained serious and grievous injuries; they were immediately taken to Sushruta Trauma\nCentre and got admitted. Injured Kamal was remained admitted in the hospital till 18.09.2018 i.e.\n19 days and right leg and right hand of the injured was got operated. FIR No. 188/18 was registered\nat PS Sooia Vihar regarding the accident. The petitioner claimed that he is working as a salesman at\n759, Katra Neel, Chandni Chowk, Delhi and his monthly salary is Rs. 17,000/− per month. No\ndocument has been placed on record by the injured regarding his income. In the absence of the any\nrecord, petitioner is entitled to compensation as per minimum wages Act as applicable to unskilled\nworkman while considering his monthly salary as per prevalent rate at relevant time i.e. 31.08.2018\nwhen accident took place. The income of the injured is assessed as per the minimum wages on the\ndate of accident i.e 31.08.2018 which was Rs. 13,896/− per month for unskilled workman.\n\n21. I have gone through the medical records of the petitioner. There is nothing on record in support\nof the affidavit of PW−1 that he suffered any loss of earnings from his work. However, with the kind\nof injuries suffered by him, it can be safely assumed that he would have been under treatment for\nabout three months. He is thus awarded Rs. 41,688/− (Rs. 13,896/− X 3) for three months for Loss\nof Wages.\n22. The petitioner has claimed amount towards compensation from the respondent. It is also\nclaimed that after the accident, the petitioner could not perform his routine and required attendant/\nassistance for his day to day business; he also suffered financial losses due the accident and his\nfamily suffered mental pain and agony.\n23."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_009",
+      "title": "Kamal S/O Shiv Ram vs Mursleem S/O Mohd. Akil",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 57.66
+   },
+   {
+    "seq": 14,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_004 focus='Section 166 claim' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_004"
+     ],
+     "focus": "Section 166 claim",
+     "title": "Oriental Insurance Company vs Soma Devi & Others",
+     "court": "In The High Court Of Himachal Pradesh, Shimla",
+     "holding": "The High Court dismissed the insurance company's appeal and, invoking Order 41 Rule 33 CPC, enhanced the total compensation awarded to the claimant to Rs. 5,99,000/- while reducing the interest rate to 6% per annum.",
+     "ratio": "In motor accident claims under Section 166 of the Motor Vehicles Act, the court is duty-bound to award just compensation and may enhance the compensation amount under Order 41 Rule 33 CPC even in the absence of an appeal or cross-objections by the claimant.",
+     "passages": [
+      {
+       "section": "body",
+       "score": 0.456,
+       "text": "taking\nthe balance years of service with reference to the retiring age. It is necessary to avoid this kind of\ninconsistency. We are concerned with cases falling under Section 166 and not under Section 163A of\nMV Act. In cases falling under Section 166 of the MV Act, Davies method is applicable.\n42. We therefore hold that the multiplier to be used should be as mentioned in column (4) of the\nTable above (prepared by applying Susamma Thomas, Trilok Chandra and Charlie), which starts\nwith an operative multiplier of 18 (for the age groups of 15 to 20 and 21 to 25 years), reduced by one\nunit for every five years, that is M−17 for 26 to 30 years, M−16 for 31 to 35 years, M−15 for 36 to 40\nyears, M−14 for 41 to 45 years, and M−13 for 46 to 50 years, then reduced by two units for every five\nyears, that is, M−11 for 51 to 55 years, M−9 for 56 to 60 years, M−7 for 61 to 65 years and M−5 for 66\nto 70 years.\n22. Accordingly, the award needs to be tested in the touchstone of the directions issued by the\nConstitutional bench, which leads to the following conclusion:\n23. In case the deceased was self−employed or on a fixed salary, an addition of 40% of the\nestablished income, is to be considered, where the deceased was below the age of 40 years.\n       (1) Heading          (2)                (3)    (4)\n                            Calculations       Amount Refer\n                            in Rupees          in     ence\n                                               Rupees\n    A. Income               3500/− per                      (Evidence)\n                                                            .\n                            month."
+      },
+      {
+       "section": "body",
+       "score": 0.412,
+       "text": "Ram.\n3. Jai Ram, the driver of the car, narrated to the Police that on Jun 19, 2010, he was driving the car\nbearing registration No. HP33B−2444. When he reached near Bhangrotu Bridge, then a little ahead,\na motorcycle bearing registration No. HP34A−9526 came from the side of Ner Chowk. The bike was\n\ncoming at a very high speed. It came towards the side of his car and hit it from the driver's side. Due\nto the impact of the accident, the motorcycle, along with its driver and the pillion rider, fell. Both the\nriders received injuries. On hearing the sound of impact and the commotion, the people from nearby\nlocality came for rescue and took the injured to the Zonal Hospital, Mandi, HP. Keeping in view the\nserious condition of the victim, the Hospital, referred him to I.G.M.C. hospital at Shimla. On the way\nto Shimla, when he reached Bilaspur, the injured breathed his last.\n4. Based on this information, the Police registered the First Information report and investigation\nensued. After that, the Police got the postmortem examination of deceased in Civil .\nHospital, Bilaspur, on Jun 20, 2010, at 11:30 A.M. As per the report of the postmortem, Ext. PW−\n4/A, the cause of death, was the cumulative effect of accidental injuries and trauma.\n5. After a few months, Smt. Soma Devi, the mother of the deceased, filed a Claim Petition under\nSection 166 of the Motor Vehicles Act, 1988, seeking compensation to the tune of Rs. Fifteen lacs. At\npoint 6 of the petition, she claimed that the monthly income of her deceased son was Rs. 10,000/−.\nShe further contends that the date of birth of his son is Jan 21, 1989. Thus, on the date of the\naccident, the age of the deceased comes out as 21 years and 5 months, which has to be rounded to 21\nyears.\n6. The complainant examined PW−2 Rahul Sood, to prove that her son Harish Kumar was working\nin a firm M/S Sidharth Communications, owned by him. PW−2 Rahul Sood tendered in evidence a\nsalary certificate Ext. PW−2/A. In cross−examination, he stated that he did bring along the records\nof salary. However, he admitted that he maintains a register of wages."
+      },
+      {
+       "section": "body",
+       "score": 0.405,
+       "text": "between the appellant and the respondent but also as between a respondent and a respondent. It\nempowers the appellate court not only to give or refuse relief to the appellant by allowing or\ndismissing the appeal but also to give such other relief to any of the respondents as \"the case may\nrequire\". In the present case, if there was no impediment in law the High Court could therefore,\nthough allowing the appeal of the State by dismissing the plaintiff's suits against it, give the plaintiff\na decree against any or all the other defendants. who were parties to the appeal as respondents.\nWhile the very words of the section make this position abundantly clear the illustration puts the\nposition beyond argument.\n26 In Nagappa v. Gurudayal, (2003) 2 SCC 274, three−member bench of Supreme Court holds, at\npage 282,\n21. For the reasons discussed above, in our view, under the MV Act, there is no restriction that the\nTribunal/court cannot award compensation amount exceeding the claimed amount. The function of\n\nthe Tribunal/court is to award \"just\" compensation which is reasonable on the basis of evidence\nproduced on record. Further, in such .\ncases there is no question of claim becoming time−barred or it cannot be contended that by\nenhancing the claim there would be change of cause of action. It is also to be stated that as provided\nunder sub−section (4) to Section 166, even the report submitted to the Claims Tribunal under sub−\nsection (6) of Section 158 can be treated as an application for compensation under the MV Act. If\nrequired, in appropriate cases, the court may permit amendment to the claim petition.\n27.\n    Supreme Court holds,\n                       r           to\nIn Ramla v. National Insurance Co. Ltd., (2019) 2 SCC 192,\n5. Though the claimants had claimed a total compensation of Rs 25,00,000 in their claim petition\nfiled before the Tribunal, we feel that the compensation which the claimants are entitled to is higher\nthan the same as mentioned supra."
+      },
+      {
+       "section": "body",
+       "score": 0.393,
+       "text": "to\nIn Ramla v. National Insurance Co. Ltd., (2019) 2 SCC 192,\n5. Though the claimants had claimed a total compensation of Rs 25,00,000 in their claim petition\nfiled before the Tribunal, we feel that the compensation which the claimants are entitled to is higher\nthan the same as mentioned supra. There is no restriction that the Court cannot award\ncompensation exceeding the claimed amount, since the function of the Tribunal or court under\nSection 168 of the Motor Vehicles Act, 1988 is to award \"just compensation\". The Motor Vehicles Act\nis a beneficial and welfare legislation. A \"just compensation\"\nis one which is reasonable on the basis of evidence produced on record. It cannot be\nsaid to have become time−barred. Further, there is no need for a new cause of action\nto claim an enhanced amount. The courts are duty− bound to award just\ncompensation. [See the judgments of this Courtin (a) Nagappa v. Gurudayal Singh\n[Nagappa v. Gurudayal Singh, (2003) 2 SCC 274 :\n2003 SCC (Cri) 523] , (b) Magma General Insurance Co. Ltd. v. Nanu Ram [Magma\nGeneral Insurance Co. Ltd. v. Nanu Ram, (2018) 18 SCC 130] ,\n(c) Ibrahim v. Raju [Ibrahim v. Raju, (2011) 10 SCC 634 : (2012) 3 SCC (Civ) 1053 :\n(2012) 1 SCC (Cri) 120] ].\n28. In view of the provisions under Order 41 Rule 33 of CPC, even if Cross Objections/Cross Appeals\nare not on the file of this Court, on the ground of awarding just compensation, the nothing can .\ndeprive the claimant of her lawful entitlement of just, fair and adequate compensation.\n29. The Tribunal has awarded interest at the rate of 7.5% per annum. In my view, there is a trend of\nfalling interest rates and these are likely to fall unless we catch up the global rates of interest, which\nare quite low. The prevalent interest rates are around 5%. As such, it shall be appropriate if the rate\nof interest on the compensation amount is reduced from 7.5% per annum to 6% per annum,\nretrospectively, i.e. from the date of the filing of the petition. The interest already accrued on fixed"
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_004",
+      "title": "Oriental Insurance Company vs Soma Devi & Others",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 57.69
+   },
+   {
+    "seq": 15,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_005 focus='Section 166 claim' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_005"
+     ],
+     "focus": "Section 166 claim",
+     "title": "L And T Insurance Co Ltd vs Bindudevi Samharu Yadav",
+     "court": "In The High Court Of Gujarat At Ahmedabad",
+     "holding": "The Court held that the bar under Section 167 of the Motor Vehicles Act does not apply when proceedings are initiated against different parties (employer under the Workmen's Compensation Act versus third-party tortfeasors under the MV Act), and upheld the Tribunal's finding that the insurance company failed to prove that the driver held a fake driving license.",
+     "ratio": "Section 167 of the Motor Vehicles Act does not bar a claimant from maintaining a claim petition against a third-party tortfeasor under the Motor Vehicles Act merely because compensation was previously sought or received from the employer under the Workmen's Compensation Act, as the parties and liabilities are distinct.",
+     "passages": [
+      {
+       "section": "judgment",
+       "score": 0.461,
+       "text": "was filed before the learned Motor Accident Claims Tribunal\nagainst the tortfeasors i.e. the owner, driver and the insurer of the offending dumper truck,\ntherefore, both the proceedings have no nexus, hence, the bar of Section 167 is not applicable in the\nfacts and circumstances of the present case. In support of his contention, learned counsel for the\nrespondent nos.1 to 4/original claimants placed the reliance upon the judgment of Divisional Bench\nof Gujarat High Court rendered in the case of Superintendent of Post Offices, Rajkot Versus Pratap\nGhelabhai Maru, reported in 1985 (0) AIJEL-HC 214345, Nasimbanu Vs. Ramjibhai Bachubhai\nAhir, reported in MANU/GJ/0048/2005 and judgment of Division Bench of the High Court of\nHimachal Pradesh rendered in the case of Gayatri Devi Vs. Tani Ram and Ors., reported in\nMANU/HP/0020/1976, judgment of Division Bench of the Bombay High Court rendered in the case\nof Inspector General of Police Vs. Sayed Adam, reported in MANU/MH/0352/1996, judgment of\nSingle Bench of the High Court of Rajasthan at Jaipur rendered in the case of New India Assurance\nCo. Ltd. Vs. Smt. Bidami and Ors., reported in 2009 SCC OnLine Raj 3440, judgment of the High\nCourt of Judicature at Madras rendered in the case of The United India Insurance Co. Ltd. Vs.\nAnthony Selvam and Ors., NEUTRAL CITATION C/FA/517/2019 JUDGMENT DATED:\n19/01/2026 undefined reported in 2014 SCC OnLine Mad 3506 and Divisional Manager, New India\nAssurance Co. Ltd. vs. Thiru. Astalingam and Ors., passed in CMA (MD) No.443 of 2012.\n11. Learned counsel for the original claimants further submitted that the insurance company could\nnot prove the case by leading the cogent evidence on record that the driver of the offending dumper\ntruck was holding the fake driving license. He further submitted that the learned Tribunal in\nabsence of any cogent evidence on record, rightly fastened the liability on the insurance company to\nsatisfy the award, therefore, the captioned appeal is liable to be dismissed.\n12."
+      },
+      {
+       "section": "judgment",
+       "score": 0.441,
+       "text": "Tribunal under Section 166 of the Motor Vehicles Act against the driver, owner and insurer\nof the dumper truck bearing registration no.GJ-18-X-9452, therefore, the parties before the\nCommissioner Workmen's Compensation and the parties before the learned Motor Accident Claims\nTribunal are different. The proceedings before the Commissioner Workmen's Compensation were\ninitiated against the employer of the deceased, who has statutory liability to pay the compensation\nunder the Workmen's Compensation Act, 1923 while the proceedings under Section 166 of the MV\nAct was filed by the respondent nos.1 to 4 herein against the tortfeasors, therefore, there is no nexus\nbetween the sets of parties before the both forums.\n14. Learned counsel for the appellant placed the reliance upon the judgment of Hon'ble Apex Court\nrendered in the case of Mastan and Anr. (supra). In Mastan's case (supra), the claimant sought the\ncompensation against his employer and insurer before the both forums and the issue involved in\nthat case was as under:-\n\"Whether the restrictions on the defences available to an insurance company in terms\nof Section 149(2) of the Motor Vehicles Act have any application to the proceedings\nunder the Workmen's Compensation Act?\"\n15. Having considered the facts of the case, the Hon'ble Apex Court in Para 22 observed as under:-\nNEUTRAL CITATION C/FA/517/2019 JUDGMENT DATED: 19/01/2026 undefined\n\"22. Section 167 of 1988 Act statutorily provides for an option to the claimant stating\nthat where the death of or bodily injury to any person gives rise to a claim for\ncompensation under the 1988 Act as also the 1923 Act, the person entitled to\ncompensation may without prejudice to the provisions of Chapter X claim such\ncompensation under either of those Acts but not under both. Section 167 contains a\nnon obstante clause providing for such an option notwithstanding anything in the\n1923 Act.\"\n16."
+      },
+      {
+       "section": "judgment",
+       "score": 0.44,
+       "text": "as also the 1923 Act, the person entitled to\ncompensation may without prejudice to the provisions of Chapter X claim such\ncompensation under either of those Acts but not under both. Section 167 contains a\nnon obstante clause providing for such an option notwithstanding anything in the\n1923 Act.\"\n16. As observed above, the issue before the Hon'ble Apex Court was entirely different and in\nMastan's case (supra), the party before the Commissioner Workmen's Compensation and the Motor\nAccident Claims Tribunal was same, therefore, the ratio of Mastan's case (supra), in my humble\nview, is not applicable in the facts and circumstances of the present case on hand.\n\n17. In case of Dyamavva and Others (supra), the Hon'ble Apex Court has dealt with an entirely\ndifferent issue. The issue before the Hon'ble Apex Court was that as to whether, the amount of\ncompensation deposited by the employer suo motu under Workmen's Compensation Act, 1923\nwould amount a bar under Section 167 of the MV Act. The Hon'ble Apex Court having considered\nthe factual and legal proposition, in para 19 observed as under:-\n\"19 In the aforesaid view of the matter, we hereby affirm the determination rendered\nby the Motor Accidents Claims Tribunal, Bagalkot and the High Court in awarding\ncompensation quantified at Rs 11,44,440 to the claimant. The Motor Accidents\nClaims Tribunal, Bagalkot, as also the High Court, ordered a deduction therefrom of\na sum of Rs 3,26,140 (paid to the claimants under the Workmen's NEUTRAL\nCITATION C/FA/517/2019 JUDGMENT DATED: 19/01/2026 undefined\nCompensation Act, 1923). The said deduction gives full effect to Section 167 The\nMotor Vehicles Act, 1988, inasmuch as, it awards compensation to the respondents\nclaimants under the enactment based on the option first exercised, and also ensures\nthat the respondent claimants are not allowed dual benefit under the two\nenactments.\"\n18."
+      },
+      {
+       "section": "judgment",
+       "score": 0.426,
+       "text": "996. Issues were\nframed on 29.6.1996, deposition of claimants recorded on 7.2.1997, and second witness of claimants\nexamined on 8.8.1997. The Insurance Company did not examine any witness in its defence. Award\nwas pronounced on 30.8.1997. With this background we find that delay is from 22.8.1988 to\n\n29.6.1996. It is not because of claimants. Rather, they represented to this Court on administrative\nside seeking direction to the Claims Tribunal to dispose of the matter at an early date. Consequently,\nclaimants cannot be held responsible for delay, therefore, they are entitled to interest from 6.4.1988\nat the rate allowed by the Claims Tribunal.\"\n21. The issue also came for consideration before the Divisional Bench of High Court of Himachal\nPradesh in case of Gayatri Devi (supra). The Divisional Bench in paras 14 and 15 of the judgment\nobserved as under:-\n\"14. Having regard to the manner in which the law has developed, to which reference\nhas already been made, I find myself unable to accept the proposition that a claimant,\nto whom Section 110-AA of the Motor Vehicles Act does not apply, cannot claim\ncompensation both under the Workmen's Compensation Act and the Motor Vehicles\nAct.\"\n\"15. I am of opinion that neither Section 3 (5) nor Section 19 of the Workmen's\nCompensation Act operates as a bar to the consideration of the claim made by the\nappellants under the Motor Vehicles Act.\n                                                                                        \n                             C/FA/517/2019                                     JUDGMENT \n                                                                                        \nThat claim was maintainable before the Claims Tribunal, and therefore the present\nappeal is maintainable. The institution of a claim under the Workmen's\nCompensation Act does not bar the present appeal.\"\n22. Similarly, the issue came for consideration before the Divisional Bench of High Court of Bombay\nin case of Sayed Adam (supra). The Divisional Bench in para 13 of the judgment observed as under:-\n\"13."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_005",
+      "title": "L And T Insurance Co Ltd vs Bindudevi Samharu Yadav",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 57.72
+   },
+   {
+    "seq": 16,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_010 focus=Section 166 claim",
+    "payload": {
+     "args": {
+      "doc_id": "doc_010",
+      "focus": "Section 166 claim"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 75.21
+   },
+   {
+    "seq": 17,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_011 focus=Section 166 claim",
+    "payload": {
+     "args": {
+      "doc_id": "doc_011",
+      "focus": "Section 166 claim"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 75.21
+   },
+   {
+    "seq": 18,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_022 focus=Section 166 claim",
+    "payload": {
+     "args": {
+      "doc_id": "doc_022",
+      "focus": "Section 166 claim"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 75.21
+   },
+   {
+    "seq": 19,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_019 focus=Section 166 claim",
+    "payload": {
+     "args": {
+      "doc_id": "doc_019",
+      "focus": "Section 166 claim"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 75.21
+   },
+   {
+    "seq": 20,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_018 focus=Section 166 claim",
+    "payload": {
+     "args": {
+      "doc_id": "doc_018",
+      "focus": "Section 166 claim"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 75.21
+   },
+   {
+    "seq": 21,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_010 focus='Section 166 claim' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_010"
+     ],
+     "focus": "Section 166 claim",
+     "title": "Raju Gupta S/O Sh. Madan Mohan Gupta vs Himachal Road",
+     "court": "Motor Accident Claims Tribunal, Karkardooma Courts, Delhi",
+     "holding": "The tribunal allowed the claim petitions and awarded compensation to the injured petitioners to be paid by the insurance company along with interest.",
+     "ratio": "Strict proof of an accident caused by a particular vehicle is not required, and claimants need only establish their case on the touchstone of preponderance of probability using criminal court records and testimonies.",
+     "passages": [
+      {
+       "section": "body",
+       "score": 0.462,
+       "text": "c c i d e n t\nc a u s e d b y r a s h a n d n e g l i g e n t d r i v i n g o f v e h i c l e N o . H R 5 5 F\n2 5 0 7 b y r e s p o n d e n t N o . 1 o n 1 5 . 0 2 . 2 0 1 6 a t a b o u t 2 A M a t\nWazirabad road in front of Sonia Vihar, Water Plant towards Wazirabad   Road,   Delhi   within   the\n\n  jurisdiction   of   PS Khajoori Khas ?OPP\n2. Whether petitioner is entitled to compensation? If so, to what amount and from whom? OPP\n3. Relief. \n5. Following   issues   were   framed   in   petition   No.   154/16   on 01.09.2016 :− DAR\nN o s . 1 5 3 / 1 6 , 1 5 4 / 1 6 & 1 5 5 / 1 6  4 o f 3 5\nSh. G. N. Pandey,  Motor Accident Claims Tribunal( Pilot Court)  Karkardooma Courts, Delhi.\n1 .   W h e t h e r   p e t i t i o n e r   s u s t a i n e d   i n j u r i e s   i n   m o t o r   a c c i d e n t\nc a u s e d b y r a s h a n d n e g l i g e n t d r i v i n g o f v e h i c l e N o . H R 5 5 F\n2 5 0 7 b y r e s p o n d e n t N o . 1 o n 1 5 . 0 2 . 2 0 1 6 a t a b o u t 2 A M a t\nWazirabad road in front of Sonia Vihar, Water Plant towards Wazirabad   Road,   Delhi   within   the\n  jurisdiction   of   PS Khajoori Khas ?OPP\n2. Whether petitioner is entitled to compensation? If so, to what amount and from whom? OPP\n3. Relief. \n6. Following   issues   were   framed   in   petition   No.   155/16   on 01.09.2016:−\n1 .   W h e t h e r   p e t i t i o n e r   s u s t a i n e d   i n j u r i e s   i n   m o t o r   a c c i d e n t\nc a u s e d b y r a s h a n d n e g l i g e n t d r i v i n g o f v e h i c l e N o . H R 5 5 F\n2 5 0 7 b y r e s p o n d e n t N o . 1 o n 1 5 . 0 2 . 2 0 1 6 a t a b o u t 2 A M a t\nWazirabad road in front of Sonia Vihar, Water Plant towards Wazirabad   Road,   Delhi   within   the\n  jurisdiction   of   PS Khajoori Khas ?OPP\n2. Whether petitioner is entitled to compensation? If so, to what amount and from whom? OPP\n3. Relief. \nThe   evidence   were   recorded   in   the   matter   for   disposal   of   the petitions:−\n Evidence in Petition  No. 153/16−\n7 . P e t i t i o n e r e x a m i n e d h i m s e l f a s P W −1 b y w a y o f a f f i d a v i t E x . P W\n1 / X . W i t n e s s h a s r e l i e d u p o n t h e d o c u m e n t s i . e ."
+      },
+      {
+       "section": "body",
+       "score": 0.449,
+       "text": "ACJ   688,   this compensation   shall   be   recovered   by  \nattaching   the   bank   account   of Insurance Company with a cost of Rs. 10,000/−.\n60.      Form−V shall be read as a part of the judgment.\n61. Copy of this judgment be placed in the DAR petitions bearing Nos.\n153/16, 154/16 & 155/16.                                                   GORAKH NATH\n                                             GORAKH                        Location: Cou\n                                             NATH                          No.69, North \n                                                                           District,\nAnnounced in open Court \non this day of 08th October 2018\n                                             PANDEY                        Karkardooma\n                                                                           Court, Delhi\n                                                                           Date: 2018.10\n\n                                                                           16:51:03 +053\n                                               G. N. Pandey\nMotor Accident Claims Tribunal(Pilot Court)        Karkardooma Courts, Delhi.\nDAR Nos. 153/16, 154/16 & 155/16                                        35 of 35"
+      },
+      {
+       "section": "body",
+       "score": 0.445,
+       "text": "........ Respondents \nDate of Institution of DAR      : 29.03.2016\nDate of Judgment/Order     : 08.10.2018 \nDAR Nos. 153/16, 154/16 & 155/16                                         1 of 35\nSh. G. N. Pandey,  Motor Accident Claims Tribunal( Pilot Court)  Karkardooma Courts, Delhi.\n\nI N T H E M A T T E R O F : − N e e l a m W / o S h . S a t i s h K u m a r  R / o  E −\n2/548, Gali no. 3, Sonia Vihar, Delhi. \n............ Petitioner V E R S U S\n1. Manoj Kumar s/o Sh. Babu Ram  R/o H. No. B−2, Nangli Vihar,  New Delhi. \n2 . R a m S i n g h S / o S h . G . S . M e e n a R / o H . N o . 1 1 7 , G a l i N o . 3 , P r e m V i h a r ,\nNangli Dairy, Najafgarh, Delhi. \n3. National Insurance Co. Ltd. \n                 B−18, Janak Puri, 1st Floor,\n                 New Delhi.                                   ........ Respondents \nDate of Institution of DAR      : 29.03.2016\nDate of Judgment/Order     : 08.10.2018 \nIN THE MATTER OF :−\n                 Satish Kumar S/o Sh. Kanhaiya Lal \nR/o  E−2/548, Gali no. 3, Sonia Vihar, Delhi. \n............ Petitioner V E R S U S\n1. Manoj Kumar s/o Sh. Babu Ram  R/o H. No. B−2, Nangli Vihar,  New Delhi. \n2 . R a m S i n g h S / o S h . G . S . M e e n a R / o H . N o . 1 1 7 , G a l i N o . 3 , P r e m V i h a r ,\nNangli Dairy, Najafgarh, Delhi. \nD A R N o s . 1 5 3 / 1 6 , 1 5 4 / 1 6 & 1 5 5 / 1 6  2 o f 3 5\nSh. G. N. Pandey,  Motor Accident Claims Tribunal( Pilot Court)  Karkardooma Courts, Delhi.\n3. National Insurance Co. Ltd. \nB−18, Janak Puri, 1st Floor, New Delhi. \n                                                              ........ Respondents \nDate of Institution of DAR      : 29.03.2016\nDate of Judgment/Order     : 08.10.2018 \nA W A R D:−"
+      },
+      {
+       "section": "body",
+       "score": 0.444,
+       "text": "Raju Gupta S/O Sh. Madan Mohan Gupta vs Himachal Road on 8\nOctober, 2018\n                 Sh. G. N. Pandey,  Motor Accident Claims Tribunal( Pilot Court) \n                                  Karkardooma Courts, Delhi.\n                        In the Court of Sh. G. N Pandey \n                  Motor Accident Claims Tribunal(Pilot Court) \n                              Karkardooma Courts, Delhi.           \n                                                               \n                                    DAR Nos. 153/16, 154/16 & 155/16\n                                                   DAR No. 153/16\nIN THE MATTER OF :−\n                 Raju Gupta S/o Sh. Madan Mohan Gupta\n                 R/o H. No. 1511, Gali Arya Samaj, Sita Ram Bazaar,\n                 Chandni Chowk, Delhi. \n                                                              ............ Petitioner\n                                         V E R S U S\n        1.       Manoj Kumar s/o Sh. Babu Ram \n                 R/o H. No. B−2, Nangli Vihar, \n                 New Delhi. \n        2.       Ram Singh S/o Sh. G. S. Meena\n                 R/o H. No. 117, Gali No. 3, Prem Vihar,\n                 Nangli Dairy, Najafgarh, Delhi. \n        3.       National Insurance Co. Ltd. \n                 B−18, Janak Puri, 1st Floor,\n                 New Delhi. \n                                                              ........ Respondents \nDate of Institution of DAR      : 29.03.2016\nDate of Judgment/Order     : 08.10.2018 \nDAR Nos. 153/16, 154/16 & 155/16                                         1 of 35\nSh. G. N. Pandey,  Motor Accident Claims Tribunal( Pilot Court)  Karkardooma Courts, Delhi."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_010",
+      "title": "Raju Gupta S/O Sh. Madan Mohan Gupta vs Himachal Road",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 75.29
+   },
+   {
+    "seq": 22,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_011 focus='Section 166 claim' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_011"
+     ],
+     "focus": "Section 166 claim",
+     "title": "Asfaq Ahmad Father vs Satender & Ors And 124/18 Titled",
+     "court": "Motor Accident Claims Tribunal (Pilot Court) Karkardooma Courts, Delhi",
+     "holding": "The tribunal awarded compensation of Rs. 12,36,660/- in MACT No. 74/18 and Rs. 1,89,150/- in MACT No. 124/18 to the claimants, holding the insurance company liable to pay the same.",
+     "ratio": "In motor accident claim cases under Section 166 of the Motor Vehicles Act, the standard of proof for establishing negligence is based on preponderance of probability, and certified criminal records coupled with un-rebutted testimony are sufficient to prove negligence.",
+     "passages": [
+      {
+       "section": "body",
+       "score": 0.441,
+       "text": "u r a n c e C o m p a n y L i m i t e d , 2 0 0 1 A C J 4 2 1 S C , t h e i s s u e\nof wrongful act or omission on the part of driver of the motor vehicle   involved  in   the   accident \nhas   been  left   to   a  secondary importance   and  it  was   held   that,   mere   use   or   involvement  \n\nof motor vehicle in causing bodily injuries or death to a human being   or   damage   to   property  \nwould   made   the   petition maintainable under section 166 and 140 of the Act. It is also settled   law\n  t h a t   t h e   t e r m   r a s h n e s s   a n d   n e g l i g e n c e   h a s   t o   b e\nc o n s t r u e d l i g h t l y w h i l e m a k i n g a d e c i s i o n o n a p e t i t i o n f o r c l a i m\nf o r t h e s a m e a s c o m p a r e d t o t h e w o r d r a s h n e s s a n d n e g l i g e n c e\na s f i n d s m e n t i o n i n t h e I n d i a n P e n a l C o d e . T h i s i s b e c a u s e t h e\nc h a p t e r i n t h e M o t o r V e h i c l e A c t d e a l i n g w i t h c o m p e n s a t i o n i s a\nbenevolent legislation and not a penal one. \nF u r t h e r t h e H o n ' b l e H i g h C o u r t o f D e l h i i n M A C A p p . N o . 2 0 0 / 2 0 1 2\ni n c a s e t i t l e d a s U n i t e d I n d i a I n s u r a n c e C o . L t d . V / s . S m t . R i n k i @ R i n k u &\nOrs  decided on 23/07/2012 by Hon'ble Delhi High Court, held as under:\n\" T h e C l a i m s T r i b u n a l w a s c o n s c i o u s o f t h e f a c t t h a t n e g l i g e n c e\ni s a s i n e q u a n o n t o a P e t i t i o n u n d e r S e c t i o n 1 6 6 o f t h e M o t o r\nV e h i c l e s A c t , 1 9 8 8 ( t h e A c t ) . I t i s a l s o t r u e t h a t t h e p r o c e e d i n g s\nf o r g r a n t o f c o m p e n s a t i o n u n d e r t h e A c t a r e n e i t h e r g o v e r n e d b y\nthe criminal procedures nor are a civil suit. \n1 5 . T h e r e f o r e , i n v i e w o f t h e c r i m i n a l c a s e r e c o r d a n d s t a t e m e n t o f P W s ,\ni t i s p r o v e d t h a t t h e d e c e a s e d I s t k h a r a n d i n j u r e d S h e r d d i n s u s t a i n e d f a t a l\nM\nA\nC\nT\n \nN\no\ns\n.\n\n/\n\n&\n\n/\n\no\nf"
+      },
+      {
+       "section": "body",
+       "score": 0.429,
+       "text": "R/o 350/1, Karula Nagar,\n                Baghpat Road, Meerut, UP. \nMACT Nos. 74/18 & 124/18                                                  1 of 26\n                 Sh. G. N. Pandey,  Motor Accident Claims Tribunal( Pilot Court) \n                                 Karkardooma Courts, Delhi.\n\n        4       The Oriental Insurance Co. Ltd.\n                Baghwati Complex, Garh Road,\n                Meerut, UP\n                Regd. Office at:−\n                Oriental House P. B. No. 7037\n                A−25/27, Asaf Ali Road, New Delhi−02\n        5.      Budh Prakash Gupta\n                S/o Late Surajbal Gupta\n                R/o 8 Raghukul Vihar, \n                T. P. Nagar Meerut, UP. \n                                                                      ........ Responden\nDate of Institution of petition  : 13.03.2018 Date of Judgment/Order     : 15.09.2018. \nIN THE MATTER OF :− Sherddin  S/o Sh. Salimuddin  R/o H. No. E−505, Gali No. 22,\n1/ 2, Tent Wala School, Old Mustafabad, North East, Delhi. \n............ Petitioner V E R S U S\n1. Satender  S/o Sh. Sai Ram  R/o Village Daluhera Jani Distt. Meerut UP. \n2 . J a g d i s h P r a s h a d S / o L a t e S u r a j b a l G u p t a R / o 5 1 / 4 , M a d h u b a n C o l o n y ,\nBaghpat Road, Meerut, UP\n3 . R o h i t B a n s a l M A C T N o s . 7 4 / 1 8 & 1 2 4 / 1 8 2 o f 2 6\nSh. G. N. Pandey,  Motor Accident Claims Tribunal( Pilot Court)  Karkardooma Courts, Delhi.\nS/o Late Sh. Dhan Prakash Bansal R/o 350/1, Karula Nagar, Baghpat Road, Meerut, UP. \n4 U. P. S. R. T. C. Through its Regional Manager, Meerut Depot, Meerut, UP. \n5. The Oriental Insurance Co. Ltd.\nBaghwati Complex, Garh Road, Meerut, UP Regd. Office at:− Oriental House P. B. No. 7037 A−\n25/27, Asaf Ali Road, New Delhi−02 ........ Respondents  Date of Institution of petition  : 27.04.2018\nDate of Judgment/Order     : 15.09.2018.\nA W A R D:−\n1. By   this   order,   I   shall   dispose   off   two   connected   claim   petitions\nbearing MACT Nos. 74/18 and 124/18 for grant of compensation."
+      },
+      {
+       "section": "body",
+       "score": 0.395,
+       "text": "aintainable  and there  is  no cause \nof action  for filing of the  same.  As contended,   motorcyclist   tried   to   overtake   dumper   in   a  \nvery   rash   and negligent and collided with the bus. Respondent No. 1 was driving the said\nb u s b y f o l l o w i n g t h e t r a f f i c r u l e s . T h e r e s p o n d e n t N o . 1  i s h a v i n g a v a l i d\nDL. The bus No. UP 15 AT 4990 is insured with the respondent No. 5.\nThe respondent No. 5 filed WS denying the averments made in the petition  contending  that  this\n p e t i t i o n  i s  n o t  m a i n t a i n a b l e .   A s   c o n t e n d e d ,\nvehicle No. UP 15 AT 4990 was insured with the respondent No. 5 vide poicy   No.  \n2 5 2 4 0 5 / 3 1 / 2 0 1 8 / 5 3 7 6   w . e . f   3 0 . 1 1 . 2 0 1 7   t o   m i d n i g h t   o f\n2 9 . 1 1 . 2 0 1 8 i n t h e n a m e o f r e s p o n d e n t B u d h P r a k a s h G u p t a , S h . J a g d i s h\nPrasad gupta and Rohit Bansal. \nT h e r e s p o n d e n t N o . 6 f i l e d W S d e n y i n g t h e a v e r m e n t s m a d e i n t h e\np e t i t i o n c o n t e n d i n g t h a t t h i s p e t i t i o n i s n o t m a i n t a i n a b l e a n d t h e r e i s n o\nc a u s e o f a c t i o n f o r f i l i n g o f t h e s a m e . A s c o n t e n d e d , m o t o r c y c l i s t t r i e d t o\no v e r t a k e d u m p e r i n a v e r y r a s h a n d n e g l i g e n t a n d c o l l i d e d w i t h t h e b u s .\nR e s p o n d e n t N o . 1 w a s d r i v i n g t h e s a i d b u s b y f o l l o w i n g t h e t r a f f i c r u l e s .\nT h e r e s p o n d e n t N o . 1  i s h a v i n g a v a l i d D L . T h e b u s N o . U P 1 5 A T 4 9 9 0 i s\ninsured with the respondent No. 5.\n4 . I n   v i e w   o f   t h e   r e c o r d s ,   f o l l o w i n g   i s s u e s   w e r e   f r a m e d   o n\n19.04.2018 in petition No. 74/18:−\n1 .   W h e t h e r   d e c e a s e d   I s t k h a r   d i e d   o n   a c c o u n t   o f   i n j u r i e s\ns u s t a i n e d i n a c c i d e n t t o o k p l a c e o n 1 0 . 0 2 . 2 0 1 8 a t a b o u t 5\nPM at near village Neeti, Baghpat road, Meerut UP of PS MACT Nos. 74/18 & 124/18 4 of 26"
+      },
+      {
+       "section": "body",
+       "score": 0.395,
+       "text": "Asaf Ali Road, New Delhi−02 ........ Respondents  Date of Institution of petition  : 27.04.2018\nDate of Judgment/Order     : 15.09.2018.\nA W A R D:−\n1. By   this   order,   I   shall   dispose   off   two   connected   claim   petitions\nbearing MACT Nos. 74/18 and 124/18 for grant of compensation.\n\n2 . B r i e f l y t h e f a c t s o f b o t h t h e c l a i m p e t i t i o n s a r e t h a t o n 1 0 . 0 2 . 2 0 1 8 ,\nt h e d e c e a s e d I s t k h a r a l o n g w i t h i n j u r e d n a m e l y S h e r u d d i n w a s c o m i n g f r o m\nB a g h p a t b y a h e r o H o n d a M o t o r c y c l e N o . D L 1 S Z 1 4 2 7 . A t a b o u t 5 P M ,\nw h e n t h e y r e a c h e d n e a r V i l l a g e M e e t l l i t o w a r d s M e e r u t i n t h e m e a n w h i l e ,\na bus No. UP 15 AT 4900 which was being driven by its driver at a very high   speed   rashly   and  \nn e g l i g e n t l y   c a m e   a n d   h i t   t h e   m o t o r c y c l e   o f   t h e\nd e c e a s e d . A s a r e s u l t o f w h i c h , b o t h o f t h e m s u s t a i n e d i n j u r i e s a n d t h e y\nimmediately moved to Baghpat Hospital. Istkhar declared brought dead by the   doctors   of   the  \nhospital.   Postmortem   was   also   conducted.   Injured sustained   serious   and   grievous   injuries\n \n \ni\nn\n \n \n \nt\nh\ni\ns\n \n \n \na\nc\nc\ni\nd\ne\nn\nt\n.\n \n \n \nT\nh\ne\nr\ne\na\nf\nt\ne\nr\n,\npetitioners have filed claim petitions for compensation i.e. petition No. MACT Nos. 74/18 & 124/18\n3 o f 2 6 S h . G . N . P a n d e y ,  M o t o r A c c i d e n t C l a i m s T r i b u n a l ( P i l o t C o u r t ) \nKarkardooma Courts, Delhi.\n74/18 titled Asfaq Ahmad & Ors V/s Satender & Ors and 124/18 titled Sherddin V/s Satender & Ors.\n3. The   respondent   No.   1   to   3   jointly   filed   their   WS   denying   the averments   made   in  \nthe   petition   contending   that   this   petition   is   not maintainable  and there  is  no cause \nof action  for filing of the  same.  As contended,   motorcyclist   tried   to   overtake   dumper   in   a  \nvery   rash   and negligent and collided with the bus. Respondent No. 1 was driving the said\nb u s b y f o l l o w i n g t h e t r a f f i c r u l e s ."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_011",
+      "title": "Asfaq Ahmad Father vs Satender & Ors And 124/18 Titled",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 75.33
+   },
+   {
+    "seq": 23,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_022 focus='Section 166 claim' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_022"
+     ],
+     "focus": "Section 166 claim",
+     "title": "Sangeeta Devi W/O Sh. Vinod Kumar Singh vs Mahesh Chand & Ors",
+     "court": "Motor Accident Claims Tribunal (Pilot Court) Karkardooma Courts, Delhi",
+     "holding": "The tribunal held that the petitioner is entitled to a total compensation of Rs. 5,74,000 with 9% interest per annum from the date of filing of the petition till realization, payable by the respondent.",
+     "ratio": "In motor accident claim cases involving the death of a child with no specific proof of actual earnings, compensation towards loss to estate is determined by taking inflation-corrected notional income based on the Second Schedule of the Motor Vehicles Act, applying appropriate personal expense deductions and age-specific multipliers, and adding a similar amount towards composite non-pecuniary damages.",
+     "passages": [
+      {
+       "section": "body",
+       "score": 0.479,
+       "text": "o r i n v o l v e m e n t o f m o t o r v e h i c l e i n\nc a u s i n g b o d i l y i n j u r i e s o r d e a t h t o a h u m a n b e i n g o r d a m a g e t o\np r o p e r t y w o u l d m a d e t h e p e t i t i o n m a i n t a i n a b l e u n d e r s e c t i o n 1 6 6\na n d 1 4 0 o f t h e A c t . I t i s a l s o s e t t l e d l a w t h a t t h e t e r m r a s h n e s s a n d\nn e g l i g e n c e h a s t o b e c o n s t r u e d l i g h t l y w h i l e m a k i n g a d e c i s i o n o n a\np e t i t i o n f o r c l a i m f o r t h e s a m e a s c o m p a r e d t o t h e w o r d r a s h n e s s\nand negligence as finds mention in the Indian Penal Code. This is because   the   chapter   in   the  \nMotor   Vehicle   Act   dealing   with compensation is a benevolent legislation and not a penal one. \nF u r t h e r t h e H o n ' b l e H i g h C o u r t o f D e l h i i n M A C A p p . N o . 2 0 0 / 2 0 1 2 i n\ncase titled as United India Insurance Co. Ltd. V/s. Smt. Rinki @ Rinku & Ors\ndecided on 23/07/2012 by Hon'ble Delhi High Court, held as under:\n\n\"The Claims Tribunal was conscious of the fact that negligence is a   sine   qua   non  \nt o   a   P e t i t i o n   u n d e r   S e c t i o n   1 6 6   o f   t h e   M o t o r\nVehicles Act, 1988(the Act). It is also true that the proceedings for\ngrant of compensation under the Act are neither governed by the\ncriminal procedures nor are a civil suit. \n1 1 . T h e r e f o r e ,  i n v i e w  o f t h e  c r i m i n a l  c a s e  r e c o r d ,  i t i s  p r o v e d t h a t t h e\ndeceased sustained fatal injuries in the accident which occurred on 14.01.2014\ndue to rash and negligent driving of offending vehicle bearing No. DL 3 SBY\n5198 driven by its driver i.e. respondent. The issue is decided accordingly.\nIssue No. ii :−\n      (ii)     Whether petitioner is entitled to compensation ? If so to\n       DAR No. 14937/15                                                             6 of\nSangeeta Devi V/s Mahesh Chand & Ors.\nSh. G. N. Pandey, Motor Accident Claims Tribunal( Pilot Court)  Karkardooma Courts, Delhi.\nwhat amount and from whom? OPP\n1 2 ."
+      },
+      {
+       "section": "body",
+       "score": 0.431,
+       "text": "Sangeeta Devi W/O Sh. Vinod Kumar Singh vs Mahesh Chand &\nOrs on 16 March, 2018\n                  Sh. G. N. Pandey, Motor Accident Claims Tribunal( Pilot Court) \n                                  Karkardooma Courts, Delhi.\n                         In the Court of Sh. G. N. Pandey \n                  Motor Accident Claims Tribunal( Pilot Court) \n                          Karkardooma Courts, Delhi. \n                                                   DAR No. 14937/15\nIN THE MATTER OF :−\n                Sangeeta Devi W/o Sh. Vinod Kumar Singh \n                r/o H. No. G−5/9, Gali No. 2, 5th Pusta, Sonia Vihar,\n                Delhi.                      Mother \n                                                           ................ Petitioner  \n                                         V E R S U S\n                Mahesh Chand s/o Sh. Kishori Lal\n                r/o 13A, Gali No. 2, Kaushal Puri,\n                Chauhan Patti, Sonia Vihar, Delhi. \n                                                             ................. Responden\nDate of Institution of DAR      : 06.11.2015\nDate of Judgment/Order     : 16.03.2018\nA W A R D:−\n1. By this order, I shall dispose off the DAR petition filed by the IO for grant   of   compensation   to  \nt h e   i n j u r e d   i n   v i e w   o f   t h e   p r o v i s i o n s   o f   M o t o r\nV e h i c l e A c t , 1 9 8 8 . T h e D A R p e t i t i o n i s t r e a t e d a s c l a i m p e t i t i o n i n v i e w o f\nsection 158 (6) of the MV Act, 1988. \n2. Briefly  the  facts  of the  case  are  that  on  14.01.2014  at  about  3  PM, deceased   alongwith   her\n  mother   were   going   towards   Annpurna   Mandir   for DAR No. 14937/15 1 of 16 Sangeeta Devi\nV/s Mahesh Chand & Ors.\nSh. G. N. Pandey, Motor Accident Claims Tribunal( Pilot Court)  Karkardooma Courts, Delhi.\nw o r s h i p f r o m r e s i d e n c e . W h e n t h e y r e a c h e d a t A n n p u r n a M a n d i r , m o t h e r o f"
+      },
+      {
+       "section": "body",
+       "score": 0.371,
+       "text": "ation\nindex) for the financial year 2013−2014 i.e. Rs. 939/− would apply. The age of\nthe deceased child was about 10 years  and therefore the calculation is to be\nmade on multiplier of 10. The inflation calculated notional income comes to Rs. 42,553/− (15,000/−\n x 939/331), rounded off Rs. 43,000/−. After deducting 1/3rd   and   applying   the   multiplier   of  \n10,   the   pecuniary   loss   to   estate   is computed   as   (   Rs.   43,000/−   x   1/3   x   10)   Rs.  \n2,86,667/−.   Adding   a   similar amount  towards   composite   non  pecuniary  damages,   the   total \ncompensation works out to be Rs. (2,86,667/− x 2) = Rs. 5,73,334/−. \nI   accordingly   award   an   amount   of   compensation   of   Rs.  5,73,334/−\nrounded to Rs. 5,74,000/− in favour of the Claimant and against Respondent.  Liability:−\nI n t h i s c a s e , r e s p o n d e n t i s t h e d r i v e r o f t h e o f f e n d i n g v e h i c l e t h e r e f o r e\nrespondent is liable to pay the compensation to the petitioner. Interim award if\nany paid to injured/ petitioner be adjusted in the award amount.  Award :−\n20. Resultantly,  the  DAR  petition stands  allowed.  Respondent is  hereby DAR No. 14937/15 14 of\n16 Sangeeta Devi V/s Mahesh Chand & Ors.\nSh. G. N. Pandey, Motor Accident Claims Tribunal( Pilot Court)  Karkardooma Courts, Delhi.\ndirected to pay the compensation of Rs.  5,74,000/−  within one month  to the\nC l a i m a n t . C l a i m a n t i s a l s o e n t i t l e d t o t h e i n t e r e s t @ 0 9 % p . a . o n t h e t o t a l\ncompensation amount from the date of filing of petition till realization. (The\nNew India Assurance Co. Ltd. Vs. Gopali & Ors., 2012 ACJ 2131 SC,  Jiju Kuruvila   &   Ors.   Vs.  \nK u n j u j a m m a   M o h a n   &   O r s . ,   2 0 1 3   A C J   2 1 4 1   S C ,\nPuttamma Vs. K.L. Naraynan Reddy & Ors., 2014 ACJ 526 SC).\n21.         Respondent is directed to deposit the amount with UCO Bank, KKD Courts Branch, Delhi.\n2 2 .         O u t o f t h e t o t a l a w a r d a m o u n t o f R s .  5 , 7 4 , 0 0 0 / −, U C O B a n k , K K D\nCourts is directed to keep the amount of Rs. 5,00,000/− in 100  FDRs of Rs."
+      },
+      {
+       "section": "body",
+       "score": 0.365,
+       "text": "d o n e   b y   t h e\nc l a i m a n t . T h e c l a i m a n t s w e r e m e r e l y t o e s t a b l i s h t h e i r c a s e o n\nt h e t o u c h s t o n e o f p r e p o n d e r a n c e o f p r o b a b i l i t y . T h e s t a n d a r d o f\nproof beyond reasonable doubt could not have been applied.\"\n9.         In judgment of Hon'ble Delhi High Court in  United India Insurance\nCompany Ltd. Vs. Deepak Goel & Ors., 2014 (2), T.A.C. 846 (Del.),  it was held   that   in   a   case,  \nwhere   FIR   is   lodged,   chargesheet   is   filed,   then   the DAR No. 14937/15 4 of 16 Sangeeta Devi\nV/s Mahesh Chand & Ors.\n\nSh. G. N. Pandey, Motor Accident Claims Tribunal( Pilot Court)  Karkardooma Courts, Delhi.\ndocuments mentioned above are sufficient to establish the fact that the driver\nof the vehicle in question was negligent in causing the accident particularly\nwhen there was no defence available from his side. In case of Cholamandalam\nM . S . G e n e r a l I n s u r a n c e C o . L t d . v . K a m l e s h , 2 0 0 9 ( 3 ) A D ( D e l h i ) 3 1 0 ,  a n\nadverse inference was drawn  because the driver of the offending vehicle had\nnot appeared in the witness box to corroborate his defence taken in the written statement.   It   was  \nn o t e d  t h a t  t h e r e   w a s   n o t h i n g  o n  r e c o r d  t o  s h o w   t h a t  t h e\nC l a i m a n t h a d a n y e n m i t y w i t h t h e d r i v e r o f t h e o f f e n d i n g v e h i c l e s o a s t o\nfalsely implicate him in the case.\n10. I have gone through the judgment of Hon'ble High Court of Delhi in 2009   ACJ   287,   National  \nInsurance   Company   Limited   Vs."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_022",
+      "title": "Sangeeta Devi W/O Sh. Vinod Kumar Singh vs Mahesh Chand & Ors",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 75.36
+   },
+   {
+    "seq": 24,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_019 focus='Section 166 claim' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_019"
+     ],
+     "focus": "Section 166 claim",
+     "title": "Surendra Singh And Another vs Vijay Singh And Another",
+     "court": "High Court of Judicature at Allahabad",
+     "holding": "The Court held that the multiplier must be applied with reference to the age of the deceased, future prospects must be awarded even for fixed/self-employed income based on standardized percentages, and the Court has the power under Order XLI Rule 33 CPC to correct and enhance compensation to ensure a just award even if the claimants did not file a cross-appeal.",
+     "ratio": "In motor accident compensation claims under Section 166 of the MV Act, the multiplier must be selected based on the age of the deceased rather than the claimants, future prospects apply to fixed-salary and self-employed individuals, and appellate courts are obligated under Order XLI Rule 33 and the concept of just compensation to correct and enhance inadequate awards.",
+     "passages": [
+      {
+       "section": "body",
+       "score": 0.51,
+       "text": "of multiplier, Column (4) of the Table in Sarla Verma is followed,\nthere is no likelihood of the claimants who have chosen to apply under Section 166\nbeing awarded lesser amount on proof of negligence on the part of the driver of the\nmotor vehicle than those who prefer to apply under Section 163-A. As regards the\ncases where the age of the victim happens to be up to 15 years, we are of the\nconsidered opinion that in such cases irrespective of Section 163-A or Section 166\nunder which the claim for compensation has been made, multiplier of 15 and the\nassessment as indicated in the Second Schedule subject to correction as pointed out\nin Column (6) of the Table in Sarla Verma should be followed. This is to ensure that\nthe claimants in such cases are not awarded lesser amount when the application is\nmade under Section 166 of the 1988 Act. In all other cases of death where the\napplication has been made under Section 166, the multiplier as indicated in Column\n(4) of the Table in Sarla Verma should be followed.\"\n46. At this stage, we must immediately say that insofar as the aforesaid multiplicand/multiplier is\nconcerned, it has to be accepted on the basis of income established by the legal representatives of\nthe deceased. Future prospects are to be 36 added to the sum on the percentage basis and \"income\"\nmeans actual income less than the tax paid. The multiplier has already been fixed in Sarla Verma\nwhich has been approved in Reshma Kumari with which we concur.\n47. In our considered opinion, if the same is followed, it shall subserve the cause of justice and the\nunnecessary contest before the tribunals and the courts would be avoided.\""
+      },
+      {
+       "section": "body",
+       "score": 0.417,
+       "text": "taking the balance years of\nservice with reference to the retiring age. It is necessary to avoid this kind of inconsistency. We are\nconcerned with cases falling under section 166 and not under section 163A of MV Act. In cases\nfalling under section 166 of the MV Act, Davies method is applicable.\n42. We therefore hold that the multiplier to be used should be as mentioned in column (4) of the\nTable above (prepared by applying Susamma Thomas, Trilok Chandra and Charlie), which starts\nwith an operative multiplier of 18 (for the age groups of 15 to 20 and 21 to 25 years), reduced by one\nunit for every five years, that is M-17 for 26 to 30 years, M-16 for 31 to 35 years, M-15 for 36 to 40\nyears, M-14 for 41 to 45 years, and M-13 for 46 to 50 years, then reduced by two units for every five\nyears, that is, M-11 for 51 to 55 years, M-9 for 56 to 60 years, M-7 for 61 to 65 years and M-5 for 66\nto 70 years.\"\nIn view of the discussion made above the the claimants in this set of appeals are held entitled to the\nbenefit of the multiplier with reference to the age of the deceased.\nAs to the award on account of future prospects, this issue is also no longer res-integra. It has\ncategorically been answered by the Supreme Court in the case of National Insurance Company\nLimited Vs. Pranay Sethi and Ors (supra). Thus, the future prospects have to be included in the loss\nof income to determine the loss of dependency for award of compensation. The directions issued by\nthe Supreme Court in this regard may be summarized in the chart below:-\nSl. No. The age of the deceased Loss of future prospects. (Deceased having\npermanent job) (as a % age of income) Loss of future prospects. (Deceased being\nself-employed/having fixed salary. As a % age of established income)\n1.\nUp to 40 years 50% 40%\n2. 40 to 50 years 30% 25%\n3. 50 to 60 years 15% 10% In view of the discussion made above the the claimants in this set of\nappeals are held entitled to the benefit of the same.\nEven as to the issue of award of non-pecuniary losses the standardized formula has been laid down\nby the Supreme Court that may be summarized as below:\nYear Loss of estate Loss of consortium Funeral expenses 2017-2019 Rs. 15,000/-"
+      },
+      {
+       "section": "body",
+       "score": 0.398,
+       "text": ". Shila Datta, (2011) 10 SCC 509 has held as below :\n\"10. A claim petition for compensation in regard to a motor accident (filed by the\ninjured or in case of death, by the dependent family members) before the Motor\nAccidents Claims Tribunal constituted under Section 165 of the Act is neither a suit\n\nnor an adversarial lis in the traditional sense. It is a proceedings in terms of and\nregulated by the provisions of Chapter XII of the Act which is a complete code in\nitself. We may in this context refer to the following significant aspects in regard to the\nTribunals and determination of compensation by the Tribunals:\n(i) Proceedings for award of compensation in regard to a motor accident before the\nTribunal can be initiated either on an application for compensation made by the\npersons aggrieved (the claimants) under Section 166(1) or Section 163-A of the Act or\nsuo motu by the Tribunal, by treating any report of accident (forwarded to the\nTribunal under Section 158(6) of the Act as an application for compensation under\nSection 166(4) of the Act).\n(ii) The rules of pleadings do not strictly apply as the claimant is required to make an\napplication in a form prescribed under the Act. In fact, there is no pleading where the\nproceedings are suo motu initiated by the Tribunal.\n(iii) In a proceedings initiated suo motu by the Tribunal, the owner and driver are the\nrespondents. The insurer is not a respondent, but a notice under Section 149(2) of the\nAct. Where a claim petition is filed by the injured or by the legal representatives of a\nperson dying in a motor accident, the driver and owner have to be impleaded as\nrespondents. The claimants need not implead the insurer as a party. But they have\nthe choice of impleading the insurer also as a party-respondent. When it is not\nimpleaded as a party, the Tribunal is required to issue a notice under Section 149(2)\nof the Act."
+      },
+      {
+       "section": "body",
+       "score": 0.394,
+       "text": "driver and owner have to be impleaded as\nrespondents. The claimants need not implead the insurer as a party. But they have\nthe choice of impleading the insurer also as a party-respondent. When it is not\nimpleaded as a party, the Tribunal is required to issue a notice under Section 149(2)\nof the Act. If the insurer is impleaded as a party, it is issued as a regular notice of the\nproceedings.\n(iv) The words \"receipt of an application for compensation\" in Section 168 refer not\nonly to an application filed by the claimants claiming compensation but also to a suo\nmotu registration of an application for compensation under Section 166(4) of the Act\non the basis of a report of an accident under Section 158(6) of the Act.\n(v) Though the Tribunal adjudicates on a claim and determines the compensation, it\ndoes not do so as in an adversarial litigation. On receipt of an application (either from\nthe applicant or suo motu registration), the Tribunal gives notice to the insurer under\nSection 149(2) of the Act, gives an opportunity of being heard to the parties to the\nclaim petition as also the insurer, holds an inquiry into the claim and makes an award\ndetermining the amount of compensation which appears to it to be just. (Vide Section\n168 of the Act.)\n(vi) The Tribunal is required to follow such summary procedure as it thinks fit. It may\nchoose one or more persons possessing special knowledge of and matters relevant to\ninquiry, to assist it in holding the enquiry. (Vide Section 169 of the Act.)\n\n(vii) The award of the Tribunal should specify the person(s) to whom compensation\nshould be paid. It should also specify the amount which shall be paid by the insurer\nor owner or driver of the vehicle involved in the accident or by all or any of them.\n(Vide Section 168 of the Act.)\n(viii) The Tribunal should deliver copies of the award to the parties concerned within\n15 days from the date of the award."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_019",
+      "title": "Surendra Singh And Another vs Vijay Singh And Another",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 75.4
+   },
+   {
+    "seq": 25,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_018 focus='Section 166 claim' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_018"
+     ],
+     "focus": "Section 166 claim",
+     "title": "The Oriental Insurance Comp. Ltd. ... vs Smt. Rani And Ors.",
+     "court": "High Court of Judicature at Allahabad, Lucknow Bench",
+     "holding": "The High Court dismissed the insurance company's appeal, confirming the judgment and award passed by the Motor Accident Claims Tribunal granting compensation of Rs. 4,17,500/- with interest.",
+     "ratio": "In motor accident claims, the burden of proving contributory negligence lies on the party asserting it, and where an insurer is already impleaded as a party respondent, it can contest the claim on all available grounds without being restricted to statutory defences under Section 149(2) regardless of whether an application under Section 170 was rejected.",
+     "passages": [
+      {
+       "section": "body",
+       "score": 0.423,
+       "text": "mpleaded as a party, it is entitled to raise all\ncontentions that are available to resist the claim, once it is a party respondent to the\nproceedings. Consequently, in the appeal, the insurer would not be restricted to\ncontesting the award only on the basis of the statutory defences available under\n\nSection 149 (2) but can challenge the award on all grounds available to the insured or\nthe person against whom the claim has been made.\"\n47. On the basis of discussions made in the Full Bench judgment of our Court, in the present case,\nthe plea of rejection of application under Section 170 of the Motor Vehicles Act by the learned Motor\nAccident Claims Tribunal, is of no force because statutorily when the appellant was already\nimpleaded in the claim petition has full right to contest the claim petition on all the grounds in\naddition to those available under Section 149(2) of the Motor Vehicle Act. All the grounds which\nhave been taken in the claim petition by filing written statement are discussed by the Tribunal. As\nsuch, the same cannot be raised afresh unless the opportunity of contest is not afforded by the\nTribunal. There was no necessity to move application under Section 170 of the Motor Vehicles Act as\nopposite party nos. 1 and 2 (Devraj Singh and Ram Sumer) who have filed their written statements\nin the claim petition and arrayed in the appeal as respondent nos. 6 and 7, have contested their case\nwith all the grounds of defence. No prejudice in any manner is caused.\n48. Likewise, by filing written statement (paper no. 12-kha), the Oriental Insurance Company has\nalso contested the claim case taking all the grounds of defence available to it.\n49. In view of the discussions made hereinabove, there is no need to interfere with the judgment and\naward of the learned court below. The appeal is liable to be dismissed and it is hereby dismissed.\n50. The judgment and award dated 26.04.2011 as well as order dated 23.03.2011, rejecting the\napplication under Section 170 of the Motor Vehicles Act, 1988, preferred by the appellant in Motor\nAccident Claim Petition No. 232 of 2009, passed by Motor Accident Claims Tribunal/Additional\nDistrict Judge, Court no."
+      },
+      {
+       "section": "body",
+       "score": 0.421,
+       "text": "ed in the Claim Petition as opposite party no. 3. Moreover, the owner of the offending\nvehicle (insured) is also impleaded. Both of them have filed their written statements. When the\nInsurance Company has already been impleaded as opposite party no. 3, then it had full right to\ncontest the case.\n44. In a Full Bench judgment of Allahabad High Court headed by Hon'ble Dr. Dhananjaya Yeshwant\nChandrachud (as he then was the Chief Justice), Hon'ble Dilip Gupta, J, Hon'ble Pradeep Kumar\nSingh Baghel, J, while deciding the First Appeal From Order No. 2174 of 2014, United India\nInsurance Co Ltd Vs Smt Shashi Prabha Sharma & 4 Ors, Hon'ble Dr. Justice D.Y. Chandrachud\nobserved as under:\n\n\"Where a claim is brought before the Tribunal under Section 166, the driver and\nowner have to be impleaded as respondents. The claimant may or may not implead\nthe insurer as a party to the proceedings. However, sub-section (2) of Section 149\nprovides that no sum shall be payable by the insurer under sub-section (1) in respect\nof a judgment or award unless, before the commencement of the proceedings, the\ninsurer had notice of the proceedings. The insurer to whom a notice of the\nproceedings is given, shall be entitled to be made a party thereto. Section 149 forms a\ncomponent of Chapter XI which provides for insurance of motor vehicles against\nthird party risks. Section 146 makes it obligatory to obtain an insurance policy\ncovering third party risks. No person can allow or cause to allow a motor vehicle to be\nused in a public place without an insurance policy being in force in accordance with\nthe requirements of the Chapter. Section 147 defines the requirements of such a\npolicy and the limits of liability. If a judgment or award in respect of the liability\nwhich has to be covered under Section 147 (3) (b) is obtained against the insured,\nafter a certificate of insurance is obtained, the insurer is obligated to pay the\ncompensation payable to the person to whom the benefit of the decree enures, even\nthough the insurer is entitled to or has actually cancelled or avoided the policy.\"\n45. His Lordship Hon'ble Dr. Justice D.Y."
+      },
+      {
+       "section": "body",
+       "score": 0.409,
+       "text": "The Oriental Insurance Comp. Ltd. ... vs Smt. Rani And Ors. on\n12 February, 2019\nEquivalent citations: AIRONLINE 2019 ALL 1546, (2019) 3 ALL WC 2838\n(2019) 4 ADJ 31 (ALL), (2019) 4 ADJ 31 (ALL)\nAuthor: Vikas Kunvar Srivastav\nBench: Vikas Kunvar Srivastav\nHIGH COURT OF JUDICATURE AT ALLAHABAD, LUCKNOW BENCH\n(AFR)\nCourt no. 29\n(Reserved)\nCase :- FIRST APPEAL FROM ORDER No. - 757 of 2011\nAppellant :- The Oriental Insurance Comp. Ltd. Amethi Sultanpur Through\nRespondent :- Smt. Rani And Ors.\nCounsel for Appellant :- Anil Srivastava\nCounsel for Respondent :- Brijesh Yadav Vijay,G.S. Triparhi,Hari Prakash Srivastava,Mata\nHon'ble Vikas Kunvar Srivastav,J.\n1. This First Appeal From Order filed under Section 173 of the Motor Vehicles Act, 1988 (hereinafter\nreferred to ''Act' in short) against the judgment and award dated 26.04.2011 as well as order dated\n23.03.2011, rejecting the application under Section 170 of the Motor Vehicles Act, 1988, preferred\nby the appellant in Motor Accident Claim Petition No. 232 of 2009, passed by Motor Accident\nClaims Tribunal (hereinafter referred to ''Tribunal' in short)/Additional District Judge, Court no. 6,\nSultanpur, whereby, a compensation in favour of claimants-respondents to the tune of Rs.\n4,17,500/- alongwith interest @ 7% per annum was awarded.\n\n2. Brief facts of the case are that on 22.06.2009 at about 3:00 p.m. the deceased-Ramhet was going\non his Motorcycle No. UP 42-G/2180 from village Umaradeeh to Jamo alongwith his father-in-law\nShyam Lal and mother-in-law Dhanpata Devi. When he reached near Dharmshala of Jivnanandan\nTiwari Ka Purwa, a Mini Truck No. 44 AH/4081 which was driven rashly and negligently, dashed\nthe Motorcycle from the front side. On account of serious injuries sustained by the\ndeceased-Ramhet, he died on the spot and his father-in-law Shyam Lal and mother-in-law\nDhanpata Devi received severe injuries.\n3. Regarding accident, a First Information Report was lodged by Ram Kumar, brother-in-law of the\ndeceased on the same day at Police Station Jamo, District Sultanpur as Case Crime No. 375/2009,\nunder Sections 338, 279, 427, 304-A of Indian Penal Code."
+      },
+      {
+       "section": "body",
+       "score": 0.408,
+       "text": "ty risk was effective on the relevant date of accident.\nFrom the pleadings, it also appears that the fact that the victim-deceased-Ramhet who was driving\nthe Motorcycle No.UP 42-G/2180, met an accident with Truck 44 AH/4081 wherein suffered severe\ninjuries and succumbed to death, is not disputed.\n9. Learned Motor Accident Claims Tribunal, Sultanpur taking into consideration the evidence of eye\nwitness PW-2-Shyam Lal held that the offending vehicle Truck No. 44 AH/4081 has wrongly and\nnegligently collided with the Motorcycle driven by Ramhet (deceased) which led in death due to\nsevere injuries. The Motor Accident Claim Petition was filed by the heirs of the deceased of the\naccident dated 22.06.2009, under Section 166 of the Motor Vehicles Act.\n10. It also appears from the judgment, impugned in this appeal, that learned Motor Accident Claims\nTribunal discussed the liability to pay compensation to the claim-petitioners by the\ninsurer/appellant for and on behalf of the owner of the offending vehicle Truck No. no. 44 AH/4081.\n11. The Motor Accident Claims Tribunal has further discussed in its judgment that the driver of the\noffending Motor Vehicle Truck no. 44 AH/4081, namely, Ram Sumer had valid and effective licence\nat the relevant date of accident. Further, the determination of compensation was done on the basis\nof age of the victim using multiplier ''17' as given in the table of IInd Scheduled, under Section 163\n(A) of the Motor Vehicles Act.\n12. Aggrieved therefrom the insurer has preferred appeal on the following grounds:\n(1) The impugned judgment and award is entirely misconceived and against the\nmaterial on record and settled law."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_018",
+      "title": "The Oriental Insurance Comp. Ltd. ... vs Smt. Rani And Ors.",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 75.43
+   },
+   {
+    "seq": 26,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_001 focus=Section 166 claim",
+    "payload": {
+     "args": {
+      "doc_id": "doc_001",
+      "focus": "Section 166 claim"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 81.55
+   },
+   {
+    "seq": 27,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_006 focus=Section 166 claim",
+    "payload": {
+     "args": {
+      "doc_id": "doc_006",
+      "focus": "Section 166 claim"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 81.55
+   },
+   {
+    "seq": 28,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_007 focus=Section 166 claim",
+    "payload": {
+     "args": {
+      "doc_id": "doc_007",
+      "focus": "Section 166 claim"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 81.55
+   },
+   {
+    "seq": 29,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_023 focus=Section 166 claim",
+    "payload": {
+     "args": {
+      "doc_id": "doc_023",
+      "focus": "Section 166 claim"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 81.55
+   },
+   {
+    "seq": 30,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_024 focus=Section 166 claim",
+    "payload": {
+     "args": {
+      "doc_id": "doc_024",
+      "focus": "Section 166 claim"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 81.55
+   },
+   {
+    "seq": 31,
+    "kind": "budget",
+    "label": "escalate",
+    "detail": "still discovering documents at step 4; budget -> 8",
+    "payload": {
+     "budget": 8
+    },
+    "docs": [],
+    "elapsed_s": 81.55
+   },
+   {
+    "seq": 32,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_001 focus='Section 166 claim' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_001"
+     ],
+     "focus": "Section 166 claim",
+     "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+     "court": "In The High Court Of Punjab And Haryana At Chandigarh",
+     "holding": "The High Court modified the compensation amounts awarded in the connected claim cases (partly enhancing some and upholding others) and granted pay-and-recover rights to the insurance company upon finding a breach of policy conditions due to the lack of a special endorsement on the driver's license for transporting hazardous goods.",
+     "ratio": "For driving a goods carriage vehicle carrying dangerous or hazardous goods, a special endorsement on the driving license as prescribed under the Central Motor Vehicles Rules, 1989 is mandatory, and the absence thereof constitutes a breach of insurance policy terms entitling the insurer to pay and recover.",
+     "passages": [
+      {
+       "section": "body",
+       "score": 0.454,
+       "text": "he time of accident. He was\nworking as private investigator and also doing the work of private trading and was earning Rs.\n20,000/- per month. Therefore, on account of injuries suffered by him in a motor vehicular\naccident, he had claimed compensation of Rs. 10.00 lacs along with interest @ 18% p.a. from the\nrespondents jointly and severally.\n\n5. The claim petition bearing MACP No. 13 (RBT) instituted on 04.01.2014/12.04.2016 titled as\n'Neelam Devi etc. vs. Sandeep etc.' was filed by claimants i.e. petitioner No. 1 (wife), petitioner No. 2\n(unmarried daughter), petitioner No. 3 (minor son) and petitioners No. 4 and 5 (parents of deceased\nRam Niwas) under Section 166 of Motor Vehicles Act for grant of compensation on account of death\nof Ram Niwas in a motor vehicular accident. Late Ram Niwas was 46 years of age at the time of\naccident. He was an agriculturist and used to cultivate the field of other farmers on contract basis\nand was earning Rs. 20,000/- per month.\n4 of 26 Neutral Citation No:=2023:PHHC:141930 2023:PHHC:141930 FAO-1113-2018 (O&M) and\nother connected cases Therefore, on account of death of Ram Niwas, it was prayed that the\nrespondents No. 1 to 3 are jointly and severally liable to compensate the claimants to the extent of\nRs. 20.00 lacs, along with interest @ 18% p.a. from the date of accident till its realization.\n6. The claim petition bearing MACP No. 14 (RBT) instituted on 04.01.2014/12.04.2016 titled as\n'Kavita Devi etc. vs. Sandeep etc.' was filed by claimants i.e. petitioner No. 1 (wife), petitioner No. 2\n(minor daughter) and petitioners No. 3 and 4 (parents of deceased) under Section 166 of Motor\nVehicles Act for grant of compensation on account of death of Sultan Singh in a motor vehicular\naccident. Late Sultan Singh was 22 years of age at the time of accident. He was a Steno-Typist\nworking in a Civil Court Compound, Narwana and was doing the work of Typing, Photostat,\nLamination etc. and was also doing the work of driving on part time basis and was earning Rs.\n18,000/- per month. Therefore, on account of death of Sultan Singh, it was prayed that the\nrespondents No."
+      },
+      {
+       "section": "body",
+       "score": 0.422,
+       "text": "were shifted to General Hospital, Jind by some passers-by.\nHowever, Ram Niwas succumbed to the injuries in the hospital. It has been alleged\nthat the accident had taken place due to the rash and negligent driving of offending\nvehicle, being driven by respondent No. 1. In this regard, FIR bearing No. 938 dated\n22.11.2013 under Sections 279, 337, 338 and 304-A of IPC was registered in Police\nStation City Jind on the statement of Satish Kumar.\n3. The claim petition bearing MACP No. 11 (RBT) instituted on 04.01.2014/12.04.2016 titled as\n'Manoj Devi etc. vs. Sandeep etc.' was filed by claimants i.e. petitioner No. 1 (wife), petitioner No. 2\nand 3 (minor children), petitioner No. 4 (mother) and petitioner No. 5 (father) under Section 166 of\nMotor Vehicles Act for grant of compensation on account of death of Munish Kumar in a motor\nvehicular accident. Late Munish 3 of 26 Neutral Citation No:=2023:PHHC:141930\n2023:PHHC:141930 FAO-1113-2018 (O&M) and other connected cases Kumar was 32 years of age at\nthe time of accident. He was a diploma holder of Multipurpose Health Worker and was a private\npractitioner and doing his private practice in his clinic at Narwana and was earning Rs.25,000/- per\nmonth. Therefore, on account of death of Munish Kumar in a motor vehicular accident, it was\nprayed that the respondents No. 1 to 3 are jointly and severally liable to compensate the claimants to\nthe extent of Rs. 25.00 lacs, along with interest @ 18% p.a. from the date of accident till its\nrealization.\n4. The claim petition bearing MACP No. 12 (RBT) instituted on 04.01.2014/12.04.2016 titled as\n'Sunil @ Rohit vs. Sandeep etc.' was filed by injured Sunil @ Rohit himself under Section 166 of\nMotor Vehicles Act for grant of compensation on account of injuries suffered by him in a motor\nvehicular accident. Injured Sunil @ Rohit was 25 years of age at the time of accident. He was\nworking as private investigator and also doing the work of private trading and was earning Rs.\n20,000/- per month. Therefore, on account of injuries suffered by him in a motor vehicular\naccident, he had claimed compensation of Rs. 10.00 lacs along with interest @ 18% p.a."
+      },
+      {
+       "section": "body",
+       "score": 0.399,
+       "text": "United India Insurance Company Ltd vs Neelam Devi And Others\non 6 November, 2023\n                                                        Neutral Citation No:=2023:PHHC:1\n                                                              2023:PHHC:141930\nFAO-1113-2018 (O&M) and other connected cases\n                                  -1-\n            IN THE HIGH COURT OF PUNJAB AND HARYANA\n                          AT CHANDIGARH\n                                             Reserved on:- 05.10.2023\n                                             Pronounced on:- 06.11.2023\n(1) FAO-1113-2018 (O&M)\nUnited India Insurance Company Limited\n                                                                      ...Appellant\n                                     Versus\nSunil and others\n                                                                  ...Respondents\n(2) FAO-1114-2018 (O&M)\nUnited India Insurance Company Limited\n                                                                     ... Appellant\n                                     Versus\nKavita Devi and others\n                                                                  ...Respondents\n(3) FAO-1119-2018 (O&M) with\n   Cross-OBJ-64-2022 (O&M)\nUnited India Insurance Company Limited\n                                                                     ... Appellant\n                                     Versus\nManoj Devi and others\n                                                                  ...Respondents\n(4) FAO-1120-2018 (O&M)\nUnited India Insurance Company Limited\n                                                                     ... Appellant\n                                     Versus\nNeelam Devi and others\n                                                                  ...Respondents\nCORAM:- HON'BLE MS. JUSTICE AMARJOT BHATTI"
+      },
+      {
+       "section": "body",
+       "score": 0.395,
+       "text": "se and frivolous;\ncause of action; locus standi; maintainability; non-joinder of necessary parties etc. On merits, it was\npleaded that the claimants/petitioners be put to strict proof regarding the salary of\ninjured/deceased. A false FIR has been registered in collusion with the local police by the\n\npetitioners. In fact, no such accident had taken place with the involvement of Oil Tanker No. HR-\n38F-4365 or due to fault of its driver at the given date, time and place. No alleged injuries have been\nsuffered by the deceased or the injured. All the facts were denied with the prayer that the\nclaimants/petitioners may be put to strict proof of age, income and regarding the claim for\ncompensation. It was prayed that the claim petitions filed by the petitioners may kindly be\ndismissed qua the answering respondent - Insurance Company.\n8. From the pleadings of the parties, following consolidated issues were framed by the Tribunal on\n04.11.2015 :-\n(1) Whether the accident in question took place on 21.11.2013 resulting in the death of\nMunish, Ram Niwas, Sultan Singh and injuries on the person of petitioner Sunil @\nRohit due to rash and negligent driving of Truck bearing registration No.\nHR-38F-4365 driven by respondent No. 1, as alleged in the petition? OPP 6 of 26\nNeutral Citation No:=2023:PHHC:141930 2023:PHHC:141930 FAO-1113-2018\n(O&M) and other connected cases (2) If issue No. 1 is proved in the affirmative, what\namount of compensation the petitioners are entitled to and from whom?\nOPP (3) Whether the respondent No. 1 was not holding a valid and effective driving license at the\ntime of accident and respondent No.2 has violated the terms and conditions of insurance policy?\nOPR (4) Relief.\n9. In order to prove their respective claim petitions, the claimant Kavita Devi (in MACP No. 14)\nstepped into the witness box as PW-1, claimant Krishna Devi (in MACP No. 11) stepped into the\nwitness box as PW-2, claimant Neelam Devi (in MACP No. 13) stepped into the witness box as\nPW-3, claimant Sunil @ Rohit (in MACP No. 12) stepped into the witness box as PW-5. The\nclaimants also examined Satish Kumar as PW4.\nThereafter, learned counsel for the petitioners tendered documents i.e."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_001",
+      "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 81.63
+   },
+   {
+    "seq": 33,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_006 focus='Section 166 claim' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_006"
+     ],
+     "focus": "Section 166 claim",
+     "title": "National Insurance Company Ltd. Thr. ... vs Smt. Meena And 4 Others",
+     "court": "High Court Of Judicature At Allahabad, Lucknow Bench",
+     "holding": "The appeal of the insurance company is dismissed, and the appeal of the claimants is partly allowed by setting aside the finding of contributory negligence, factoring in future prospects, and enhancing the total compensation to Rs. 13,74,876/- with a pay-and-recover order against the vehicle owner.",
+     "ratio": "Where there is consistent and unimpeached oral testimony of an eye-witness establishing the absence of negligence on the part of the deceased, a tribunal cannot record a finding of contributory negligence merely by drawing assumptions from a police sketch or site plan that does not conclusively indicate a head-on collision. Furthermore, even if the driver lacks a valid driving licence, the insurer remains liable to satisfy third-party claims subject to a right of recovery from the vehicle owner.",
+     "passages": [
+      {
+       "section": "body",
+       "score": 0.422,
+       "text": "National Insurance Company Ltd. Thr. ... vs Smt. Meena And 4\nOthers on 18 June, 2024\nHIGH COURT OF JUDICATURE AT ALLAHABAD, LUCKNOW BENCH\n                                    Neutral Citation No. - 2024:AHC-LKO:43597\n                                                                                        \nCourt No. - 5\nCase :- FIRST APPEAL FROM ORDER No. - 123 of 2012\nAppellant :- Smt. Meena And 3 Others\nRespondent :- Sri Anil Kumar Gupta And Another\nCounsel for  Appellant :- Balendu Shekhar\nCounsel for Respondent :- S.C. Gulati\nWith\nCase :- FIRST APPEAL FROM ORDER No. - 148 of 2012\nAppellant :- National Insurance Company Ltd. Thr. Its Asstt. Manager\nRespondent :- Smt. Meena And 4 Others\nCounsel for Appellant :- S.C.Gulati,Balendu Shekhar\nHon'ble Manjive Shukla,J.\n1.    Since the order and award dated 11.11.2011 passed by the learned Motor Accident Claims\nTribunal/Additional District Judge, Court No.2, Lucknow in M.A.C.P. No.190 of 2009 (Smt. Meena\n\nand others Vs. Anil Kumar and others) is under challenge in both the aforesaid appeals therefore,\nthey are being decided by the common judgment.\n2.     Heard Sri Balendu Shekhar, learned counsel appearing for the appellants/claimants and Ms.\nPooja Arora, Advocate holding brief of Sri S.C. Gulati, learned counsel appearing for Opposite Party\nNo.2 in F.A.F.O. No. 123 of 2012. Ms. Pooja Arora, Advocate holding brief of Sri S.C. Gulati, learned\ncounsel has appeared for the appellant and Sri Balendu Shekhar, learned counsel has appeared for\nOpposite Parties No. 1 to 4 in F.A.F.O. No. 148 of 2012.\n3.    Facts of the case, in brief, are that on 12.5.2006 at about 7.00 A.M. while Mr. Sunder Lal was\nmoving on his moped bearing Registration No. UP-32-AB/8094, one Tanker bearing Registration\nNo. UP32-T/6251 which was being driven negligently by the driver, collided with the moped near\nNeelam Traders, Devpur Tara, Police Station Talkatora, District Lucknow and as a result of the said\naccident, Mr. Sundar Lal suffered serious injuries and he remained admitted in the hospital since\n12.5.2006 till 15.5.2006 and ultimately succumbed to injuries and died on 15.5.2006."
+      },
+      {
+       "section": "body",
+       "score": 0.371,
+       "text": "ndra and Claimant No. 4 Renu shall receive Rs. 1,00,000/-, Rs. 1,00,000/-\nand Rs. 2,00,000/- respectively. The Claimant No. 1 Smt. Meena shall be paid remaining amount of\ncompensation i.e. (Rs. 13,74,876- Rs. 4,00,000 = Rs. 9,74,876) out of which Rs. 2,00,000/- shall be\ndeposited in the name of Smt. Meena in the fixed deposit account in any nationalized bank for a\nperiod of two years.\nOrder Date :- 18.6.2024 Salim/Gaurav"
+      },
+      {
+       "section": "body",
+       "score": 0.36,
+       "text": "fulfil the requirements of law or not will have to be determined in each case.\n(viii) If a vehicle at the time of accident was driven by a person having a learner's\nlicence, the insurance companies would be liable to satisfy the decree.\n(ix) The Claims Tribunal constituted under Section 165 read with Section 168 is\nempowered to adjudicate all claims in respect of the accidents involving death or of\nbodily injury or damage to property of third party arising in use of motor vehicle. The\nsaid power of the Tribunal is not restricted to decide the claims inter se between\nclaimant or claimants on one side and insured, insurer and driver on the other. In the\ncourse of adjudicating the claim for compensation and to decide the availability of\ndefence or defences to the insurer, the Tribunal has necessarily the power and\njurisdiction to decide disputes inter se between the insurer and the insured. The\ndecision rendered on the claims and disputes inter se between the insurer and\ninsured in the course of adjudication of claim for compensation by the claimants and\nthe award made thereon is enforceable and executable in the same manner as\nprovided in Section 174 of the Act for enforcement and execution of the award in\nfavour of the claimants.\n(x) Where on adjudication of the claim under the Act the Tribunal arrives at a\nconclusion that the insurer has satisfactorily proved its defence in accordance with\nthe provisions of Section 149(2) read with sub-section (7), as interpreted by this\nCourt above, the Tribunal can direct that the insurer is liable to be reimbursed by the\ninsured for the compensation and other amounts which it has been compelled to pay\nto the third party under the award of the Tribunal. Such determination of claim by\nthe Tribunal will be enforceable and the money found due to the insurer from the\ninsured will be recoverable on a certificate issued by the Tribunal to the Collector in\nthe same manner under Section 174 of the Act as arrears of land revenue. The\ncertificate will be issued for the recovery as arrears of land revenue only if, as"
+      },
+      {
+       "section": "body",
+       "score": 0.34,
+       "text": "en by the deceased Raj Kumar Dugar and the offending bus had\na head-on collision. The MACT has not accepted the evidence of P.W. 2 to prove that\nthe driver of the offending bus was driving the vehicle at abnormal speed. If the bus\nwas being driven by the driver abnormally in a zigzag manner, as P.W. 2 wanted the\nCourt to believe, it was but natural, as a prudent man, for the deceased to have taken\ndue care and precaution to avoid head-on collision when he had already seen the bus\ncoming from the opposite direction from a long distance. It was head- on collision in\nwhich both the vehicles were damaged and unfortunately, Raj Kumar Dugar died on\nthe spot. MACT, in our view, has rightly observed that had the knocking been on one\nside of the car, the negligence or rashness could have been wholly fastened or\nattributable to the driver of the bus, but when the vehicles had a head-on collision,\nthe drivers of both the vehicles should be held responsible to have contributed\nequally to the accident. The finding on this issue is a finding of fact and we do not\nfind any cogent and convincing reason to disagree with the well-reasoned order of the\nMACT on this point. MACT has awarded interest at the rate of 10% per annum on the\namount of compensation from the date of filing of the claim application till the date\nof payment. It is a discretionary relief granted by MACT and, in our view, the\ndiscretion exercised by MACT cannot be said to be inadequate and inappropriate.\"\n33. Learned counsel appearing for the claimants has relied on the latest judgment of the Hon'ble\nSupreme Court rendered in the case of Saroj Devi & Ors. Vs. Narendra Singh & Ors. 2023 (2) T.A.C.\n707 (S.C.), wherein it has been held that if there is credible testimony of the eye-witnesses of the\naccident that there was no negligence on the part of the deceased then the Motor Accident Claims\nTribunal is not justify in drawing certain assumptions based on the sketch/site plan of the accident\nprepared by the police authorities. For ready reference relevant paragraphs of the judgment\nrendered by the Hon'ble Supreme Court in the case of Saroj Devi (supra) are extracted as under :-"
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_006",
+      "title": "National Insurance Company Ltd. Thr. ... vs Smt. Meena And 4 Others",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 81.67
+   },
+   {
+    "seq": 34,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_007 focus='Section 166 claim' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_007"
+     ],
+     "focus": "Section 166 claim",
+     "title": "National Insurance Co.Ltd. vs Harpreet Singh And Ors.",
+     "court": "High Court of Jammu and Kashmir at Jammu",
+     "holding": "The court held that a legal representative who was not dependent upon the deceased at the time of death is not entitled to compensation under the head 'loss of dependency', reducing the total compensation accordingly.",
+     "ratio": "Only legal representatives who were dependent upon the victim at the time of death are entitled to compensation under the head 'loss of dependency'; non-dependent legal representatives can only claim under loss to estate and statutory liability under Section 140.",
+     "passages": [
+      {
+       "section": "body",
+       "score": 0.45,
+       "text": "National Insurance Co.Ltd. vs Harpreet Singh And Ors. on 3\nFebruary, 2014\n\n           HIGH COURT OF JAMMU AND KASHMIR\n                       AT JAMMU\nCIMA No. D-627/2010\nCMA No. 933/2010\n                                Date of decision:03.02.2014\n  National Insurance Co. Ltd.    Vs. Harpreet Singh and others.\nCoram:\n        Hon'ble Mr. Justice Janak Raj Kotwal-Judge\nAppearing counsel:\nFor appellant (s):      Mr. C. S. Gupta, Advocate\nFor respondent(s):      Mr. Surinder Singh, Advocate\ni.     Whether approved for\n       reporting in Press/Media  : Yes\nii.    Whether to be reported in\n       Digest/Journal            : Yes\n1. This is an appeal in a Motor Accident Claim case.\n2. Heard. I have perused the record.\n3. On 29.09.2007, S. Amarjeet Singh (hereinafter the deceased) was travelling from Kishtwar to\nJammu by a car bearing registration No. JK0 2D-9212. Respondent No. 3, Inderjit Singh Bali, who\nwas owner of the car, was on the wheel. The car met with an accident near a place called Thathri and\nplunged into a trench. Deceased suffered grievous injuries. He died.\n4. Respondent Nos. 1 & 2, (hereinafter the claimants) who are the sons of the deceased, filed a claim\nfor compensation under section 166 of the Motor Vehicles Act, 1998 (hereinafter the Act) before the\nMotor Accident Claims Tribunal, Jammu (hereinafter the Tribunal) against the owner and insurer\n(herein appellant) of the offending car.\n5. Learned Tribunal vide its judgment and award dated 30.04.2010 found that the accident had\noccurred due to rash and negligent driving by respondent No. 3 and awarded compensation of Rs."
+      },
+      {
+       "section": "body",
+       "score": 0.393,
+       "text": "ibunal. It is also contended that as per the evidence, the\nbasic salary of the deceased was Rs. 10,600/ and the total amount which he was drawing after\ndeduction was Rs. 19,481/. It is also contended that both the claimants were major but this aspect\nwas ignored by the learned Tribunal.\n8. Mr. C. S. Gupta, learned counsel appearing on behalf of the appellant, submitted that\ncompensation under the head 'loss of dependency' is payable only to the dependent legal\nrepresentatives of a deceased. Compensation under this head is paid for the monetary loss suffered\nby the dependants. Learned Tribunal, therefore, submitted Mr. Gupta, has fallen in error by taking\nthe total strength of the family of the deceased as three and thereby deducting only 1/3rd of the\nsalary towards his personal expenses. Mr. Gupta cited Supreme Court judgment in Smt. Manjuri\nBera v Oriental Company limited and anr. 2007 (3) Supreme\n620.\n9. Mr. Surinder Singh, learned counsel appearing on behalf of the respondents, on the other hand\nsupported the judgment and award passed by the learned Tribunal. He submitted that under section\n166 of the Act, all the legal representatives of deceased are entitled to claim compensation\nirrespective of the fact whether they were dependent upon the deceased or not. He cited Smt. Lalitha\nand ors. v Dashanbhat Haribansh Bhat, AIR 1998 Karnatka 344 and Kulsum Bai v Kallu and ors.\nAIR 200 MP 292.\n10. Claimant-respondent No. 2, Harbaksh Singh has deposed before the learned Tribunal as\nclaimants' witness. In cross-examination he has admitted that his brother Harpreet Singh is\nemployed as a clerk in Doordarshan. This aspect is not disputed by the claimants. Appellant in its\nobjections before the learned Tribunal had clearly contended that the claimants were major and"
+      },
+      {
+       "section": "body",
+       "score": 0.343,
+       "text": "ibunal, Jammu (hereinafter the Tribunal) against the owner and insurer\n(herein appellant) of the offending car.\n5. Learned Tribunal vide its judgment and award dated 30.04.2010 found that the accident had\noccurred due to rash and negligent driving by respondent No. 3 and awarded compensation of Rs.\n\n17,53,800/ to claimants. The Tribunal foisted liability of paying the compensation on the appellant.\n6. In assessing the compensation, learned Tribunal on appreciation of evidence found that the\ndeceased was a Government servant serving as Manager QC in the Food Corporation of India. His\nmonthly salary was Rs. 24,149/. He was aged 54 years as at the time of his death. Learned Tribunal\ndeducted 1/3rd of the salary towards personal expenses of the deceased and took the remaining Rs.\n16,100/ as his monthly contribution towards the claimants. Annual contribution of the deceased\ntowards the claimants thus came out as Rs. 1, 93,200/, which became the 'multiplicand' for\ncalculating compensation under the head 'loss of dependency'. On the basis of the age of the\ndeceased, applicable multiplier being 11, learned Tribunal scaled it down to 9. Compensation under\nthis head thus amounting to Rs. 17, 38, 800/ (1, 93,200x9). In addition, learned Tribunal awarded\nRs. 15,000/ as compensation for funeral expenses. Total compensation thus awarded was Rs. 17,\n53,800/.\n7. Appellant-Insurance Company has impugned the judgment and award of the learned Tribunal to\nthe extent of the quantum of compensation awarded to the claimants. Award has been assailed on\nthe ground that only respondent No. 2, who is a MBA student, should have been taken as dependent\nof the deceased, whereas respondent No. 1 could not have been because he is gainfully employed as\nper the evidence available before the Tribunal. It is also contended that as per the evidence, the\nbasic salary of the deceased was Rs. 10,600/ and the total amount which he was drawing after\ndeduction was Rs. 19,481/. It is also contended that both the claimants were major but this aspect\nwas ignored by the learned Tribunal.\n8. Mr. C. S."
+      },
+      {
+       "section": "body",
+       "score": 0.336,
+       "text": "d Tribunal as\nclaimants' witness. In cross-examination he has admitted that his brother Harpreet Singh is\nemployed as a clerk in Doordarshan. This aspect is not disputed by the claimants. Appellant in its\nobjections before the learned Tribunal had clearly contended that the claimants were major and\n\nearning hands. No evidence, however, has been led by the claimants to prove that even claimant\nHarpreet Singh was an unemployed person and dependent upon the deceased up to the time of his\ndeath. Since claimant, Harpreet Singh is gainfully employed in a Central Government service and\nthere is nothing in the claimants' evidence that he was dependent upon the deceased as at the time\nof latter's death, appellant's contention that claimant Harpreet Singh cannot be taken as a person\ndependent upon the deceased is to be accepted.\n11. Viewed thus, correctness of compensation awarded under the head 'loss of dependency' by the\nlearned Tribunal calls for reconsideration. It needs to be determined, whether claimant, Harpreet\nSingh, is entitled to the compensation under this head?\n12. Before taking up the above aspect, I will however, first take up the appellant's challenge to the\ncorrectness of the income of the deceased as taken by the learned Tribunal. In this regard, evidence\navailable with and relied upon by the learned Tribunal is the salary certificate Ex.PW KA issued by\nManager (Accounts), Food Corporation of India, District Office, Jammu. In this certificate, basic pay\nof the deceased is shown as Rs. 10,600/ and total salary, inclusive of allowances as Rs. 24,149/.\nDeduction towards CPF is shown as Rs. 4352/, Rs. 306/ is shown as deduction towards licensing fee\nand Rs. 10/ towards BF. Learned Tribunal, therefore, cannot be said to have erred in taking total\nsalary of the deceased as Rs. 24,149/ because nothing except income tax paid on the total salary is\ndeductible, while ascertaining the contribution of the deceased towards his dependents.\n13."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_007",
+      "title": "National Insurance Co.Ltd. vs Harpreet Singh And Ors.",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 81.7
+   },
+   {
+    "seq": 35,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_023 focus='Section 166 claim' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_023"
+     ],
+     "focus": "Section 166 claim",
+     "title": "Suman Lata And Ors. vs Madan Mohan Sonkar And Ors.",
+     "court": "Motor Accident Claims Tribunal/Ii Additional District Judge, Faizabad",
+     "holding": "Both appeals are dismissed, except that the rate of interest on compensation is reduced from 9% to 7.5% per annum.",
+     "ratio": "When a vehicle hits a scooter from behind, the maxim of res ipsa loquitur applies, negating any plea of contributory negligence, and an insurer without permission under Section 170 cannot challenge the quantum of compensation.",
+     "passages": [
+      {
+       "section": "judgment",
+       "score": 0.426,
+       "text": "JUDGMENT\n U.K. Dhaon, J.\n1. These are the two First Appeals from Order under Section 173 of the Motor Vehicles Act, 1988\ndirected against the judgment and award dated 7th August, 2001, passed by Motor Accident Claims\nTribunal/II Additional District Judge, Faizabad, directing the appellant-Assurance Company to pay\na sum ' of Rs. 16,09,000, as compensation with interest @ 9% per annum from the date of filing of\nthe petition till the date of actual payment.\n2. F.A.F.O. No. 510 of 2001 has been filed by the New India Assurance Company Ltd. challenging\nthe legality and correctness of the award directing the payment of the aforesaid sum, whereas\nF.A.F.O. No. 509 of 2001 has been filed by the claimants for enhancement of the amount of\ncompensation.\n3. Both the appeals having arisen out of the same judgment and award and common questions of\nlaw and fact being involved, we propose to dispose of both the appeals by this common judgment.\n4. Briefly stated facts giving rise to these appeals are that Dr. Kamlesh Kumar, who was an Eye\nSurgeon, aged about 43 years, while moving on his Scooter No. U.P. 42/1395 was knocked down by\na Jeep, bearing registration No. P. 42-A 0174. He sustained serious injuries. A vehicle belonging to\nthe Health Department of the district, was coming from the opposite side, wherefrom Dr. Kamlesh\nKumar was taken to the hospital by eye-witnesses, where he was declared \"brought dead\".\n5. The report of the incident was lodged by one Shri Ram Prasad at Police Station, Ayodhya, who\nalong with Shri Hari Kishan PW 2 had allegedly seen the accident.\n6. It is undisputed that the said jeep was insured with the appellant, the New India Assurance\nCompany Ltd. and driver, Shri Gaya Prasad, who was driving the vehicle at the relevant time under"
+      },
+      {
+       "section": "preamble",
+       "score": 0.415,
+       "text": "Suman Lata And Ors. vs Madan Mohan Sonkar And Ors. on 17\nNovember, 2005\nEquivalent citations: I(2007)ACC209, AIR 2006 (NOC) 1505 (ALL), 2006 (4)\nALL LJ 408, 2006 (4) ALJ 408, 2006 A I H C 2755, (2006) 3 TAC 623, (2007) 1\nACC 209\nAuthor: R.P. Yadav\nBench: R.P. Yadav"
+      },
+      {
+       "section": "judgment",
+       "score": 0.373,
+       "text": "m Prasad at Police Station, Ayodhya, who\nalong with Shri Hari Kishan PW 2 had allegedly seen the accident.\n6. It is undisputed that the said jeep was insured with the appellant, the New India Assurance\nCompany Ltd. and driver, Shri Gaya Prasad, who was driving the vehicle at the relevant time under\n\nthe direction of the owner, Shri Madan Mohan Sonkar, DW 1, was having a valid driving licence. The\nwidow of the deceased, Smt. Suman Lata, his children and father preferred a claim petition before\nthe Tribunal on the allegations that the accident took place due to rash and negligent driving of the\nsaid jeep, which had hit the deceased from behind.\n7. The appellant Assurance Company as well as the owner of the vehicle in question contested the\nclaim. They denied the accident with the said jeep and pleaded that the claimant respondents were\nnot entitled to any compensation.\n8. On behalf of the claimant respondents, Smt. Sumanlata PW 1, Shri Harikishan, PW 2 and Shri\nDevendra Nath Singh PW 3 were examined, whereas the owner of the vehicle examined himself as\nDW 1 and one Shri Ram Sunder Maurya, DW 2.\n9. The learned Tribunal considered the entire evidence and arrived at the conclusion that the\naccident took place due to rash and negligent driving of the jeep and that at the relevant time, salary\nof Dr. Kamlesh Kumar was Rs. 9,776 per month and his dependents were entitled to a compensation\nof Rs. 15,92,000 on the principles laid down in the case of General Manager, State Road Transport\nCorporation, Kerala v. Susamma Thomas (Mrs.) and Ors. . He further held that the\nclaimant-respondents were entitled for Rs. 15,000 for loss of consortium, love and affection and a\nsum of Rs. 2,000 for funeral expenses. The Tribunal holding the appellant Company liable to make\nthe payment under the terms and conditions of the policy held that the liability to make the entire\npayment was on the appellant. The Tribunal, accordingly, mulcted the liability for the payment of\nRs. 16,09,000 on the Assurance Company along with interest thereon as said above.\n10. Feeling aggrieved, the Assurance Company and also claimants respondents have preferred these\nappeals.\n11. We have heard Mr. M.S."
+      },
+      {
+       "section": "judgment",
+       "score": 0.369,
+       "text": "ed in applying the multiplier of 10 instead of 12.\n18. Lastly, it was submitted that the appellant had no permission under Section 170 of the Motor\nVehicles Act, 1980 so it cannot challenge the quantum of compensation. Reliance was placed on the\ncase of Chinnama George and Ors. v. N.K. Raju and Anr. reported in I (2000) ACC 577 (SC) : 2000\n(2) TAC 207. The Hon'ble Apex Court had ruled in this case that Sections 146, 147, 149 and 173 are\nin the scheme of the Act and when read together mean: (1) it is legally obligatory to ensure the\nMotor Vehicle against third party risk. Driving an uninsured vehicle is an offence punishable with an\nimprisonment extending up to three months or the fine which may extend to Rs. 1,000 or both; (2)\npolicy of insurance must comply with the requirement as contained in Section 147 of the Act; (3) it is\nobligatory for the insurer to satisfy the judgment and awards against the person insured in respect\nof third party risks. These are Sub-sections (1) and (7) of Section 149. Grounds on which insurer can\navoid his liability are given in Sub-section (2) of Section 149.\nIf none of the conditions as contained in Sub-section (2) of Section 149 exist for the insurer to avoid\nthe policy of insurance, he is legally bound to satisfy the award, he cannot be a person aggrieved by\nthe award. In that case, insurer will be barred from filing any appeal against the award of the Claims\nTribunal.\n19. We have considered over the submissions made by the learned Counsel for the parties.\n20. In Susamma Thomas case the Hon'ble Apex Court has held that the determination of quantum\nof compensation must answer what contemporary society \"would deem to be a fair sum such as\nwould allow the wrong-doer to hold up his head among his neighbours and say with their approval\nthat he has done the fair thing\". The amount awarded must not be niggardly since the \"law values\nlife and limb in a free society in generous scales\". All this means that the sum awarded must be fair\nand reasonable by accepted legal standards."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_023",
+      "title": "Suman Lata And Ors. vs Madan Mohan Sonkar And Ors.",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 81.73
+   },
+   {
+    "seq": 36,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_024 focus='Section 166 claim' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_024"
+     ],
+     "focus": "Section 166 claim",
+     "title": "Sunil Shreesail Killiket vs Subbraya",
+     "court": "Motor Accident Claims Tribunal, Court Of Small Causes Bengaluru",
+     "holding": "The tribunal held that the insurer proved a fundamental breach of policy conditions due to the driver lacking a valid driving licence, but directed the insurer to pay the compensation to the petitioner in the first instance under the 'pay and recover' principle, with liberty to recover the same from the vehicle owner.",
+     "ratio": "Driving a motor vehicle without a valid licence constitutes a fundamental and statutory breach of the insurance policy, absolving the insurer of direct liability; however, to protect third-party rights, the insurer may be ordered to pay the compensation first and subsequently recover it from the owner.",
+     "passages": [
+      {
+       "section": "judgment",
+       "score": 0.453,
+       "text": "JUDGMENT\nThe petitioner has filed the petition under Section 166 of Motor Vehicles Act, 1988, claiming\ncompensation for the injuries sustained by him in a road traffic accident dated 09.01.2021.\n2. The brief facts of the petitioner's case are as under:\n(a) That on 09.01.2021 at about 5.30 p.m., the petitioner being one of the inmates in\nthe car bearing registration No.KA-03-AC-5300 (hereinafter this vehicle has been\nreferred to as offending vehicle) along with his friends proceeding in the offending\nvehicle which was driven by Appu @ Bhagyodaya Shivapura. When they reached near\nAmbha Dresses situated at opposite to IB near MG Patel Hospital, Indi, DS,\nVijayapura, at that time driver of said car drove the same in a rash and negligent\nmanner and suddenly turned the car, as a result of which, the car was out of control\nand it fell down and rotated on the side of the said road. Due to the impact, the\npetitioner and his friends were sustained grievous injuries, the offending vehicle was\ncompletely damaged.\n(b) It is further pleaded that immediately after the accident the petitioner was shifted\nto Vedanta Hospital, Vijayapura and then he was shifted to Vasudeva Hospital\nwherein he was treated as an inpatient from 9.1.2021 to 12.1.2021. Again he was\nshifted to Sparsh Multi Speciality Hospital, Bengaluru, wherein he was treated as an\ninpatient from 13.1.2021 to 10.3.2021.\nThe petitioner has spent sum of Rs.44,98,831/- towards medical expenses, treatment charges,\nmedicine, nourishment food and for regular treatment.\n(c) It is further case of the petitioner that at the time of the accident the petitioner was aged about\n24 years. He was running a provision stores and getting an income of Rs.45,000/- per month. On\naccount of accidental injuries the family members have lost the only bread earner of the family. The\nrespondent No.1 being the owner and the respondent No.2 being the insurer of the offending vehicle\nare jointly and severally liable to pay the compensation of Rs.99,99,999/- with interest from the\ndate of petition till realization.\n3. In response to the notice the respondents No.1 & 2 have appeared through their respective\nadvocates on record."
+      },
+      {
+       "section": "judgment",
+       "score": 0.438,
+       "text": "is made clear that the petitioner is\nnot entitled interest on sum of Rs.17,28,000/- which is awarded under the head of attendant\ncharges and Rs.2,00,000/- which is awarded under the head of future medical expenses. In view of\naforesaid discussion, the issue No.2 is answered accordingly.\nIssue No.3:\n\n63. In view of findings on issue No.1 and 2, this tribunal proceeds to pass the following:\nORDER Petition filed by the petitioner U/s 166 of Indian Motor Vehicles Act, 1988 is\nallowed in part with costs.\nPetitioner is entitled for compensation of Rs.87,49,500/- (Rupees Eighty Seven Lakh\nForty Nine Thousand & Five Hundred only) from the respondent No.1.\nThe petitioner is entitled to interest on sum of Rs.68,21,500/- (Rupees Sixty Eight\nLakh Twenty One Thousand and Five Hundred only) at the rate of 6% per annum\nfrom the date of petition till realization of the said amount, but petitioner is not\nentitled to interest on sum of Rs.19,28,000/- (Rupees Nineteen Lakh Twenty Eight\nThousand only).\nRespondent No.1 is liable to pay the award amount. The respondent No.2 is not liable to indemnify\nthe respondent No.1.\nHowever, under the principle of 'Pay and Recovery' the respondent No.2 is directed to pay the award\namount with accrued interest thereon to the petitioner within 60 days from the date of this order by\nreserving liberty to the respondent No.2 to recover the same from the respondent No.1 in\naccordance with law.\nOut of the amount so awarded to the petitioner, 60% with proportionate interest is ordered to be\ndeposited in the name of petitioner in any of the nationalized or schedule bank of choice of the\npetitioner initially for a period of 5 years subject to auto renewal till further Order of the Tribunal\nsubject to withdrawing periodical interest from time to time by the petitioner and remaining\namount with proportionate interest is ordered to be credited to the account of the petitioner through\ne-payment.\nAdvocate fee is fixed at Rs.2,000/-.\nDraw award accordingly.\n(Dictated to the stenographer directly on computer, corrected by me and then pronounced in open\ncourt on this the 18th day of July 2024).\n(LAVANYA H.N.) III ADDL.SMALL CAUSES JUDGE, MEMBER, MACT & ACJM, BANG"
+      },
+      {
+       "section": "judgment",
+       "score": 0.43,
+       "text": "Others V/s Vinod Kumar\nLamba & Another's case referred supra and in view of aforesaid discussion it is proper to direct the\nrespondent No.2 to pay the compensation by reserving liberty to recover the same from the\nrespondent No.1, owner of the offending vehicle in the manner provided under law.\n62. So far as interest on compensation is concerned, this tribunal likes to place reliance upon the\ndecision of the Hon'ble High Court of Karnataka in M.F.A. 13390/2014 clubbed with M.F.A.\n25107/2013 dated 07.03.2018, between Vijay Ishwar Jadhav and others Vs. the Divisional Manager,\nthe Bajaj Allianz General Insurance Co. Ltd., wherein the Hon'ble High Court of Karnataka has\nelaborately discussed with regard to the rate of interest to be awarded in the case arising out of the\naccident, wherein at para No.15 it is held that \"However, the provisions of Section 149 (1) of the Act\nto the extent they speak of interest payable on the compensation amount is in the nature of an\nexception to the general law enacted in Section 169 of the M.V. Act and therefore, the provisions of\nSection 34 of C.P.C. to that extent become invocable on the general principles of construction of\nstatutes namely the special law over rides the general law. Therefore, in the absence of any other law\nrelating to interest on judgments, the MACT has to follow the provisions of Section 34 of C.P.C.,\n1908. Thus, in the given circumstances of this case, interest at the rate of more than 6% could not\nhave been awarded.\" By relying upon the Vijay Ishwar Jadhav' case referred supra, this tribunal is of\nthe opinion that it is just and proper to award interest at the rate of 6% per annum on sum of\nRs.68,21,500/- from the date of the petition till its realization. It is made clear that the petitioner is\nnot entitled interest on sum of Rs.17,28,000/- which is awarded under the head of attendant\ncharges and Rs.2,00,000/- which is awarded under the head of future medical expenses. In view of\naforesaid discussion, the issue No.2 is answered accordingly.\nIssue No.3:"
+      },
+      {
+       "section": "preamble",
+       "score": 0.43,
+       "text": "KABC020301942021\n IN THE COURT OF III ADDL.JUDGE AND MOTOR\n ACCIDENT CLAIMS TRIBUNAL, COURT OF SMALL\n            CAUSES BENGALURU\n                 (SCCH-18)\n         Dated: This 18th day of July 2024\n               Present: LAVANYA H.N. B.Sc., LL.B.,\n                       III ADDL. JUDGE &\n                       MEMBER, MACT\n                       COURT OF SMALL CAUSES,\n                        BENGALURU.\n                    M.V.C.No.5135/2021\n  Petitioner           Shri Sunil Shreesail Killiket,\n                       Son of Shreesail Killiket,\n                       Aged about 24 years,\n                       Residing at Hiremasali,\n                       Tamba, Indi Taluk,\n                       Vijaypura-856 215.\n                       (By Pleader Smt.Vedashree)\n                       V/s\n  Respondents          1.Mr.Subbaray,\n                       Son of Narsimhaiah,\n                       Aged about 43 years,\n                       Residing at No.78, Alluru\n                       Devanahalli Taluk,\n                       Bengaluru Rural District,\n                       Karnataka -567 110.\n SCCH-18               2          MVC No. 5135/2021\n                      (By Pleader Shri P.Prasad)\n                      2.Bajaj Allianz General\n                      Insurance Co. Ltd.,\n                      Golden Heights 4th floor,\n                      No.1/2, 59th C Cross,\n                      4th Block, Rajajinagar,\n                      Bengaluru.\n                      (By Pleader Shri K.Nagaraja)"
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_024",
+      "title": "Sunil Shreesail Killiket vs Subbraya",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 81.77
+   },
+   {
+    "seq": 37,
+    "kind": "tool_call",
+    "label": "submit_answer",
+    "detail": "question=Which judgments decide claims under Section 166 of the Motor Vehicles ... answer=Based on the corpus of 56 judgments, **19 judgments** decide claims un... cited_doc_ids=['doc_001', 'doc_004', 'doc_005', 'doc_006', 'doc_007', 'doc_009', 'do... confidence=high",
+    "payload": {
+     "args": {
+      "question": "Which judgments decide claims under Section 166 of the Motor Vehicles Act?",
+      "answer": "Based on the corpus of 56 judgments, **19 judgments** decide claims under Section 166 of the Motor Vehicles Act, 1988. These are listed below with their key holdings:\n\n---\n\n### 1. Death / Fatal Accident Claims under Section 166\n\n| Doc ID | Case Name | Court | Key Holding |\n|--------|-----------|-------|-------------|\n| **doc_001** | *United India Insurance Company Ltd vs Neelam Devi And Others* | Punjab & Haryana HC | Multiple claim petitions under Section 166 for deaths in a tanker accident; insurer granted pay-and-recover for breach of policy (no special endorsement for hazardous goods). |\n| **doc_004** | *Oriental Insurance Company vs Soma Devi & Others* | Himachal Pradesh HC | Court is duty-bound to award just compensation under Section 166 and may enhance compensation under Order 41 Rule 33 CPC even without cross-appeal. |\n| **doc_005** | *L And T Insurance Co Ltd vs Bindudevi Samharu Yadav* | Gujarat HC | Section 167 bar does not apply when proceedings under WC Act (against employer) and Section 166 (against third-party tortfeasors) involve different parties. |\n| **doc_006** | *National Insurance Company Ltd. Thr. ... vs Smt. Meena And 4 Others* | Allahabad HC (Lucknow) | Contributory negligence cannot be assumed from a site plan alone when there is credible eye-witness testimony; insurer liable with pay-and-recover for unlicensed driver. |\n| **doc_007** | *National Insurance Co.Ltd. vs Harpreet Singh And Ors.* | J&K HC | Only dependent legal representatives are entitled to compensation under 'loss of dependency'; non-dependent LRs can only claim under loss to estate. |\n| **doc_009** | *Kamal S/O Shiv Ram vs Mursleem S/O Mohd. Akil* | MACT Delhi | Standard of proof under Section 166 is preponderance of probabilities; contributory negligence found where rider drove without licence and helmet (50% deduction). |\n| **doc_011** | *Asfaq Ahmad Father vs Satender & Ors* | MACT Delhi | Criminal records (FIR, chargesheet) with unrebutted testimony sufficient to prove negligence under Section 166. |\n| **doc_012** | *Smt. Rekha Kumari W/O Late Sh. Sachin vs Himachal Road* | MACT Delhi | Claimants must establish occurrence on preponderance of probability; FIR and chargesheet are sufficient prima facie proof of negligence when unrebutted. |\n| **doc_018** | *The Oriental Insurance Comp. Ltd. ... vs Smt. Rani And Ors.* | Allahabad HC (Lucknow) | Burden of proving contributory negligence lies on the party asserting it; insurer impleaded as party can contest on all grounds without needing Section 170 permission. |\n| **doc_019** | *Surendra Singh And Another vs Vijay Singh And Another* | Allahabad HC | Multiplier based on age of deceased (not claimants); future prospects apply to self-employed/fixed salary; appellate court can enhance under Order 41 Rule 33. |\n| **doc_022** | *Sangeeta Devi W/O Sh. Vinod Kumar Singh vs Mahesh Chand & Ors* | MACT Delhi | Child death compensation under Section 166: notional income based on Second Schedule, inflation-corrected, with multiplier of 10 for a 10-year-old. |\n| **doc_041** | *No.4 Is A Mother Of The Deceased Sri. M. ... vs No.1 Has Filed The Written Statement To ...* | (MACT) | Addresses future prospects and compensation calculation in a fatal accident claim under Section 166. |\n\n### 2. Injury Claims under Section 166\n\n| Doc ID | Case Name | Court | Key Holding |\n|--------|-----------|-------|-------------|\n| **doc_010** | *Raju Gupta S/O Sh. Madan Mohan Gupta vs Himachal Road* | MACT Delhi | Strict proof of accident by a particular vehicle not required; preponderance of probability standard applies. |\n| **doc_021** | *Both R/O E−365 vs Naseem* | MACT Delhi | Strict rules of evidence not applicable; criminal record and oral testimony sufficient to prove negligence. |\n| **doc_024** | *Sunil Shreesail Killiket vs Subbraya* | MACT Bengaluru | Driving without valid licence is fundamental breach; insurer directed to pay-and-recover from owner. |\n| **doc_023** | *Suman Lata And Ors. vs Madan Mohan Sonkar And Ors.* | Allahabad HC | Res ipsa loquitur applies when vehicle hits from behind; insurer without Section 170 permission cannot challenge quantum. |\n\n### 3. Mixed / Procedural\n\n| Doc ID | Case Name | Court | Key Holding |\n|--------|-----------|-------|-------------|\n| **doc_027** | *The Manager vs Chennamma* | (MACT) | Insurer's liability and pay-and-recover for licence endorsement breach in third-party claim. |\n| **doc_029** | *United India Insurance Co.Ltd vs Minor Mahesh Kanubhai & 2* | (MACT) | Insurer's liability for gratuitous passengers in goods vehicle under Section 166. |\n| **doc_031** | *National Insurance Co. Ltd vs Laxmi Narain Dhut* | (MACT) | Concerns own-damage claims and Swaran Singh applicability in a Section 166 context. |\n| **doc_043** | *Jagdish Rai vs State Of Punjab And Others* | (Service law) | Service law recovery from salary — only tangentially references Section 166. |\n\n---\n\n### Key Principles Emerging from These Judgments\n\n1. **Standard of proof**: Preponderance of probabilities, not beyond reasonable doubt (doc_009, doc_010, doc_011, doc_012, doc_021).\n2. **Negligence is sine qua non** for a Section 166 claim (doc_012, doc_021, doc_022).\n3. **Criminal records** (FIR, chargesheet) are sufficient prima facie proof of negligence when unrebutted (doc_009, doc_011, doc_012).\n4. **Just compensation**: Courts can award more than claimed and enhance even without cross-appeal (doc_004, doc_019).\n5. **Multiplier**: Based on age of deceased per *Sarla Verma* (doc_019).\n6. **Future prospects**: Apply to self-employed and fixed-salary earners per *Pranay Sethi* (doc_019).\n7. **Pay-and-recover**: Insurer liable to third parties even on policy breach, with right to recover from owner (doc_001, doc_006, doc_024, doc_027).\n8. **Contributory negligence**: Burden on party asserting it; cannot be assumed from site plan alone (doc_006, doc_018).",
+      "cited_doc_ids": [
+       "doc_001",
+       "doc_004",
+       "doc_005",
+       "doc_006",
+       "doc_007",
+       "doc_009",
+       "doc_010",
+       "doc_011",
+       "doc_012",
+       "doc_018",
+       "doc_019",
+       "doc_021",
+       "doc_022",
+       "doc_023",
+       "doc_024",
+       "doc_027",
+       "doc_029",
+       "doc_031",
+       "doc_041",
+       "doc_043"
+      ],
+      "confidence": "high"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 102.09
+   },
+   {
+    "seq": 38,
+    "kind": "budget",
+    "label": "escalate",
+    "detail": "still discovering documents at step 5; budget -> 8",
+    "payload": {
+     "budget": 8
+    },
+    "docs": [],
+    "elapsed_s": 102.09
+   },
+   {
+    "seq": 39,
+    "kind": "budget",
+    "label": "wrong_contract_check",
+    "detail": "rejected: direct answer cites 20 judgments with 13 adverse-pool judgments retrieved",
+    "payload": {
+     "doc_ids": [
+      "doc_001",
+      "doc_006",
+      "doc_007",
+      "doc_009",
+      "doc_014",
+      "doc_016",
+      "doc_017",
+      "doc_023",
+      "doc_024",
+      "doc_027",
+      "doc_029",
+      "doc_031",
+      "doc_035"
+     ]
+    },
+    "docs": [],
+    "elapsed_s": 102.1
+   },
+   {
+    "seq": 40,
+    "kind": "tool_call",
+    "label": "submit_answer",
+    "detail": "question=Which judgments decide claims under Section 166 of the Motor Vehicles ... answer=Based on the corpus of 56 judgments, **19 judgments** decide claims un... cited_doc_ids=['doc_001', 'doc_004', 'doc_005', 'doc_006', 'doc_007', 'doc_009', 'do... confidence=high",
+    "payload": {
+     "args": {
+      "question": "Which judgments decide claims under Section 166 of the Motor Vehicles Act?",
+      "answer": "Based on the corpus of 56 judgments, **19 judgments** decide claims under Section 166 of the Motor Vehicles Act, 1988. These are:\n\n### Death / Fatal Accident Claims under Section 166\n\n| Doc ID | Case Name | Court | Outcome |\n|--------|-----------|-------|---------|\n| doc_001 | *United India Insurance Company Ltd vs Neelam Devi And Others* | Punjab & Haryana HC | Mixed |\n| doc_004 | *Oriental Insurance Company vs Soma Devi & Others* | Himachal Pradesh HC | Claimant |\n| doc_005 | *L And T Insurance Co Ltd vs Bindudevi Samharu Yadav* | Gujarat HC | Claimant |\n| doc_006 | *National Insurance Company Ltd. Thr. ... vs Smt. Meena And 4 Others* | Allahabad HC (Lucknow) | Mixed |\n| doc_007 | *National Insurance Co.Ltd. vs Harpreet Singh And Ors.* | J&K HC | Insurer |\n| doc_009 | *Kamal S/O Shiv Ram vs Mursleem S/O Mohd. Akil* | MACT Delhi | Mixed |\n| doc_011 | *Asfaq Ahmad Father vs Satender & Ors* | MACT Delhi | Claimant |\n| doc_012 | *Smt. Rekha Kumari W/O Late Sh. Sachin vs Himachal Road* | MACT Delhi | Claimant |\n| doc_018 | *The Oriental Insurance Comp. Ltd. ... vs Smt. Rani And Ors.* | Allahabad HC (Lucknow) | Claimant |\n| doc_019 | *Surendra Singh And Another vs Vijay Singh And Another* | Allahabad HC | Claimant |\n| doc_022 | *Sangeeta Devi W/O Sh. Vinod Kumar Singh vs Mahesh Chand & Ors* | MACT Delhi | Claimant |\n| doc_041 | *No.4 Is A Mother Of The Deceased Sri. M. ... vs No.1 Has Filed The Written Statement To ...* | MACT | Claimant |\n\n### Injury Claims under Section 166\n\n| Doc ID | Case Name | Court | Outcome |\n|--------|-----------|-------|---------|\n| doc_010 | *Raju Gupta S/O Sh. Madan Mohan Gupta vs Himachal Road* | MACT Delhi | Claimant |\n| doc_021 | *Both R/O E−365 vs Naseem* | MACT Delhi | Claimant |\n| doc_024 | *Sunil Shreesail Killiket vs Subbraya* | MACT Bengaluru | Mixed |\n| doc_023 | *Suman Lata And Ors. vs Madan Mohan Sonkar And Ors.* | Allahabad HC | Mixed |\n\n### Other Section 166 Claims (coverage / procedural)\n\n| Doc ID | Case Name | Court | Outcome |\n|--------|-----------|-------|---------|\n| doc_027 | *The Manager vs Chennamma* | MACT | Mixed |\n| doc_029 | *United India Insurance Co.Ltd vs Minor Mahesh Kanubhai & 2* | MACT | Insurer |\n| doc_031 | *National Insurance Co. Ltd vs Laxmi Narain Dhut* | MACT | Insurer |\n\n### Key Principles from These Judgments\n\n1. **Standard of proof**: Preponderance of probabilities, not beyond reasonable doubt (doc_009, doc_010, doc_011, doc_012, doc_021).\n2. **Negligence is sine qua non** for a Section 166 claim (doc_012, doc_021, doc_022).\n3. **Criminal records** (FIR, chargesheet) are sufficient prima facie proof of negligence when unrebutted (doc_009, doc_011, doc_012).\n4. **Just compensation**: Courts can award more than claimed and enhance even without cross-appeal (doc_004, doc_019).\n5. **Multiplier**: Based on age of deceased per *Sarla Verma* (doc_019).\n6. **Future prospects**: Apply to self-employed and fixed-salary earners per *Pranay Sethi* (doc_019).\n7. **Pay-and-recover**: Insurer liable to third parties even on policy breach, with right to recover from owner (doc_001, doc_006, doc_024, doc_027).\n8. **Contributory negligence**: Burden on party asserting it; cannot be assumed from site plan alone (doc_006, doc_018).",
+      "cited_doc_ids": [
+       "doc_001",
+       "doc_004",
+       "doc_005",
+       "doc_006",
+       "doc_007",
+       "doc_009",
+       "doc_010",
+       "doc_011",
+       "doc_012",
+       "doc_018",
+       "doc_019",
+       "doc_021",
+       "doc_022",
+       "doc_023",
+       "doc_024",
+       "doc_027",
+       "doc_029",
+       "doc_031",
+       "doc_041"
+      ],
+      "confidence": "high"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 115.72
+   },
+   {
+    "seq": 41,
+    "kind": "budget",
+    "label": "escalate",
+    "detail": "still discovering documents at step 6; budget -> 8",
+    "payload": {
+     "budget": 8
+    },
+    "docs": [],
+    "elapsed_s": 115.72
+   },
+   {
+    "seq": 42,
+    "kind": "answer",
+    "label": "submit_answer",
+    "detail": "19 citations, confidence=high",
+    "payload": {
+     "doc_ids": [
+      "doc_001",
+      "doc_004",
+      "doc_005",
+      "doc_006",
+      "doc_007",
+      "doc_009",
+      "doc_010",
+      "doc_011",
+      "doc_012",
+      "doc_018",
+      "doc_019",
+      "doc_021",
+      "doc_022",
+      "doc_023",
+      "doc_024",
+      "doc_027",
+      "doc_029",
+      "doc_031",
+      "doc_041"
+     ]
+    },
+    "docs": [],
+    "elapsed_s": 115.74
+   },
+   {
+    "seq": 43,
+    "kind": "plan",
+    "label": "reasoning",
+    "detail": "Here is the answer:",
+    "payload": {},
+    "docs": [],
+    "elapsed_s": 129.12
+   }
+  ],
+  "started_at": 1787074863.202616,
+  "llm_calls": 9,
+  "in_tokens": 223383,
+  "out_tokens": 6140
+ },
+ "retrieved": [
+  "doc_012",
+  "doc_021",
+  "doc_009",
+  "doc_010",
+  "doc_011",
+  "doc_022",
+  "doc_004",
+  "doc_041",
+  "doc_019",
+  "doc_018",
+  "doc_023",
+  "doc_005",
+  "doc_001",
+  "doc_024",
+  "doc_027",
+  "doc_034",
+  "doc_035",
+  "doc_029",
+  "doc_045",
+  "doc_014",
+  "doc_031",
+  "doc_016",
+  "doc_017",
+  "doc_042",
+  "doc_043",
+  "doc_006",
+  "doc_007"
+ ],
+ "tool_sequence": [
+  "search_precedents",
+  "filter_judgments",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "submit_answer",
+  "submit_answer"
+ ],
+ "llm_calls": 9,
+ "tokens": 229523,
+ "result_type": "DirectAnswer",
+ "result": {
+  "question": "Which judgments decide claims under Section 166 of the Motor Vehicles Act?",
+  "answer": "Based on the corpus of 56 judgments, **19 judgments** decide claims under Section 166 of the Motor Vehicles Act, 1988. These are:\n\n### Death / Fatal Accident Claims under Section 166\n\n| Doc ID | Case Name | Court | Outcome |\n|--------|-----------|-------|---------|\n| doc_001 | *United India Insurance Company Ltd vs Neelam Devi And Others* | Punjab & Haryana HC | Mixed |\n| doc_004 | *Oriental Insurance Company vs Soma Devi & Others* | Himachal Pradesh HC | Claimant |\n| doc_005 | *L And T Insurance Co Ltd vs Bindudevi Samharu Yadav* | Gujarat HC | Claimant |\n| doc_006 | *National Insurance Company Ltd. Thr. ... vs Smt. Meena And 4 Others* | Allahabad HC (Lucknow) | Mixed |\n| doc_007 | *National Insurance Co.Ltd. vs Harpreet Singh And Ors.* | J&K HC | Insurer |\n| doc_009 | *Kamal S/O Shiv Ram vs Mursleem S/O Mohd. Akil* | MACT Delhi | Mixed |\n| doc_011 | *Asfaq Ahmad Father vs Satender & Ors* | MACT Delhi | Claimant |\n| doc_012 | *Smt. Rekha Kumari W/O Late Sh. Sachin vs Himachal Road* | MACT Delhi | Claimant |\n| doc_018 | *The Oriental Insurance Comp. Ltd. ... vs Smt. Rani And Ors.* | Allahabad HC (Lucknow) | Claimant |\n| doc_019 | *Surendra Singh And Another vs Vijay Singh And Another* | Allahabad HC | Claimant |\n| doc_022 | *Sangeeta Devi W/O Sh. Vinod Kumar Singh vs Mahesh Chand & Ors* | MACT Delhi | Claimant |\n| doc_041 | *No.4 Is A Mother Of The Deceased Sri. M. ... vs No.1 Has Filed The Written Statement To ...* | MACT | Claimant |\n\n### Injury Claims under Section 166\n\n| Doc ID | Case Name | Court | Outcome |\n|--------|-----------|-------|---------|\n| doc_010 | *Raju Gupta S/O Sh. Madan Mohan Gupta vs Himachal Road* | MACT Delhi | Claimant |\n| doc_021 | *Both R/O E−365 vs Naseem* | MACT Delhi | Claimant |\n| doc_024 | *Sunil Shreesail Killiket vs Subbraya* | MACT Bengaluru | Mixed |\n| doc_023 | *Suman Lata And Ors. vs Madan Mohan Sonkar And Ors.* | Allahabad HC | Mixed |\n\n### Other Section 166 Claims (coverage / procedural)\n\n| Doc ID | Case Name | Court | Outcome |\n|--------|-----------|-------|---------|\n| doc_027 | *The Manager vs Chennamma* | MACT | Mixed |\n| doc_029 | *United India Insurance Co.Ltd vs Minor Mahesh Kanubhai & 2* | MACT | Insurer |\n| doc_031 | *National Insurance Co. Ltd vs Laxmi Narain Dhut* | MACT | Insurer |\n\n### Key Principles from These Judgments\n\n1. **Standard of proof**: Preponderance of probabilities, not beyond reasonable doubt (doc_009, doc_010, doc_011, doc_012, doc_021).\n2. **Negligence is sine qua non** for a Section 166 claim (doc_012, doc_021, doc_022).\n3. **Criminal records** (FIR, chargesheet) are sufficient prima facie proof of negligence when unrebutted (doc_009, doc_011, doc_012).\n4. **Just compensation**: Courts can award more than claimed and enhance even without cross-appeal (doc_004, doc_019).\n5. **Multiplier**: Based on age of deceased per *Sarla Verma* (doc_019).\n6. **Future prospects**: Apply to self-employed and fixed-salary earners per *Pranay Sethi* (doc_019).\n7. **Pay-and-recover**: Insurer liable to third parties even on policy breach, with right to recover from owner (doc_001, doc_006, doc_024, doc_027).\n8. **Contributory negligence**: Burden on party asserting it; cannot be assumed from site plan alone (doc_006, doc_018).",
+  "cited_doc_ids": [
+   "doc_001",
+   "doc_004",
+   "doc_005",
+   "doc_006",
+   "doc_007",
+   "doc_009",
+   "doc_010",
+   "doc_011",
+   "doc_012",
+   "doc_018",
+   "doc_019",
+   "doc_021",
+   "doc_022",
+   "doc_023",
+   "doc_024",
+   "doc_027",
+   "doc_029",
+   "doc_031",
+   "doc_041"
+  ],
+  "confidence": "high"
+ },
+ "cited": [
+  "doc_001",
+  "doc_004",
+  "doc_005",
+  "doc_006",
+  "doc_007",
+  "doc_009",
+  "doc_010",
+  "doc_011",
+  "doc_012",
+  "doc_018",
+  "doc_019",
+  "doc_021",
+  "doc_022",
+  "doc_023",
+  "doc_024",
+  "doc_027",
+  "doc_029",
+  "doc_031",
+  "doc_041"
+ ],
+ "elapsed_s": 129.1
+}

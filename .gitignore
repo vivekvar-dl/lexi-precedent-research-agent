@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+
+# LanceDB is rebuilt by `make index`; the enrichment cache and gold set ARE
+# committed (they are expensive to regenerate and must stay reproducible).
+index/lance/

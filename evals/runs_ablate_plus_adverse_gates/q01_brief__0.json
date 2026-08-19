@@ -1,0 +1,2671 @@
+{
+ "qid": "q01_brief",
+ "seed": 0,
+ "question": "Client: Mrs. Lakshmi Devi. Matter: motor accident claim, death of spouse.\n\nHer husband was killed in a road accident involving a commercial truck. The truck driver was operating the vehicle without a valid driving licence. National Insurance Co. denies the claim, arguing the policy is void because the driver was unlicensed, and that it bears no liability.\n\nKey facts: deceased aged 42; monthly income Rs 35,000; dependants are the wife and two minor children (8 and 12); the truck was a commercial vehicle owned by a transport company; the driver held no valid licence; the insurer contests liability.\n\nResearch the corpus and advise on supporting precedents, adverse precedents, and strategy.",
+ "kind": "research",
+ "ok": true,
+ "trace": {
+  "question": "Client: Mrs. Lakshmi Devi. Matter: motor accident claim, death of spouse.\n\nHer husband was killed in a road accident involving a commercial truck. The truck driver was operating the vehicle without a valid driving licence. National Insurance Co. denies the claim, arguing the policy is void because the driver was unlicensed, and that it bears no liability.\n\nKey facts: deceased aged 42; monthly income Rs 35,000; dependants are the wife and two minor children (8 and 12); the truck was a commercial vehicle owned by a transport company; the driver held no valid licence; the insurer contests liability.\n\nResearch the corpus and advise on supporting precedents, adverse precedents, and strategy.",
+  "events": [
+   {
+    "seq": 1,
+    "kind": "budget",
+    "label": "triage",
+    "detail": "research -- The request requires finding, comparing, and weighing precedents on insurer liability when a driver is unlicensed, including adverse precedents, and developing a legal strategy for the claimant. This goes beyond a simple factual lookup or summary.",
+    "payload": {
+     "budget": 14
+    },
+    "docs": [],
+    "elapsed_s": 6.07
+   },
+   {
+    "seq": 2,
+    "kind": "tool_call",
+    "label": "search_precedents",
+    "detail": "query=insurer liability when driver has no valid driving licence commercial ... top_k=15",
+    "payload": {
+     "args": {
+      "query": "insurer liability when driver has no valid driving licence commercial vehicle third party death claim",
+      "top_k": 15
+     }
+    },
+    "docs": [],
+    "elapsed_s": 9.4
+   },
+   {
+    "seq": 3,
+    "kind": "tool_call",
+    "label": "search_precedents",
+    "detail": "query=National Insurance Co. v. Swaran Singh unlicensed driver liability pay... top_k=10",
+    "payload": {
+     "args": {
+      "query": "National Insurance Co. v. Swaran Singh unlicensed driver liability pay and recover",
+      "top_k": 10
+     }
+    },
+    "docs": [],
+    "elapsed_s": 9.4
+   },
+   {
+    "seq": 4,
+    "kind": "tool_call",
+    "label": "search_precedents",
+    "detail": "query=motor accident claim death of spouse compensation multiplier 42 years ... top_k=10",
+    "payload": {
+     "args": {
+      "query": "motor accident claim death of spouse compensation multiplier 42 years income 35000",
+      "top_k": 10
+     }
+    },
+    "docs": [],
+    "elapsed_s": 9.4
+   },
+   {
+    "seq": 5,
+    "kind": "retrieval",
+    "label": "search_precedents",
+    "detail": "query='insurer liability when driver has no valid driving licence commercial vehicle third party death claim' favours=None k=15",
+    "payload": {
+     "query": "insurer liability when driver has no valid driving licence commercial vehicle third party death claim",
+     "favours": null
+    },
+    "docs": [
+     {
+      "doc_id": "doc_032",
+      "title": "S.Iyyapan vs M/S United India Insurance Co.Ld.& Anr",
+      "dense_score": 0.7363818287849426,
+      "dense_rank": 1,
+      "sparse_score": 21.51943588256836,
+      "sparse_rank": 1,
+      "fused_score": 0.03278688524590164,
+      "fused_rank": 1,
+      "rerank_score": 10.0,
+      "final_rank": 1,
+      "why": "Directly addresses insurer liability when driver has a valid LMV licence but no commercial endorsement, which is the core issue in a commercial vehicle third-party death claim.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_027",
+      "title": "The Manager vs Chennamma",
+      "dense_score": 0.7153634428977966,
+      "dense_rank": 3,
+      "sparse_score": 15.97003173828125,
+      "sparse_rank": 3,
+      "fused_score": 0.031746031746031744,
+      "fused_rank": 3,
+      "rerank_score": 9.0,
+      "final_rank": 2,
+      "why": "Holds insurer liable for third-party death even when driver lacks endorsement for heavy goods vehicle; ratio directly applies to commercial vehicle licence deficiency.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_035",
+      "title": "United India Insurance Company Limited vs V.Vijayakumar",
+      "dense_score": 0.6623940467834473,
+      "dense_rank": 5,
+      "sparse_score": 11.13020133972168,
+      "sparse_rank": 8,
+      "fused_score": 0.030090497737556562,
+      "fused_rank": 4,
+      "rerank_score": 9.0,
+      "final_rank": 3,
+      "why": "Deals with driver holding only LMV licence without transport vehicle authorisation, leading to pay-and-recover order; factual posture matches commercial vehicle scenario.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_001",
+      "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+      "dense_score": 0.6650611758232117,
+      "dense_rank": 4,
+      "sparse_score": 10.64209270477295,
+      "sparse_rank": 10,
+      "fused_score": 0.029910714285714284,
+      "fused_rank": 5,
+      "rerank_score": 8.0,
+      "final_rank": 4,
+      "why": "Concerns lack of special endorsement for goods carriage; ratio on pay-and-recover for licence deficiency is relevant to commercial vehicle third-party death.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_033",
+      "title": "Satto & Ors vs New India Assurance Co Ltd",
+      "dense_score": 0.6523984670639038,
+      "dense_rank": 8,
+      "sparse_score": 11.685243606567383,
+      "sparse_rank": 7,
+      "fused_score": 0.029631255487269532,
+      "fused_rank": 7,
+      "rerank_score": 8.0,
+      "final_rank": 5,
+      "why": "Holds insurer statutorily liable for third-party death despite invalid driving licence, with recovery rights; directly bears on the question.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_034",
+      "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+      "dense_score": 0.7320973873138428,
+      "dense_rank": 2,
+      "sparse_score": 16.72043800354004,
+      "sparse_rank": 2,
+      "fused_score": 0.03225806451612903,
+      "fused_rank": 2,
+      "rerank_score": 7.0,
+      "final_rank": 6,
+      "why": "Holds insurer liable despite expired licence; ratio on statutory liability for third-party death is relevant, though issue is expiry not lack of commercial endorsement.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_024",
+      "title": "Sunil Shreesail Killiket vs Subbraya",
+      "dense_score": 0.6326733231544495,
+      "dense_rank": 11,
+      "sparse_score": 15.138375282287598,
+      "sparse_rank": 4,
+      "fused_score": 0.029709507042253523,
+      "fused_rank": 6,
+      "rerank_score": 7.0,
+      "final_rank": 7,
+      "why": "Addresses fundamental breach due to no valid licence in third-party claim; pay-and-recover principle applies, though factual posture is not specifically commercial vehicle.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_003",
+      "title": "United India Insurance Co Ltd., vs Smt Parvathi Hebbar W/O Late ...",
+      "dense_score": 0.6462070047855377,
+      "dense_rank": 10,
+      "sparse_score": 12.592073440551758,
+      "sparse_rank": 6,
+      "fused_score": 0.029437229437229435,
+      "fused_rank": 8,
+      "rerank_score": 6.0,
+      "final_rank": 8,
+      "why": "Concerns lapsed licence renewal; insurer liable with recovery; relevant but not directly about commercial vehicle endorsement.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_031",
+      "title": "National Insurance Co. Ltd vs Laxmi Narain Dhut",
+      "dense_score": 0.652478963136673,
+      "dense_rank": 7,
+      "sparse_score": 10.793057441711426,
+      "sparse_rank": 9,
+      "fused_score": 0.029418126757516764,
+      "fused_rank": 9,
+      "rerank_score": 5.0,
+      "final_rank": 9,
+      "why": "Distinguishes third-party from own-damage claims; relevant for scope of Swaran Singh but does not directly address commercial vehicle licence issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_006",
+      "title": "National Insurance Company Ltd. Thr. ... vs Smt. Meena And 4 Others",
+      "dense_score": 0.6314148008823395,
+      "dense_rank": 12,
+      "sparse_score": 13.807308197021484,
+      "sparse_rank": 5,
+      "fused_score": 0.029273504273504274,
+      "fused_rank": 10,
+      "rerank_score": 3.0,
+      "final_rank": 10,
+      "why": "Focuses on contributory negligence and pay-and-recover; does not address the core issue of driver's licence validity for commercial vehicle.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_005",
+      "title": "L And T Insurance Co Ltd vs Bindudevi Samharu Yadav",
+      "dense_score": 0.6473690271377563,
+      "dense_rank": 9,
+      "sparse_score": 10.620882034301758,
+      "sparse_rank": 11,
+      "fused_score": 0.028577260665441927,
+      "fused_rank": 11,
+      "rerank_score": 2.0,
+      "final_rank": 11,
+      "why": "Concerns Section 167 bar and Workmen's Compensation Act; unrelated to driver licence or insurer liability for third-party death.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_014",
+      "title": "Shivlal And Ors. Etc. vs Smt. Rukmabai And Ors.",
+      "dense_score": 0.6568690836429596,
+      "dense_rank": 6,
+      "sparse_score": 8.306679725646973,
+      "sparse_rank": 15,
+      "fused_score": 0.028484848484848488,
+      "fused_rank": 12,
+      "rerank_score": 2.0,
+      "final_rank": 12,
+      "why": "Deals with gratuitous passenger in goods vehicle; issue is coverage of passenger, not driver's licence.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_016",
+      "title": "Reserved On: 21.07.2025 vs State Of H.P",
+      "dense_score": 0.5645775496959686,
+      "dense_rank": 16,
+      "sparse_score": 9.350285530090332,
+      "sparse_rank": 13,
+      "fused_score": 0.026856524873828405,
+      "fused_rank": 13,
+      "rerank_score": 1.0,
+      "final_rank": 13,
+      "why": "Criminal revision about rash driving and absence of licence; does not address civil insurer liability for third-party death.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_042",
+      "title": "Nazar Singh vs State Of Punjab And Others",
+      "dense_score": 0.5180987417697906,
+      "dense_rank": 24,
+      "sparse_score": 9.768701553344727,
+      "sparse_rank": 12,
+      "fused_score": 0.025793650793650792,
+      "fused_rank": 14,
+      "rerank_score": 1.0,
+      "final_rank": 14,
+      "why": "Concerns employer recovery from employee-driver; unrelated to insurer liability for third-party death claim.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_018",
+      "title": "The Oriental Insurance Comp. Ltd. ... vs Smt. Rani And Ors.",
+      "dense_score": 0.5529110729694366,
+      "dense_rank": 19,
+      "sparse_score": 7.212952613830566,
+      "sparse_rank": 17,
+      "fused_score": 0.025645240835114255,
+      "fused_rank": 15,
+      "rerank_score": 1.0,
+      "final_rank": 15,
+      "why": "Focuses on contributory negligence burden and insurer's right to contest; no bearing on driver licence issue.",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 19.83
+   },
+   {
+    "seq": 6,
+    "kind": "retrieval",
+    "label": "search_precedents",
+    "detail": "query='National Insurance Co. v. Swaran Singh unlicensed driver liability pay and recover' favours=None k=10",
+    "payload": {
+     "query": "National Insurance Co. v. Swaran Singh unlicensed driver liability pay and recover",
+     "favours": null
+    },
+    "docs": [
+     {
+      "doc_id": "doc_031",
+      "title": "National Insurance Co. Ltd vs Laxmi Narain Dhut",
+      "dense_score": 0.7581814080476761,
+      "dense_rank": 1,
+      "sparse_score": 6.726178169250488,
+      "sparse_rank": 16,
+      "fused_score": 0.029551337359792925,
+      "fused_rank": 6,
+      "rerank_score": 10.0,
+      "final_rank": 1,
+      "why": "Directly discusses the scope of Swaran Singh (third-party vs own-damage), which is the core issue in the question.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_033",
+      "title": "Satto & Ors vs New India Assurance Co Ltd",
+      "dense_score": 0.5809885859489441,
+      "dense_rank": 14,
+      "sparse_score": 11.023645401000977,
+      "sparse_rank": 6,
+      "fused_score": 0.028665028665028666,
+      "fused_rank": 10,
+      "rerank_score": 9.0,
+      "final_rank": 2,
+      "why": "Applies Swaran Singh principle of statutory liability to third parties with recovery rights for invalid licence, matching the question's issue and posture.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_032",
+      "title": "S.Iyyapan vs M/S United India Insurance Co.Ld.& Anr",
+      "dense_score": 0.5892795026302338,
+      "dense_rank": 12,
+      "sparse_score": 9.997054100036621,
+      "sparse_rank": 10,
+      "fused_score": 0.02817460317460317,
+      "fused_rank": 11,
+      "rerank_score": 9.0,
+      "final_rank": 3,
+      "why": "Addresses insurer's liability to third parties despite lack of endorsement on licence, directly relevant to unlicensed driver liability under Swaran Singh.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_035",
+      "title": "United India Insurance Company Limited vs V.Vijayakumar",
+      "dense_score": 0.6374901533126831,
+      "dense_rank": 3,
+      "sparse_score": 11.944656372070312,
+      "sparse_rank": 3,
+      "fused_score": 0.031746031746031744,
+      "fused_rank": 1,
+      "rerank_score": 8.0,
+      "final_rank": 4,
+      "why": "Holds insurer must pay third party and recover from owner for breach due to driver lacking proper licence, aligning with the question's pay-and-recover issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_024",
+      "title": "Sunil Shreesail Killiket vs Subbraya",
+      "dense_score": 0.6341317594051361,
+      "dense_rank": 4,
+      "sparse_score": 10.78481674194336,
+      "sparse_rank": 7,
+      "fused_score": 0.03055037313432836,
+      "fused_rank": 3,
+      "rerank_score": 8.0,
+      "final_rank": 5,
+      "why": "Applies pay-and-recover for fundamental breach (no valid licence), directly on point for unlicensed driver liability.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_027",
+      "title": "The Manager vs Chennamma",
+      "dense_score": 0.5440181493759155,
+      "dense_rank": 24,
+      "sparse_score": 12.311022758483887,
+      "sparse_rank": 2,
+      "fused_score": 0.02803379416282642,
+      "fused_rank": 12,
+      "rerank_score": 8.0,
+      "final_rank": 6,
+      "why": "Insurer liable to third party despite driver lacking endorsement for heavy vehicle, with pay-and-recover, matching the question's factual and legal issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_003",
+      "title": "United India Insurance Co Ltd., vs Smt Parvathi Hebbar W/O Late ...",
+      "dense_score": 0.5902715623378754,
+      "dense_rank": 11,
+      "sparse_score": 13.368436813354492,
+      "sparse_rank": 1,
+      "fused_score": 0.03047794966520434,
+      "fused_rank": 4,
+      "rerank_score": 7.0,
+      "final_rank": 7,
+      "why": "Deals with lapsed licence and pay-and-recover, relevant to unlicensed driver liability but focuses on renewal timing rather than core Swaran Singh principle.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_034",
+      "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+      "dense_score": 0.6052808463573456,
+      "dense_rank": 7,
+      "sparse_score": 9.71320629119873,
+      "sparse_rank": 11,
+      "fused_score": 0.02900988017658188,
+      "fused_rank": 8,
+      "rerank_score": 7.0,
+      "final_rank": 8,
+      "why": "Holds insurer liable to third party despite expired licence, applying Swaran Singh reasoning, though not explicitly pay-and-recover.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_001",
+      "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+      "dense_score": 0.6074284315109253,
+      "dense_rank": 5,
+      "sparse_score": 7.6325225830078125,
+      "sparse_rank": 15,
+      "fused_score": 0.02871794871794872,
+      "fused_rank": 9,
+      "rerank_score": 6.0,
+      "final_rank": 9,
+      "why": "Pay-and-recover for missing special endorsement on licence, relevant but narrower than general unlicensed driver issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_006",
+      "title": "National Insurance Company Ltd. Thr. ... vs Smt. Meena And 4 Others",
+      "dense_score": 0.6547943353652954,
+      "dense_rank": 2,
+      "sparse_score": 10.684215545654297,
+      "sparse_rank": 8,
+      "fused_score": 0.030834914611005692,
+      "fused_rank": 2,
+      "rerank_score": 4.0,
+      "final_rank": 10,
+      "why": "Pay-and-recover order present but ratio focuses on contributory negligence, not on unlicensed driver liability.",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 27.91
+   },
+   {
+    "seq": 7,
+    "kind": "retrieval",
+    "label": "search_precedents",
+    "detail": "query='motor accident claim death of spouse compensation multiplier 42 years income 35000' favours=None k=10",
+    "payload": {
+     "query": "motor accident claim death of spouse compensation multiplier 42 years income 35000",
+     "favours": null
+    },
+    "docs": [
+     {
+      "doc_id": "doc_041",
+      "title": "No.4 Is A Mother Of The Deceased Sri. M. ... vs No.1 Has Filed The Written Statement To ...",
+      "dense_score": 0.6633078753948212,
+      "dense_rank": 2,
+      "sparse_score": 14.365032196044922,
+      "sparse_rank": 1,
+      "fused_score": 0.03252247488101534,
+      "fused_rank": 1,
+      "rerank_score": 9.0,
+      "final_rank": 1,
+      "why": "Directly addresses multiplier selection based on deceased's age (below 40) and future prospects (50% addition for stable employment), which are core to the question.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_019",
+      "title": "Surendra Singh And Another vs Vijay Singh And Another",
+      "dense_score": 0.7242401838302612,
+      "dense_rank": 1,
+      "sparse_score": 10.352351188659668,
+      "sparse_rank": 4,
+      "fused_score": 0.032018442622950824,
+      "fused_rank": 2,
+      "rerank_score": 9.0,
+      "final_rank": 2,
+      "why": "Holds that multiplier is based on deceased's age (not claimants') and future prospects apply to fixed/self-employed income, directly relevant to computing compensation for a 42-year-old earning 35,000.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_006",
+      "title": "National Insurance Company Ltd. Thr. ... vs Smt. Meena And 4 Others",
+      "dense_score": 0.5145794749259949,
+      "dense_rank": 8,
+      "sparse_score": 5.876816749572754,
+      "sparse_rank": 7,
+      "fused_score": 0.029631255487269532,
+      "fused_rank": 6,
+      "rerank_score": 5.0,
+      "final_rank": 3,
+      "why": "Discusses future prospects and compensation enhancement but focuses on contributory negligence and pay-and-recover, not directly on multiplier or income calculation for a spouse's death.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_004",
+      "title": "Oriental Insurance Company vs Soma Devi & Others",
+      "dense_score": 0.5863069593906403,
+      "dense_rank": 4,
+      "sparse_score": 2.6433985233306885,
+      "sparse_rank": 24,
+      "fused_score": 0.027529761904761904,
+      "fused_rank": 11,
+      "rerank_score": 4.0,
+      "final_rank": 4,
+      "why": "Addresses just compensation and appellate enhancement under Order 41 Rule 33 CPC, but does not provide specific guidance on multiplier or income computation for a 42-year-old.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_007",
+      "title": "National Insurance Co.Ltd. vs Harpreet Singh And Ors.",
+      "dense_score": 0.5576960742473602,
+      "dense_rank": 5,
+      "sparse_score": 5.746213912963867,
+      "sparse_rank": 8,
+      "fused_score": 0.030090497737556562,
+      "fused_rank": 5,
+      "rerank_score": 3.0,
+      "final_rank": 5,
+      "why": "Concerns entitlement of non-dependent legal representatives to loss of dependency, which is a different issue from computing multiplier for a dependent spouse.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_022",
+      "title": "Sangeeta Devi W/O Sh. Vinod Kumar Singh vs Mahesh Chand & Ors",
+      "dense_score": 0.6462794840335846,
+      "dense_rank": 3,
+      "sparse_score": 11.490119934082031,
+      "sparse_rank": 3,
+      "fused_score": 0.031746031746031744,
+      "fused_rank": 3,
+      "rerank_score": 2.0,
+      "final_rank": 6,
+      "why": "Deals with notional income for a child with no proof of earnings, not applicable to a 42-year-old earning 35,000.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_021",
+      "title": "Both R/O E−365 vs Naseem",
+      "dense_score": 0.519014298915863,
+      "dense_rank": 7,
+      "sparse_score": 11.53873348236084,
+      "sparse_rank": 2,
+      "fused_score": 0.031054405392392875,
+      "fused_rank": 4,
+      "rerank_score": 2.0,
+      "final_rank": 7,
+      "why": "Focuses on proving negligence through preponderance of probability, not on multiplier or income computation.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_034",
+      "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+      "dense_score": 0.48250120878219604,
+      "dense_rank": 13,
+      "sparse_score": 5.571508884429932,
+      "sparse_rank": 9,
+      "fused_score": 0.02819138376017471,
+      "fused_rank": 7,
+      "rerank_score": 2.0,
+      "final_rank": 8,
+      "why": "Addresses insurer liability for expired licence, not relevant to computing compensation for loss of spouse.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_018",
+      "title": "The Oriental Insurance Comp. Ltd. ... vs Smt. Rani And Ors.",
+      "dense_score": 0.5124914646148682,
+      "dense_rank": 9,
+      "sparse_score": 3.1510167121887207,
+      "sparse_rank": 14,
+      "fused_score": 0.028006267136701922,
+      "fused_rank": 8,
+      "rerank_score": 2.0,
+      "final_rank": 9,
+      "why": "Concerns burden of proof for contributory negligence and insurer's defences, not multiplier or income.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_012",
+      "title": "Smt. Rekha Kumari W/O Late Sh. Sachin vs Himachal Road",
+      "dense_score": 0.49887627363204956,
+      "dense_rank": 12,
+      "sparse_score": 4.484842300415039,
+      "sparse_rank": 12,
+      "fused_score": 0.027777777777777776,
+      "fused_rank": 9,
+      "rerank_score": 2.0,
+      "final_rank": 10,
+      "why": "Addresses proof of negligence via criminal records, not relevant to multiplier or income assessment.",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 43.67
+   },
+   {
+    "seq": 8,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_032 focus=insurer liability unlicensed driver commercial vehicle third party pay...",
+    "payload": {
+     "args": {
+      "doc_id": "doc_032",
+      "focus": "insurer liability unlicensed driver commercial vehicle third party pay and recover"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 60.79
+   },
+   {
+    "seq": 9,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_027 focus=insurer liability third party death driver lacking endorsement heavy g...",
+    "payload": {
+     "args": {
+      "doc_id": "doc_027",
+      "focus": "insurer liability third party death driver lacking endorsement heavy goods vehicle pay and recover"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 60.79
+   },
+   {
+    "seq": 10,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_033 focus=statutory liability third party death invalid driving licence recovery...",
+    "payload": {
+     "args": {
+      "doc_id": "doc_033",
+      "focus": "statutory liability third party death invalid driving licence recovery rights"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 60.79
+   },
+   {
+    "seq": 11,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_035 focus=pay and recover driver LMV licence without transport vehicle authorisa...",
+    "payload": {
+     "args": {
+      "doc_id": "doc_035",
+      "focus": "pay and recover driver LMV licence without transport vehicle authorisation third party"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 60.79
+   },
+   {
+    "seq": 12,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_001 focus=pay and recover missing special endorsement goods carriage third party...",
+    "payload": {
+     "args": {
+      "doc_id": "doc_001",
+      "focus": "pay and recover missing special endorsement goods carriage third party death"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 60.79
+   },
+   {
+    "seq": 13,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_024 focus=fundamental breach no valid licence third party pay and recover",
+    "payload": {
+     "args": {
+      "doc_id": "doc_024",
+      "focus": "fundamental breach no valid licence third party pay and recover"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 60.79
+   },
+   {
+    "seq": 14,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_032 focus='insurer liability unlicensed driver commercial vehicle third party pay and recover' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_032"
+     ],
+     "focus": "insurer liability unlicensed driver commercial vehicle third party pay and recover"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_032",
+      "title": "S.Iyyapan vs M/S United India Insurance Co.Ld.& Anr",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 60.86
+   },
+   {
+    "seq": 15,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_027 focus='insurer liability third party death driver lacking endorsement heavy goods vehicle pay and recover' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_027"
+     ],
+     "focus": "insurer liability third party death driver lacking endorsement heavy goods vehicle pay and recover"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_027",
+      "title": "The Manager vs Chennamma",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 60.9
+   },
+   {
+    "seq": 16,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_033 focus='statutory liability third party death invalid driving licence recovery rights' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_033"
+     ],
+     "focus": "statutory liability third party death invalid driving licence recovery rights"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_033",
+      "title": "Satto & Ors vs New India Assurance Co Ltd",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 60.94
+   },
+   {
+    "seq": 17,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_035 focus='pay and recover driver LMV licence without transport vehicle authorisation third party' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_035"
+     ],
+     "focus": "pay and recover driver LMV licence without transport vehicle authorisation third party"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_035",
+      "title": "United India Insurance Company Limited vs V.Vijayakumar",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 60.97
+   },
+   {
+    "seq": 18,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_001 focus='pay and recover missing special endorsement goods carriage third party death' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_001"
+     ],
+     "focus": "pay and recover missing special endorsement goods carriage third party death"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_001",
+      "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 61.0
+   },
+   {
+    "seq": 19,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_024 focus='fundamental breach no valid licence third party pay and recover' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_024"
+     ],
+     "focus": "fundamental breach no valid licence third party pay and recover"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_024",
+      "title": "Sunil Shreesail Killiket vs Subbraya",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 61.03
+   },
+   {
+    "seq": 20,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_019 focus=multiplier based on deceased age future prospects self employed income...",
+    "payload": {
+     "args": {
+      "doc_id": "doc_019",
+      "focus": "multiplier based on deceased age future prospects self employed income computation"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 65.16
+   },
+   {
+    "seq": 21,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_041 focus=multiplier selection future prospects dependency deduction compensatio...",
+    "payload": {
+     "args": {
+      "doc_id": "doc_041",
+      "focus": "multiplier selection future prospects dependency deduction compensation"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 65.16
+   },
+   {
+    "seq": 22,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_031 focus=Swaran Singh third party own damage distinction scope",
+    "payload": {
+     "args": {
+      "doc_id": "doc_031",
+      "focus": "Swaran Singh third party own damage distinction scope"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 65.16
+   },
+   {
+    "seq": 23,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_019 focus='multiplier based on deceased age future prospects self employed income computation' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_019"
+     ],
+     "focus": "multiplier based on deceased age future prospects self employed income computation"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_019",
+      "title": "Surendra Singh And Another vs Vijay Singh And Another",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 65.24
+   },
+   {
+    "seq": 24,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_041 focus='multiplier selection future prospects dependency deduction compensation' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_041"
+     ],
+     "focus": "multiplier selection future prospects dependency deduction compensation"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_041",
+      "title": "No.4 Is A Mother Of The Deceased Sri. M. ... vs No.1 Has Filed The Written Statement To ...",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 65.28
+   },
+   {
+    "seq": 25,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_031 focus='Swaran Singh third party own damage distinction scope' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_031"
+     ],
+     "focus": "Swaran Singh third party own damage distinction scope"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_031",
+      "title": "National Insurance Co. Ltd vs Laxmi Narain Dhut",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 65.31
+   },
+   {
+    "seq": 26,
+    "kind": "tool_call",
+    "label": "search_precedents",
+    "detail": "query=insurer not liable third party death driver no licence at all fundamen... top_k=10 favours=insurer",
+    "payload": {
+     "args": {
+      "query": "insurer not liable third party death driver no licence at all fundamental breach commercial vehicle",
+      "top_k": 10,
+      "favours": "insurer"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 69.37
+   },
+   {
+    "seq": 27,
+    "kind": "tool_call",
+    "label": "filter_judgments",
+    "detail": "outcome_favours=insurer",
+    "payload": {
+     "args": {
+      "outcome_favours": "insurer"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 69.37
+   },
+   {
+    "seq": 28,
+    "kind": "retrieval",
+    "label": "search_precedents",
+    "detail": "query='insurer not liable third party death driver no licence at all fundamental breach commercial vehicle' favours=insurer k=10",
+    "payload": {
+     "query": "insurer not liable third party death driver no licence at all fundamental breach commercial vehicle",
+     "favours": "insurer"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_014",
+      "title": "Shivlal And Ors. Etc. vs Smt. Rukmabai And Ors.",
+      "dense_score": 0.6316440403461456,
+      "dense_rank": 1,
+      "sparse_score": 7.903363227844238,
+      "sparse_rank": 3,
+      "fused_score": 0.032266458495966696,
+      "fused_rank": 1,
+      "rerank_score": 8.0,
+      "final_rank": 1,
+      "why": "Matches issue of insurer liability for death in a goods vehicle; factual posture of gratuitous passenger aligns; ratio directly bears on non-liability for risks not statutorily covered.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_029",
+      "title": "United India Insurance Co.Ltd vs Minor Mahesh Kanubhai & 2",
+      "dense_score": 0.524258017539978,
+      "dense_rank": 5,
+      "sparse_score": 1.4873204231262207,
+      "sparse_rank": 7,
+      "fused_score": 0.030309988518943745,
+      "fused_rank": 6,
+      "rerank_score": 7.0,
+      "final_rank": 2,
+      "why": "Addresses insurer non-liability for gratuitous passengers in goods vehicles and limits on tribunal's power to order pay-and-recover; relevant to fundamental breach scenario.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_031",
+      "title": "National Insurance Co. Ltd vs Laxmi Narain Dhut",
+      "dense_score": 0.6039717793464661,
+      "dense_rank": 2,
+      "sparse_score": 8.242107391357422,
+      "sparse_rank": 2,
+      "fused_score": 0.03225806451612903,
+      "fused_rank": 2,
+      "rerank_score": 6.0,
+      "final_rank": 3,
+      "why": "Distinguishes third-party vs own-damage claims and discusses fake licence; relevant to 'no licence at all' but limited to non-third-party context.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_028",
+      "title": "United India Insurance Co. Ltd., Thr ... vs Sukumarbai Suryakant Nikam And Ors",
+      "dense_score": 0.5788857042789459,
+      "dense_rank": 4,
+      "sparse_score": 9.298134803771973,
+      "sparse_rank": 1,
+      "fused_score": 0.032018442622950824,
+      "fused_rank": 3,
+      "rerank_score": 5.0,
+      "final_rank": 4,
+      "why": "Concerns passengers in private vehicle for hire/reward, not goods vehicle; ratio on 'pay and recover' inapplicability is somewhat relevant but factual posture differs.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_002",
+      "title": "Liyakat Ali vs Smt Chunni Devi",
+      "dense_score": 0.597522646188736,
+      "dense_rank": 3,
+      "sparse_score": 3.2015280723571777,
+      "sparse_rank": 5,
+      "fused_score": 0.03125763125763126,
+      "fused_rank": 4,
+      "rerank_score": 4.0,
+      "final_rank": 5,
+      "why": "Involves breach of policy condition (non-agricultural use) absolving insurer; shares concept of fundamental breach but factual posture (tractor/trailer) differs from commercial vehicle/no licence.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_007",
+      "title": "National Insurance Co.Ltd. vs Harpreet Singh And Ors.",
+      "dense_score": 0.4775131940841675,
+      "dense_rank": 6,
+      "sparse_score": 4.341026782989502,
+      "sparse_rank": 4,
+      "fused_score": 0.030776515151515152,
+      "fused_rank": 5,
+      "rerank_score": 2.0,
+      "final_rank": 6,
+      "why": "Addresses dependency for loss of dependency calculation; no match on issue of insurer liability for unlicensed driver or commercial vehicle.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_038",
+      "title": "M/S Crown Consultants (P) Ltd. vs The Oriental Insurance Company Ltd.",
+      "dense_score": 0.41142112016677856,
+      "dense_rank": 7,
+      "sparse_score": 2.190088987350464,
+      "sparse_rank": 6,
+      "fused_score": 0.03007688828584351,
+      "fused_rank": 7,
+      "rerank_score": 1.0,
+      "final_rank": 7,
+      "why": "Consumer dispute about late claim filing; no overlap with motor accident, third-party death, or licence breach.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_054",
+      "title": "Chinnasamy vs K.Viswanathan(Died)",
+      "dense_score": 0.31604957580566406,
+      "dense_rank": 8,
+      "sparse_score": 0.4752362072467804,
+      "sparse_rank": 8,
+      "fused_score": 0.029411764705882353,
+      "fused_rank": 8,
+      "rerank_score": 0.0,
+      "final_rank": 8,
+      "why": "Civil specific performance case; entirely unrelated to insurance or motor accident liability.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_051",
+      "title": "Sh. Yashpal Chaudhrani & Ors. vs State (Govt. Of Nct Delhi) & Anr.",
+      "dense_score": 0.189081072807312,
+      "dense_rank": 9,
+      "sparse_score": 0.2986893653869629,
+      "sparse_rank": 9,
+      "fused_score": 0.028985507246376812,
+      "fused_rank": 9,
+      "rerank_score": 0.0,
+      "final_rank": 9,
+      "why": "Criminal quashing of proceedings for economic offences; no relevance to insurance or motor accident law.",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 85.28
+   },
+   {
+    "seq": 29,
+    "kind": "filter",
+    "label": "filter_judgments",
+    "detail": "WHERE outcome_favours = 'insurer'  ->  9 of 56 judgments",
+    "payload": {
+     "where": "outcome_favours = 'insurer'",
+     "n_matched": 9,
+     "doc_ids": [
+      "doc_002",
+      "doc_007",
+      "doc_014",
+      "doc_028",
+      "doc_029",
+      "doc_031",
+      "doc_038",
+      "doc_051",
+      "doc_054"
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_002",
+      "title": "Liyakat Ali vs Smt Chunni Devi",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_007",
+      "title": "National Insurance Co.Ltd. vs Harpreet Singh And Ors.",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_014",
+      "title": "Shivlal And Ors. Etc. vs Smt. Rukmabai And Ors.",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_028",
+      "title": "United India Insurance Co. Ltd., Thr ... vs Sukumarbai Suryakant Nikam And Ors",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_029",
+      "title": "United India Insurance Co.Ltd vs Minor Mahesh Kanubhai & 2",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_031",
+      "title": "National Insurance Co. Ltd vs Laxmi Narain Dhut",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_038",
+      "title": "M/S Crown Consultants (P) Ltd. vs The Oriental Insurance Company Ltd.",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_051",
+      "title": "Sh. Yashpal Chaudhrani & Ors. vs State (Govt. Of Nct Delhi) & Anr.",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_054",
+      "title": "Chinnasamy vs K.Viswanathan(Died)",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 85.29
+   },
+   {
+    "seq": 30,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_014 focus=gratuitous passenger goods vehicle insurer not liable third party",
+    "payload": {
+     "args": {
+      "doc_id": "doc_014",
+      "focus": "gratuitous passenger goods vehicle insurer not liable third party"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 88.92
+   },
+   {
+    "seq": 31,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_029 focus=insurer non-liability gratuitous passenger goods vehicle pay and recov...",
+    "payload": {
+     "args": {
+      "doc_id": "doc_029",
+      "focus": "insurer non-liability gratuitous passenger goods vehicle pay and recover"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 88.92
+   },
+   {
+    "seq": 32,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_002 focus=breach of policy condition insurer absolved tractor non-agricultural u...",
+    "payload": {
+     "args": {
+      "doc_id": "doc_002",
+      "focus": "breach of policy condition insurer absolved tractor non-agricultural use"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 88.92
+   },
+   {
+    "seq": 33,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_014 focus='gratuitous passenger goods vehicle insurer not liable third party' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_014"
+     ],
+     "focus": "gratuitous passenger goods vehicle insurer not liable third party"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_014",
+      "title": "Shivlal And Ors. Etc. vs Smt. Rukmabai And Ors.",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 89.0
+   },
+   {
+    "seq": 34,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_029 focus='insurer non-liability gratuitous passenger goods vehicle pay and recover' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_029"
+     ],
+     "focus": "insurer non-liability gratuitous passenger goods vehicle pay and recover"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_029",
+      "title": "United India Insurance Co.Ltd vs Minor Mahesh Kanubhai & 2",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 89.04
+   },
+   {
+    "seq": 35,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_002 focus='breach of policy condition insurer absolved tractor non-agricultural use' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_002"
+     ],
+     "focus": "breach of policy condition insurer absolved tractor non-agricultural use"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_002",
+      "title": "Liyakat Ali vs Smt Chunni Devi",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 89.07
+   },
+   {
+    "seq": 36,
+    "kind": "tool_call",
+    "label": "compute_quantum",
+    "detail": "monthly_income=35000 age=42 dependents=3 employment=self_employed award_year=2026",
+    "payload": {
+     "args": {
+      "monthly_income": 35000,
+      "age": 42,
+      "dependents": 3,
+      "employment": "self_employed",
+      "award_year": 2026
+     }
+    },
+    "docs": [],
+    "elapsed_s": 97.21
+   },
+   {
+    "seq": 37,
+    "kind": "compute",
+    "label": "compute_quantum",
+    "detail": "age=42 income=35000.0 deps=3 -> Rs 5,099,650",
+    "payload": {
+     "inputs": {
+      "monthly_income": 35000.0,
+      "age": 42,
+      "dependents": 3,
+      "employment": "self_employed",
+      "award_year": 2026,
+      "contributory_negligence_pct": 0.0
+     },
+     "result": {
+      "total": 5099650.0,
+      "low": 5099650.0,
+      "high": 5295650.0,
+      "steps": [
+       {
+        "label": "Annual income",
+        "value": "Rs 35,000 x 12 = Rs 420,000",
+        "authority": "Sarla Verma (2009) 6 SCC 121"
+       },
+       {
+        "label": "Add future prospects",
+        "value": "+25% (self-employed/fixed wages, age 42) -> Rs 525,000",
+        "authority": "Pranay Sethi (2017) 16 SCC 680 (Constitution Bench)"
+       },
+       {
+        "label": "Deduct personal expenses",
+        "value": "less 1/3 (2-3 dependants) -> Rs 350,000",
+        "authority": "Sarla Verma (2009) 6 SCC 121"
+       },
+       {
+        "label": "Apply multiplier",
+        "value": "x 14 (age 42) -> Rs 4,900,000",
+        "authority": "Sarla Verma multiplier table, affirmed in Pranay Sethi"
+       },
+       {
+        "label": "Conventional heads",
+        "value": "estate Rs 19,965 + funeral Rs 19,965 + consortium Rs 159,720 (3 dependants) = Rs 199,650",
+        "authority": "Pranay Sethi; Magma General v. Nanu Ram (2018) 18 SCC 130; United India v. Satinder Kaur (2020) 11 SCC 419"
+       }
+      ],
+      "notes": [
+       "Interest is additionally payable, customarily 7.5-9% p.a. from the date of the claim petition until realisation.",
+       "Range reflects the two future-prospects bands available on these facts (self-employed vs permanent employment), which is the usual live dispute."
+      ]
+     }
+    },
+    "docs": [],
+    "elapsed_s": 97.21
+   },
+   {
+    "seq": 38,
+    "kind": "tool_call",
+    "label": "search_precedents",
+    "detail": "query=driver had no driving licence at all third party death pay and recover... top_k=10",
+    "payload": {
+     "args": {
+      "query": "driver had no driving licence at all third party death pay and recover insurer liability",
+      "top_k": 10
+     }
+    },
+    "docs": [],
+    "elapsed_s": 99.77
+   },
+   {
+    "seq": 39,
+    "kind": "retrieval",
+    "label": "search_precedents",
+    "detail": "query='driver had no driving licence at all third party death pay and recover insurer liability' favours=None k=10",
+    "payload": {
+     "query": "driver had no driving licence at all third party death pay and recover insurer liability",
+     "favours": null
+    },
+    "docs": [
+     {
+      "doc_id": "doc_024",
+      "title": "Sunil Shreesail Killiket vs Subbraya",
+      "dense_score": 0.715972900390625,
+      "dense_rank": 3,
+      "sparse_score": 15.3853759765625,
+      "sparse_rank": 3,
+      "fused_score": 0.031746031746031744,
+      "fused_rank": 3,
+      "rerank_score": 9.0,
+      "final_rank": 1,
+      "why": "Directly addresses driver without any valid licence; holds insurer liable to third party via pay-and-recover.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_033",
+      "title": "Satto & Ors vs New India Assurance Co Ltd",
+      "dense_score": 0.6877836287021637,
+      "dense_rank": 8,
+      "sparse_score": 13.810916900634766,
+      "sparse_rank": 5,
+      "fused_score": 0.030090497737556562,
+      "fused_rank": 7,
+      "rerank_score": 9.0,
+      "final_rank": 2,
+      "why": "Holds insurer statutorily liable to third party even for invalid licence, with recovery rights.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_034",
+      "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+      "dense_score": 0.7708785086870193,
+      "dense_rank": 1,
+      "sparse_score": 15.636791229248047,
+      "sparse_rank": 2,
+      "fused_score": 0.03252247488101534,
+      "fused_rank": 2,
+      "rerank_score": 8.0,
+      "final_rank": 3,
+      "why": "Expired licence (no licence at all on date) leads to insurer liability to third party; ratio directly applicable.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_003",
+      "title": "United India Insurance Co Ltd., vs Smt Parvathi Hebbar W/O Late ...",
+      "dense_score": 0.6996266543865204,
+      "dense_rank": 4,
+      "sparse_score": 13.600340843200684,
+      "sparse_rank": 7,
+      "fused_score": 0.03055037313432836,
+      "fused_rank": 5,
+      "rerank_score": 8.0,
+      "final_rank": 4,
+      "why": "Lapsed licence (effectively no licence) results in pay-and-recover; factual posture aligns.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_027",
+      "title": "The Manager vs Chennamma",
+      "dense_score": 0.7163538038730621,
+      "dense_rank": 2,
+      "sparse_score": 16.442846298217773,
+      "sparse_rank": 1,
+      "fused_score": 0.03252247488101534,
+      "fused_rank": 1,
+      "rerank_score": 7.0,
+      "final_rank": 5,
+      "why": "Wrong class of licence (not no licence) but ratio on pay-and-recover for third-party death is relevant.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_035",
+      "title": "United India Insurance Company Limited vs V.Vijayakumar",
+      "dense_score": 0.6992935538291931,
+      "dense_rank": 5,
+      "sparse_score": 12.533699035644531,
+      "sparse_rank": 8,
+      "fused_score": 0.030090497737556562,
+      "fused_rank": 8,
+      "rerank_score": 7.0,
+      "final_rank": 6,
+      "why": "Driver lacked proper authorisation for transport vehicle; pay-and-recover ordered for third-party claim.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_032",
+      "title": "S.Iyyapan vs M/S United India Insurance Co.Ld.& Anr",
+      "dense_score": 0.6970546245574951,
+      "dense_rank": 6,
+      "sparse_score": 13.666393280029297,
+      "sparse_rank": 6,
+      "fused_score": 0.030303030303030304,
+      "fused_rank": 6,
+      "rerank_score": 6.0,
+      "final_rank": 7,
+      "why": "Lack of commercial endorsement on LMV licence; insurer liable to third party, but not 'no licence at all'.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_001",
+      "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+      "dense_score": 0.6594380438327789,
+      "dense_rank": 10,
+      "sparse_score": 10.810164451599121,
+      "sparse_rank": 10,
+      "fused_score": 0.02857142857142857,
+      "fused_rank": 9,
+      "rerank_score": 5.0,
+      "final_rank": 8,
+      "why": "Missing special endorsement for hazardous goods; pay-and-recover, but issue is endorsement not absence of licence.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_006",
+      "title": "National Insurance Company Ltd. Thr. ... vs Smt. Meena And 4 Others",
+      "dense_score": 0.6920811831951141,
+      "dense_rank": 7,
+      "sparse_score": 14.002388000488281,
+      "sparse_rank": 4,
+      "fused_score": 0.03055037313432836,
+      "fused_rank": 4,
+      "rerank_score": 3.0,
+      "final_rank": 9,
+      "why": "Focus on contributory negligence and quantum; no discussion of licence issue or insurer liability for no licence.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_005",
+      "title": "L And T Insurance Co Ltd vs Bindudevi Samharu Yadav",
+      "dense_score": 0.6413527727127075,
+      "dense_rank": 12,
+      "sparse_score": 8.829753875732422,
+      "sparse_rank": 13,
+      "fused_score": 0.02758751902587519,
+      "fused_rank": 12,
+      "rerank_score": 2.0,
+      "final_rank": 10,
+      "why": "Section 167 bar issue; unrelated to driver licence or insurer liability for third-party death.",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 113.37
+   },
+   {
+    "seq": 40,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_034 focus=expired licence no valid licence insurer liable third party pay and re...",
+    "payload": {
+     "args": {
+      "doc_id": "doc_034",
+      "focus": "expired licence no valid licence insurer liable third party pay and recover"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 118.0
+   },
+   {
+    "seq": 41,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_034 focus='expired licence no valid licence insurer liable third party pay and recover' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_034"
+     ],
+     "focus": "expired licence no valid licence insurer liable third party pay and recover"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_034",
+      "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 118.08
+   },
+   {
+    "seq": 42,
+    "kind": "tool_call",
+    "label": "submit_research_report",
+    "detail": "question=Mrs. Lakshmi Devi's claim for compensation for death of spouse (aged 4... supporting=[{'doc_id': 'doc_033', 'title': 'Satto & Ors vs New India Assurance Co... adverse=[{'doc_id': 'doc_031', 'title': 'National Insurance Co. Ltd vs Laxmi N... strategy={'priority_arguments': [\"Lead with the st",
+    "payload": {
+     "args": {
+      "question": "Mrs. Lakshmi Devi's claim for compensation for death of spouse (aged 42, monthly income Rs 35,000, 3 dependants) in a commercial truck accident where the driver had no valid driving licence. National Insurance Co. denies liability arguing the policy is void due to unlicensed driver.",
+      "supporting": [
+       {
+        "doc_id": "doc_033",
+        "title": "Satto & Ors vs New India Assurance Co Ltd",
+        "principle": "The insurer has a statutory liability to pay compensation to third parties even if there is a breach of policy conditions (such as an invalid driving licence), and is entitled to recover the same from the insured.",
+        "fact_alignment": "Directly on point: the driver of the tempo did not possess a valid driving licence. The court held the insurer must pay the third-party award and can recover from the owner/driver.",
+        "why_it_matters": "This is the strongest supporting precedent. It squarely holds that even where the driver had no valid licence at all, the insurer's statutory liability to the third-party claimant remains intact, with only a right of recovery against the insured.",
+        "strength": "strong",
+        "quote": "The Claims Tribunal, therefore, rightly made the Insurance Company liable to pay the compensation and granted it recovery rights."
+       },
+       {
+        "doc_id": "doc_032",
+        "title": "S.Iyyapan vs M/S United India Insurance Co.Ld.& Anr",
+        "principle": "An insurer cannot disown its liability to third parties on the ground that the driver lacked an endorsement to drive a commercial vehicle while holding a valid LMV licence.",
+        "fact_alignment": "The vehicle was a commercial vehicle (Mahindra Maxi Cab). The driver held an LMV licence but no commercial endorsement. The Supreme Court held the insurer liable to the third party.",
+        "why_it_matters": "This Supreme Court judgment establishes that even for commercial vehicles, the absence of a proper licence/endorsement does not defeat the third party's right to recover from the insurer. The insurer must pay and can recover from the insured.",
+        "strength": "strong",
+        "quote": "the insurer cannot disown its liability on the ground that although the driver was holding a licence to drive a light motor vehicle but before driving light motor vehicle used as commercial vehicle, no endorsement to drive commercial vehicle was obtained in the driving licence."
+       },
+       {
+        "doc_id": "doc_027",
+        "title": "The Manager vs Chennamma",
+        "principle": "In third-party motor accident claims, even if the driver lacks an appropriate endorsement to drive a specific heavy vehicle class, the insurer remains liable to satisfy the third-party award and may recover the amount from the insured owner.",
+        "fact_alignment": "The driver had only an LMV/transport endorsement but was driving a heavy goods vehicle. The court ordered pay-and-recover. Our case involves a commercial truck where the driver had no licence at all — a stronger case for third-party protection.",
+        "why_it_matters": "This Madras High Court judgment applies the Swaran Singh and S. Iyyapan principles to heavy goods vehicles, confirming that the pay-and-recover remedy is available even for class-of-vehicle licence deficiencies.",
+        "strength": "strong",
+        "quote": "the insurer cannot disown its liability... In any case, it is the statutory right of a third party to recover the amount of compensation so awarded from the insurer."
+       },
+       {
+        "doc_id": "doc_035",
+        "title": "United India Insurance Company Limited vs V.Vijayakumar",
+        "principle": "Where the driver of a transport vehicle holds only an LMV licence without the specific authorisation to drive a transport vehicle, the insurer must pay the third-party compensation first and then recover from the insured.",
+        "fact_alignment": "The driver had only an LMV licence and no badge/authorisation for a transport vehicle. The court ordered pay-and-recover. Our case involves a commercial truck with no licence at all.",
+        "why_it_matters": "This judgment explicitly recognises the 'pay and recover' doctrine for licence deficiencies in transport/commercial vehicles, directly supporting the client's right to receive compensation from the insurer.",
+        "strength": "moderate",
+        "quote": "The doctrine of 'pay and recover' has been recognised by the Supreme Court in Several decisions."
+       },
+       {
+        "doc_id": "doc_024",
+        "title": "Sunil Shreesail Killiket vs Subbraya",
+        "principle": "Driving without a valid licence constitutes a fundamental breach, but the insurer must still pay the third-party claimant first and then recover from the owner.",
+        "fact_alignment": "The driver had no driving licence at all. The tribunal held this was a fundamental breach but still ordered pay-and-recover in favour of the third-party claimant.",
+        "why_it_matters": "This is the closest factual match — the driver had no licence whatsoever. Despite finding a fundamental breach, the tribunal protected the third party by ordering pay-and-recover. This directly counters the insurer's argument that 'no licence = no liability.'",
+        "strength": "strong",
+        "quote": "it is proper to direct the respondent No.2 to pay the compensation by reserving liberty to recover the same from the respondent No.1, owner of the offending vehicle"
+       },
+       {
+        "doc_id": "doc_034",
+        "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+        "principle": "The insurer is statutorily liable to satisfy an award obtained by a third party regardless of policy condition breaches such as an expired (or absent) driving licence.",
+        "fact_alignment": "The driver's licence had expired (effectively no valid licence on the date). The court held the insurer liable to the third party.",
+        "why_it_matters": "Reinforces the principle that the insurer's statutory liability to third parties under Section 149 is not defeated by licence deficiencies.",
+        "strength": "moderate",
+        "quote": "the insurer who is made statutorily liable to pay compensation to third parties on account of the certificate of insurance issued shall be entitled to recover from the insured the amount paid to the third parties, if there was any breach of policy conditions"
+       },
+       {
+        "doc_id": "doc_019",
+        "title": "Surendra Singh And Another vs Vijay Singh And Another",
+        "principle": "Multiplier must be based on deceased's age; future prospects apply to self-employed persons at 25% for age 40-50; 1/3 deduction for 3 dependants.",
+        "fact_alignment": "Deceased aged 42 (within 40-50 bracket), self-employed or fixed salary, 3 dependants. The court applied Pranay Sethi principles exactly matching our client's facts.",
+        "why_it_matters": "Provides the authoritative framework for computing compensation: multiplier of 14 (age 42), future prospects at 25%, 1/3 deduction for personal expenses, and conventional heads as per Pranay Sethi.",
+        "strength": "strong",
+        "quote": "In case the deceased was self-employed or on a fixed salary, an addition of 25% where the deceased was between the age of 40 to 50 years... The selection of multiplier shall be as indicated in the Table in Sarla Verma... The age of the deceased should be the basis for applying the multiplier."
+       }
+      ],
+      "adverse": [
+       {
+        "doc_id": "doc_031",
+        "title": "National Insurance Co. Ltd vs Laxmi Narain Dhut",
+        "principle": "The decision in Swaran Singh applies exclusively to third-party risks and does not extend to own-damage claims or disputes between insurer and insured where no third party is involved.",
+        "risk_to_client": "The insurer may cite this to argue that Swaran Singh's liberal approach is limited to third-party claims. However, this case actually HELPS the client because it expressly affirms (at point 3 of the holding) that 'In case of third party risks the insurer has to indemnify the amount and if so advised to recover the same from the insured.' The risk is low because the insurer cannot use this to defeat a third-party claim — it only limits Swaran Singh's application to non-third-party contexts.",
+        "risk_level": "low",
+        "distinguishing_argument": "This judgment expressly states that for third-party risks (which is our case), the insurer must indemnify and can recover from the insured. It is not adverse — it actually confirms the client's position. The insurer cannot use it to avoid liability because the holding explicitly preserves the pay-and-recover principle for third-party claims."
+       },
+       {
+        "doc_id": "doc_029",
+        "title": "United India Insurance Co.Ltd vs Minor Mahesh Kanubhai & 2",
+        "principle": "Where a risk is neither statutorily required to be covered nor covered under the policy terms (gratuitous passengers in goods vehicle), the Tribunal has no power under Section 149(4)/(5) to direct pay-and-recover.",
+        "risk_to_client": "The insurer may argue by analogy that if the driver had no licence at all, the risk was never one the insurer agreed to cover, and therefore pay-and-recover should not apply. However, this case is about gratuitous passengers — a fundamentally different issue. The Supreme Court has consistently held that third-party death claims (which are statutorily mandated to be covered) are different from gratuitous passenger claims (which are not statutorily mandated).",
+        "risk_level": "low",
+        "distinguishing_argument": "This case deals with gratuitous passengers in goods vehicles — a risk that is NOT statutorily required to be covered under Section 147. Our case involves a third-party death (the deceased was not a passenger in the truck but a third-party road user), which IS a statutorily mandated risk. The entire ratio of this judgment turns on the distinction between risks that are and are not statutorily required to be covered. Third-party death claims fall squarely within the mandatory coverage."
+       },
+       {
+        "doc_id": "doc_014",
+        "title": "Shivlal And Ors. Etc. vs Smt. Rukmabai And Ors.",
+        "principle": "The insurer is not liable for the death of a gratuitous passenger carried in a goods vehicle where the risk is not statutorily required to be covered.",
+        "risk_to_client": "This is about gratuitous passengers, not third-party road users. It has no application to our facts. The deceased was not travelling in the truck; he was a third-party road user killed by the truck. This case is entirely distinguishable.",
+        "risk_level": "low",
+        "distinguishing_argument": "The deceased in our case was not a passenger in the goods vehicle. He was a third-party road user (pedestrian/other vehicle occupant). The statutory requirement to insure third-party risks under Section 147 is fundamentally different from the gratuitous passenger issue. This case is irrelevant to our facts."
+       }
+      ],
+      "strategy": {
+       "priority_arguments": [
+        "Lead with the statutory liability argument under Section 149 MV Act: the insurer's liability to third parties is statutory and cannot be defeated by policy breaches. Cite Satto (doc_033), S. Iyyapan (doc_032), and Sunil Shreesail Killiket (doc_024).",
+        "Argue that even if the driver had no licence, the 'pay and recover' principle applies: the insurer must pay the claimant first and then recover from the owner/transport company. This is the consistent thread across all corpus precedents.",
+        "Emphasise that the deceased was a third-party road user (not a passenger in the goods vehicle), so there is no question of gratuitous passenger exclusion. The risk is statutorily mandated.",
+        "On quantum: claim compensation of approximately Rs 51-53 lakhs based on: monthly income Rs 35,000; 25% future prospects (Pranay Sethi for age 42, self-employed); multiplier of 14 (Sarla Verma table); 1/3 deduction for personal expenses (3 dependants); conventional heads as per Pranay Sethi/Magma General (loss of estate Rs 19,965, funeral Rs 19,965, spousal consortium Rs 159,720 for wife + parental consortium for 2 minor children).",
+        "If the insurer argues 'fundamental breach' to avoid all liability, counter with Sunil Shreesail Killiket (doc_024) which held that even a fundamental breach (no licence at all) only entitles the insurer to recovery rights, not exoneration from third-party liability.",
+        "File the claim under Section 166 MV Act (not 163A) to claim the higher compensation based on actual income."
+       ],
+       "compensation_range": "Rs 50,99,650 to Rs 52,95,650 (approximately Rs 51-53 lakhs) plus interest at 7.5-9% p.a. from the date of claim petition",
+       "compensation_reasoning": "Computed using the compute_quantum tool based on: monthly income Rs 35,000; age 42 (multiplier 14); 3 dependants (1/3 deduction); self-employed (25% future prospects per Pranay Sethi). Conventional heads: loss of estate Rs 19,965, funeral Rs 19,965, spousal consortium Rs 40,000 x 1 + parental consortium Rs 40,000 x 2 = Rs 1,59,720 (as per Magma General and Satinder Kaur). Total: Rs 50,99,650. If the deceased is proven to be in permanent employment, 30% future prospects would apply, yielding approximately Rs 52.96 lakhs.",
+       "risks": [
+        "The insurer may argue that the driver having 'no licence at all' is a more serious breach than 'wrong class of licence,' and may seek to distinguish S. Iyyapan (doc_032) which involved a driver who at least held an LMV licence. However, Sunil Shreesail Killiket (doc_024) and Satto (doc_033) both involved drivers with no valid licence and still ordered pay-and-recover, so this risk is manageable.",
+        "The insurer may challenge the income proof. Ensure the deceased's income is documented through salary slips, bank statements, IT returns, or employer certificate. If the income is not fully documented, the Tribunal may assess notional income, reducing the award.",
+        "If the transport company owner is impleaded but unresponsive or insolvent, the client's de facto recovery may be limited to the insurer's pay-and-recover order. However, the insurer is typically solvent and the pay-and-recover mechanism is enforceable against the owner through execution proceedings.",
+        "The insurer may attempt to prove that the owner knew the driver had no licence (conscious breach), but even this only affects the insurer's recovery rights against the owner, not the claimant's right to payment."
+       ],
+       "recommended_forum_or_relief": "File claim petition under Section 166 of the Motor Vehicles Act, 1988 before the Motor Accident Claims Tribunal having jurisdiction over the place of accident. Join the truck owner (transport company), the driver, and National Insurance Co. Ltd. as respondents. Seek a declaration that the insurer is liable to pay compensation with liberty to recover from the owner. Claim compensation of Rs 51-53 lakhs with interest at 9% p.a."
+      },
+      "caveats": [
+       "The corpus contains no judgment where an insurer was fully exonerated from third-party liability solely because the driver had no licence. Every relevant precedent in this corpus applies the pay-and-recover principle. This is a favourable finding for the client.",
+       "The adverse precedents identified (doc_031, doc_029, doc_014) are either affirmatively helpful (doc_031 confirms pay-and-recover for third-party claims) or factually distinguishable (doc_029, doc_014 deal with gratuitous passengers, not third-party road users). None poses a genuine risk to the client's right to receive compensation.",
+       "The compensation computation assumes the deceased's income of Rs 35,000/month is proven. If the income proof is weak, the Tribunal may assess notional income (currently around Rs 15,000-18,000/month for an able-bodied person in many states), which would significantly reduce the award. Strong documentary evidence of income is critical.",
+       "The corpus does not contain a judgment from the Supreme Court directly on 'no licence at all' for a commercial vehicle third-party death — the closest are Satto (doc_033, Delhi HC) and Sunil Shreesail Killiket (doc_024, Tribunal). However, the consistent application of Swaran Singh principles across all levels of courts in this corpus provides strong persuasive authority.",
+       "If the deceased was a pedestrian or cyclist (third party), the case is stronger than if he was an occupant of another vehicle where contributory negligence could be alleged. The facts state 'road accident involving a commercial truck' — ensure the claim petition clearly establishes the truck driver's sole negligence."
+      ]
+     }
+    },
+    "docs": [],
+    "elapsed_s": 163.01
+   },
+   {
+    "seq": 43,
+    "kind": "budget",
+    "label": "adverse_coverage_check",
+    "detail": "1 padded adverse entries; 10 unaddressed adverse-pool judgments",
+    "payload": {
+     "doc_ids": [
+      "doc_031",
+      "doc_001",
+      "doc_002",
+      "doc_003",
+      "doc_006",
+      "doc_007",
+      "doc_016",
+      "doc_028",
+      "doc_038",
+      "doc_051",
+      "doc_054"
+     ]
+    },
+    "docs": [],
+    "elapsed_s": 163.04
+   },
+   {
+    "seq": 44,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_003 focus=lapsed licence renewal insurer liability third party pay and recover",
+    "payload": {
+     "args": {
+      "doc_id": "doc_003",
+      "focus": "lapsed licence renewal insurer liability third party pay and recover"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 166.85
+   },
+   {
+    "seq": 45,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_006 focus=contributory negligence pay and recover insurer liability",
+    "payload": {
+     "args": {
+      "doc_id": "doc_006",
+      "focus": "contributory negligence pay and recover insurer liability"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 166.85
+   },
+   {
+    "seq": 46,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_007 focus=non-dependent legal representative loss of dependency",
+    "payload": {
+     "args": {
+      "doc_id": "doc_007",
+      "focus": "non-dependent legal representative loss of dependency"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 166.85
+   },
+   {
+    "seq": 47,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_028 focus=pay and recover private vehicle passengers hire reward not third party",
+    "payload": {
+     "args": {
+      "doc_id": "doc_028",
+      "focus": "pay and recover private vehicle passengers hire reward not third party"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 166.85
+   },
+   {
+    "seq": 48,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_016 focus=conviction section 181 driving without licence criminal",
+    "payload": {
+     "args": {
+      "doc_id": "doc_016",
+      "focus": "conviction section 181 driving without licence criminal"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 166.85
+   },
+   {
+    "seq": 49,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_003 focus='lapsed licence renewal insurer liability third party pay and recover' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_003"
+     ],
+     "focus": "lapsed licence renewal insurer liability third party pay and recover"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_003",
+      "title": "United India Insurance Co Ltd., vs Smt Parvathi Hebbar W/O Late ...",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 166.93
+   },
+   {
+    "seq": 50,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_006 focus='contributory negligence pay and recover insurer liability' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_006"
+     ],
+     "focus": "contributory negligence pay and recover insurer liability"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_006",
+      "title": "National Insurance Company Ltd. Thr. ... vs Smt. Meena And 4 Others",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 166.97
+   },
+   {
+    "seq": 51,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_007 focus='non-dependent legal representative loss of dependency' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_007"
+     ],
+     "focus": "non-dependent legal representative loss of dependency"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_007",
+      "title": "National Insurance Co.Ltd. vs Harpreet Singh And Ors.",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 167.0
+   },
+   {
+    "seq": 52,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_028 focus='pay and recover private vehicle passengers hire reward not third party' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_028"
+     ],
+     "focus": "pay and recover private vehicle passengers hire reward not third party"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_028",
+      "title": "United India Insurance Co. Ltd., Thr ... vs Sukumarbai Suryakant Nikam And Ors",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 167.04
+   },
+   {
+    "seq": 53,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_016 focus='conviction section 181 driving without licence criminal' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_016"
+     ],
+     "focus": "conviction section 181 driving without licence criminal"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_016",
+      "title": "Reserved On: 21.07.2025 vs State Of H.P",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 167.07
+   },
+   {
+    "seq": 54,
+    "kind": "tool_call",
+    "label": "submit_research_report",
+    "detail": "question=Mrs. Lakshmi Devi's claim for compensation for death of spouse (aged 4... supporting=[{'doc_id': 'doc_033', 'title': 'Satto & Ors vs New India Assurance Co... adverse=[{'doc_id': 'doc_028', 'title': 'United India Insurance Co. Ltd., Thr ... strategy={'priority_arguments': [\"Lead with the st",
+    "payload": {
+     "args": {
+      "question": "Mrs. Lakshmi Devi's claim for compensation for death of spouse (aged 42, monthly income Rs 35,000, 3 dependants) in a commercial truck accident where the driver had no valid driving licence. National Insurance Co. denies liability arguing the policy is void due to unlicensed driver.",
+      "supporting": [
+       {
+        "doc_id": "doc_033",
+        "title": "Satto & Ors vs New India Assurance Co Ltd",
+        "principle": "The insurer has a statutory liability to pay compensation to third parties even if there is a breach of policy conditions (such as an invalid driving licence), and is entitled to recover the same from the insured.",
+        "fact_alignment": "Directly on point: the driver of the tempo did not possess a valid driving licence. The court held the insurer must pay the third-party award and can recover from the owner/driver.",
+        "why_it_matters": "This is the strongest supporting precedent. It squarely holds that even where the driver had no valid licence at all, the insurer's statutory liability to the third-party claimant remains intact, with only a right of recovery against the insured.",
+        "strength": "strong",
+        "quote": "The Claims Tribunal, therefore, rightly made the Insurance Company liable to pay the compensation and granted it recovery rights."
+       },
+       {
+        "doc_id": "doc_032",
+        "title": "S.Iyyapan vs M/S United India Insurance Co.Ld.& Anr",
+        "principle": "An insurer cannot disown its liability to third parties on the ground that the driver lacked an endorsement to drive a commercial vehicle while holding a valid LMV licence.",
+        "fact_alignment": "The vehicle was a commercial vehicle (Mahindra Maxi Cab). The driver held an LMV licence but no commercial endorsement. The Supreme Court held the insurer liable to the third party.",
+        "why_it_matters": "This Supreme Court judgment establishes that even for commercial vehicles, the absence of a proper licence/endorsement does not defeat the third party's right to recover from the insurer. The insurer must pay and can recover from the insured.",
+        "strength": "strong",
+        "quote": "the insurer cannot disown its liability on the ground that although the driver was holding a licence to drive a light motor vehicle but before driving light motor vehicle used as commercial vehicle, no endorsement to drive commercial vehicle was obtained in the driving licence."
+       },
+       {
+        "doc_id": "doc_027",
+        "title": "The Manager vs Chennamma",
+        "principle": "In third-party motor accident claims, even if the driver lacks an appropriate endorsement to drive a specific heavy vehicle class, the insurer remains liable to satisfy the third-party award and may recover the amount from the insured owner.",
+        "fact_alignment": "The driver had only an LMV/transport endorsement but was driving a heavy goods vehicle. The court ordered pay-and-recover. Our case involves a commercial truck where the driver had no licence at all — a stronger case for third-party protection.",
+        "why_it_matters": "This Madras High Court judgment applies the Swaran Singh and S. Iyyapan principles to heavy goods vehicles, confirming that the pay-and-recover remedy is available even for class-of-vehicle licence deficiencies.",
+        "strength": "strong",
+        "quote": "the insurer cannot disown its liability... In any case, it is the statutory right of a third party to recover the amount of compensation so awarded from the insurer."
+       },
+       {
+        "doc_id": "doc_024",
+        "title": "Sunil Shreesail Killiket vs Subbraya",
+        "principle": "Driving without a valid licence constitutes a fundamental breach, but the insurer must still pay the third-party claimant first and then recover from the owner.",
+        "fact_alignment": "The driver had no driving licence at all. The tribunal held this was a fundamental breach but still ordered pay-and-recover in favour of the third-party claimant.",
+        "why_it_matters": "This is the closest factual match — the driver had no licence whatsoever. Despite finding a fundamental breach, the tribunal protected the third party by ordering pay-and-recover. This directly counters the insurer's argument that 'no licence = no liability.'",
+        "strength": "strong",
+        "quote": "it is proper to direct the respondent No.2 to pay the compensation by reserving liberty to recover the same from the respondent No.1, owner of the offending vehicle"
+       },
+       {
+        "doc_id": "doc_035",
+        "title": "United India Insurance Company Limited vs V.Vijayakumar",
+        "principle": "Where the driver of a transport vehicle holds only an LMV licence without the specific authorisation to drive a transport vehicle, the insurer must pay the third-party compensation first and then recover from the insured.",
+        "fact_alignment": "The driver had only an LMV licence and no badge/authorisation for a transport vehicle. The court ordered pay-and-recover. Our case involves a commercial truck with no licence at all.",
+        "why_it_matters": "This judgment explicitly recognises the 'pay and recover' doctrine for licence deficiencies in transport/commercial vehicles, directly supporting the client's right to receive compensation from the insurer.",
+        "strength": "moderate",
+        "quote": "The doctrine of 'pay and recover' has been recognised by the Supreme Court in Several decisions."
+       },
+       {
+        "doc_id": "doc_034",
+        "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+        "principle": "The insurer is statutorily liable to satisfy an award obtained by a third party regardless of policy condition breaches such as an expired (or absent) driving licence.",
+        "fact_alignment": "The driver's licence had expired (effectively no valid licence on the date). The court held the insurer liable to the third party.",
+        "why_it_matters": "Reinforces the principle that the insurer's statutory liability to third parties under Section 149 is not defeated by licence deficiencies.",
+        "strength": "moderate",
+        "quote": "the insurer who is made statutorily liable to pay compensation to third parties on account of the certificate of insurance issued shall be entitled to recover from the insured the amount paid to the third parties, if there was any breach of policy conditions"
+       },
+       {
+        "doc_id": "doc_019",
+        "title": "Surendra Singh And Another vs Vijay Singh And Another",
+        "principle": "Multiplier must be based on deceased's age; future prospects apply to self-employed persons at 25% for age 40-50; 1/3 deduction for 3 dependants.",
+        "fact_alignment": "Deceased aged 42 (within 40-50 bracket), self-employed or fixed salary, 3 dependants. The court applied Pranay Sethi principles exactly matching our client's facts.",
+        "why_it_matters": "Provides the authoritative framework for computing compensation: multiplier of 14 (age 42), future prospects at 25%, 1/3 deduction for personal expenses, and conventional heads as per Pranay Sethi.",
+        "strength": "strong",
+        "quote": "In case the deceased was self-employed or on a fixed salary, an addition of 25% where the deceased was between the age of 40 to 50 years... The selection of multiplier shall be as indicated in the Table in Sarla Verma... The age of the deceased should be the basis for applying the multiplier."
+       },
+       {
+        "doc_id": "doc_006",
+        "title": "National Insurance Company Ltd. Thr. ... vs Smt. Meena And 4 Others",
+        "principle": "Even if the driver lacks a valid driving licence, the insurer remains liable to satisfy third-party claims subject to a right of recovery from the vehicle owner.",
+        "fact_alignment": "The driver of the Tanker had no valid licence. The Tribunal directed pay-and-recover, and the High Court affirmed this while enhancing compensation.",
+        "why_it_matters": "This Allahabad High Court judgment directly affirms that even where the driver had no valid licence (not just wrong class), the pay-and-recover principle applies to third-party claims.",
+        "strength": "moderate",
+        "quote": "learned Tribunal though has accepted that there was no valid licence with the driver of the Tanker but even then has directed the insurance company to pay compensation to the claimants with a right to recover it from the owner."
+       }
+      ],
+      "adverse": [
+       {
+        "doc_id": "doc_028",
+        "title": "United India Insurance Co. Ltd., Thr ... vs Sukumarbai Suryakant Nikam And Ors",
+        "principle": "Where a passenger is travelling in a private vehicle for hire or reward in breach of policy conditions, such a passenger is not a 'third party' under the Act policy, and the Tribunal cannot invoke 'pay and recover' to compel the insurer to satisfy the award.",
+        "risk_to_client": "The insurer may cite this to argue that if the risk was never one the policy was required to cover (analogising: driving without any licence means the risk was never assumed), the pay-and-recover mechanism should not apply. However, this case is about gratuitous passengers — a risk not statutorily mandated. Third-party death claims ARE statutorily mandated under Section 147. The insurer's argument would fail because the deceased here is a third-party road user, not a passenger.",
+        "risk_level": "low",
+        "distinguishing_argument": "This case deals with passengers in a private vehicle carried for hire/reward — a risk that is NOT statutorily required to be covered under Section 147. Our case involves a third-party road user (the deceased was not a passenger in the truck). The statutory mandate to insure third-party risks is fundamentally different. The Supreme Court in Swaran Singh and Laxmi Narain Dhut has consistently held that for third-party risks, the insurer must pay and recover. This judgment itself distinguishes Shamanna's case (which involved no valid driving licence) and notes that pay-and-recover was held justified there."
+       },
+       {
+        "doc_id": "doc_029",
+        "title": "United India Insurance Co.Ltd vs Minor Mahesh Kanubhai & 2",
+        "principle": "Where a risk is neither statutorily required to be covered nor covered under the policy terms (gratuitous passengers in goods vehicle), the Tribunal has no power under Section 149(4)/(5) to direct pay-and-recover.",
+        "risk_to_client": "The insurer may argue by analogy that if the driver had no licence at all, the risk was never one the insurer agreed to cover, and therefore pay-and-recover should not apply. However, this case is about gratuitous passengers — a fundamentally different issue. The Supreme Court has consistently held that third-party death claims (which are statutorily mandated) are different from gratuitous passenger claims (which are not).",
+        "risk_level": "low",
+        "distinguishing_argument": "This case deals with gratuitous passengers in goods vehicles — a risk that is NOT statutorily required to be covered under Section 147. Our case involves a third-party road user (the deceased was not a passenger in the truck). The entire ratio turns on the distinction between risks that are and are not statutorily required to be covered. Third-party death claims fall squarely within the mandatory coverage. The judgment itself notes that in Shamanna (a no-licence case), pay-and-recover was held justified."
+       }
+      ],
+      "strategy": {
+       "priority_arguments": [
+        "Lead with the statutory liability argument under Section 149 MV Act: the insurer's liability to third parties is statutory and cannot be defeated by policy breaches. Cite Satto (doc_033), S. Iyyapan (doc_032), and Sunil Shreesail Killiket (doc_024).",
+        "Argue that even if the driver had no licence, the 'pay and recover' principle applies: the insurer must pay the claimant first and then recover from the owner/transport company. This is the consistent thread across all corpus precedents.",
+        "Emphasise that the deceased was a third-party road user (not a passenger in the goods vehicle), so there is no question of gratuitous passenger exclusion. The risk is statutorily mandated.",
+        "On quantum: claim compensation of approximately Rs 51-53 lakhs based on: monthly income Rs 35,000; 25% future prospects (Pranay Sethi for age 42, self-employed); multiplier of 14 (Sarla Verma table); 1/3 deduction for personal expenses (3 dependants); conventional heads as per Pranay Sethi/Magma General (loss of estate Rs 19,965, funeral Rs 19,965, spousal consortium Rs 40,000 for wife + parental consortium Rs 40,000 x 2 for minor children = Rs 1,59,720).",
+        "If the insurer argues 'fundamental breach' to avoid all liability, counter with Sunil Shreesail Killiket (doc_024) which held that even a fundamental breach (no licence at all) only entitles the insurer to recovery rights, not exoneration from third-party liability.",
+        "File the claim under Section 166 MV Act (not 163A) to claim the higher compensation based on actual income."
+       ],
+       "compensation_range": "Rs 50,99,650 to Rs 52,95,650 (approximately Rs 51-53 lakhs) plus interest at 7.5-9% p.a. from the date of claim petition",
+       "compensation_reasoning": "Computed using the compute_quantum tool based on: monthly income Rs 35,000; age 42 (multiplier 14); 3 dependants (1/3 deduction); self-employed (25% future prospects per Pranay Sethi). Conventional heads: loss of estate Rs 19,965, funeral Rs 19,965, spousal consortium Rs 40,000 x 1 + parental consortium Rs 40,000 x 2 = Rs 1,59,720 (as per Magma General and Satinder Kaur). Total: Rs 50,99,650. If the deceased is proven to be in permanent employment, 30% future prospects would apply, yielding approximately Rs 52.96 lakhs.",
+       "risks": [
+        "The insurer may argue that the driver having 'no licence at all' is a more serious breach than 'wrong class of licence,' and may seek to distinguish S. Iyyapan (doc_032) which involved a driver who at least held an LMV licence. However, Sunil Shreesail Killiket (doc_024), Satto (doc_033), and Meena (doc_006) all involved drivers with no valid licence and still ordered pay-and-recover, so this risk is manageable.",
+        "The insurer may challenge the income proof. Ensure the deceased's income is documented through salary slips, bank statements, IT returns, or employer certificate. If the income is not fully documented, the Tribunal may assess notional income, reducing the award.",
+        "If the transport company owner is impleaded but unresponsive or insolvent, the client's de facto recovery may be limited to the insurer's pay-and-recover order. However, the insurer is typically solvent and the pay-and-recover mechanism is enforceable against the owner through execution proceedings.",
+        "The insurer may attempt to prove that the owner knew the driver had no licence (conscious breach), but even this only affects the insurer's recovery rights against the owner, not the claimant's right to payment."
+       ],
+       "recommended_forum_or_relief": "File claim petition under Section 166 of the Motor Vehicles Act, 1988 before the Motor Accident Claims Tribunal having jurisdiction over the place of accident. Join the truck owner (transport company), the driver, and National Insurance Co. Ltd. as respondents. Seek a declaration that the insurer is liable to pay compensation with liberty to recover from the owner. Claim compensation of Rs 51-53 lakhs with interest at 9% p.a."
+      },
+      "caveats": [
+       "The corpus contains no judgment where an insurer was fully exonerated from third-party liability solely because the driver had no licence. Every relevant precedent in this corpus applies the pay-and-recover principle. This is a favourable finding for the client.",
+       "doc_031 (Laxmi Narain Dhut) — cited by the insurer in the adverse section of an earlier draft, but on re-examination it actually HELPS the client: it expressly states at point 3 that 'In case of third party risks the insurer has to indemnify the amount and if so advised to recover the same from the insured.' It only limits Swaran Singh's application to non-third-party contexts (own-damage claims), which is irrelevant here.",
+       "doc_014 (Shivlal) — outcome favours insurer but deals with gratuitous passengers in goods vehicles under the 1939 Act. Entirely distinguishable: our deceased is a third-party road user, not a passenger.",
+       "doc_002 (Liyakat Ali) — outcome favours insurer but deals with a tractor used for non-agricultural purposes in breach of policy. No bearing on driver licence or third-party death.",
+       "doc_007 (Harpreet Singh) — outcome favours insurer but deals with non-dependent legal representatives' entitlement to loss of dependency. No bearing on the licence issue.",
+       "doc_016 (State of H.P.) — criminal revision about rash driving conviction. No bearing on civil insurer liability.",
+       "doc_038 (Crown Consultants) — consumer dispute about late claim filing. Entirely unrelated.",
+       "doc_051 (Yashpal Chaudhrani) — criminal quashing for economic offences. Entirely unrelated.",
+       "doc_054 (Chinnasamy) — civil specific performance. Entirely unrelated.",
+       "doc_003 (Parvathi Hebbar) — outcome mixed; deals with lapsed licence renewal and still ordered pay-and-recover. Actually supports the client's position.",
+       "The compensation computation assumes the deceased's income of Rs 35,000/month is proven. If the income proof is weak, the Tribunal may assess notional income (currently around Rs 15,000-18,000/month for an able-bodied person in many states), which would significantly reduce the award. Strong documentary evidence of income is critical.",
+       "If the deceased was a pedestrian or cyclist (third party), the case is stronger than if he was an occupant of another vehicle where contributory negligence could be alleged. Ensure the claim petition clearly establishes the truck driver's sole negligence."
+      ]
+     }
+    },
+    "docs": [],
+    "elapsed_s": 196.73
+   },
+   {
+    "seq": 55,
+    "kind": "budget",
+    "label": "adverse_coverage_check",
+    "detail": "1 unaddressed adverse-pool judgments",
+    "payload": {
+     "doc_ids": [
+      "doc_001"
+     ]
+    },
+    "docs": [],
+    "elapsed_s": 196.76
+   },
+   {
+    "seq": 56,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_001 focus=pay and recover special endorsement hazardous goods insurer liability",
+    "payload": {
+     "args": {
+      "doc_id": "doc_001",
+      "focus": "pay and recover special endorsement hazardous goods insurer liability"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 205.14
+   },
+   {
+    "seq": 57,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_001 focus='pay and recover special endorsement hazardous goods insurer liability' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_001"
+     ],
+     "focus": "pay and recover special endorsement hazardous goods insurer liability"
+    },
+    "docs": [
+     {
+      "doc_id": "doc_001",
+      "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 205.25
+   },
+   {
+    "seq": 58,
+    "kind": "tool_call",
+    "label": "submit_research_report",
+    "detail": "question=Mrs. Lakshmi Devi's claim for compensation for death of spouse (aged 4... supporting=[{'doc_id': 'doc_033', 'title': 'Satto & Ors vs New India Assurance Co... adverse=[{'doc_id': 'doc_028', 'title': 'United India Insurance Co. Ltd., Thr ... strategy={'priority_arguments': [\"Lead with the st",
+    "payload": {
+     "args": {
+      "question": "Mrs. Lakshmi Devi's claim for compensation for death of spouse (aged 42, monthly income Rs 35,000, 3 dependants) in a commercial truck accident where the driver had no valid driving licence. National Insurance Co. denies liability arguing the policy is void due to unlicensed driver.",
+      "supporting": [
+       {
+        "doc_id": "doc_033",
+        "title": "Satto & Ors vs New India Assurance Co Ltd",
+        "principle": "The insurer has a statutory liability to pay compensation to third parties even if there is a breach of policy conditions (such as an invalid driving licence), and is entitled to recover the same from the insured.",
+        "fact_alignment": "Directly on point: the driver of the tempo did not possess a valid driving licence. The court held the insurer must pay the third-party award and can recover from the owner/driver.",
+        "why_it_matters": "This is the strongest supporting precedent. It squarely holds that even where the driver had no valid licence at all, the insurer's statutory liability to the third-party claimant remains intact, with only a right of recovery against the insured.",
+        "strength": "strong",
+        "quote": "The Claims Tribunal, therefore, rightly made the Insurance Company liable to pay the compensation and granted it recovery rights."
+       },
+       {
+        "doc_id": "doc_032",
+        "title": "S.Iyyapan vs M/S United India Insurance Co.Ld.& Anr",
+        "principle": "An insurer cannot disown its liability to third parties on the ground that the driver lacked an endorsement to drive a commercial vehicle while holding a valid LMV licence.",
+        "fact_alignment": "The vehicle was a commercial vehicle (Mahindra Maxi Cab). The driver held an LMV licence but no commercial endorsement. The Supreme Court held the insurer liable to the third party.",
+        "why_it_matters": "This Supreme Court judgment establishes that even for commercial vehicles, the absence of a proper licence/endorsement does not defeat the third party's right to recover from the insurer. The insurer must pay and can recover from the insured.",
+        "strength": "strong",
+        "quote": "the insurer cannot disown its liability on the ground that although the driver was holding a licence to drive a light motor vehicle but before driving light motor vehicle used as commercial vehicle, no endorsement to drive commercial vehicle was obtained in the driving licence."
+       },
+       {
+        "doc_id": "doc_027",
+        "title": "The Manager vs Chennamma",
+        "principle": "In third-party motor accident claims, even if the driver lacks an appropriate endorsement to drive a specific heavy vehicle class, the insurer remains liable to satisfy the third-party award and may recover the amount from the insured owner.",
+        "fact_alignment": "The driver had only an LMV/transport endorsement but was driving a heavy goods vehicle. The court ordered pay-and-recover. Our case involves a commercial truck where the driver had no licence at all — a stronger case for third-party protection.",
+        "why_it_matters": "This Madras High Court judgment applies the Swaran Singh and S. Iyyapan principles to heavy goods vehicles, confirming that the pay-and-recover remedy is available even for class-of-vehicle licence deficiencies.",
+        "strength": "strong",
+        "quote": "the insurer cannot disown its liability... In any case, it is the statutory right of a third party to recover the amount of compensation so awarded from the insurer."
+       },
+       {
+        "doc_id": "doc_024",
+        "title": "Sunil Shreesail Killiket vs Subbraya",
+        "principle": "Driving without a valid licence constitutes a fundamental breach, but the insurer must still pay the third-party claimant first and then recover from the owner.",
+        "fact_alignment": "The driver had no driving licence at all. The tribunal held this was a fundamental breach but still ordered pay-and-recover in favour of the third-party claimant.",
+        "why_it_matters": "This is the closest factual match — the driver had no licence whatsoever. Despite finding a fundamental breach, the tribunal protected the third party by ordering pay-and-recover. This directly counters the insurer's argument that 'no licence = no liability.'",
+        "strength": "strong",
+        "quote": "it is proper to direct the respondent No.2 to pay the compensation by reserving liberty to recover the same from the respondent No.1, owner of the offending vehicle"
+       },
+       {
+        "doc_id": "doc_001",
+        "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+        "principle": "For a commercial goods vehicle (truck/tanker), the absence of a required special endorsement on the driving licence constitutes a policy breach, but the insurer cannot escape liability to pay compensation to the claimants and has a right to recover from the insured.",
+        "fact_alignment": "The offending vehicle was a commercial Truck/Tanker. The driver held a valid licence for MC, LMV, HGV, HTV but lacked the special endorsement for hazardous goods. The court held the insurer must pay and can recover from the insured.",
+        "why_it_matters": "This Punjab & Haryana High Court judgment directly applies to commercial trucks: even where the driver lacked the required licence endorsement for the specific vehicle type, the insurer must pay the third-party claimants and can recover from the insured. The ratio supports our client's right to receive compensation from the insurer.",
+        "strength": "moderate",
+        "quote": "the insurance company cannot escape its liability to make payment of compensation awarded in favour of the claimants. Once the payment is made, the insurance company has right to recover the same from the insured."
+       },
+       {
+        "doc_id": "doc_035",
+        "title": "United India Insurance Company Limited vs V.Vijayakumar",
+        "principle": "Where the driver of a transport vehicle holds only an LMV licence without the specific authorisation to drive a transport vehicle, the insurer must pay the third-party compensation first and then recover from the insured.",
+        "fact_alignment": "The driver had only an LMV licence and no badge/authorisation for a transport vehicle. The court ordered pay-and-recover. Our case involves a commercial truck with no licence at all.",
+        "why_it_matters": "This judgment explicitly recognises the 'pay and recover' doctrine for licence deficiencies in transport/commercial vehicles, directly supporting the client's right to receive compensation from the insurer.",
+        "strength": "moderate",
+        "quote": "The doctrine of 'pay and recover' has been recognised by the Supreme Court in Several decisions."
+       },
+       {
+        "doc_id": "doc_034",
+        "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+        "principle": "The insurer is statutorily liable to satisfy an award obtained by a third party regardless of policy condition breaches such as an expired (or absent) driving licence.",
+        "fact_alignment": "The driver's licence had expired (effectively no valid licence on the date). The court held the insurer liable to the third party.",
+        "why_it_matters": "Reinforces the principle that the insurer's statutory liability to third parties under Section 149 is not defeated by licence deficiencies.",
+        "strength": "moderate",
+        "quote": "the insurer who is made statutorily liable to pay compensation to third parties on account of the certificate of insurance issued shall be entitled to recover from the insured the amount paid to the third parties, if there was any breach of policy conditions"
+       },
+       {
+        "doc_id": "doc_006",
+        "title": "National Insurance Company Ltd. Thr. ... vs Smt. Meena And 4 Others",
+        "principle": "Even if the driver lacks a valid driving licence, the insurer remains liable to satisfy third-party claims subject to a right of recovery from the vehicle owner.",
+        "fact_alignment": "The driver of the Tanker had no valid licence. The Tribunal directed pay-and-recover, and the High Court affirmed this while enhancing compensation.",
+        "why_it_matters": "This Allahabad High Court judgment directly affirms that even where the driver had no valid licence (not just wrong class), the pay-and-recover principle applies to third-party claims.",
+        "strength": "moderate",
+        "quote": "learned Tribunal though has accepted that there was no valid licence with the driver of the Tanker but even then has directed the insurance company to pay compensation to the claimants with a right to recover it from the owner."
+       },
+       {
+        "doc_id": "doc_019",
+        "title": "Surendra Singh And Another vs Vijay Singh And Another",
+        "principle": "Multiplier must be based on deceased's age; future prospects apply to self-employed persons at 25% for age 40-50; 1/3 deduction for 3 dependants.",
+        "fact_alignment": "Deceased aged 42 (within 40-50 bracket), self-employed or fixed salary, 3 dependants. The court applied Pranay Sethi principles exactly matching our client's facts.",
+        "why_it_matters": "Provides the authoritative framework for computing compensation: multiplier of 14 (age 42), future prospects at 25%, 1/3 deduction for personal expenses, and conventional heads as per Pranay Sethi.",
+        "strength": "strong",
+        "quote": "In case the deceased was self-employed or on a fixed salary, an addition of 25% where the deceased was between the age of 40 to 50 years... The selection of multiplier shall be as indicated in the Table in Sarla Verma... The age of the deceased should be the basis for applying the multiplier."
+       }
+      ],
+      "adverse": [
+       {
+        "doc_id": "doc_028",
+        "title": "United India Insurance Co. Ltd., Thr ... vs Sukumarbai Suryakant Nikam And Ors",
+        "principle": "Where a passenger is travelling in a private vehicle for hire or reward in breach of policy conditions, such a passenger is not a 'third party' under the Act policy, and the Tribunal cannot invoke 'pay and recover' to compel the insurer to satisfy the award.",
+        "risk_to_client": "The insurer may cite this to argue that if the risk was never one the policy was required to cover (analogising: driving without any licence means the risk was never assumed), the pay-and-recover mechanism should not apply. However, this case is about gratuitous passengers — a risk not statutorily mandated. Third-party death claims ARE statutorily mandated under Section 147. The insurer's argument would fail because the deceased here is a third-party road user, not a passenger.",
+        "risk_level": "low",
+        "distinguishing_argument": "This case deals with passengers in a private vehicle carried for hire/reward — a risk that is NOT statutorily required to be covered under Section 147. Our case involves a third-party road user (the deceased was not a passenger in the truck). The statutory mandate to insure third-party risks is fundamentally different. The Supreme Court in Swaran Singh and Laxmi Narain Dhut has consistently held that for third-party risks, the insurer must pay and recover. This judgment itself distinguishes Shamanna's case (which involved no valid driving licence) and notes that pay-and-recover was held justified there."
+       },
+       {
+        "doc_id": "doc_029",
+        "title": "United India Insurance Co.Ltd vs Minor Mahesh Kanubhai & 2",
+        "principle": "Where a risk is neither statutorily required to be covered nor covered under the policy terms (gratuitous passengers in goods vehicle), the Tribunal has no power under Section 149(4)/(5) to direct pay-and-recover.",
+        "risk_to_client": "The insurer may argue by analogy that if the driver had no licence at all, the risk was never one the insurer agreed to cover, and therefore pay-and-recover should not apply. However, this case is about gratuitous passengers — a fundamentally different issue. The Supreme Court has consistently held that third-party death claims (which are statutorily mandated) are different from gratuitous passenger claims (which are not).",
+        "risk_level": "low",
+        "distinguishing_argument": "This case deals with gratuitous passengers in goods vehicles — a risk that is NOT statutorily required to be covered under Section 147. Our case involves a third-party road user (the deceased was not a passenger in the truck). The entire ratio turns on the distinction between risks that are and are not statutorily required to be covered. Third-party death claims fall squarely within the mandatory coverage. The judgment itself notes that in Shamanna (a no-licence case), pay-and-recover was held justified."
+       }
+      ],
+      "strategy": {
+       "priority_arguments": [
+        "Lead with the statutory liability argument under Section 149 MV Act: the insurer's liability to third parties is statutory and cannot be defeated by policy breaches. Cite Satto (doc_033), S. Iyyapan (doc_032), and Sunil Shreesail Killiket (doc_024).",
+        "Argue that even if the driver had no licence, the 'pay and recover' principle applies: the insurer must pay the claimant first and then recover from the owner/transport company. This is the consistent thread across all corpus precedents.",
+        "Emphasise that the deceased was a third-party road user (not a passenger in the goods vehicle), so there is no question of gratuitous passenger exclusion. The risk is statutorily mandated.",
+        "On quantum: claim compensation of approximately Rs 51-53 lakhs based on: monthly income Rs 35,000; 25% future prospects (Pranay Sethi for age 42, self-employed); multiplier of 14 (Sarla Verma table); 1/3 deduction for personal expenses (3 dependants); conventional heads as per Pranay Sethi/Magma General (loss of estate Rs 19,965, funeral Rs 19,965, spousal consortium Rs 40,000 for wife + parental consortium Rs 40,000 x 2 for minor children = Rs 1,59,720).",
+        "If the insurer argues 'fundamental breach' to avoid all liability, counter with Sunil Shreesail Killiket (doc_024) which held that even a fundamental breach (no licence at all) only entitles the insurer to recovery rights, not exoneration from third-party liability.",
+        "File the claim under Section 166 MV Act (not 163A) to claim the higher compensation based on actual income."
+       ],
+       "compensation_range": "Rs 50,99,650 to Rs 52,95,650 (approximately Rs 51-53 lakhs) plus interest at 7.5-9% p.a. from the date of claim petition",
+       "compensation_reasoning": "Computed using the compute_quantum tool based on: monthly income Rs 35,000; age 42 (multiplier 14); 3 dependants (1/3 deduction); self-employed (25% future prospects per Pranay Sethi). Conventional heads: loss of estate Rs 19,965, funeral Rs 19,965, spousal consortium Rs 40,000 x 1 + parental consortium Rs 40,000 x 2 = Rs 1,59,720 (as per Magma General and Satinder Kaur). Total: Rs 50,99,650. If the deceased is proven to be in permanent employment, 30% future prospects would apply, yielding approximately Rs 52.96 lakhs.",
+       "risks": [
+        "The insurer may argue that the driver having 'no licence at all' is a more serious breach than 'wrong class of licence,' and may seek to distinguish S. Iyyapan (doc_032) which involved a driver who at least held an LMV licence. However, Sunil Shreesail Killiket (doc_024), Satto (doc_033), and Meena (doc_006) all involved drivers with no valid licence and still ordered pay-and-recover, so this risk is manageable.",
+        "The insurer may challenge the income proof. Ensure the deceased's income is documented through salary slips, bank statements, IT returns, or employer certificate. If the income is not fully documented, the Tribunal may assess notional income, reducing the award.",
+        "If the transport company owner is impleaded but unresponsive or insolvent, the client's de facto recovery may be limited to the insurer's pay-and-recover order. However, the insurer is typically solvent and the pay-and-recover mechanism is enforceable against the owner through execution proceedings.",
+        "The insurer may attempt to prove that the owner knew the driver had no licence (conscious breach), but even this only affects the insurer's recovery rights against the owner, not the claimant's right to payment."
+       ],
+       "recommended_forum_or_relief": "File claim petition under Section 166 of the Motor Vehicles Act, 1988 before the Motor Accident Claims Tribunal having jurisdiction over the place of accident. Join the truck owner (transport company), the driver, and National Insurance Co. Ltd. as respondents. Seek a declaration that the insurer is liable to pay compensation with liberty to recover from the owner. Claim compensation of Rs 51-53 lakhs with interest at 9% p.a."
+      },
+      "caveats": [
+       "The corpus contains no judgment where an insurer was fully exonerated from third-party liability solely because the driver had no licence. Every relevant precedent in this corpus applies the pay-and-recover principle. This is a favourable finding for the client.",
+       "doc_031 (Laxmi Narain Dhut) — outcome favours insurer but actually HELPS the client: it expressly states at point 3 that 'In case of third party risks the insurer has to indemnify the amount and if so advised to recover the same from the insured.' It only limits Swaran Singh's application to non-third-party contexts (own-damage claims), which is irrelevant here.",
+       "doc_014 (Shivlal) — outcome favours insurer but deals with gratuitous passengers in goods vehicles under the 1939 Act. Entirely distinguishable: our deceased is a third-party road user, not a passenger.",
+       "doc_002 (Liyakat Ali) — outcome favours insurer but deals with a tractor used for non-agricultural purposes in breach of policy. No bearing on driver licence or third-party death.",
+       "doc_007 (Harpreet Singh) — outcome favours insurer but deals with non-dependent legal representatives' entitlement to loss of dependency. No bearing on the licence issue.",
+       "doc_016 (State of H.P.) — criminal revision about rash driving conviction. No bearing on civil insurer liability.",
+       "doc_038 (Crown Consultants) — consumer dispute about late claim filing. Entirely unrelated.",
+       "doc_051 (Yashpal Chaudhrani) — criminal quashing for economic offences. Entirely unrelated.",
+       "doc_054 (Chinnasamy) — civil specific performance. Entirely unrelated.",
+       "doc_003 (Parvathi Hebbar) — outcome mixed; deals with lapsed licence renewal and still ordered pay-and-recover. Actually supports the client's position.",
+       "The compensation computation assumes the deceased's income of Rs 35,000/month is proven. If the income proof is weak, the Tribunal may assess notional income (currently around Rs 15,000-18,000/month for an able-bodied person in many states), which would significantly reduce the award. Strong documentary evidence of income is critical.",
+       "If the deceased was a pedestrian or cyclist (third party), the case is stronger than if he was an occupant of another vehicle where contributory negligence could be alleged. Ensure the claim petition clearly establishes the truck driver's sole negligence."
+      ]
+     }
+    },
+    "docs": [],
+    "elapsed_s": 244.21
+   },
+   {
+    "seq": 59,
+    "kind": "answer",
+    "label": "submit_research_report",
+    "detail": "9 supporting, 2 adverse, adverse reconciled",
+    "payload": {
+     "doc_ids": [
+      "doc_033",
+      "doc_032",
+      "doc_027",
+      "doc_024",
+      "doc_001",
+      "doc_035",
+      "doc_034",
+      "doc_006",
+      "doc_019",
+      "doc_028",
+      "doc_029"
+     ],
+     "unreconciled_adverse": []
+    },
+    "docs": [],
+    "elapsed_s": 244.25
+   },
+   {
+    "seq": 60,
+    "kind": "plan",
+    "label": "reasoning",
+    "detail": "The research report has been submitted successfully. Here's a summary of the key findings:",
+    "payload": {},
+    "docs": [],
+    "elapsed_s": 255.01
+   }
+  ],
+  "started_at": 1786977178.4509661,
+  "llm_calls": 20,
+  "in_tokens": 552023,
+  "out_tokens": 17543
+ },
+ "retrieved": [
+  "doc_032",
+  "doc_027",
+  "doc_035",
+  "doc_001",
+  "doc_033",
+  "doc_034",
+  "doc_024",
+  "doc_003",
+  "doc_031",
+  "doc_006",
+  "doc_005",
+  "doc_014",
+  "doc_016",
+  "doc_042",
+  "doc_018",
+  "doc_041",
+  "doc_019",
+  "doc_004",
+  "doc_007",
+  "doc_022",
+  "doc_021",
+  "doc_012",
+  "doc_029",
+  "doc_028",
+  "doc_002",
+  "doc_038",
+  "doc_054",
+  "doc_051"
+ ],
+ "tool_sequence": [
+  "search_precedents",
+  "search_precedents",
+  "search_precedents",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "search_precedents",
+  "filter_judgments",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "compute_quantum",
+  "search_precedents",
+  "read_judgment",
+  "submit_research_report",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "submit_research_report",
+  "read_judgment",
+  "submit_research_report"
+ ],
+ "llm_calls": 20,
+ "tokens": 569566,
+ "result_type": "PrecedentResearchReport",
+ "result": {
+  "question": "Mrs. Lakshmi Devi's claim for compensation for death of spouse (aged 42, monthly income Rs 35,000, 3 dependants) in a commercial truck accident where the driver had no valid driving licence. National Insurance Co. denies liability arguing the policy is void due to unlicensed driver.",
+  "supporting": [
+   {
+    "doc_id": "doc_033",
+    "title": "Satto & Ors vs New India Assurance Co Ltd",
+    "principle": "The insurer has a statutory liability to pay compensation to third parties even if there is a breach of policy conditions (such as an invalid driving licence), and is entitled to recover the same from the insured.",
+    "fact_alignment": "Directly on point: the driver of the tempo did not possess a valid driving licence. The court held the insurer must pay the third-party award and can recover from the owner/driver.",
+    "why_it_matters": "This is the strongest supporting precedent. It squarely holds that even where the driver had no valid licence at all, the insurer's statutory liability to the third-party claimant remains intact, with only a right of recovery against the insured.",
+    "strength": "strong",
+    "quote": "The Claims Tribunal, therefore, rightly made the Insurance Company liable to pay the compensation and granted it recovery rights."
+   },
+   {
+    "doc_id": "doc_032",
+    "title": "S.Iyyapan vs M/S United India Insurance Co.Ld.& Anr",
+    "principle": "An insurer cannot disown its liability to third parties on the ground that the driver lacked an endorsement to drive a commercial vehicle while holding a valid LMV licence.",
+    "fact_alignment": "The vehicle was a commercial vehicle (Mahindra Maxi Cab). The driver held an LMV licence but no commercial endorsement. The Supreme Court held the insurer liable to the third party.",
+    "why_it_matters": "This Supreme Court judgment establishes that even for commercial vehicles, the absence of a proper licence/endorsement does not defeat the third party's right to recover from the insurer. The insurer must pay and can recover from the insured.",
+    "strength": "strong",
+    "quote": "the insurer cannot disown its liability on the ground that although the driver was holding a licence to drive a light motor vehicle but before driving light motor vehicle used as commercial vehicle, no endorsement to drive commercial vehicle was obtained in the driving licence."
+   },
+   {
+    "doc_id": "doc_027",
+    "title": "The Manager vs Chennamma",
+    "principle": "In third-party motor accident claims, even if the driver lacks an appropriate endorsement to drive a specific heavy vehicle class, the insurer remains liable to satisfy the third-party award and may recover the amount from the insured owner.",
+    "fact_alignment": "The driver had only an LMV/transport endorsement but was driving a heavy goods vehicle. The court ordered pay-and-recover. Our case involves a commercial truck where the driver had no licence at all — a stronger case for third-party protection.",
+    "why_it_matters": "This Madras High Court judgment applies the Swaran Singh and S. Iyyapan principles to heavy goods vehicles, confirming that the pay-and-recover remedy is available even for class-of-vehicle licence deficiencies.",
+    "strength": "strong",
+    "quote": "the insurer cannot disown its liability... In any case, it is the statutory right of a third party to recover the amount of compensation so awarded from the insurer."
+   },
+   {
+    "doc_id": "doc_024",
+    "title": "Sunil Shreesail Killiket vs Subbraya",
+    "principle": "Driving without a valid licence constitutes a fundamental breach, but the insurer must still pay the third-party claimant first and then recover from the owner.",
+    "fact_alignment": "The driver had no driving licence at all. The tribunal held this was a fundamental breach but still ordered pay-and-recover in favour of the third-party claimant.",
+    "why_it_matters": "This is the closest factual match — the driver had no licence whatsoever. Despite finding a fundamental breach, the tribunal protected the third party by ordering pay-and-recover. This directly counters the insurer's argument that 'no licence = no liability.'",
+    "strength": "strong",
+    "quote": "it is proper to direct the respondent No.2 to pay the compensation by reserving liberty to recover the same from the respondent No.1, owner of the offending vehicle"
+   },
+   {
+    "doc_id": "doc_001",
+    "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+    "principle": "For a commercial goods vehicle (truck/tanker), the absence of a required special endorsement on the driving licence constitutes a policy breach, but the insurer cannot escape liability to pay compensation to the claimants and has a right to recover from the insured.",
+    "fact_alignment": "The offending vehicle was a commercial Truck/Tanker. The driver held a valid licence for MC, LMV, HGV, HTV but lacked the special endorsement for hazardous goods. The court held the insurer must pay and can recover from the insured.",
+    "why_it_matters": "This Punjab & Haryana High Court judgment directly applies to commercial trucks: even where the driver lacked the required licence endorsement for the specific vehicle type, the insurer must pay the third-party claimants and can recover from the insured. The ratio supports our client's right to receive compensation from the insurer.",
+    "strength": "moderate",
+    "quote": "the insurance company cannot escape its liability to make payment of compensation awarded in favour of the claimants. Once the payment is made, the insurance company has right to recover the same from the insured."
+   },
+   {
+    "doc_id": "doc_035",
+    "title": "United India Insurance Company Limited vs V.Vijayakumar",
+    "principle": "Where the driver of a transport vehicle holds only an LMV licence without the specific authorisation to drive a transport vehicle, the insurer must pay the third-party compensation first and then recover from the insured.",
+    "fact_alignment": "The driver had only an LMV licence and no badge/authorisation for a transport vehicle. The court ordered pay-and-recover. Our case involves a commercial truck with no licence at all.",
+    "why_it_matters": "This judgment explicitly recognises the 'pay and recover' doctrine for licence deficiencies in transport/commercial vehicles, directly supporting the client's right to receive compensation from the insurer.",
+    "strength": "moderate",
+    "quote": "The doctrine of 'pay and recover' has been recognised by the Supreme Court in Several decisions."
+   },
+   {
+    "doc_id": "doc_034",
+    "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+    "principle": "The insurer is statutorily liable to satisfy an award obtained by a third party regardless of policy condition breaches such as an expired (or absent) driving licence.",
+    "fact_alignment": "The driver's licence had expired (effectively no valid licence on the date). The court held the insurer liable to the third party.",
+    "why_it_matters": "Reinforces the principle that the insurer's statutory liability to third parties under Section 149 is not defeated by licence deficiencies.",
+    "strength": "moderate",
+    "quote": "the insurer who is made statutorily liable to pay compensation to third parties on account of the certificate of insurance issued shall be entitled to recover from the insured the amount paid to the third parties, if there was any breach of policy conditions"
+   },
+   {
+    "doc_id": "doc_006",
+    "title": "National Insurance Company Ltd. Thr. ... vs Smt. Meena And 4 Others",
+    "principle": "Even if the driver lacks a valid driving licence, the insurer remains liable to satisfy third-party claims subject to a right of recovery from the vehicle owner.",
+    "fact_alignment": "The driver of the Tanker had no valid licence. The Tribunal directed pay-and-recover, and the High Court affirmed this while enhancing compensation.",
+    "why_it_matters": "This Allahabad High Court judgment directly affirms that even where the driver had no valid licence (not just wrong class), the pay-and-recover principle applies to third-party claims.",
+    "strength": "moderate",
+    "quote": "learned Tribunal though has accepted that there was no valid licence with the driver of the Tanker but even then has directed the insurance company to pay compensation to the claimants with a right to recover it from the owner."
+   },
+   {
+    "doc_id": "doc_019",
+    "title": "Surendra Singh And Another vs Vijay Singh And Another",
+    "principle": "Multiplier must be based on deceased's age; future prospects apply to self-employed persons at 25% for age 40-50; 1/3 deduction for 3 dependants.",
+    "fact_alignment": "Deceased aged 42 (within 40-50 bracket), self-employed or fixed salary, 3 dependants. The court applied Pranay Sethi principles exactly matching our client's facts.",
+    "why_it_matters": "Provides the authoritative framework for computing compensation: multiplier of 14 (age 42), future prospects at 25%, 1/3 deduction for personal expenses, and conventional heads as per Pranay Sethi.",
+    "strength": "strong",
+    "quote": "In case the deceased was self-employed or on a fixed salary, an addition of 25% where the deceased was between the age of 40 to 50 years... The selection of multiplier shall be as indicated in the Table in Sarla Verma... The age of the deceased should be the basis for applying the multiplier."
+   }
+  ],
+  "adverse": [
+   {
+    "doc_id": "doc_028",
+    "title": "United India Insurance Co. Ltd., Thr ... vs Sukumarbai Suryakant Nikam And Ors",
+    "principle": "Where a passenger is travelling in a private vehicle for hire or reward in breach of policy conditions, such a passenger is not a 'third party' under the Act policy, and the Tribunal cannot invoke 'pay and recover' to compel the insurer to satisfy the award.",
+    "risk_to_client": "The insurer may cite this to argue that if the risk was never one the policy was required to cover (analogising: driving without any licence means the risk was never assumed), the pay-and-recover mechanism should not apply. However, this case is about gratuitous passengers — a risk not statutorily mandated. Third-party death claims ARE statutorily mandated under Section 147. The insurer's argument would fail because the deceased here is a third-party road user, not a passenger.",
+    "risk_level": "low",
+    "distinguishing_argument": "This case deals with passengers in a private vehicle carried for hire/reward — a risk that is NOT statutorily required to be covered under Section 147. Our case involves a third-party road user (the deceased was not a passenger in the truck). The statutory mandate to insure third-party risks is fundamentally different. The Supreme Court in Swaran Singh and Laxmi Narain Dhut has consistently held that for third-party risks, the insurer must pay and recover. This judgment itself distinguishes Shamanna's case (which involved no valid driving licence) and notes that pay-and-recover was held justified there.",
+    "quote": ""
+   },
+   {
+    "doc_id": "doc_029",
+    "title": "United India Insurance Co.Ltd vs Minor Mahesh Kanubhai & 2",
+    "principle": "Where a risk is neither statutorily required to be covered nor covered under the policy terms (gratuitous passengers in goods vehicle), the Tribunal has no power under Section 149(4)/(5) to direct pay-and-recover.",
+    "risk_to_client": "The insurer may argue by analogy that if the driver had no licence at all, the risk was never one the insurer agreed to cover, and therefore pay-and-recover should not apply. However, this case is about gratuitous passengers — a fundamentally different issue. The Supreme Court has consistently held that third-party death claims (which are statutorily mandated) are different from gratuitous passenger claims (which are not).",
+    "risk_level": "low",
+    "distinguishing_argument": "This case deals with gratuitous passengers in goods vehicles — a risk that is NOT statutorily required to be covered under Section 147. Our case involves a third-party road user (the deceased was not a passenger in the truck). The entire ratio turns on the distinction between risks that are and are not statutorily required to be covered. Third-party death claims fall squarely within the mandatory coverage. The judgment itself notes that in Shamanna (a no-licence case), pay-and-recover was held justified.",
+    "quote": ""
+   }
+  ],
+  "strategy": {
+   "priority_arguments": [
+    "Lead with the statutory liability argument under Section 149 MV Act: the insurer's liability to third parties is statutory and cannot be defeated by policy breaches. Cite Satto (doc_033), S. Iyyapan (doc_032), and Sunil Shreesail Killiket (doc_024).",
+    "Argue that even if the driver had no licence, the 'pay and recover' principle applies: the insurer must pay the claimant first and then recover from the owner/transport company. This is the consistent thread across all corpus precedents.",
+    "Emphasise that the deceased was a third-party road user (not a passenger in the goods vehicle), so there is no question of gratuitous passenger exclusion. The risk is statutorily mandated.",
+    "On quantum: claim compensation of approximately Rs 51-53 lakhs based on: monthly income Rs 35,000; 25% future prospects (Pranay Sethi for age 42, self-employed); multiplier of 14 (Sarla Verma table); 1/3 deduction for personal expenses (3 dependants); conventional heads as per Pranay Sethi/Magma General (loss of estate Rs 19,965, funeral Rs 19,965, spousal consortium Rs 40,000 for wife + parental consortium Rs 40,000 x 2 for minor children = Rs 1,59,720).",
+    "If the insurer argues 'fundamental breach' to avoid all liability, counter with Sunil Shreesail Killiket (doc_024) which held that even a fundamental breach (no licence at all) only entitles the insurer to recovery rights, not exoneration from third-party liability.",
+    "File the claim under Section 166 MV Act (not 163A) to claim the higher compensation based on actual income."
+   ],
+   "compensation_range": "Rs 50,99,650 to Rs 52,95,650 (approximately Rs 51-53 lakhs) plus interest at 7.5-9% p.a. from the date of claim petition",
+   "compensation_reasoning": "Computed using the compute_quantum tool based on: monthly income Rs 35,000; age 42 (multiplier 14); 3 dependants (1/3 deduction); self-employed (25% future prospects per Pranay Sethi). Conventional heads: loss of estate Rs 19,965, funeral Rs 19,965, spousal consortium Rs 40,000 x 1 + parental consortium Rs 40,000 x 2 = Rs 1,59,720 (as per Magma General and Satinder Kaur). Total: Rs 50,99,650. If the deceased is proven to be in permanent employment, 30% future prospects would apply, yielding approximately Rs 52.96 lakhs.",
+   "risks": [
+    "The insurer may argue that the driver having 'no licence at all' is a more serious breach than 'wrong class of licence,' and may seek to distinguish S. Iyyapan (doc_032) which involved a driver who at least held an LMV licence. However, Sunil Shreesail Killiket (doc_024), Satto (doc_033), and Meena (doc_006) all involved drivers with no valid licence and still ordered pay-and-recover, so this risk is manageable.",
+    "The insurer may challenge the income proof. Ensure the deceased's income is documented through salary slips, bank statements, IT returns, or employer certificate. If the income is not fully documented, the Tribunal may assess notional income, reducing the award.",
+    "If the transport company owner is impleaded but unresponsive or insolvent, the client's de facto recovery may be limited to the insurer's pay-and-recover order. However, the insurer is typically solvent and the pay-and-recover mechanism is enforceable against the owner through execution proceedings.",
+    "The insurer may attempt to prove that the owner knew the driver had no licence (conscious breach), but even this only affects the insurer's recovery rights against the owner, not the claimant's right to payment."
+   ],
+   "recommended_forum_or_relief": "File claim petition under Section 166 of the Motor Vehicles Act, 1988 before the Motor Accident Claims Tribunal having jurisdiction over the place of accident. Join the truck owner (transport company), the driver, and National Insurance Co. Ltd. as respondents. Seek a declaration that the insurer is liable to pay compensation with liberty to recover from the owner. Claim compensation of Rs 51-53 lakhs with interest at 9% p.a."
+  },
+  "caveats": [
+   "The corpus contains no judgment where an insurer was fully exonerated from third-party liability solely because the driver had no licence. Every relevant precedent in this corpus applies the pay-and-recover principle. This is a favourable finding for the client.",
+   "doc_031 (Laxmi Narain Dhut) — outcome favours insurer but actually HELPS the client: it expressly states at point 3 that 'In case of third party risks the insurer has to indemnify the amount and if so advised to recover the same from the insured.' It only limits Swaran Singh's application to non-third-party contexts (own-damage claims), which is irrelevant here.",
+   "doc_014 (Shivlal) — outcome favours insurer but deals with gratuitous passengers in goods vehicles under the 1939 Act. Entirely distinguishable: our deceased is a third-party road user, not a passenger.",
+   "doc_002 (Liyakat Ali) — outcome favours insurer but deals with a tractor used for non-agricultural purposes in breach of policy. No bearing on driver licence or third-party death.",
+   "doc_007 (Harpreet Singh) — outcome favours insurer but deals with non-dependent legal representatives' entitlement to loss of dependency. No bearing on the licence issue.",
+   "doc_016 (State of H.P.) — criminal revision about rash driving conviction. No bearing on civil insurer liability.",
+   "doc_038 (Crown Consultants) — consumer dispute about late claim filing. Entirely unrelated.",
+   "doc_051 (Yashpal Chaudhrani) — criminal quashing for economic offences. Entirely unrelated.",
+   "doc_054 (Chinnasamy) — civil specific performance. Entirely unrelated.",
+   "doc_003 (Parvathi Hebbar) — outcome mixed; deals with lapsed licence renewal and still ordered pay-and-recover. Actually supports the client's position.",
+   "The compensation computation assumes the deceased's income of Rs 35,000/month is proven. If the income proof is weak, the Tribunal may assess notional income (currently around Rs 15,000-18,000/month for an able-bodied person in many states), which would significantly reduce the award. Strong documentary evidence of income is critical.",
+   "If the deceased was a pedestrian or cyclist (third party), the case is stronger than if he was an occupant of another vehicle where contributory negligence could be alleged. Ensure the claim petition clearly establishes the truck driver's sole negligence."
+  ]
+ },
+ "cited": [
+  "doc_033",
+  "doc_032",
+  "doc_027",
+  "doc_024",
+  "doc_001",
+  "doc_035",
+  "doc_034",
+  "doc_006",
+  "doc_019",
+  "doc_028",
+  "doc_029"
+ ],
+ "elapsed_s": 255.0
+}

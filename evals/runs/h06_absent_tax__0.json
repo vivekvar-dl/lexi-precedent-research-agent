@@ -1,0 +1,1231 @@
+{
+ "qid": "h06_absent_tax",
+ "seed": 0,
+ "question": "Find judgments in this corpus about goods and services tax assessment disputes and input tax credit.",
+ "kind": "absent",
+ "ok": true,
+ "trace": {
+  "question": "Find judgments in this corpus about goods and services tax assessment disputes and input tax credit.",
+  "events": [
+   {
+    "seq": 1,
+    "kind": "budget",
+    "label": "triage",
+    "detail": "research / side=none -- The request asks to find judgments about goods and services tax assessment disputes and input tax credit. This requires searching a corpus, filtering by topic, and likely comparing multiple cases to identify relevant precedents. It is not a simple factual lookup or enumeration of a single document's metadata.",
+    "payload": {
+     "budget": 14,
+     "client_side": "none"
+    },
+    "docs": [],
+    "elapsed_s": 24.29
+   },
+   {
+    "seq": 2,
+    "kind": "tool_call",
+    "label": "search_precedents",
+    "detail": "query=goods and services tax assessment dispute input tax credit top_k=15",
+    "payload": {
+     "args": {
+      "query": "goods and services tax assessment dispute input tax credit",
+      "top_k": 15
+     }
+    },
+    "docs": [],
+    "elapsed_s": 26.61
+   },
+   {
+    "seq": 3,
+    "kind": "tool_call",
+    "label": "filter_judgments",
+    "detail": "statute_contains=GST",
+    "payload": {
+     "args": {
+      "statute_contains": "GST"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 26.61
+   },
+   {
+    "seq": 4,
+    "kind": "tool_call",
+    "label": "filter_judgments",
+    "detail": "statute_contains=goods and services tax",
+    "payload": {
+     "args": {
+      "statute_contains": "goods and services tax"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 26.61
+   },
+   {
+    "seq": 5,
+    "kind": "retrieval",
+    "label": "search_precedents",
+    "detail": "query='goods and services tax assessment dispute input tax credit' favours=None k=15",
+    "payload": {
+     "query": "goods and services tax assessment dispute input tax credit",
+     "favours": null
+    },
+    "docs": [
+     {
+      "doc_id": "doc_044",
+      "title": "Monnet Ispat & Energy Ltd vs C.C.E., Raipur",
+      "dense_score": 0.4815112352371216,
+      "dense_rank": 1,
+      "sparse_score": 29.1147518157959,
+      "sparse_rank": 1,
+      "fused_score": 0.03278688524590164,
+      "fused_rank": 1,
+      "rerank_score": 8.0,
+      "final_rank": 1,
+      "why": "Directly addresses Cenvat credit (analogous to input tax credit) on input services, matching the legal issue and ratio.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_038",
+      "title": "M/S Crown Consultants (P) Ltd. vs The Oriental Insurance Company Ltd.",
+      "dense_score": 0.3078780174255371,
+      "dense_rank": 9,
+      "sparse_score": 9.30276870727539,
+      "sparse_rank": 2,
+      "fused_score": 0.030621785881252923,
+      "fused_rank": 2,
+      "rerank_score": 1.0,
+      "final_rank": 2,
+      "why": "Insurance claim repudiation for late filing; no GST or input tax credit issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_031",
+      "title": "National Insurance Co. Ltd vs Laxmi Narain Dhut",
+      "dense_score": 0.3090500235557556,
+      "dense_rank": 8,
+      "sparse_score": 3.742877960205078,
+      "sparse_rank": 10,
+      "fused_score": 0.028991596638655463,
+      "fused_rank": 4,
+      "rerank_score": 1.0,
+      "final_rank": 3,
+      "why": "Motor insurance own-damage claim; no GST or input tax credit issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_036",
+      "title": "Tarachand Raosaheb Chaudhari vs The Oriental Insurance Co Ltd",
+      "dense_score": 0.30308306217193604,
+      "dense_rank": 12,
+      "sparse_score": 5.813658714294434,
+      "sparse_rank": 7,
+      "fused_score": 0.028814262023217248,
+      "fused_rank": 5,
+      "rerank_score": 1.0,
+      "final_rank": 4,
+      "why": "COVID insurance policy coverage; no GST or input tax credit issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_037",
+      "title": "Bhagyashree Santosh Galande vs The Oriental Insurance Co Ltd",
+      "dense_score": 0.29426997900009155,
+      "dense_rank": 15,
+      "sparse_score": 5.899204254150391,
+      "sparse_rank": 6,
+      "fused_score": 0.028484848484848488,
+      "fused_rank": 6,
+      "rerank_score": 1.0,
+      "final_rank": 5,
+      "why": "COVID insurance policy coverage; no GST or input tax credit issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_022",
+      "title": "Sangeeta Devi W/O Sh. Vinod Kumar Singh vs Mahesh Chand & Ors",
+      "dense_score": 0.28089654445648193,
+      "dense_rank": 19,
+      "sparse_score": 6.907050132751465,
+      "sparse_rank": 4,
+      "fused_score": 0.028283227848101264,
+      "fused_rank": 8,
+      "rerank_score": 1.0,
+      "final_rank": 6,
+      "why": "Motor accident compensation; no GST or input tax credit issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_001",
+      "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+      "dense_score": 0.2817223072052002,
+      "dense_rank": 17,
+      "sparse_score": 3.312467575073242,
+      "sparse_rank": 12,
+      "fused_score": 0.026875901875901876,
+      "fused_rank": 11,
+      "rerank_score": 1.0,
+      "final_rank": 7,
+      "why": "Motor accident compensation with insurance breach; no GST or input tax credit issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_010",
+      "title": "Raju Gupta S/O Sh. Madan Mohan Gupta vs Himachal Road",
+      "dense_score": 0.26133233308792114,
+      "dense_rank": 26,
+      "sparse_score": 3.6001651287078857,
+      "sparse_rank": 11,
+      "fused_score": 0.02571241401899771,
+      "fused_rank": 12,
+      "rerank_score": 1.0,
+      "final_rank": 8,
+      "why": "Motor accident compensation; no GST or input tax credit issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_012",
+      "title": "Smt. Rekha Kumari W/O Late Sh. Sachin vs Himachal Road",
+      "dense_score": 0.2700793147087097,
+      "dense_rank": 23,
+      "sparse_score": 1.8564558029174805,
+      "sparse_rank": 26,
+      "fused_score": 0.023676099747828524,
+      "fused_rank": 15,
+      "rerank_score": 1.0,
+      "final_rank": 9,
+      "why": "Motor accident compensation; no GST or input tax credit issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_052",
+      "title": "Company Of Management For Baranagar ... vs Atis Dipankar Chowdhuri",
+      "dense_score": 0.30763566493988037,
+      "dense_rank": 10,
+      "sparse_score": 7.113820552825928,
+      "sparse_rank": 3,
+      "fused_score": 0.030158730158730156,
+      "fused_rank": 3,
+      "rerank_score": 0.0,
+      "final_rank": 10,
+      "why": "Criminal prosecution under Negotiable Instruments Act; unrelated to GST input tax credit.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_048",
+      "title": "Azuga Inc & Anr vs Azuga Telematics Llc & Ors",
+      "dense_score": 0.3394949436187744,
+      "dense_rank": 3,
+      "sparse_score": 2.447558879852295,
+      "sparse_rank": 20,
+      "fused_score": 0.028373015873015873,
+      "fused_rank": 7,
+      "rerank_score": 0.0,
+      "final_rank": 11,
+      "why": "Trademark and copyright infringement; no GST or input tax credit issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_049",
+      "title": "Intel Corporation vs S.P. Gupta And Others",
+      "dense_score": 0.33518290519714355,
+      "dense_rank": 5,
+      "sparse_score": 2.819535255432129,
+      "sparse_rank": 18,
+      "fused_score": 0.028205128205128206,
+      "fused_rank": 9,
+      "rerank_score": 0.0,
+      "final_rank": 12,
+      "why": "Trademark infringement; no GST or input tax credit issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_047",
+      "title": "New Balance Athletics Inc. vs Ashok Kumar & Ors.",
+      "dense_score": 0.32602471113204956,
+      "dense_rank": 7,
+      "sparse_score": 2.070781946182251,
+      "sparse_rank": 22,
+      "fused_score": 0.02712049508554787,
+      "fused_rank": 10,
+      "rerank_score": 0.0,
+      "final_rank": 13,
+      "why": "Trademark infringement and passing off; no GST or input tax credit issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_043",
+      "title": "Jagdish Rai vs State Of Punjab And Others",
+      "dense_score": 0.26618802547454834,
+      "dense_rank": 25,
+      "sparse_score": 2.876957654953003,
+      "sparse_rank": 17,
+      "fused_score": 0.02475171886936593,
+      "fused_rank": 13,
+      "rerank_score": 0.0,
+      "final_rank": 14,
+      "why": "Service law recovery from salary; no GST or input tax credit issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_053",
+      "title": "Ashokbhai Shankar Chaudhary & vs Jayendra Virendra Sharma &",
+      "dense_score": 0.27795273065567017,
+      "dense_rank": 21,
+      "sparse_score": 2.0401532649993896,
+      "sparse_rank": 23,
+      "fused_score": 0.024393871783430016,
+      "fused_rank": 14,
+      "rerank_score": 0.0,
+      "final_rank": 15,
+      "why": "Civil injunction over title and possession; no GST or input tax credit issue.",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 44.18
+   },
+   {
+    "seq": 6,
+    "kind": "filter",
+    "label": "filter_judgments",
+    "detail": "WHERE statutes_joined LIKE '%gst%'  ->  0 of 56 judgments",
+    "payload": {
+     "where": "statutes_joined LIKE '%gst%'",
+     "n_matched": 0,
+     "doc_ids": []
+    },
+    "docs": [],
+    "elapsed_s": 44.19
+   },
+   {
+    "seq": 7,
+    "kind": "filter",
+    "label": "filter_judgments",
+    "detail": "WHERE statutes_joined LIKE '%goods and services tax%'  ->  0 of 56 judgments",
+    "payload": {
+     "where": "statutes_joined LIKE '%goods and services tax%'",
+     "n_matched": 0,
+     "doc_ids": []
+    },
+    "docs": [],
+    "elapsed_s": 44.19
+   },
+   {
+    "seq": 8,
+    "kind": "tool_call",
+    "label": "search_precedents",
+    "detail": "query=Cenvat credit input service tax assessment dispute top_k=10",
+    "payload": {
+     "args": {
+      "query": "Cenvat credit input service tax assessment dispute",
+      "top_k": 10
+     }
+    },
+    "docs": [],
+    "elapsed_s": 46.98
+   },
+   {
+    "seq": 9,
+    "kind": "tool_call",
+    "label": "search_precedents",
+    "detail": "query=tax assessment input tax credit dispute top_k=10",
+    "payload": {
+     "args": {
+      "query": "tax assessment input tax credit dispute",
+      "top_k": 10
+     }
+    },
+    "docs": [],
+    "elapsed_s": 46.98
+   },
+   {
+    "seq": 10,
+    "kind": "tool_call",
+    "label": "screen_corpus",
+    "detail": "criteria=Judgments about goods and services tax (GST), service tax, excise duty...",
+    "payload": {
+     "args": {
+      "criteria": "Judgments about goods and services tax (GST), service tax, excise duty, Cenvat credit, input tax credit, or any tax assessment dispute"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 46.98
+   },
+   {
+    "seq": 11,
+    "kind": "retrieval",
+    "label": "search_precedents",
+    "detail": "query='Cenvat credit input service tax assessment dispute' favours=None k=10",
+    "payload": {
+     "query": "Cenvat credit input service tax assessment dispute",
+     "favours": null
+    },
+    "docs": [
+     {
+      "doc_id": "doc_044",
+      "title": "Monnet Ispat & Energy Ltd vs C.C.E., Raipur",
+      "dense_score": 0.6895545125007629,
+      "dense_rank": 1,
+      "sparse_score": 29.453428268432617,
+      "sparse_rank": 1,
+      "fused_score": 0.03278688524590164,
+      "fused_rank": 1,
+      "rerank_score": 9.0,
+      "final_rank": 1,
+      "why": "Directly addresses Cenvat credit on input services, including transit insurance and installation, matching the legal issue and factual posture.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_037",
+      "title": "Bhagyashree Santosh Galande vs The Oriental Insurance Co Ltd",
+      "dense_score": 0.32964086532592773,
+      "dense_rank": 3,
+      "sparse_score": 5.899204254150391,
+      "sparse_rank": 3,
+      "fused_score": 0.031746031746031744,
+      "fused_rank": 2,
+      "rerank_score": 1.0,
+      "final_rank": 2,
+      "why": "Concerns insurance policy definition of hospital for COVID-19 treatment, unrelated to Cenvat credit or excise assessment.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_036",
+      "title": "Tarachand Raosaheb Chaudhari vs The Oriental Insurance Co Ltd",
+      "dense_score": 0.32277458906173706,
+      "dense_rank": 4,
+      "sparse_score": 5.813658714294434,
+      "sparse_rank": 4,
+      "fused_score": 0.03125,
+      "fused_rank": 3,
+      "rerank_score": 1.0,
+      "final_rank": 3,
+      "why": "Similar to doc_037, deals with COVID-19 care centre as hospital under insurance policy, not Cenvat credit.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_031",
+      "title": "National Insurance Co. Ltd vs Laxmi Narain Dhut",
+      "dense_score": 0.32183146476745605,
+      "dense_rank": 5,
+      "sparse_score": 3.742877960205078,
+      "sparse_rank": 7,
+      "fused_score": 0.030309988518943745,
+      "fused_rank": 4,
+      "rerank_score": 1.0,
+      "final_rank": 4,
+      "why": "Motor accident insurance third-party vs own-damage claim, no connection to Cenvat credit or input service tax.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_038",
+      "title": "M/S Crown Consultants (P) Ltd. vs The Oriental Insurance Company Ltd.",
+      "dense_score": 0.28817319869995117,
+      "dense_rank": 16,
+      "sparse_score": 6.356171607971191,
+      "sparse_rank": 2,
+      "fused_score": 0.02928692699490662,
+      "fused_rank": 6,
+      "rerank_score": 1.0,
+      "final_rank": 5,
+      "why": "Insurance claim repudiation for late filing, no relevance to Cenvat credit or input service tax.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_052",
+      "title": "Company Of Management For Baranagar ... vs Atis Dipankar Chowdhuri",
+      "dense_score": 0.3144199252128601,
+      "dense_rank": 7,
+      "sparse_score": 3.556910276412964,
+      "sparse_rank": 9,
+      "fused_score": 0.029418126757516764,
+      "fused_rank": 5,
+      "rerank_score": 0.0,
+      "final_rank": 6,
+      "why": "Criminal prosecution under Negotiable Instruments Act, completely unrelated to Cenvat credit or excise.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_043",
+      "title": "Jagdish Rai vs State Of Punjab And Others",
+      "dense_score": 0.29637402296066284,
+      "dense_rank": 12,
+      "sparse_score": 2.876957654953003,
+      "sparse_rank": 12,
+      "fused_score": 0.027777777777777776,
+      "fused_rank": 7,
+      "rerank_score": 0.0,
+      "final_rank": 7,
+      "why": "Service law recovery from salary for negligence, no connection to Cenvat credit or excise.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_022",
+      "title": "Sangeeta Devi W/O Sh. Vinod Kumar Singh vs Mahesh Chand & Ors",
+      "dense_score": 0.29152989387512207,
+      "dense_rank": 15,
+      "sparse_score": 3.4535250663757324,
+      "sparse_rank": 10,
+      "fused_score": 0.02761904761904762,
+      "fused_rank": 8,
+      "rerank_score": 0.0,
+      "final_rank": 8,
+      "why": "Motor accident compensation for child death, unrelated to Cenvat credit or input service tax.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_048",
+      "title": "Azuga Inc & Anr vs Azuga Telematics Llc & Ors",
+      "dense_score": 0.2978290915489197,
+      "dense_rank": 11,
+      "sparse_score": 2.447558879852295,
+      "sparse_rank": 14,
+      "fused_score": 0.027598020555767037,
+      "fused_rank": 9,
+      "rerank_score": 0.0,
+      "final_rank": 9,
+      "why": "Trademark and copyright infringement, no relevance to Cenvat credit or excise.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_053",
+      "title": "Ashokbhai Shankar Chaudhary & vs Jayendra Virendra Sharma &",
+      "dense_score": 0.2800600528717041,
+      "dense_rank": 19,
+      "sparse_score": 2.0401532649993896,
+      "sparse_rank": 15,
+      "fused_score": 0.0259915611814346,
+      "fused_rank": 10,
+      "rerank_score": 0.0,
+      "final_rank": 10,
+      "why": "Civil injunction appeal, unrelated to Cenvat credit or input service tax.",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 54.87
+   },
+   {
+    "seq": 12,
+    "kind": "retrieval",
+    "label": "search_precedents",
+    "detail": "query='tax assessment input tax credit dispute' favours=None k=10",
+    "payload": {
+     "query": "tax assessment input tax credit dispute",
+     "favours": null
+    },
+    "docs": [
+     {
+      "doc_id": "doc_044",
+      "title": "Monnet Ispat & Energy Ltd vs C.C.E., Raipur",
+      "dense_score": 0.4527398347854614,
+      "dense_rank": 1,
+      "sparse_score": 22.932138442993164,
+      "sparse_rank": 1,
+      "fused_score": 0.03278688524590164,
+      "fused_rank": 1,
+      "rerank_score": 9.0,
+      "final_rank": 1,
+      "why": "Directly addresses Cenvat credit admissibility on input services, matching the tax assessment input tax credit issue and factual posture.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_052",
+      "title": "Company Of Management For Baranagar ... vs Atis Dipankar Chowdhuri",
+      "dense_score": 0.33444106578826904,
+      "dense_rank": 6,
+      "sparse_score": 7.113820552825928,
+      "sparse_rank": 2,
+      "fused_score": 0.03128054740957967,
+      "fused_rank": 2,
+      "rerank_score": 0.0,
+      "final_rank": 2,
+      "why": "Criminal negotiable instruments case; no relation to tax assessment or input tax credit.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_022",
+      "title": "Sangeeta Devi W/O Sh. Vinod Kumar Singh vs Mahesh Chand & Ors",
+      "dense_score": 0.3274109363555908,
+      "dense_rank": 8,
+      "sparse_score": 6.907050132751465,
+      "sparse_rank": 3,
+      "fused_score": 0.03057889822595705,
+      "fused_rank": 3,
+      "rerank_score": 0.0,
+      "final_rank": 3,
+      "why": "Motor accident compensation; irrelevant to tax assessment or input tax credit.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_031",
+      "title": "National Insurance Co. Ltd vs Laxmi Narain Dhut",
+      "dense_score": 0.3411710262298584,
+      "dense_rank": 5,
+      "sparse_score": 3.742877960205078,
+      "sparse_rank": 7,
+      "fused_score": 0.030309988518943745,
+      "fused_rank": 4,
+      "rerank_score": 0.0,
+      "final_rank": 4,
+      "why": "Motor accident insurance dispute; no connection to tax assessment or input tax credit.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_036",
+      "title": "Tarachand Raosaheb Chaudhari vs The Oriental Insurance Co Ltd",
+      "dense_score": 0.31625741720199585,
+      "dense_rank": 11,
+      "sparse_score": 3.255338668823242,
+      "sparse_rank": 11,
+      "fused_score": 0.028169014084507043,
+      "fused_rank": 5,
+      "rerank_score": 0.0,
+      "final_rank": 5,
+      "why": "Consumer insurance claim for COVID treatment; unrelated to tax assessment or input tax credit.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_020",
+      "title": "Yogeshkumar Badharsinh Baria vs Dilipkumar Ranchhodbhai Damor",
+      "dense_score": 0.28667759895324707,
+      "dense_rank": 27,
+      "sparse_score": 4.986503601074219,
+      "sparse_rank": 5,
+      "fused_score": 0.026878868258178604,
+      "fused_rank": 6,
+      "rerank_score": 0.0,
+      "final_rank": 6,
+      "why": "Motor accident compensation for disability; no relevance to tax assessment or input tax credit.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_037",
+      "title": "Bhagyashree Santosh Galande vs The Oriental Insurance Co Ltd",
+      "dense_score": 0.29235076904296875,
+      "dense_rank": 24,
+      "sparse_score": 3.3182790279388428,
+      "sparse_rank": 10,
+      "fused_score": 0.026190476190476188,
+      "fused_rank": 7,
+      "rerank_score": 0.0,
+      "final_rank": 7,
+      "why": "Consumer insurance claim for COVID care; not about tax assessment or input tax credit.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_010",
+      "title": "Raju Gupta S/O Sh. Madan Mohan Gupta vs Himachal Road",
+      "dense_score": 0.28728997707366943,
+      "dense_rank": 26,
+      "sparse_score": 3.6001651287078857,
+      "sparse_rank": 9,
+      "fused_score": 0.026120660599932594,
+      "fused_rank": 8,
+      "rerank_score": 0.0,
+      "final_rank": 8,
+      "why": "Motor accident compensation; irrelevant to tax assessment or input tax credit.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_050",
+      "title": "M/S. Mandvi Co-Op Bank Ltd vs Nimesh B.Thakore",
+      "dense_score": 0.35994821786880493,
+      "dense_rank": 2,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": 0.016129032258064516,
+      "fused_rank": 9,
+      "rerank_score": 0.0,
+      "final_rank": 9,
+      "why": "Negotiable Instruments Act procedural issue; no bearing on tax assessment or input tax credit.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_023",
+      "title": "Suman Lata And Ors. vs Madan Mohan Sonkar And Ors.",
+      "dense_score": 0.3575087785720825,
+      "dense_rank": 3,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": 0.015873015873015872,
+      "fused_rank": 10,
+      "rerank_score": 0.0,
+      "final_rank": 10,
+      "why": "Motor accident compensation; unrelated to tax assessment or input tax credit.",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 65.42
+   },
+   {
+    "seq": 13,
+    "kind": "screen",
+    "label": "screen_corpus",
+    "detail": "criteria='Judgments about goods and services tax (GST), service tax, excise duty, Cenvat credit, input tax credit, or any tax assessment dispute' -- screened 56/56, 1 qualified",
+    "payload": {
+     "criteria": "Judgments about goods and services tax (GST), service tax, excise duty, Cenvat credit, input tax credit, or any tax assessment dispute",
+     "n_screened": 56,
+     "doc_ids": [
+      "doc_044"
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_044",
+      "title": "",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "Judgment concerns admissibility of Cenvat credit on various insurance services, which falls under excise duty and Cenvat credit.",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 105.97
+   },
+   {
+    "seq": 14,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_044 focus=Cenvat credit input service tax assessment dispute",
+    "payload": {
+     "args": {
+      "doc_id": "doc_044",
+      "focus": "Cenvat credit input service tax assessment dispute"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 107.51
+   },
+   {
+    "seq": 15,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_044 focus='Cenvat credit input service tax assessment dispute' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_044"
+     ],
+     "focus": "Cenvat credit input service tax assessment dispute",
+     "title": "Monnet Ispat & Energy Ltd vs C.C.E., Raipur",
+     "court": "Customs Excise & Service Tax Appellate Tribunal, New Delhi",
+     "holding": "The Tribunal held that Cenvat credit is admissible on transit insurance of plant and machinery, money in transit insurance, follow-up services for installation, and personnel accident insurance, but is rightly denied in respect of telephone services installed at the General Manager's residence and the company's guest house.",
+     "ratio": "Since inward transportation of inputs or capital goods is covered under the definition of 'input service', transit insurance of capital goods during transportation, insurance of money in transit for business operations, installation-related services, and personnel accident insurance for workers in the factory form part of business activities and qualify as input services under the Cenvat Credit Rules, 2004.",
+     "passages": [
+      {
+       "section": "body",
+       "score": 0.669,
+       "text": "input\nservices in terms of Cenvat Credit Rules, 2004. The Department issued a show cause\nnotice dated 3.11.2006 seeking to deny service tax credit amounting to Rs.4,36,650/-\nand its recovery along with interest and also imposition of penalty on the appellant\nunder Rule 15 of the Cenvat Credit Rules. The Assistant Commissioner vide order in\noriginal dated 23.2.07 allowed the cenvat credit of Rs.3,98,142/- but disallowed the\ncenvat credit of Rs.38,510/- in respect of the services of \u0013Marine Inland Transit\nInsurance\u0014 in connection with the procurement of plant and machinery of the\ncaptive power project, \u0013money insurance for money in transit from the factory to\nbank to & fro\u0014, \u0013insurance for personnel working in the appellant\u0012s factory in the\ncase of accident or loss\u0014; \u0013the follow-up services in connection with installation of\nplant and machinery of captive power plant \u0013 and, telephone services in respect of\ntelephones installed at the residence of General Manager and Company\u0012s guest\nhouse. The Assistant Commissioner vide order in original dated 23.2.2007,\nconfirmed the Cenvat credit demand of Rs.38,510/- along with interest and imposed\npenalty of Rs.25,000/- on the appellant under Rule 15 (1) of Cenvat Credit Rules,\n2004. On appeal, the Commissioner (Appeals) vide impugned order in appeal No.\n201/RPR-I/2007 dated 9.10.2007 upheld the Assistant Commissioner\u0012s order. It is\nagainst this order, that the present appeal has been filed by the appellant.\n2. Heard both sides.\n3. Shri K.K. Gupta, Advocate, the learned Counsel for the appellant, pleaded that the\nservices of transit insurance for plant and machinery, insurance for money in transit\nfrom factory to bank to & fro, and the insurance of the personnel working in the\nappellant\u0012s factory for injury to employees in the case of accident, are the services\navailed in connection with the activities relating to business whose cost forms part of\nthe cost of finished products and hence as per the ratio of the Tribunal (Larger\nBench) decision in the case of C.C.E., Mumbai V vs. GTC Industries Ltd."
+      },
+      {
+       "section": "body",
+       "score": 0.601,
+       "text": "jury to employees in the case of accident, are the services\navailed in connection with the activities relating to business whose cost forms part of\nthe cost of finished products and hence as per the ratio of the Tribunal (Larger\nBench) decision in the case of C.C.E., Mumbai V vs. GTC Industries Ltd. reported in\n2008 (12) STR 468 (Tri-LB), these services have to be treated as input services, that\nas per the definition of input service, the inward transportation of inputs or capital\ngoods is specifically covered in the definition of input service, that when inward\ntransportation of inputs is covered by the definition of input service, the transit\ninsurance would also be covered, that the follow-up services are business auxiliary\nservices availed in connection with installation of captive power plant which is very\nmuch covered by the definition of input services; that telephone services installed at\nthe residence of general manager or in the guest house had been used in connection\nwith business operation and hence are eligible for Cenvat Credit and the insurance of\nmoney in transit is also an essential service relating to day to day business and hence\nthe same has to be treated as input service , that in view of this all these services are\ncovered by the definition of \u0011input service\u0012, that the Tribunal in the case of Finolex\nCables Ltd. vs.C.C.E., Pune I reported in 2009 (14) STR 303 (Tri-Mumbai) had held\n\nthat insurance services in respect of plant and machinery is expenditure which goes\ninto the costing and hence service tax on insurance premium for plant and machinery\nwould be admissible as cenvat credit and that the Tribunal in the case of Millipore\nIndia Ltd. vs."
+      },
+      {
+       "section": "body",
+       "score": 0.587,
+       "text": "4) STR 303 (Tri-Mumbai) had held\n\nthat insurance services in respect of plant and machinery is expenditure which goes\ninto the costing and hence service tax on insurance premium for plant and machinery\nwould be admissible as cenvat credit and that the Tribunal in the case of Millipore\nIndia Ltd. vs. C.C.E., Bangalore II reported in 2009 (236) ELT 145 (Tri-Bang.) has\nheld that medical and personnel accident policy and group personnel accident policy\nare the items considered for costing of the final product in terms of CAS -4 and,\ntherefore, these services have to be treated as services received in relation to the\nmanufacture of final product and would be covered in the definition of input service.\nShri Gupta also pleaded that one of the ground for denial of cenvat credit in respect\nof transit insurance policy for the plant and machinery for captive power plant is that\nthe plant and machinery is meant for generating electricity for captive use and since\nthe electricity does not attract any central excise duty, no cenvat credit would be\navailable in respect of any services used for bringing and installation of the captive\npower plant and machinery the ground for denial of cenvat credit is wrong as the\nelectricity generated by the captive power plant is used in or in relation to the\nmanufacture of dutiable final product and therefore, just because electricity\ngenerated does not attract any central excise duty. Cenvat credit of service tax on the\ntransit insurance of plant and machinery cannot be denied, and that in this regard, he\nrelies upon the Board\u0012s Circular No.665/56/2002-CX dated 25th September 2002\nwherein it has been clarified that cenvat credit in respect of capital goods used in\nmanufacture of intermediate goods exempt from payment of duty which are used\ncaptively in the manufacture of finished goods chargeable to duty cannot be denied.\n4."
+      },
+      {
+       "section": "body",
+       "score": 0.584,
+       "text": "tallation of captive power plant. Since these\nservices are in connection with installation of captive power plant and since the\nservices in relation to setting up or modernisation are specifically by the definition of\ninput service , I hold that these services are also eligible for cenvat credit.\n8. As regards the service tax in respect of telephone services installed in the residence\nof general manger and company\u0012s guest house, the appellant have not shown as to\nhow these services are in relation to his manufacturing business, or in or in relation\nto manufacture of finished goods. The use of these telephones may be substantially\nfor non-business purposes also while for being covered by the definition of \u0011input\nservice\u0012 the service availed must be in or in relation to manufacturing business of the\nAssessee. Service tax credit in respect of telephone services in respect of telephone\ninstalled in the G.M.s residence and the company\u0012s guest house has, therefore, been\nrightly denied.\n9. As regards the cenvat credit of service tax on the premium for insurance of the\npersonnel working in the appellant factory, the learned Departmental Representative\npleads that this insurance is for drivers, security man employed through contractors\nand they are not the employees of the appellant\u0012s factory and hence, the cenvat\ncredit of service tax in respect of accident insurance for them would not be available.\nThe appellant\u0012s plea is that as per the provisions of Factory Act, the appellant as\nprincipal employer has vicarious liability for any compensation in the case of injury\netc. to even contract workers and for this reason, the accident insurance covered is\nprovided even to the workers supplied by the contractors. I agree with the"
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_044",
+      "title": "Monnet Ispat & Energy Ltd vs C.C.E., Raipur",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 107.59
+   },
+   {
+    "seq": 16,
+    "kind": "tool_call",
+    "label": "filter_judgments",
+    "detail": "statute_contains=cenvat",
+    "payload": {
+     "args": {
+      "statute_contains": "cenvat"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 110.27
+   },
+   {
+    "seq": 17,
+    "kind": "tool_call",
+    "label": "filter_judgments",
+    "detail": "statute_contains=excise",
+    "payload": {
+     "args": {
+      "statute_contains": "excise"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 110.27
+   },
+   {
+    "seq": 18,
+    "kind": "tool_call",
+    "label": "filter_judgments",
+    "detail": "statute_contains=service tax",
+    "payload": {
+     "args": {
+      "statute_contains": "service tax"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 110.27
+   },
+   {
+    "seq": 19,
+    "kind": "tool_call",
+    "label": "filter_judgments",
+    "detail": "statute_contains=tax",
+    "payload": {
+     "args": {
+      "statute_contains": "tax"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 110.27
+   },
+   {
+    "seq": 20,
+    "kind": "filter",
+    "label": "filter_judgments",
+    "detail": "WHERE statutes_joined LIKE '%cenvat%'  ->  1 of 56 judgments",
+    "payload": {
+     "where": "statutes_joined LIKE '%cenvat%'",
+     "n_matched": 1,
+     "doc_ids": [
+      "doc_044"
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_044",
+      "title": "Monnet Ispat & Energy Ltd vs C.C.E., Raipur",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 110.28
+   },
+   {
+    "seq": 21,
+    "kind": "filter",
+    "label": "filter_judgments",
+    "detail": "WHERE statutes_joined LIKE '%excise%'  ->  0 of 56 judgments",
+    "payload": {
+     "where": "statutes_joined LIKE '%excise%'",
+     "n_matched": 0,
+     "doc_ids": []
+    },
+    "docs": [],
+    "elapsed_s": 110.29
+   },
+   {
+    "seq": 22,
+    "kind": "filter",
+    "label": "filter_judgments",
+    "detail": "WHERE statutes_joined LIKE '%service tax%'  ->  0 of 56 judgments",
+    "payload": {
+     "where": "statutes_joined LIKE '%service tax%'",
+     "n_matched": 0,
+     "doc_ids": []
+    },
+    "docs": [],
+    "elapsed_s": 110.29
+   },
+   {
+    "seq": 23,
+    "kind": "filter",
+    "label": "filter_judgments",
+    "detail": "WHERE statutes_joined LIKE '%tax%'  ->  3 of 56 judgments",
+    "payload": {
+     "where": "statutes_joined LIKE '%tax%'",
+     "n_matched": 3,
+     "doc_ids": [
+      "doc_021",
+      "doc_022",
+      "doc_052"
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_021",
+      "title": "Both R/O E−365 vs Naseem",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_022",
+      "title": "Sangeeta Devi W/O Sh. Vinod Kumar Singh vs Mahesh Chand & Ors",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_052",
+      "title": "Company Of Management For Baranagar ... vs Atis Dipankar Chowdhuri",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 110.3
+   },
+   {
+    "seq": 24,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_021 focus=tax",
+    "payload": {
+     "args": {
+      "doc_id": "doc_021",
+      "focus": "tax"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 113.04
+   },
+   {
+    "seq": 25,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_022 focus=tax",
+    "payload": {
+     "args": {
+      "doc_id": "doc_022",
+      "focus": "tax"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 113.04
+   },
+   {
+    "seq": 26,
+    "kind": "tool_call",
+    "label": "read_judgment",
+    "detail": "doc_id=doc_052 focus=tax",
+    "payload": {
+     "args": {
+      "doc_id": "doc_052",
+      "focus": "tax"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 113.04
+   },
+   {
+    "seq": 27,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_021 focus='tax' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_021"
+     ],
+     "focus": "tax",
+     "title": "Both R/O E−365 vs Naseem",
+     "court": "Motor Accident Claims Tribunal (Pilot Court), Karkardooma Courts, Delhi",
+     "holding": "The tribunal held that the accident was caused by the rash and negligent driving of the offending truck by Respondent No. 1, and awarded compensation across the four connected claim petitions to be paid by the insurance company.",
+     "ratio": "In motor accident claim cases under Section 166 of the MV Act, the claimants must establish negligence on the touchstone of preponderance of probability based on the criminal record and oral testimony, and strict rules of evidence are not applicable.",
+     "passages": [
+      {
+       "section": "body",
+       "score": 0.387,
+       "text": "a s s p e c i f i e d i n t h e M A C T\nN o s . 1 4 6 1 5 / 1 5 , 1 5 1 2 8 / 1 5 , 1 5 1 2 9 / 1 5 & 1 5 1 8 2 / 1 5  1 8 o f 4 6\nSh. G. N. Pandey,  Motor Accident Claims Tribunal( Pilot Court)  Karkardooma Courts, Delhi.\ns e c o n d s c h e d u l e ( b r o u g h t i n f o r c e f r o m 1 4 . 1 1 . 1 9 9 4 ) , s h a l l b e\na s s u m e d t o b e t h e i n c o m e o f t h e d e c e a s e d c h i l d , a n d t a k e n\ni n t o a c c o u n t a f t e r i t i s i n f l a t i o n c o r r e c t e d w i t h t h e h e l p o f\nC o s t i n f l a t i o n I n d e x ( C I I ) a s n o t i f i e d b y t h e G o v e r n m e n t o f\nI n d i a f r o m y e a r t o y e a r u n d e r S e c t i o n 4 8 o f t h e I n c o m e T a x ,\n1961 , by applying the formula indicated hereinafter.\n( i i ) F o r   i n f l a t i o n  c o r r e c t i o n ,   t h e   f i n a n c i a l   y e a r   o f 1 9 9 7 −\n1 9 9 8 s h a l l b e t r e a t e d a s t h e \" b a s e y e a r \" a n d t h e v a l u e\no f t h e n o t i o n a l i n c o m e r e l e v a n t t o t h e d a t e o f c a u s e o f a c t i o n\ns h a l l b e c o m p u t e d i n t h e f o l l o w i n g m a n n e r : − R s . 1 5 , 0 0 0 / − X A / 3 3 1\n{Wherein the figure of Rs. 15,000/− ' represents the   notional   income   specified   in   the   second  \nschedule requiring inflation−correction; 'A' represent the CII for the financial  year   in  which  the  \ncause   of  action  arose   (i.e.   the accident/ death occurred); and the figure of '331' represent\nthe CII for the 'base year'}. \n( i i i ) A f t e r   a r r i v i n g  a t a n  a p p r o p r i a t e   f i g u r e   o f t h e\np r e s e n t e q u i v a l e n t v a l u e o f t h e n o t i o n a l i n c o m e ( i . e . i n f l a t i o n\ncorrected amount), it shall be rounded off to a figure in next thousands of rupees."
+      },
+      {
+       "section": "body",
+       "score": 0.352,
+       "text": "e year'}. \n( i i i ) A f t e r   a r r i v i n g  a t a n  a p p r o p r i a t e   f i g u r e   o f t h e\np r e s e n t e q u i v a l e n t v a l u e o f t h e n o t i o n a l i n c o m e ( i . e . i n f l a t i o n\ncorrected amount), it shall be rounded off to a figure in next thousands of rupees. \n(iv) The amount of notional income thus calculated shall be reduced to two−\nthird, the deduction to the extent of one third being towards personal & living expenses of the\nd e c e a s e d ,   t h e   b a l a n c e   t a k e n   a s   t h e   a n n u a l   l o s s   t o   e s t a t e\n( hereinafter also referred to as \"the multiplicand\").\n( v ) F o r   a s s e s s m e n t   o f   t h e   p e c u n i a r y   d a m a g e s   o n M A C T\nN o s . 1 4 6 1 5 / 1 5 , 1 5 1 2 8 / 1 5 , 1 5 1 2 9 / 1 5 & 1 5 1 8 2 / 1 5  1 9 o f 4 6\nSh. G. N. Pandey,  Motor Accident Claims Tribunal( Pilot Court)  Karkardooma Courts, Delhi.\n\naccount of the death of children upto the age of 10 years, the loss   to   estate   shall   be   calculated,  \ncapitalizing   the multiplicand, by applying the multiplier of ten (10).\n( v i ) F o r c h i l d r e n o f t h e a g e g r o u p o f m o r e t h a n 1 0\nyears upto 15 years, the loss to estate shall be calculated by applying the multiplier of fifteen(15)\n(vii) For Children of the age group of more than 15 years   but   less   than   18   years,   the   loss   to  \nestate   shall   be calculated by applying the multiplier of eighteen (18). \n(viii) After   the   pecuniary   loss   to   estate   has   been worked   out   in   the   manner   indicated  \nabove,   an   amount equivalent to the amount thus computed shall be added to it\na s t h e c o m p o s i t e n o n p e c u n i a r y d a m a g e s t a k i n g c a r e o f n o t\no n l y t h e c o n v e n t i o n a l h e a d s b u t a l s o t o w a r d s f u t u r e p r o s p e c t s\nas awarded in R. K. Malik V/s Kiran Pal (2009) 14 SCC 1. \n(ix) The   final   sum   thus   arrived   at,   appropriately rounded   off,   if   so   required   to   the  \nnearest   (   if   not   next) thousands of rupees, shall be awarded as compensation for\nthe death of the child. \n28."
+      },
+      {
+       "section": "body",
+       "score": 0.345,
+       "text": "o s p e c t s\nas awarded in R. K. Malik V/s Kiran Pal (2009) 14 SCC 1. \n(ix) The   final   sum   thus   arrived   at,   appropriately rounded   off,   if   so   required   to   the  \nnearest   (   if   not   next) thousands of rupees, shall be awarded as compensation for\nthe death of the child. \n28. I   have   gone   through   the   testimony   of   the   witnesses   alongwith complete   records.   The\n  p e t i t i o n e r s   h a v e   p r a y e d   f o r   c o m p e n s a t i o n   o f   R s . 5 0 , 0 0 , 0 0 0 / −\n a g a i n s t r e s p o n d e n t s . I t i s a r g u e d b y L d c o u n s e l f o r r e s p o n d e n t s\nt h a t p e t i t i o n e r s h a v e n o t s u f f e r e d a n y m o n e t a r y l o s s o n a c c o u n t o f t h e f a t a l\naccident and therefore, they are not entitled for compensation.\n There is no dispute at all regarding the offending vehicle nor there is   dispute  \nt h a t d e c e a s e d r e c e i v e d f a t a l  i n j u r i e s  d u e  t o  t h e   a c c i d e n t .   T h e\nfactum of accident as well as death is not denied. I have gone through the MACT\nN o s . 1 4 6 1 5 / 1 5 , 1 5 1 2 8 / 1 5 , 1 5 1 2 9 / 1 5 & 1 5 1 8 2 / 1 5  2 0 o f 4 6\nSh. G. N. Pandey,  Motor Accident Claims Tribunal( Pilot Court)  Karkardooma Courts, Delhi.\npostmortem report. As per Ex. PW 1/ 3, the date of birth of deceased is 17.10.2010.   The   accident  \nt o o k   p l a c e   o n   0 9 . 0 6 . 2 0 1 5 .   T h e   a g e   o f   t h e\ndeceased is taken as about 5 years on the date of accident. \n29. There is no evidence regarding the academic record of the deceased child.   The   death   occurred\n  on   09.06.2015   and   therefore   the   CII   (cost inflation   index)   for   the   financial   year   2015−\n2016  i.e.  Rs.   1,081/−   would apply. The age of the deceased child was about 5 years\n and therefore the calculation   is   to   be   made   on   multiplier   of   10.   The   inflation   calculated\nnotional income comes to Rs. 48,988/− (15,000/− x 1,081 /331), rounded off Rs. 49,000/−\n. After deducting 1/3rd and applying the multiplier of 10, the pecuniary  loss   to   estate   is  \ncomputed   as   (  Rs.   49,000/−   x  1/3  x  10)  Rs."
+      },
+      {
+       "section": "body",
+       "score": 0.345,
+       "text": "n   multiplier   of   10.   The   inflation   calculated\nnotional income comes to Rs. 48,988/− (15,000/− x 1,081 /331), rounded off Rs. 49,000/−\n. After deducting 1/3rd and applying the multiplier of 10, the pecuniary  loss   to   estate   is  \ncomputed   as   (  Rs.   49,000/−   x  1/3  x  10)  Rs. 3,26,667/−.   Adding   a   similar   amount  \nt o w a r d s   c o m p o s i t e   n o n   p e c u n i a r y\ndamages, the total compensation works out to be Rs. (3,26,667/− x 2) = Rs. 6,53,334/−. \n\nI a c c o r d i n g l y a w a r d a n a m o u n t o f c o m p e n s a t i o n o f R s . 6 , 5 3 , 3 3 4 / − i n\nfavour of the Claimant and against Respondents.  Issue No. ii in MACT No. 15128/15:−\nii. Whether petitioner is entitled to compensation? If so, to what amount and from whom? OPP\n30. Hon'ble Supreme Court in (2011) 1 SCC 343 titled Raj Kumar V/s Ajay   Kumar   &   Anr. \nexamined   the   general   principles   relating   to compensation in injury cases. As held:−\n4 . T h e p r o v i s i o n o f t h e M o t o r V e h i c l e s A c t , 1 9 8 8 ( A c t\nf o r s h o r t ) m a k e s i t c l e a r t h a t t h e a w a r d m u s t b e j u s t , w h i c h\nm e a n s t h a t c o m p e n s a t i o n s h o u l d , t o t h e e x t e n t p o s s i b l e ,\nf u l l y a n d a d e q u a t e l y r e s t o r e t h e c l a i m a n t t o t h e p o s i t i o n\np r i o r t o t h e a c c i d e n t . T h e o b j e c t o f a w a r d i n g d a m a g e s i s M A C T\nN o s . 1 4 6 1 5 / 1 5 , 1 5 1 2 8 / 1 5 , 1 5 1 2 9 / 1 5 & 1 5 1 8 2 / 1 5  2 1 o f 4 6\nSh. G. N. Pandey,  Motor Accident Claims Tribunal( Pilot Court)  Karkardooma Courts, Delhi.\nt o m a k e g o o d t h e l o s s s u f f e r e d a s a r e s u l t o f w r o n g d o n e a s\nfar as money can do so, in a fair, reasonable and equitable manner.   The   court   of   tribunal   shall  \nhave   to   assess   the damages objectively and exclude from consideration   any speculation   or  \nfancy,   though   some   conjecture   with reference to the nature of disability and its consequences,\ni s i n e v i t a b l e ."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_021",
+      "title": "Both R/O E−365 vs Naseem",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 113.12
+   },
+   {
+    "seq": 28,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_022 focus='tax' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_022"
+     ],
+     "focus": "tax",
+     "title": "Sangeeta Devi W/O Sh. Vinod Kumar Singh vs Mahesh Chand & Ors",
+     "court": "Motor Accident Claims Tribunal (Pilot Court) Karkardooma Courts, Delhi",
+     "holding": "The tribunal held that the petitioner is entitled to a total compensation of Rs. 5,74,000 with 9% interest per annum from the date of filing of the petition till realization, payable by the respondent.",
+     "ratio": "In motor accident claim cases involving the death of a child with no specific proof of actual earnings, compensation towards loss to estate is determined by taking inflation-corrected notional income based on the Second Schedule of the Motor Vehicles Act, applying appropriate personal expense deductions and age-specific multipliers, and adding a similar amount towards composite non-pecuniary damages.",
+     "passages": [
+      {
+       "section": "body",
+       "score": 0.415,
+       "text": "w h e r e i n t h e p r o s p e c t s o f e m p l o y a b i l i t y a n d e a r n i n g s ( i n\nf u t u r e o r p r e s e n t ) o f t h e d e c e a s e d c h i l d a r e p r o v e d b y c o g e n t\nand irrefutable evidence, this having regard, inter alia, to the academic   record   or   training   in  \nspecial   talents   or   skills,   for computing   the   pecuniary   damages   on   account   of   the   loss  \nto estate, the notional income of non−earning persons( Rs. 15,000/− DAR No. 14937/15 11 of 16\nSangeeta Devi V/s Mahesh Chand & Ors.\nSh. G. N. Pandey, Motor Accident Claims Tribunal( Pilot Court)  Karkardooma Courts, Delhi.\np . a ) a s s p e c i f i e d i n t h e s e c o n d s c h e d u l e ( b r o u g h t i n f o r c e f r o m\n1 4 . 1 1 . 1 9 9 4 ) , s h a l l b e a s s u m e d t o b e t h e i n c o m e o f t h e d e c e a s e d\nchild, and taken into account after it is inflation corrected with the   help   of   Cost   inflation   Index\n  (CII)   as   notified   by   the Government of India from year to year under Section 48 of the Income  \nTax   ,   1961   ,   by   applying   the   formula   indicated hereinafter.\n( i i ) F o r   i n f l a t i o n   c o r r e c t i o n ,   t h e   f i n a n c i a l   y e a r   o f 1 9 9 7 −\n1 9 9 8 s h a l l b e t r e a t e d a s t h e \" b a s e y e a r \" a n d t h e v a l u e o f\nt h e n o t i o n a l i n c o m e r e l e v a n t t o t h e d a t e o f c a u s e o f a c t i o n s h a l l\nbe computed in the following manner:− Rs. 15,000/− X A /331 {Wherein the figure of Rs. 15,000/−\n ' represents the notional   income   specified   in   the   second   schedule   requiring inflation−\ncorrection; 'A' represent the CII for the financial year in   which   the   cause   of   action   arose   (i.e.  \nthe   accident/   death occurred); and the figure of '331' represent the CII for the 'base year'}. \n( i i i ) A f t e r   a r r i v i n g   a t   a n   a p p r o p r i a t e   f i g u r e   o f   t h e\np r e s e n t e q u i v a l e n t v a l u e o f t h e n o t i o n a l i n c o m e ( i . e . i n f l a t i o n"
+      },
+      {
+       "section": "body",
+       "score": 0.395,
+       "text": "ation\nindex) for the financial year 2013−2014 i.e. Rs. 939/− would apply. The age of\nthe deceased child was about 10 years  and therefore the calculation is to be\nmade on multiplier of 10. The inflation calculated notional income comes to Rs. 42,553/− (15,000/−\n x 939/331), rounded off Rs. 43,000/−. After deducting 1/3rd   and   applying   the   multiplier   of  \n10,   the   pecuniary   loss   to   estate   is computed   as   (   Rs.   43,000/−   x   1/3   x   10)   Rs.  \n2,86,667/−.   Adding   a   similar amount  towards   composite   non  pecuniary  damages,   the   total \ncompensation works out to be Rs. (2,86,667/− x 2) = Rs. 5,73,334/−. \nI   accordingly   award   an   amount   of   compensation   of   Rs.  5,73,334/−\nrounded to Rs. 5,74,000/− in favour of the Claimant and against Respondent.  Liability:−\nI n t h i s c a s e , r e s p o n d e n t i s t h e d r i v e r o f t h e o f f e n d i n g v e h i c l e t h e r e f o r e\nrespondent is liable to pay the compensation to the petitioner. Interim award if\nany paid to injured/ petitioner be adjusted in the award amount.  Award :−\n20. Resultantly,  the  DAR  petition stands  allowed.  Respondent is  hereby DAR No. 14937/15 14 of\n16 Sangeeta Devi V/s Mahesh Chand & Ors.\nSh. G. N. Pandey, Motor Accident Claims Tribunal( Pilot Court)  Karkardooma Courts, Delhi.\ndirected to pay the compensation of Rs.  5,74,000/−  within one month  to the\nC l a i m a n t . C l a i m a n t i s a l s o e n t i t l e d t o t h e i n t e r e s t @ 0 9 % p . a . o n t h e t o t a l\ncompensation amount from the date of filing of petition till realization. (The\nNew India Assurance Co. Ltd. Vs. Gopali & Ors., 2012 ACJ 2131 SC,  Jiju Kuruvila   &   Ors.   Vs.  \nK u n j u j a m m a   M o h a n   &   O r s . ,   2 0 1 3   A C J   2 1 4 1   S C ,\nPuttamma Vs. K.L. Naraynan Reddy & Ors., 2014 ACJ 526 SC).\n21.         Respondent is directed to deposit the amount with UCO Bank, KKD Courts Branch, Delhi.\n2 2 .         O u t o f t h e t o t a l a w a r d a m o u n t o f R s .  5 , 7 4 , 0 0 0 / −, U C O B a n k , K K D\nCourts is directed to keep the amount of Rs. 5,00,000/− in 100  FDRs of Rs."
+      },
+      {
+       "section": "body",
+       "score": 0.353,
+       "text": "Sangeeta Devi W/O Sh. Vinod Kumar Singh vs Mahesh Chand &\nOrs on 16 March, 2018\n                  Sh. G. N. Pandey, Motor Accident Claims Tribunal( Pilot Court) \n                                  Karkardooma Courts, Delhi.\n                         In the Court of Sh. G. N. Pandey \n                  Motor Accident Claims Tribunal( Pilot Court) \n                          Karkardooma Courts, Delhi. \n                                                   DAR No. 14937/15\nIN THE MATTER OF :−\n                Sangeeta Devi W/o Sh. Vinod Kumar Singh \n                r/o H. No. G−5/9, Gali No. 2, 5th Pusta, Sonia Vihar,\n                Delhi.                      Mother \n                                                           ................ Petitioner  \n                                         V E R S U S\n                Mahesh Chand s/o Sh. Kishori Lal\n                r/o 13A, Gali No. 2, Kaushal Puri,\n                Chauhan Patti, Sonia Vihar, Delhi. \n                                                             ................. Responden\nDate of Institution of DAR      : 06.11.2015\nDate of Judgment/Order     : 16.03.2018\nA W A R D:−\n1. By this order, I shall dispose off the DAR petition filed by the IO for grant   of   compensation   to  \nt h e   i n j u r e d   i n   v i e w   o f   t h e   p r o v i s i o n s   o f   M o t o r\nV e h i c l e A c t , 1 9 8 8 . T h e D A R p e t i t i o n i s t r e a t e d a s c l a i m p e t i t i o n i n v i e w o f\nsection 158 (6) of the MV Act, 1988. \n2. Briefly  the  facts  of the  case  are  that  on  14.01.2014  at  about  3  PM, deceased   alongwith   her\n  mother   were   going   towards   Annpurna   Mandir   for DAR No. 14937/15 1 of 16 Sangeeta Devi\nV/s Mahesh Chand & Ors.\nSh. G. N. Pandey, Motor Accident Claims Tribunal( Pilot Court)  Karkardooma Courts, Delhi.\nw o r s h i p f r o m r e s i d e n c e . W h e n t h e y r e a c h e d a t A n n p u r n a M a n d i r , m o t h e r o f"
+      },
+      {
+       "section": "body",
+       "score": 0.351,
+       "text": "nt/   death occurred); and the figure of '331' represent the CII for the 'base year'}. \n( i i i ) A f t e r   a r r i v i n g   a t   a n   a p p r o p r i a t e   f i g u r e   o f   t h e\np r e s e n t e q u i v a l e n t v a l u e o f t h e n o t i o n a l i n c o m e ( i . e . i n f l a t i o n\n\ncorrected amount), it shall be rounded off to a figure in next thousands of rupees. \n(iv) The   amount   of   notional   income   thus   calculated shall be reduced to two−\nt h i r d , t h e d e d u c t i o n t o t h e e x t e n t o f o n e\nthird being towards personal & living expenses of the deceased, DAR No. 14937/15 12 of 16 Sangeeta\nDevi V/s Mahesh Chand & Ors.\nSh. G. N. Pandey, Motor Accident Claims Tribunal( Pilot Court)  Karkardooma Courts, Delhi.\nthe balance taken as the annual loss to estate ( hereinafter also referred to as \"the multiplicand\").\n( v ) F o r   a s s e s s m e n t   o f   t h e   p e c u n i a r y   d a m a g e s   o n\na c c o u n t o f t h e d e a t h o f c h i l d r e n u p t o t h e a g e o f 1 0 y e a r s , t h e\nloss to estate shall be calculated, capitalizing the multiplicand, by applying the multiplier of ten (10).\n(vi) For   children   of   the   age   group   of   more   than   10 years  upto 15 years,  the loss to estate\n shall be calculated by applying the multiplier of fifteen(15)\n( v i i ) F o r   C h i l d r e n  o f  t h e   a g e   g r o u p   o f   m o r e   t h a n   1 5\ny e a r s b u t l e s s t h a n 1 8 y e a r s , t h e l o s s t o e s t a t e s h a l l b e c a l c u l a t e d\nby applying the multiplier of eighteen (18). \n( v i i i ) A f t e r t h e p e c u n i a r y l o s s t o e s t a t e h a s b e e n w o r k e d\no u t i n t h e m a n n e r i n d i c a t e d a b o v e , a n a m o u n t e q u i v a l e n t t o t h e\namount thus computed shall be added to it as the composite non pecuniary   damages   taking   care  \nof   not   only   the   conventional heads  but also towards  future  prospects  as  awarded  in R.  K.\nMalik V/s Kiran Pal (2009) 14 SCC 1."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_022",
+      "title": "Sangeeta Devi W/O Sh. Vinod Kumar Singh vs Mahesh Chand & Ors",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 113.16
+   },
+   {
+    "seq": 29,
+    "kind": "read",
+    "label": "read_judgment",
+    "detail": "doc_052 focus='tax' -- 4 passages",
+    "payload": {
+     "doc_ids": [
+      "doc_052"
+     ],
+     "focus": "tax",
+     "title": "Company Of Management For Baranagar ... vs Atis Dipankar Chowdhuri",
+     "court": "High Court of Calcutta",
+     "holding": "The Court held that while Section 138 does not prohibit presenting a cheque more than once, the criminal proceeding must be quashed because the Committee of Management is a representative of the Court requiring prior leave to prosecute, and it does not constitute a 'company' or 'association of individuals' attracting vicarious liability under Section 141 of the Negotiable Instruments Act.",
+     "ratio": "A Committee of Management appointed by the High Court functions as an officer or representative of the Court and cannot be prosecuted without prior leave of the appointing Court, nor does it qualify as a company or corporate body subject to criminal prosecution under Section 141 of the Negotiable Instruments Act.",
+     "passages": [
+      {
+       "section": "order",
+       "score": 0.395,
+       "text": "any. According to Mr. Ghosh therefore, no prosecution can be launched against the petitioner\nNo. 1. In this respect Mr. Ghosh raises another point. He submits that the punishment under Section\n138 of the Negotiable Instruments Act is imprisonment for a term which may extend to one year or\nwith fine. Thus the Committee of Management here cannot suffer the punishment of imprisonment\nas it is not an individual. Mr. Ghosh cites a case reported in 1992 (1) CHN 299 (M/s. Hanuman\nSugar and Industries Ltd. v. Nirmalendu Banerjee). In which a single Bench of this Court has held\nthat the punishment of compulsory imprisonment as provided under Section 276B of the\nIncome-tax Act cannot be imposed upon the company who is a juristic person and that as such the\ncontinuation of a criminal proceeding in this regard amounts to an abuse of the process of the Court\nand is liable to be quashed. Another case cited is M/s. Shyamlal Dey Housing Industries Pvt. Ltd. v.\nSidheswar Bhusan Puttenda reported in 1992 (2) CHN 434 in which it has been held that a company\ncannot commit an offence under Section 276B of the Income-tax Act. It is argued on the basis of\nthese cases that the Committee of Management in this case cannot suffer the punishment of\nimprisonment and as such cannot be an accused. Consequently no vicarious liability can be attached\nto the petitioner No. 2 on behalf of the Committee of Management.\n19. Mr. Maitra on the other hand cites (Sheoratan Agarwal v. State of Madhya Pradesh) and argues\nthat a person can be convicted of an offence even apart from the company. It was a case under the\nEssential Commodities Act. There is no doubt that a person may have individual liability for an\noffence as also the vicarious liability for a company if the offence is liable to be committed also\nindividually. In the instant case the Committee of Management is actually not a company although it\nis a body of individuals. There is also a basic difference between a company and its employee and the\naccused Committee of Management and one of its members. So the case cited under the E.C. Act\ndoes not actually help in this case, and the Committee of Management cannot be prosecuted as a\ncompany.\n20."
+      },
+      {
+       "section": "preamble",
+       "score": 0.38,
+       "text": "Company Of Management For Baranagar ... vs Atis Dipankar\nChowdhuri on 15 February, 1993\nEquivalent citations: 1993CRILJ2165"
+      },
+      {
+       "section": "order",
+       "score": 0.371,
+       "text": "ument. He refers to a decision of the Division Bench reported in 59 CWN 481\n(Banwarilal Agarwal v. Sudhamoy Basu, Receiver), in which it has been held that the rule requiring\nleave of the Court to sue a receiver is an ancient rule based, not on any statutory authority but on\nreason of public policy. It has been further held in this case that for all practical purposes, the Rule\nhas become a part of the law of the land and that its application is not limited to suits, strictly\nso-called, but also to other legal proceedings. Reference has also been made to a case reported in\n1990 (1) CHN 222 (Galokpati Mahato v. The State of West Bengal). This was also a case in which a\n\nreceiver appointed of a Colliery by an order of the High Court passed in a suit was prosecuted on the\nallegation that he was extracting coal from the said colliery and selling the same to different persons\ncontrary to the provisions of the Coal Mines (Nationalisation) Amendment Act, 1976. It was held\nthat a receiver appointed by the Court is entitled to protection under Sections 78 and 79 of the\nIndian Penal Code and that the prosecution should apply to the Court appointing the receiver for\nsanction to prosecute him. The next case referred to is Corporation of Calcutta v. Sudhamoy Bose in\nwhich it was held that a receiver of property appointed by a Court cannot be prosecuted for an\nalleged offence under the Calcutta Municipal Act, in connection with the duties of a receiver as such.\nAnother case relied on is Rambadan Chowbey v. State reported in 1982 (1) CHN 470. It was also a\ncase of prosecution of a receiver for illegal mining in violation of the provisions of the Coal Mines\n(Nationalisation) Amendment Act, 1976.\n15. Mr. Ghosh argues that the principle applicable to the prosecution of a receiver appointed by the\nCourt equally applies in this case also. He submits that the Committee of Management was\nappointed here by the High Court expressly for the purpose of."
+      },
+      {
+       "section": "order",
+       "score": 0.36,
+       "text": "one\nCourt, the cause of action for launching prosecution might arise within the jurisdiction of another\nCourt where the drawer failed to pay the amount to the payee after a demand was made for such\npayment. This case, therefore, does not deal with the question raised in the instant revision case.\n7. Yet another case reported in 1990 C Cr LR (Cal) 145 was also cited. This case, decided by a\nDivision Bench of the Calcutta High Court, actually dealt with the question of the retrospective\noperation of the amended Section 138 and it was held that no prosecution could be held for the\nbouncing of a cheque prior to the introduction of the amendment in Section 138. So this case also is\nof no help.\n8. Mr. Sudipto Moitra appearing for the O.P., however, cites a rather recent judgment of the\nCalcutta High Court reported in 1992 C Cr LR (Cal) 14 (Sekhar Gupta v. Subhas Chandra Mandal) in\nwhich a contrary view to that expressed in 1992 (1) Crimes 23 was taken. In this case, decided by a\nsingle Judge, it was held that the provisions of Section 138 did not prohibit or forbid presentation of\nthe cheque to the bank for payment more than once. The prima facie reason for holding such a view\nwas that under Clause (a) of the Proviso to Section 138 a payee was entitled to present the cheque to\nthe bank within a period of six months at the latest. As this view is directly opposed to the view of\nthe Division Bench of the Kerala High Court it is necessary to examine the provisions of Section 138\nof the Negotiable Instruments Act more closely. Section 138 of the Act after its amendment stands as\nfollows."
+      }
+     ]
+    },
+    "docs": [
+     {
+      "doc_id": "doc_052",
+      "title": "Company Of Management For Baranagar ... vs Atis Dipankar Chowdhuri",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": null,
+      "fused_rank": null,
+      "rerank_score": null,
+      "final_rank": null,
+      "why": "",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 113.19
+   },
+   {
+    "seq": 30,
+    "kind": "tool_call",
+    "label": "submit_answer",
+    "detail": "question=Find judgments in this corpus about goods and services tax assessment ... answer=After a thorough search of all 56 judgments in the corpus, only **one ... cited_doc_ids=['doc_044'] confidence=high",
+    "payload": {
+     "args": {
+      "question": "Find judgments in this corpus about goods and services tax assessment disputes and input tax credit.",
+      "answer": "After a thorough search of all 56 judgments in the corpus, only **one judgment** is relevant to goods and services tax assessment disputes and input tax credit:\n\n**doc_044 — Monnet Ispat & Energy Ltd vs C.C.E., Raipur** (Customs Excise & Service Tax Appellate Tribunal, New Delhi, decided 22 December 2009)\n\nThis judgment deals with **Cenvat credit** (the pre-GST equivalent of input tax credit under the excise/service tax regime) on various input services. The key issues and findings are:\n\n- **Dispute:** The Department issued a show-cause notice seeking to deny service tax credit of ₹4,36,650/- and imposed penalty under Rule 15 of the Cenvat Credit Rules, 2004.\n- **Held admissible (input service credit allowed):**\n  - Transit insurance of plant and machinery (including for a captive power plant)\n  - Money-in-transit insurance (factory to bank and back)\n  - Personnel accident insurance for workers in the factory\n  - Follow-up services for installation of plant and machinery\n- **Held inadmissible (credit rightly denied):**\n  - Telephone services installed at the General Manager's residence and the company's guest house (not shown to be in relation to manufacturing business)\n\n**Ratio:** Since inward transportation of inputs or capital goods is covered under the definition of 'input service', transit insurance of capital goods during transportation, insurance of money in transit for business operations, installation-related services, and personnel accident insurance for factory workers form part of business activities and qualify as input services under the Cenvat Credit Rules, 2004.\n\n**Important caveat:** This corpus does **not** contain any judgments under the GST regime (post-2017). The only tax-credit judgment is under the pre-GST Cenvat Credit regime. No other judgment in the corpus concerns GST assessment disputes, input tax credit under GST, or any other tax assessment matter.",
+      "cited_doc_ids": [
+       "doc_044"
+      ],
+      "confidence": "high"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 120.0
+   },
+   {
+    "seq": 31,
+    "kind": "answer",
+    "label": "submit_answer",
+    "detail": "1 citations, confidence=high",
+    "payload": {
+     "doc_ids": [
+      "doc_044"
+     ]
+    },
+    "docs": [],
+    "elapsed_s": 120.02
+   },
+   {
+    "seq": 32,
+    "kind": "plan",
+    "label": "reasoning",
+    "detail": "Here's a summary of the findings:",
+    "payload": {},
+    "docs": [],
+    "elapsed_s": 123.89
+   }
+  ],
+  "started_at": 1787043710.318057,
+  "llm_calls": 12,
+  "in_tokens": 75609,
+  "out_tokens": 6893
+ },
+ "retrieved": [
+  "doc_044",
+  "doc_038",
+  "doc_031",
+  "doc_036",
+  "doc_037",
+  "doc_022",
+  "doc_001",
+  "doc_010",
+  "doc_012",
+  "doc_052",
+  "doc_048",
+  "doc_049",
+  "doc_047",
+  "doc_043",
+  "doc_053",
+  "doc_020",
+  "doc_050",
+  "doc_023",
+  "doc_021"
+ ],
+ "tool_sequence": [
+  "search_precedents",
+  "filter_judgments",
+  "filter_judgments",
+  "search_precedents",
+  "search_precedents",
+  "screen_corpus",
+  "read_judgment",
+  "filter_judgments",
+  "filter_judgments",
+  "filter_judgments",
+  "filter_judgments",
+  "read_judgment",
+  "read_judgment",
+  "read_judgment",
+  "submit_answer"
+ ],
+ "llm_calls": 12,
+ "tokens": 82502,
+ "result_type": "DirectAnswer",
+ "result": {
+  "question": "Find judgments in this corpus about goods and services tax assessment disputes and input tax credit.",
+  "answer": "After a thorough search of all 56 judgments in the corpus, only **one judgment** is relevant to goods and services tax assessment disputes and input tax credit:\n\n**doc_044 — Monnet Ispat & Energy Ltd vs C.C.E., Raipur** (Customs Excise & Service Tax Appellate Tribunal, New Delhi, decided 22 December 2009)\n\nThis judgment deals with **Cenvat credit** (the pre-GST equivalent of input tax credit under the excise/service tax regime) on various input services. The key issues and findings are:\n\n- **Dispute:** The Department issued a show-cause notice seeking to deny service tax credit of ₹4,36,650/- and imposed penalty under Rule 15 of the Cenvat Credit Rules, 2004.\n- **Held admissible (input service credit allowed):**\n  - Transit insurance of plant and machinery (including for a captive power plant)\n  - Money-in-transit insurance (factory to bank and back)\n  - Personnel accident insurance for workers in the factory\n  - Follow-up services for installation of plant and machinery\n- **Held inadmissible (credit rightly denied):**\n  - Telephone services installed at the General Manager's residence and the company's guest house (not shown to be in relation to manufacturing business)\n\n**Ratio:** Since inward transportation of inputs or capital goods is covered under the definition of 'input service', transit insurance of capital goods during transportation, insurance of money in transit for business operations, installation-related services, and personnel accident insurance for factory workers form part of business activities and qualify as input services under the Cenvat Credit Rules, 2004.\n\n**Important caveat:** This corpus does **not** contain any judgments under the GST regime (post-2017). The only tax-credit judgment is under the pre-GST Cenvat Credit regime. No other judgment in the corpus concerns GST assessment disputes, input tax credit under GST, or any other tax assessment matter.",
+  "cited_doc_ids": [
+   "doc_044"
+  ],
+  "confidence": "high"
+ },
+ "cited": [
+  "doc_044"
+ ],
+ "elapsed_s": 123.9
+}

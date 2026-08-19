@@ -1,0 +1,13 @@
+[server]
+headless = true
+enableCORS = false
+enableXsrfProtection = true
+# Judgments are large; keep uploads small since we never accept them anyway.
+maxUploadSize = 5
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"
+primaryColor = "#1f4e79"

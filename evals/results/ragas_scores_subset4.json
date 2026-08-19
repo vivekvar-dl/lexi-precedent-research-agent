@@ -1,0 +1,49 @@
+{
+ "means": {
+  "faithfulness": 0.20987494728113937,
+  "llm_context_precision_without_reference": 0.6597222222043981
+ },
+ "per_query": {
+  "q01_brief": {
+   "llm_context_precision_without_reference": 0.999999999975,
+   "faithfulness": 0.08246641040119301,
+   "faithfulness_segments_scored": "13/13"
+  },
+  "q04_adverse_licence": {
+   "llm_context_precision_without_reference": 0.999999999975,
+   "faithfulness": 0.13523850692849265,
+   "faithfulness_segments_scored": "13/13"
+  },
+  "q12_s166": {
+   "llm_context_precision_without_reference": 0.0,
+   "faithfulness": 0.0,
+   "faithfulness_segments_scored": "2/2"
+  },
+  "q14_summarise": {
+   "llm_context_precision_without_reference": 0.6388888888675925,
+   "faithfulness": 0.6217948717948718,
+   "faithfulness_segments_scored": "2/2"
+  }
+ },
+ "n_runs": 4,
+ "n_scored": {
+  "faithfulness": 4,
+  "llm_context_precision_without_reference": 4
+ },
+ "_provenance": {
+  "scope": "4-query subset (q01_brief, q04_adverse_licence, q12_s166, q14_summarise)",
+  "why_subset": "RAGAS costs ~300 judge calls over the full 21-query set -- 20x our entire Dimension 3 -- because it decomposes every claim against every context. Measured 2-4 hours; a 4-query subset covering each behaviour (research, adverse, enumerative, point-lookup) buys the cross-check for ~15 minutes.",
+  "config": "ragas 0.4.3, langchain-community<0.4, judge=Kimi-K2.6, timeout 180s, 6 workers",
+  "faithfulness_method": "segment-wise: the answer is split on entry boundaries and every segment scored, because Azure's content filter blocks the judge's own output on full-length answers containing fatal-accident detail. All 4 queries reached 100% segment coverage.",
+  "also_scored_in_earlier_full_run": {
+   "h01_minor_death": {
+    "faithfulness": 0.197,
+    "context_precision": 1.0
+   },
+   "h02_permit_breach": {
+    "faithfulness": 0.043,
+    "context_precision": 0.792
+   }
+  }
+ }
+}

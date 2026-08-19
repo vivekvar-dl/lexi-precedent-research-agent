@@ -1,0 +1,14 @@
+{
+ "qid": "q05_flip_insurer",
+ "seed": 0,
+ "question": "I am counsel for National Insurance Co. The deceased's family is claiming compensation for a death caused by our insured's truck, whose driver had no valid licence. Find the precedents that best support our defence, and tell me honestly which authorities cut against us.",
+ "kind": "flip",
+ "ok": false,
+ "error": "RateLimitError: Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Your requests to DeepSeek-V4-Flash for DeepSeek-V4-Flash in eastus have exceeded rate limit.', 'details': 'Your requests to DeepSeek-V4-Flash for DeepSeek-V4-Flash in eastus have exceeded rate limit.'}}",
+ "traceback": "4/site-packages/langchain_openai/chat_models/base.py\", line 1752, in _generate\n    _handle_openai_api_error(e)\n    ~~~~~~~~~~~~~~~~~~~~~~~~^^^\n  File \"/Users/vivek4sightai/assigement/.venv/lib/python3.14/site-packages/langchain_openai/chat_models/base.py\", line 1747, in _generate\n    raw_response = self.client.with_raw_response.create(**payload)\n  File \"/Users/vivek4sightai/assigement/.venv/lib/python3.14/site-packages/openai/_legacy_response.py\", line 369, in wrapped\n    return cast(LegacyAPIResponse[R], func(*args, **kwargs))\n                                      ~~~~^^^^^^^^^^^^^^^^^\n  File \"/Users/vivek4sightai/assigement/.venv/lib/python3.14/site-packages/openai/_utils/_utils.py\", line 298, in wrapper\n    return func(*args, **kwargs)\n  File \"/Users/vivek4sightai/assigement/.venv/lib/python3.14/site-packages/openai/resources/chat/completions/completions.py\", line 1296, in create\n    return self._post(\n           ~~~~~~~~~~^\n        \"/chat/completions\",\n        ^^^^^^^^^^^^^^^^^^^^\n    ...<53 lines>...\n        stream_cls=Stream[ChatCompletionChunk],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/Users/vivek4sightai/assigement/.venv/lib/python3.14/site-packages/openai/_base_client.py\", line 1382, in post\n    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))\n                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/vivek4sightai/assigement/.venv/lib/python3.14/site-packages/openai/_base_client.py\", line 1155, in request\n    raise self._make_status_error_from_response(err.response) from None\nopenai.RateLimitError: Error code: 429 - {'error': {'code': 'RateLimitReached', 'message': 'Your requests to DeepSeek-V4-Flash for DeepSeek-V4-Flash in eastus have exceeded rate limit.', 'details': 'Your requests to DeepSeek-V4-Flash for DeepSeek-V4-Flash in eastus have exceeded rate limit.'}}\nDuring task with name 'agent' and id 'de66fc06-4bb5-a249-041f-11e00d46677f'\n",
+ "retrieved": [],
+ "cited": [],
+ "result": null,
+ "result_type": null,
+ "elapsed_s": 111.2
+}

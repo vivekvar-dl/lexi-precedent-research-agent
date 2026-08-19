@@ -1,0 +1,14 @@
+{
+ "qid": "q01_brief",
+ "seed": 0,
+ "question": "Client: Mrs. Lakshmi Devi. Matter: motor accident claim, death of spouse.\n\nHer husband was killed in a road accident involving a commercial truck. The truck driver was operating the vehicle without a valid driving licence. National Insurance Co. denies the claim, arguing the policy is void because the driver was unlicensed, and that it bears no liability.\n\nKey facts: deceased aged 42; monthly income Rs 35,000; dependants are the wife and two minor children (8 and 12); the truck was a commercial vehicle owned by a transport company; the driver held no valid licence; the insurer contests liability.\n\nResearch the corpus and advise on supporting precedents, adverse precedents, and strategy.",
+ "kind": "research",
+ "ok": false,
+ "error": "GraphRecursionError: Recursion limit of 66 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT",
+ "traceback": "Traceback (most recent call last):\n  File \"/Users/vivek4sightai/assigement/evals/runner.py\", line 45, in run_agent\n    trace, result = agent.run(q.text)\n                    ~~~~~~~~~^^^^^^^^\n  File \"/Users/vivek4sightai/assigement/src/lexi/agent.py\", line 428, in run\n    final = graph.invoke(state, {\"recursion_limit\": settings.budget_ceiling * 3})\n  File \"/Users/vivek4sightai/assigement/.venv/lib/python3.14/site-packages/langgraph/pregel/main.py\", line 3913, in invoke\n    for chunk in self.stream(\n                 ~~~~~~~~~~~^\n        input,\n        ^^^^^^\n    ...<11 lines>...\n        **kwargs,\n        ^^^^^^^^^\n    ):\n    ^\n  File \"/Users/vivek4sightai/assigement/.venv/lib/python3.14/site-packages/langgraph/pregel/main.py\", line 3011, in stream\n    raise GraphRecursionError(msg)\nlanggraph.errors.GraphRecursionError: Recursion limit of 66 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT\n",
+ "retrieved": [],
+ "cited": [],
+ "result": null,
+ "result_type": null,
+ "elapsed_s": 422.4
+}

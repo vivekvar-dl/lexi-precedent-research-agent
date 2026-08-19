@@ -1,0 +1,14 @@
+{
+ "qid": "h05_insurer_appeal",
+ "seed": 0,
+ "question": "I act for the insurer and want to appeal the quantum, not liability. Which judgments support reducing an award on appeal, and which cut against me?",
+ "kind": "adverse",
+ "ok": false,
+ "error": "GraphRecursionError: Recursion limit of 66 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT",
+ "traceback": "Traceback (most recent call last):\n  File \"/Users/vivek4sightai/assigement/evals/runner.py\", line 45, in run_agent\n    trace, result = agent.run(q.text)\n                    ~~~~~~~~~^^^^^^^^\n  File \"/Users/vivek4sightai/assigement/src/lexi/agent.py\", line 428, in run\n    final = graph.invoke(state, {\"recursion_limit\": settings.budget_ceiling * 3})\n  File \"/Users/vivek4sightai/assigement/.venv/lib/python3.14/site-packages/langgraph/pregel/main.py\", line 3913, in invoke\n    for chunk in self.stream(\n                 ~~~~~~~~~~~^\n        input,\n        ^^^^^^\n    ...<11 lines>...\n        **kwargs,\n        ^^^^^^^^^\n    ):\n    ^\n  File \"/Users/vivek4sightai/assigement/.venv/lib/python3.14/site-packages/langgraph/pregel/main.py\", line 3011, in stream\n    raise GraphRecursionError(msg)\nlanggraph.errors.GraphRecursionError: Recursion limit of 66 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT\n",
+ "retrieved": [],
+ "cited": [],
+ "result": null,
+ "result_type": null,
+ "elapsed_s": 509.4
+}

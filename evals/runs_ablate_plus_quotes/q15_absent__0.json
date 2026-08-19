@@ -1,0 +1,1031 @@
+{
+ "qid": "q15_absent",
+ "seed": 0,
+ "question": "Find precedents in this corpus about maritime salvage rights and shipping collision liability under admiralty law.",
+ "kind": "absent",
+ "ok": true,
+ "trace": {
+  "question": "Find precedents in this corpus about maritime salvage rights and shipping collision liability under admiralty law.",
+  "events": [
+   {
+    "seq": 1,
+    "kind": "budget",
+    "label": "triage",
+    "detail": "research -- The request asks to find precedents on two distinct but related admiralty law topics (maritime salvage rights and shipping collision liability), which requires searching, comparing, and weighing multiple cases within the corpus to identify relevant authorities. This goes beyond a simple factual lookup or single-document summary.",
+    "payload": {
+     "budget": 14
+    },
+    "docs": [],
+    "elapsed_s": 68.17
+   },
+   {
+    "seq": 2,
+    "kind": "tool_call",
+    "label": "search_precedents",
+    "detail": "query=maritime salvage rights shipping collision liability admiralty law top_k=15",
+    "payload": {
+     "args": {
+      "query": "maritime salvage rights shipping collision liability admiralty law",
+      "top_k": 15
+     }
+    },
+    "docs": [],
+    "elapsed_s": 70.72
+   },
+   {
+    "seq": 3,
+    "kind": "tool_call",
+    "label": "filter_judgments",
+    "detail": "case_type_contains=admiralty",
+    "payload": {
+     "args": {
+      "case_type_contains": "admiralty"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 70.72
+   },
+   {
+    "seq": 4,
+    "kind": "tool_call",
+    "label": "filter_judgments",
+    "detail": "case_type_contains=maritime",
+    "payload": {
+     "args": {
+      "case_type_contains": "maritime"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 70.72
+   },
+   {
+    "seq": 5,
+    "kind": "retrieval",
+    "label": "search_precedents",
+    "detail": "query='maritime salvage rights shipping collision liability admiralty law' favours=None k=15",
+    "payload": {
+     "query": "maritime salvage rights shipping collision liability admiralty law",
+     "favours": null
+    },
+    "docs": [
+     {
+      "doc_id": "doc_027",
+      "title": "The Manager vs Chennamma",
+      "dense_score": 0.4076409935951233,
+      "dense_rank": 8,
+      "sparse_score": 3.0445351600646973,
+      "sparse_rank": 8,
+      "fused_score": 0.029411764705882353,
+      "fused_rank": 1,
+      "rerank_score": 0.0,
+      "final_rank": 1,
+      "why": "Motor accident compensation case; no maritime, salvage, or collision issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_035",
+      "title": "United India Insurance Company Limited vs V.Vijayakumar",
+      "dense_score": 0.42850321531295776,
+      "dense_rank": 4,
+      "sparse_score": 2.5282280445098877,
+      "sparse_rank": 13,
+      "fused_score": 0.0293236301369863,
+      "fused_rank": 2,
+      "rerank_score": 0.0,
+      "final_rank": 2,
+      "why": "Motor accident compensation; driver license issue, not maritime salvage or collision.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_024",
+      "title": "Sunil Shreesail Killiket vs Subbraya",
+      "dense_score": 0.4055035710334778,
+      "dense_rank": 9,
+      "sparse_score": 2.9258129596710205,
+      "sparse_rank": 9,
+      "fused_score": 0.028985507246376812,
+      "fused_rank": 3,
+      "rerank_score": 0.0,
+      "final_rank": 3,
+      "why": "Motor accident compensation; driver license breach, no maritime law relevance.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_040",
+      "title": "A.V. Janaki Amma And Ors. vs Union Of India (Uoi) And Ors.",
+      "dense_score": 0.3781370520591736,
+      "dense_rank": 20,
+      "sparse_score": 6.489140510559082,
+      "sparse_rank": 1,
+      "fused_score": 0.02889344262295082,
+      "fused_rank": 4,
+      "rerank_score": 0.0,
+      "final_rank": 4,
+      "why": "Medical negligence/constitutional tort; no connection to maritime salvage or collision.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_033",
+      "title": "Satto & Ors vs New India Assurance Co Ltd",
+      "dense_score": 0.40371543169021606,
+      "dense_rank": 10,
+      "sparse_score": 2.742885112762451,
+      "sparse_rank": 12,
+      "fused_score": 0.02817460317460317,
+      "fused_rank": 5,
+      "rerank_score": 0.0,
+      "final_rank": 5,
+      "why": "Motor accident third-party claim; no maritime or admiralty issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_026",
+      "title": "National Insurance Co. Ltd vs Ellappa ... 1St",
+      "dense_score": 0.47080910205841064,
+      "dense_rank": 1,
+      "sparse_score": 1.4934040307998657,
+      "sparse_rank": 27,
+      "fused_score": 0.02788769549651404,
+      "fused_rank": 6,
+      "rerank_score": 0.0,
+      "final_rank": 6,
+      "why": "Motor accident; goods vehicle passenger; no maritime salvage or collision.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_014",
+      "title": "Shivlal And Ors. Etc. vs Smt. Rukmabai And Ors.",
+      "dense_score": 0.43718868494033813,
+      "dense_rank": 2,
+      "sparse_score": 1.4773120880126953,
+      "sparse_rank": 28,
+      "fused_score": 0.02749266862170088,
+      "fused_rank": 7,
+      "rerank_score": 0.0,
+      "final_rank": 7,
+      "why": "Motor accident; gratuitous passenger; no maritime law relevance.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_006",
+      "title": "National Insurance Company Ltd. Thr. ... vs Smt. Meena And 4 Others",
+      "dense_score": 0.3634093999862671,
+      "dense_rank": 27,
+      "sparse_score": 4.675085544586182,
+      "sparse_rank": 5,
+      "fused_score": 0.026878868258178604,
+      "fused_rank": 8,
+      "rerank_score": 0.0,
+      "final_rank": 8,
+      "why": "Motor accident contributory negligence; no maritime or salvage issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_032",
+      "title": "S.Iyyapan vs M/S United India Insurance Co.Ld.& Anr",
+      "dense_score": 0.39318472146987915,
+      "dense_rank": 12,
+      "sparse_score": 1.654455542564392,
+      "sparse_rank": 22,
+      "fused_score": 0.0260840108401084,
+      "fused_rank": 9,
+      "rerank_score": 0.0,
+      "final_rank": 9,
+      "why": "Motor accident; driver license endorsement; no maritime law.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_001",
+      "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+      "dense_score": 0.3750879764556885,
+      "dense_rank": 23,
+      "sparse_score": 2.4637255668640137,
+      "sparse_rank": 15,
+      "fused_score": 0.02538152610441767,
+      "fused_rank": 10,
+      "rerank_score": 0.0,
+      "final_rank": 10,
+      "why": "Motor accident; goods carriage special endorsement; no maritime salvage or collision.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_034",
+      "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+      "dense_score": 0.38239479064941406,
+      "dense_rank": 16,
+      "sparse_score": 1.6339373588562012,
+      "sparse_rank": 24,
+      "fused_score": 0.02506265664160401,
+      "fused_rank": 11,
+      "rerank_score": 0.0,
+      "final_rank": 11,
+      "why": "Motor accident; expired license; no maritime or admiralty issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_018",
+      "title": "The Oriental Insurance Comp. Ltd. ... vs Smt. Rani And Ors.",
+      "dense_score": 0.37112855911254883,
+      "dense_rank": 25,
+      "sparse_score": 2.181525707244873,
+      "sparse_rank": 16,
+      "fused_score": 0.024922600619195046,
+      "fused_rank": 12,
+      "rerank_score": 0.0,
+      "final_rank": 12,
+      "why": "Motor accident contributory negligence; no maritime law relevance.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_042",
+      "title": "Nazar Singh vs State Of Punjab And Others",
+      "dense_score": 0.37766528129577637,
+      "dense_rank": 21,
+      "sparse_score": 1.8049784898757935,
+      "sparse_rank": 20,
+      "fused_score": 0.02484567901234568,
+      "fused_rank": 13,
+      "rerank_score": 0.0,
+      "final_rank": 13,
+      "why": "Employer recovery from employee-driver; no maritime salvage or collision.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_025",
+      "title": "New India Assurance Co., Ltd., vs Yallavva W/O Yamanappa Dharnakeri",
+      "dense_score": 0.387778639793396,
+      "dense_rank": 15,
+      "sparse_score": 1.3714255094528198,
+      "sparse_rank": 30,
+      "fused_score": 0.024444444444444446,
+      "fused_rank": 14,
+      "rerank_score": 0.0,
+      "final_rank": 14,
+      "why": "Motor accident policy breach; no maritime or admiralty issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_045",
+      "title": "K. Surappa vs V. Venkatesha Reddy And Others",
+      "dense_score": 0.37514835596084595,
+      "dense_rank": 22,
+      "sparse_score": 1.4997235536575317,
+      "sparse_rank": 26,
+      "fused_score": 0.0238230289279637,
+      "fused_rank": 15,
+      "rerank_score": 0.0,
+      "final_rank": 15,
+      "why": "Vicarious liability under Representation of People Act; no maritime law.",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 290.15
+   },
+   {
+    "seq": 6,
+    "kind": "filter",
+    "label": "filter_judgments",
+    "detail": "WHERE case_type LIKE '%admiralty%'  ->  0 of 56 judgments",
+    "payload": {
+     "where": "case_type LIKE '%admiralty%'",
+     "n_matched": 0,
+     "doc_ids": []
+    },
+    "docs": [],
+    "elapsed_s": 290.16
+   },
+   {
+    "seq": 7,
+    "kind": "filter",
+    "label": "filter_judgments",
+    "detail": "WHERE case_type LIKE '%maritime%'  ->  0 of 56 judgments",
+    "payload": {
+     "where": "case_type LIKE '%maritime%'",
+     "n_matched": 0,
+     "doc_ids": []
+    },
+    "docs": [],
+    "elapsed_s": 290.16
+   },
+   {
+    "seq": 8,
+    "kind": "tool_call",
+    "label": "screen_corpus",
+    "detail": "criteria=Any judgment involving maritime law, admiralty law, shipping, salvage ...",
+    "payload": {
+     "args": {
+      "criteria": "Any judgment involving maritime law, admiralty law, shipping, salvage rights, collision at sea, vessel collision, ship, navigation, high seas, or any admiralty/maritime claim"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 292.14
+   },
+   {
+    "seq": 9,
+    "kind": "screen",
+    "label": "screen_corpus",
+    "detail": "criteria='Any judgment involving maritime law, admiralty law, shipping, salvage rights, collision at sea, vessel collision, ship, navigation, high seas, or any admiralty/maritime claim' -- screened 56/56, 0 qualified",
+    "payload": {
+     "criteria": "Any judgment involving maritime law, admiralty law, shipping, salvage rights, collision at sea, vessel collision, ship, navigation, high seas, or any admiralty/maritime claim",
+     "n_screened": 56,
+     "doc_ids": []
+    },
+    "docs": [],
+    "elapsed_s": 318.68
+   },
+   {
+    "seq": 10,
+    "kind": "tool_call",
+    "label": "search_precedents",
+    "detail": "query=admiralty court shipping vessel collision salvage maritime law India top_k=25",
+    "payload": {
+     "args": {
+      "query": "admiralty court shipping vessel collision salvage maritime law India",
+      "top_k": 25
+     }
+    },
+    "docs": [],
+    "elapsed_s": 321.1
+   },
+   {
+    "seq": 11,
+    "kind": "retrieval",
+    "label": "search_precedents",
+    "detail": "query='admiralty court shipping vessel collision salvage maritime law India' favours=None k=25",
+    "payload": {
+     "query": "admiralty court shipping vessel collision salvage maritime law India",
+     "favours": null
+    },
+    "docs": [
+     {
+      "doc_id": "doc_040",
+      "title": "A.V. Janaki Amma And Ors. vs Union Of India (Uoi) And Ors.",
+      "dense_score": 0.42086541652679443,
+      "dense_rank": 5,
+      "sparse_score": 3.7714059352874756,
+      "sparse_rank": 3,
+      "fused_score": 0.03125763125763126,
+      "fused_rank": 1,
+      "rerank_score": 0.0,
+      "final_rank": 1,
+      "why": "Medical negligence / constitutional tort; no connection to admiralty, collision, salvage, or maritime law.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_031",
+      "title": "National Insurance Co. Ltd vs Laxmi Narain Dhut",
+      "dense_score": 0.44207221269607544,
+      "dense_rank": 1,
+      "sparse_score": 0.6008987426757812,
+      "sparse_rank": 15,
+      "fused_score": 0.029726775956284153,
+      "fused_rank": 2,
+      "rerank_score": 0.0,
+      "final_rank": 2,
+      "why": "Motor accident insurance; no maritime or admiralty issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_026",
+      "title": "National Insurance Co. Ltd vs Ellappa ... 1St",
+      "dense_score": 0.4103981852531433,
+      "dense_rank": 6,
+      "sparse_score": 0.6059483289718628,
+      "sparse_rank": 14,
+      "fused_score": 0.028665028665028666,
+      "fused_rank": 3,
+      "rerank_score": 0.0,
+      "final_rank": 3,
+      "why": "Motor accident compensation for goods vehicle passengers; no maritime law relevance.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_029",
+      "title": "United India Insurance Co.Ltd vs Minor Mahesh Kanubhai & 2",
+      "dense_score": 0.40666884183883667,
+      "dense_rank": 8,
+      "sparse_score": 0.6229451894760132,
+      "sparse_rank": 13,
+      "fused_score": 0.028404512489927477,
+      "fused_rank": 4,
+      "rerank_score": 0.0,
+      "final_rank": 4,
+      "why": "Motor accident insurance for gratuitous passengers; no admiralty or salvage issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_006",
+      "title": "National Insurance Company Ltd. Thr. ... vs Smt. Meena And 4 Others",
+      "dense_score": 0.3695799708366394,
+      "dense_rank": 23,
+      "sparse_score": 3.9605565071105957,
+      "sparse_rank": 2,
+      "fused_score": 0.028177225029148854,
+      "fused_rank": 5,
+      "rerank_score": 0.0,
+      "final_rank": 5,
+      "why": "Motor accident contributory negligence; no maritime or collision law.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_028",
+      "title": "United India Insurance Co. Ltd., Thr ... vs Sukumarbai Suryakant Nikam And Ors",
+      "dense_score": 0.39759474992752075,
+      "dense_rank": 9,
+      "sparse_score": 0.5961512327194214,
+      "sparse_rank": 17,
+      "fused_score": 0.027479766610201392,
+      "fused_rank": 6,
+      "rerank_score": 0.0,
+      "final_rank": 6,
+      "why": "Motor accident insurance for private vehicle passengers; no admiralty relevance.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_015",
+      "title": "State Of H.P vs Krishan Lal",
+      "dense_score": 0.38076919317245483,
+      "dense_rank": 15,
+      "sparse_score": 1.9705902338027954,
+      "sparse_rank": 11,
+      "fused_score": 0.027417840375586856,
+      "fused_rank": 7,
+      "rerank_score": 0.0,
+      "final_rank": 7,
+      "why": "Criminal rash driving on road; no maritime or salvage context.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_008",
+      "title": "O.V. Shanthakumari vs Kokila",
+      "dense_score": 0.3691587448120117,
+      "dense_rank": 24,
+      "sparse_score": 3.309839963912964,
+      "sparse_rank": 5,
+      "fused_score": 0.02728937728937729,
+      "fused_rank": 8,
+      "rerank_score": 0.0,
+      "final_rank": 8,
+      "why": "Motor accident compensation precedent; no admiralty or collision issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_035",
+      "title": "United India Insurance Company Limited vs V.Vijayakumar",
+      "dense_score": 0.4302753806114197,
+      "dense_rank": 3,
+      "sparse_score": 0.5737434029579163,
+      "sparse_rank": 28,
+      "fused_score": 0.027236652236652236,
+      "fused_rank": 9,
+      "rerank_score": 0.0,
+      "final_rank": 9,
+      "why": "Motor accident insurance breach; no maritime law.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_043",
+      "title": "Jagdish Rai vs State Of Punjab And Others",
+      "dense_score": 0.37442898750305176,
+      "dense_rank": 21,
+      "sparse_score": 2.403775691986084,
+      "sparse_rank": 8,
+      "fused_score": 0.027051561365286855,
+      "fused_rank": 10,
+      "rerank_score": 0.0,
+      "final_rank": 10,
+      "why": "Service law recovery from salary; no connection to shipping or salvage.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_012",
+      "title": "Smt. Rekha Kumari W/O Late Sh. Sachin vs Himachal Road",
+      "dense_score": 0.40912026166915894,
+      "dense_rank": 7,
+      "sparse_score": 0.5909108519554138,
+      "sparse_rank": 23,
+      "fused_score": 0.026973565905412694,
+      "fused_rank": 11,
+      "rerank_score": 0.0,
+      "final_rank": 11,
+      "why": "Motor accident claim under MV Act; no admiralty or collision.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_018",
+      "title": "The Oriental Insurance Comp. Ltd. ... vs Smt. Rani And Ors.",
+      "dense_score": 0.3645678162574768,
+      "dense_rank": 26,
+      "sparse_score": 2.7606043815612793,
+      "sparse_rank": 7,
+      "fused_score": 0.026553280111072546,
+      "fused_rank": 12,
+      "rerank_score": 0.0,
+      "final_rank": 12,
+      "why": "Motor accident contributory negligence; no maritime issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_053",
+      "title": "Ashokbhai Shankar Chaudhary & vs Jayendra Virendra Sharma &",
+      "dense_score": 0.3645366430282593,
+      "dense_rank": 27,
+      "sparse_score": 2.2906618118286133,
+      "sparse_rank": 9,
+      "fused_score": 0.025987006496751626,
+      "fused_rank": 13,
+      "rerank_score": 0.0,
+      "final_rank": 13,
+      "why": "Civil injunction over title/possession; no maritime or salvage.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_009",
+      "title": "Kamal S/O Shiv Ram vs Mursleem S/O Mohd. Akil",
+      "dense_score": 0.3746548891067505,
+      "dense_rank": 20,
+      "sparse_score": 0.6004865169525146,
+      "sparse_rank": 16,
+      "fused_score": 0.025657894736842105,
+      "fused_rank": 14,
+      "rerank_score": 0.0,
+      "final_rank": 14,
+      "why": "Motor accident contributory negligence; no admiralty.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_025",
+      "title": "New India Assurance Co., Ltd., vs Yallavva W/O Yamanappa Dharnakeri",
+      "dense_score": 0.3826965093612671,
+      "dense_rank": 13,
+      "sparse_score": 0.582305908203125,
+      "sparse_rank": 26,
+      "fused_score": 0.025326537113730486,
+      "fused_rank": 15,
+      "rerank_score": 0.0,
+      "final_rank": 15,
+      "why": "Motor accident insurance breach; no maritime law.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_022",
+      "title": "Sangeeta Devi W/O Sh. Vinod Kumar Singh vs Mahesh Chand & Ors",
+      "dense_score": 0.38373827934265137,
+      "dense_rank": 12,
+      "sparse_score": 0.5731833577156067,
+      "sparse_rank": 29,
+      "fused_score": 0.025124843945068663,
+      "fused_rank": 16,
+      "rerank_score": 0.0,
+      "final_rank": 16,
+      "why": "Motor accident child death compensation; no salvage or collision.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_023",
+      "title": "Suman Lata And Ors. vs Madan Mohan Sonkar And Ors.",
+      "dense_score": 0.37637728452682495,
+      "dense_rank": 18,
+      "sparse_score": 0.582801878452301,
+      "sparse_rank": 25,
+      "fused_score": 0.02458521870286576,
+      "fused_rank": 17,
+      "rerank_score": 0.0,
+      "final_rank": 17,
+      "why": "Motor accident res ipsa loquitur; no admiralty.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_005",
+      "title": "L And T Insurance Co Ltd vs Bindudevi Samharu Yadav",
+      "dense_score": 0.3703349232673645,
+      "dense_rank": 22,
+      "sparse_score": 0.5854694843292236,
+      "sparse_rank": 24,
+      "fused_score": 0.024099883855981417,
+      "fused_rank": 18,
+      "rerank_score": 0.0,
+      "final_rank": 18,
+      "why": "Motor accident vs workmen's compensation; no maritime.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_021",
+      "title": "Both R/O E−365 vs Naseem",
+      "dense_score": 0.36226022243499756,
+      "dense_rank": 28,
+      "sparse_score": 0.5920791625976562,
+      "sparse_rank": 20,
+      "fused_score": 0.023863636363636365,
+      "fused_rank": 19,
+      "rerank_score": 0.0,
+      "final_rank": 19,
+      "why": "Motor accident negligence; no admiralty or salvage.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_027",
+      "title": "The Manager vs Chennamma",
+      "dense_score": 0.3757030963897705,
+      "dense_rank": 19,
+      "sparse_score": 0.5724033713340759,
+      "sparse_rank": 30,
+      "fused_score": 0.023769338959212377,
+      "fused_rank": 20,
+      "rerank_score": 0.0,
+      "final_rank": 20,
+      "why": "Motor accident third-party insurance; no maritime.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_038",
+      "title": "M/S Crown Consultants (P) Ltd. vs The Oriental Insurance Company Ltd.",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": 5.837676525115967,
+      "sparse_rank": 1,
+      "fused_score": 0.01639344262295082,
+      "fused_rank": 21,
+      "rerank_score": 0.0,
+      "final_rank": 21,
+      "why": "Consumer insurance claim repudiation; no admiralty or salvage.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_004",
+      "title": "Oriental Insurance Company vs Soma Devi & Others",
+      "dense_score": 0.43048858642578125,
+      "dense_rank": 2,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": 0.016129032258064516,
+      "fused_rank": 22,
+      "rerank_score": 0.0,
+      "final_rank": 22,
+      "why": "Motor accident compensation enhancement; no maritime.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_039",
+      "title": "Smt. Kamla Devi vs Government Of Nct Of Delhi And Anr.",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": 3.7582709789276123,
+      "sparse_rank": 4,
+      "fused_score": 0.015625,
+      "fused_rank": 23,
+      "rerank_score": 0.0,
+      "final_rank": 23,
+      "why": "Public law compensation for terrorist act; no maritime or salvage.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_001",
+      "title": "United India Insurance Company Ltd vs Neelam Devi And Others",
+      "dense_score": 0.4209497570991516,
+      "dense_rank": 4,
+      "sparse_score": null,
+      "sparse_rank": null,
+      "fused_score": 0.015625,
+      "fused_rank": 24,
+      "rerank_score": 0.0,
+      "final_rank": 24,
+      "why": "Motor accident insurance breach for goods vehicle; no admiralty.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_046",
+      "title": "Ajay Alias Vishal Veeru Devgan vs The Artists Planet & Ors",
+      "dense_score": null,
+      "dense_rank": null,
+      "sparse_score": 2.8651905059814453,
+      "sparse_rank": 6,
+      "fused_score": 0.015151515151515152,
+      "fused_rank": 25,
+      "rerank_score": 0.0,
+      "final_rank": 25,
+      "why": "Personality rights infringement; no connection to shipping or salvage.",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 343.63
+   },
+   {
+    "seq": 12,
+    "kind": "tool_call",
+    "label": "search_precedents",
+    "detail": "query=admiralty jurisdiction ship owner liability collision regulations sea top_k=10",
+    "payload": {
+     "args": {
+      "query": "admiralty jurisdiction ship owner liability collision regulations sea",
+      "top_k": 10
+     }
+    },
+    "docs": [],
+    "elapsed_s": 352.13
+   },
+   {
+    "seq": 13,
+    "kind": "tool_call",
+    "label": "filter_judgments",
+    "detail": "statute_contains=admiralty",
+    "payload": {
+     "args": {
+      "statute_contains": "admiralty"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 352.13
+   },
+   {
+    "seq": 14,
+    "kind": "tool_call",
+    "label": "filter_judgments",
+    "detail": "statute_contains=merchant shipping",
+    "payload": {
+     "args": {
+      "statute_contains": "merchant shipping"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 352.13
+   },
+   {
+    "seq": 15,
+    "kind": "retrieval",
+    "label": "search_precedents",
+    "detail": "query='admiralty jurisdiction ship owner liability collision regulations sea' favours=None k=10",
+    "payload": {
+     "query": "admiralty jurisdiction ship owner liability collision regulations sea",
+     "favours": null
+    },
+    "docs": [
+     {
+      "doc_id": "doc_030",
+      "title": "D a d a p e e r a S / O A b d u l S a l a m S a b v s M a l l e s h M S / O Hanumanthappa",
+      "dense_score": 0.4090990424156189,
+      "dense_rank": 4,
+      "sparse_score": 8.167104721069336,
+      "sparse_rank": 1,
+      "fused_score": 0.032018442622950824,
+      "fused_rank": 1,
+      "rerank_score": 1.0,
+      "final_rank": 1,
+      "why": "Motor accident compensation case about tractor mud-guard and Regulation 28 of road rules, not admiralty jurisdiction or collision regulations at sea.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_033",
+      "title": "Satto & Ors vs New India Assurance Co Ltd",
+      "dense_score": 0.4136204123497009,
+      "dense_rank": 3,
+      "sparse_score": 3.6449408531188965,
+      "sparse_rank": 7,
+      "fused_score": 0.030798389007344232,
+      "fused_rank": 2,
+      "rerank_score": 1.0,
+      "final_rank": 2,
+      "why": "Motor accident compensation case about insurer liability for invalid driving licence, no connection to admiralty or collision at sea.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_035",
+      "title": "United India Insurance Company Limited vs V.Vijayakumar",
+      "dense_score": 0.4301983118057251,
+      "dense_rank": 1,
+      "sparse_score": 3.113637924194336,
+      "sparse_rank": 12,
+      "fused_score": 0.03028233151183971,
+      "fused_rank": 3,
+      "rerank_score": 1.0,
+      "final_rank": 3,
+      "why": "Motor accident compensation case about driver's licence breach, irrelevant to admiralty jurisdiction or collision regulations.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_045",
+      "title": "K. Surappa vs V. Venkatesha Reddy And Others",
+      "dense_score": 0.38342976570129395,
+      "dense_rank": 9,
+      "sparse_score": 3.845292568206787,
+      "sparse_rank": 6,
+      "fused_score": 0.02964426877470356,
+      "fused_rank": 4,
+      "rerank_score": 1.0,
+      "final_rank": 4,
+      "why": "Motor accident case about vicarious liability under Representation of the People Act, not admiralty or sea collision.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_014",
+      "title": "Shivlal And Ors. Etc. vs Smt. Rukmabai And Ors.",
+      "dense_score": 0.39445215463638306,
+      "dense_rank": 7,
+      "sparse_score": 2.841799259185791,
+      "sparse_rank": 13,
+      "fused_score": 0.02862400327131466,
+      "fused_rank": 5,
+      "rerank_score": 1.0,
+      "final_rank": 5,
+      "why": "Motor accident compensation case about gratuitous passenger in goods vehicle, no admiralty or collision at sea issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_026",
+      "title": "National Insurance Co. Ltd vs Ellappa ... 1St",
+      "dense_score": 0.4160895347595215,
+      "dense_rank": 2,
+      "sparse_score": 1.4934040307998657,
+      "sparse_rank": 22,
+      "fused_score": 0.02832415420928403,
+      "fused_rank": 6,
+      "rerank_score": 1.0,
+      "final_rank": 6,
+      "why": "Motor accident compensation case about passengers in goods vehicle, not admiralty jurisdiction or collision regulations.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_024",
+      "title": "Sunil Shreesail Killiket vs Subbraya",
+      "dense_score": 0.37508612871170044,
+      "dense_rank": 12,
+      "sparse_score": 3.1776466369628906,
+      "sparse_rank": 11,
+      "fused_score": 0.02797339593114241,
+      "fused_rank": 7,
+      "rerank_score": 1.0,
+      "final_rank": 7,
+      "why": "Motor accident compensation case about invalid driving licence, no relevance to admiralty or sea collision.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_027",
+      "title": "The Manager vs Chennamma",
+      "dense_score": 0.37024635076522827,
+      "dense_rank": 14,
+      "sparse_score": 3.2542877197265625,
+      "sparse_rank": 10,
+      "fused_score": 0.027799227799227798,
+      "fused_rank": 8,
+      "rerank_score": 1.0,
+      "final_rank": 8,
+      "why": "Motor accident compensation case about driver's endorsement, not admiralty or collision at sea.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_034",
+      "title": "K.G. Srinivasamurthy vs Habib Khathun And Ors.",
+      "dense_score": 0.37705230712890625,
+      "dense_rank": 10,
+      "sparse_score": 2.6471920013427734,
+      "sparse_rank": 15,
+      "fused_score": 0.02761904761904762,
+      "fused_rank": 10,
+      "rerank_score": 1.0,
+      "final_rank": 9,
+      "why": "Motor accident compensation case about expired driving licence, no admiralty or sea collision issue.",
+      "best_passage": ""
+     },
+     {
+      "doc_id": "doc_029",
+      "title": "United India Insurance Co.Ltd vs Minor Mahesh Kanubhai & 2",
+      "dense_score": 0.3834912180900574,
+      "dense_rank": 8,
+      "sparse_score": 1.8387675285339355,
+      "sparse_rank": 18,
+      "fused_score": 0.027526395173453996,
+      "fused_rank": 11,
+      "rerank_score": 1.0,
+      "final_rank": 10,
+      "why": "Motor accident compensation case about gratuitous passengers in goods vehicle, not admiralty or collision at sea.",
+      "best_passage": ""
+     }
+    ],
+    "elapsed_s": 377.19
+   },
+   {
+    "seq": 16,
+    "kind": "filter",
+    "label": "filter_judgments",
+    "detail": "WHERE statutes_joined LIKE '%admiralty%'  ->  0 of 56 judgments",
+    "payload": {
+     "where": "statutes_joined LIKE '%admiralty%'",
+     "n_matched": 0,
+     "doc_ids": []
+    },
+    "docs": [],
+    "elapsed_s": 377.19
+   },
+   {
+    "seq": 17,
+    "kind": "filter",
+    "label": "filter_judgments",
+    "detail": "WHERE statutes_joined LIKE '%merchant shipping%'  ->  0 of 56 judgments",
+    "payload": {
+     "where": "statutes_joined LIKE '%merchant shipping%'",
+     "n_matched": 0,
+     "doc_ids": []
+    },
+    "docs": [],
+    "elapsed_s": 377.2
+   },
+   {
+    "seq": 18,
+    "kind": "tool_call",
+    "label": "submit_answer",
+    "detail": "question=Find precedents in this corpus about maritime salvage rights and shipp... answer=**No relevant precedents found in this corpus.**\n\nThe corpus consists ... cited_doc_ids=[] confidence=high",
+    "payload": {
+     "args": {
+      "question": "Find precedents in this corpus about maritime salvage rights and shipping collision liability under admiralty law.",
+      "answer": "**No relevant precedents found in this corpus.**\n\nThe corpus consists of 56 judgments, and every one of them has been exhaustively searched — via semantic search, keyword search, metadata filtering, and full corpus screening — for any content relating to:\n\n- Maritime salvage rights\n- Shipping collision liability\n- Admiralty law / admiralty jurisdiction\n- Merchant shipping statutes\n- Vessel or ship collisions\n- Salvage claims\n- Navigation rules at sea\n\n**Result: Zero matches.** The corpus is composed almost entirely of motor accident compensation cases under the Motor Vehicles Act, 1988 (third-party claims, licence defects, contributory negligence, quantum of compensation), along with a few unrelated civil, criminal, service law, and consumer matters. None involve admiralty, maritime, or shipping law.\n\n**If you need precedents on maritime salvage or shipping collision liability, this corpus cannot assist.** You would need to look to:\n- The **Admiralty (Jurisdiction and Settlement of Maritime Claims) Act, 2017**\n- The **Merchant Shipping Act, 1958**\n- Indian High Court admiralty decisions (especially from the Bombay, Calcutta, Madras, and Gujarat High Courts which exercise admiralty jurisdiction)\n- The **International Convention on Salvage, 1989** (to which India is a signatory)\n- The **International Regulations for Preventing Collisions at Sea (COLREGs)**",
+      "cited_doc_ids": [],
+      "confidence": "high"
+     }
+    },
+    "docs": [],
+    "elapsed_s": 382.65
+   },
+   {
+    "seq": 19,
+    "kind": "answer",
+    "label": "submit_answer",
+    "detail": "0 citations, confidence=high",
+    "payload": {
+     "doc_ids": []
+    },
+    "docs": [],
+    "elapsed_s": 382.67
+   },
+   {
+    "seq": 20,
+    "kind": "plan",
+    "label": "reasoning",
+    "detail": "The answer has been submitted. To summarise: this corpus of 56 judgments contains **no precedents whatsoever** on maritime salvage rights, shipping collision liability, or admiralty law. The corpus is overwhelmingly composed of motor accident compensation cases under the Motor Vehicles Act, 1988. I'",
+    "payload": {},
+    "docs": [],
+    "elapsed_s": 384.28
+   }
+  ],
+  "started_at": 1786976748.2256708,
+  "llm_calls": 11,
+  "in_tokens": 42754,
+  "out_tokens": 5590
+ },
+ "retrieved": [
+  "doc_027",
+  "doc_035",
+  "doc_024",
+  "doc_040",
+  "doc_033",
+  "doc_026",
+  "doc_014",
+  "doc_006",
+  "doc_032",
+  "doc_001",
+  "doc_034",
+  "doc_018",
+  "doc_042",
+  "doc_025",
+  "doc_045",
+  "doc_031",
+  "doc_029",
+  "doc_028",
+  "doc_015",
+  "doc_008",
+  "doc_043",
+  "doc_012",
+  "doc_053",
+  "doc_009",
+  "doc_022",
+  "doc_023",
+  "doc_005",
+  "doc_021",
+  "doc_038",
+  "doc_004",
+  "doc_039",
+  "doc_046",
+  "doc_030"
+ ],
+ "tool_sequence": [
+  "search_precedents",
+  "filter_judgments",
+  "filter_judgments",
+  "screen_corpus",
+  "search_precedents",
+  "search_precedents",
+  "filter_judgments",
+  "filter_judgments",
+  "submit_answer"
+ ],
+ "llm_calls": 11,
+ "tokens": 48344,
+ "result_type": "DirectAnswer",
+ "result": {
+  "question": "Find precedents in this corpus about maritime salvage rights and shipping collision liability under admiralty law.",
+  "answer": "**No relevant precedents found in this corpus.**\n\nThe corpus consists of 56 judgments, and every one of them has been exhaustively searched — via semantic search, keyword search, metadata filtering, and full corpus screening — for any content relating to:\n\n- Maritime salvage rights\n- Shipping collision liability\n- Admiralty law / admiralty jurisdiction\n- Merchant shipping statutes\n- Vessel or ship collisions\n- Salvage claims\n- Navigation rules at sea\n\n**Result: Zero matches.** The corpus is composed almost entirely of motor accident compensation cases under the Motor Vehicles Act, 1988 (third-party claims, licence defects, contributory negligence, quantum of compensation), along with a few unrelated civil, criminal, service law, and consumer matters. None involve admiralty, maritime, or shipping law.\n\n**If you need precedents on maritime salvage or shipping collision liability, this corpus cannot assist.** You would need to look to:\n- The **Admiralty (Jurisdiction and Settlement of Maritime Claims) Act, 2017**\n- The **Merchant Shipping Act, 1958**\n- Indian High Court admiralty decisions (especially from the Bombay, Calcutta, Madras, and Gujarat High Courts which exercise admiralty jurisdiction)\n- The **International Convention on Salvage, 1989** (to which India is a signatory)\n- The **International Regulations for Preventing Collisions at Sea (COLREGs)**",
+  "cited_doc_ids": [],
+  "confidence": "high"
+ },
+ "cited": [],
+ "elapsed_s": 384.3
+}
